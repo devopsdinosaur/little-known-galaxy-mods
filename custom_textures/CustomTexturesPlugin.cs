@@ -67,7 +67,7 @@ public class CustomTexturesPlugin : BaseUnityPlugin {
 					if (this.m_texture != null) {
 						return this.m_texture;
 					}
-					debug_log($"CustomTexture.get_texture - loading '{this.m_name}' from file '{this.m_path}'.");
+					// debug_log($"CustomTexture.get_texture - loading '{this.m_name}' from file '{this.m_path}'.");
 					this.m_texture = new Texture2D(1, 1, GraphicsFormat.R8G8B8A8_UNorm, new TextureCreationFlags());
 					this.m_texture.LoadImage(File.ReadAllBytes(this.m_path));
 					this.m_texture.filterMode = FilterMode.Point;
@@ -164,10 +164,10 @@ public class CustomTexturesPlugin : BaseUnityPlugin {
 					try {
 						object val = field.GetValue(obj);
 						if (field.FieldType == typeof(T)) {
-							debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
+							// debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
 							field.SetValue(obj, this.get_replacement<T>((T) val));
 						} else if (field.FieldType == typeof(T[])) {
-							debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
+							// debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
 							List<T> new_items = new List<T>();
 							foreach (T item in (T[]) val) {
 								new_items.Add((T) this.get_replacement<T>(item));
@@ -175,22 +175,22 @@ public class CustomTexturesPlugin : BaseUnityPlugin {
 							field.SetValue(obj, new_items.ToArray());
 						} else if (field.FieldType.IsGenericType) {
 							if (field.FieldType.Name.StartsWith("List") && field.FieldType.GenericTypeArguments.Length == 1 && field.FieldType.GenericTypeArguments[0] == typeof(T)) {
-								debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
+								// debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
 								ReflectionUtils.enumerate_list_entries(val, delegate (ReflectionUtils.EnumerateListEntriesCallbackParams info) {
 									info.Value = this.get_replacement<T>((T) info.Value);
-									debug_log($"[{info.Index}] = {info.Value} ({(info.Value != null ? info.Value.GetHashCode().ToString() : "---")})");
+									// debug_log($"[{info.Index}] = {info.Value} ({(info.Value != null ? info.Value.GetHashCode().ToString() : "---")})");
 									return true;
 								});
 							} else if (field.FieldType.Name.StartsWith("Dictionary") && field.FieldType.GenericTypeArguments.Length == 2 && field.FieldType.GenericTypeArguments[1] == typeof(T)) {
-								debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
+								// debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
 								ReflectionUtils.enumerate_dict_entries(val, delegate (ReflectionUtils.EnumerateDictEntriesCallbackParams info) {
 									info.Value = this.get_replacement<T>((T) info.Value);
-									debug_log($"[{info.Key}] = {info.Value} ({(info.Value != null ? info.Value.GetHashCode().ToString() : "---")})");
+									// debug_log($"[{info.Key}] = {info.Value} ({(info.Value != null ? info.Value.GetHashCode().ToString() : "---")})");
 									return true;
 								});
 							}
 						} else if (val != null && field.FieldType.Assembly.GetName().Name == this.m_main_assembly_name && !(val is Enum) && !(val is MonoBehaviour)) {
-							debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
+							// debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
 							this.replace_members_in_instance<T>(val, checked_hashes);
 						}
 					} catch (Exception e) {
@@ -209,7 +209,7 @@ public class CustomTexturesPlugin : BaseUnityPlugin {
 		private object get_replacement<T>(T original) where T : UnityEngine.Object {
 			try {
 				if (original == null) {
-					debug_log($"get_replacement(original == null); nothing to do.");
+					// debug_log($"get_replacement(original == null); nothing to do.");
 					return original;
 				}
 				if (original is Sprite sprite) {
@@ -227,12 +227,12 @@ public class CustomTexturesPlugin : BaseUnityPlugin {
 		private object get_replacement_Texture2D(Texture2D texture) {
 			string texture_name = texture?.name;
 			if (string.IsNullOrEmpty(texture_name)) {
-				debug_log($"get_replacement_texture(texture_name == null); nothing to do.");
+				// debug_log($"get_replacement_texture(texture_name == null); nothing to do.");
 				return texture;
 			}
-			debug_log($"get_replacement_texture(texture.name: {texture_name})");
+			// debug_log($"get_replacement_texture(texture.name: {texture_name})");
 			if (!this.m_textures.ContainsKey(texture_name) || this.m_textures[texture_name].Texture == null) {
-				debug_log($"texture not in custom texture dict; nothing to replace.");
+				// debug_log($"texture not in custom texture dict; nothing to replace.");
 				return texture;
 			}
 			return this.m_textures[texture_name].Texture;
@@ -241,17 +241,17 @@ public class CustomTexturesPlugin : BaseUnityPlugin {
 		private object get_replacement_Sprite(Sprite sprite) {
 			string texture_name = sprite.texture?.name;
 			if (string.IsNullOrEmpty(texture_name)) {
-				debug_log($"get_replacement_sprite(texture_name == null); nothing to do.");
+				// debug_log($"get_replacement_sprite(texture_name == null); nothing to do.");
 				return sprite;
 			}
-			debug_log($"get_replacement_sprite(sprite.name: {sprite.name}, sprite.texture.name: {texture_name})");
+			// debug_log($"get_replacement_sprite(sprite.name: {sprite.name}, sprite.texture.name: {texture_name})");
 			string key = get_sprite_key(sprite.name, texture_name);
 			if (this.m_sprites.TryGetValue(key, out Sprite replaced_sprite)) {
-				debug_log($"returning cached '{key}' sprite.");
+				// debug_log($"returning cached '{key}' sprite.");
 				return replaced_sprite;
 			}
 			if (!this.m_textures.ContainsKey(texture_name) || this.m_textures[texture_name].Texture == null) {
-				debug_log($"texture not in custom texture dict; nothing to replace.");
+				// debug_log($"texture not in custom texture dict; nothing to replace.");
 				return sprite;
 			}
 			Sprite new_sprite = Sprite.Create(
@@ -268,7 +268,7 @@ public class CustomTexturesPlugin : BaseUnityPlugin {
 				true
 			);
 			new_sprite.name = sprite.name;
-			debug_log($"adding replacement sprite to dict at key '{key}'.");
+			// debug_log($"adding replacement sprite to dict at key '{key}'.");
 			return (this.m_sprites[key] = new_sprite);
 		}
 	
