@@ -24,9 +24,6 @@ public class TestingPlugin : BaseUnityPlugin {
 			if (m_enabled.Value) {
 				this.m_harmony.PatchAll();
 			}
-
-            SceneManager.sceneLoaded += on_scene_loaded;
-
 			logger.LogInfo("devopsdinosaur.lkg.testing v0.0.1" + (m_enabled.Value ? "" : " [inactive; disabled in config]") + " loaded.");
 		} catch (Exception e) {
 			logger.LogError("** Awake FATAL - " + e);
@@ -70,96 +67,6 @@ public class TestingPlugin : BaseUnityPlugin {
 		foreach (Component component in obj.GetComponents<Component>()) {
 			logger.LogInfo(component.GetType().ToString());
 		}
-	}
-
-
-	class CustomTexture {
-		private string m_name;
-		private string m_path;
-		private Texture2D m_texture;
-
-		public CustomTexture(string name, string path) {
-			this.m_name = name;
-			this.m_path = path;
-			this.m_texture = null;
-		}
-
-		public Texture2D get_texture() {
-
-		}
-	}
-
-	class TextureManager {
-		
-		
-		private Dictionary<string, CustomTexture> m_textures = new Dictionary<string, CustomTexture>();
-
-
-	}
-	
-	private static Dictionary<string, Sprite> m_replaced_sprites = new Dictionary<string, Sprite>();
-
-
-	private static void debug_log(string text) {
-		logger.LogInfo(text);
-	}
-
-	private static void on_scene_loaded(Scene scene, LoadSceneMode mode) {
-		try {
-			List<int> checked_hashes = new List<int>();
-			foreach (Component component in Resources.FindObjectsOfTypeAll<Component>()) {
-				if (component is Renderer renderer) {
-
-				} else if (component is MonoBehaviour) {
-					replace_sprites_in_object(component, checked_hashes);
-				}
-			}
-		} catch (Exception e) {
-			logger.LogError("** on_scene_loaded ERROR - " + e);
-		}
-	}
-
-	private static void replace_sprites_in_object(object obj, List<int> checked_hashes) {
-		try {
-			if (checked_hashes.Contains(obj.GetHashCode())) {
-				return;
-			}
-			checked_hashes.Add(obj.GetHashCode());
-			foreach (FieldInfo field in AccessTools.GetDeclaredFields(obj.GetType())) {
-				if (field.FieldType == typeof(Sprite)) {
-					debug_log($"Replacing sprite {obj.GetType().Name}.{field.Name}");
-					field.SetValue(obj, replace_sprite((Sprite) field.GetValue(obj)));
-				}
-			}
-		} catch (Exception e) {
-			logger.LogError("** replace_sprites_in_object ERROR - " + e);
-		}
-	}
-
-	private static string get_sprite_key(string sprite_name, string texture_name) {
-		return sprite_name + "_" + texture_name;
-	}
-
-	private static Sprite replace_sprite(Sprite sprite) {
-		try {
-			if (sprite == null) {
-				return null;
-			}
-			string texture_name = sprite.texture?.name;
-			if (string.IsNullOrEmpty(texture_name)) {
-				return sprite;
-			}
-			debug_log($"replace_sprite(sprite.name: {sprite.name}, sprite.texture.name: {texture_name})");
-			string key = get_sprite_key(sprite.name, texture_name);
-			if (m_replaced_sprites.TryGetValue(key, out Sprite new_sprite)) {
-				debug_log($"sprite already replaced");
-				return new_sprite;
-			}
-
-		} catch (Exception e) {
-			logger.LogError("** replace_sprite ERROR - " + e);
-		}
-		return sprite;
 	}
 
 	/*

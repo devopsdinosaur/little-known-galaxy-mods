@@ -7,21 +7,27 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using System.Reflection;
+using System.IO;
+using UnityEngine.Experimental.Rendering;
+using UnityEngine.UI;
 
 [BepInPlugin("devopsdinosaur.lkg.custom_textures", "Custom Textures", "0.0.1")]
 public class CustomTexturesPlugin : BaseUnityPlugin {
+
+	const string GAME_ASSEMBLY_NAME = "Assembly-CSharp";
 
 	private Harmony m_harmony = new Harmony("devopsdinosaur.lkg.custom_textures");
 	public static ManualLogSource logger;
 	private static ConfigEntry<bool> m_enabled;
 	private static ConfigEntry<string> m_subdir;
-	
+
 	private void Awake() {
 		logger = this.Logger;
 		try {
 			m_enabled = this.Config.Bind<bool>("General", "Enabled", true, "Set to false to disable this mod.");
 			m_subdir = this.Config.Bind<string>("General", "Texture Subfolder", "custom_textures", "Subfolder under this plugin's parent folder (i.e. <game>/BepInEx/plugins) which in turn contains a set of mod-specific texture directories.");
-			TextureManager.Instance.get_texture_paths(m_subdir.Value);
+			CustomTextureManager.Instance.initialize(GAME_ASSEMBLY_NAME);
+			CustomTextureManager.Instance.get_texture_paths();
 			this.m_harmony.PatchAll();
 			logger.LogInfo("devopsdinosaur.lkg.custom_textures v0.0.1 loaded.");
 		} catch (Exception e) {
@@ -29,105 +35,243 @@ public class CustomTexturesPlugin : BaseUnityPlugin {
 		}
 	}
 
-	class CustomTexture {
-		private string m_name;
-		private string m_path;
-		private Texture2D m_texture;
-
-		public CustomTexture(string name, string path) {
-			this.m_name = name;
-			this.m_path = path;
-			this.m_texture = null;
-		}
-
-		public Texture2D get_texture() {
-			return null;
-		}
-	}
-
-	class TextureManager {
-		private static TextureManager m_instance = null;
-		public static TextureManager Instance {
-			get {
-				if (m_instance == null) {
-					m_instance = new TextureManager();
-				}
-				return m_instance;
-			}
-		}
-		private Dictionary<string, CustomTexture> m_textures = new Dictionary<string, CustomTexture>();
-
-		public void get_texture_paths(string root_dir) {
-			try {
-
-			} catch (Exception e) {
-
-			}
-		}
-	}
-
-	private static Dictionary<string, Sprite> m_replaced_sprites = new Dictionary<string, Sprite>();
-
-
 	private static void debug_log(string text) {
 		logger.LogInfo(text);
 	}
 
-	private static void on_scene_loaded(Scene scene, LoadSceneMode mode) {
-		try {
-			List<int> checked_hashes = new List<int>();
-			foreach (Component component in Resources.FindObjectsOfTypeAll<Component>()) {
-				if (component is Renderer renderer) {
+	class CustomTextureManager {
 
-				} else if (component is MonoBehaviour) {
-					replace_sprites_in_object(component, checked_hashes);
+		class CustomTexture {
+			public string m_name;
+			public string m_path;
+			private Texture2D m_texture;
+			public Texture2D Texture {
+				get {
+					return this.get_texture();
 				}
 			}
-		} catch (Exception e) {
-			logger.LogError("** on_scene_loaded ERROR - " + e);
-		}
-	}
+			private bool m_load_failed;
 
-	private static void replace_sprites_in_object(object obj, List<int> checked_hashes) {
-		try {
-			if (checked_hashes.Contains(obj.GetHashCode())) {
-				return;
+			public CustomTexture(string name, string path) {
+				this.m_name = name;
+				this.m_path = path;
+				this.m_texture = null;
+				this.m_load_failed = false;
 			}
-			checked_hashes.Add(obj.GetHashCode());
-			foreach (FieldInfo field in AccessTools.GetDeclaredFields(obj.GetType())) {
-				if (field.FieldType == typeof(Sprite)) {
-					debug_log($"Replacing sprite {obj.GetType().Name}.{field.Name}");
-					field.SetValue(obj, replace_sprite((Sprite) field.GetValue(obj)));
+
+			private Texture2D get_texture() {
+				try {
+					if (this.m_load_failed) {
+						return null;
+					}
+					if (this.m_texture != null) {
+						return this.m_texture;
+					}
+					debug_log($"CustomTexture.get_texture - loading '{this.m_name}' from file '{this.m_path}'.");
+					this.m_texture = new Texture2D(1, 1, GraphicsFormat.R8G8B8A8_UNorm, new TextureCreationFlags());
+					this.m_texture.LoadImage(File.ReadAllBytes(this.m_path));
+					this.m_texture.filterMode = FilterMode.Point;
+					this.m_texture.wrapMode = TextureWrapMode.Clamp;
+					this.m_texture.wrapModeU = TextureWrapMode.Clamp;
+					this.m_texture.wrapModeV = TextureWrapMode.Clamp;
+					this.m_texture.wrapModeW = TextureWrapMode.Clamp;
+					this.m_load_failed = false;
+					return this.m_texture;
+				} catch (Exception e) {
+					logger.LogError("** CustomTexture.get_texture ERROR - " + e);
+					logger.LogError("** NOTE: Texture load failed.  This texture will no longer be considered for replacement during this run or until a manual reload is triggered.");
 				}
-			}
-		} catch (Exception e) {
-			logger.LogError("** replace_sprites_in_object ERROR - " + e);
-		}
-	}
-
-	private static string get_sprite_key(string sprite_name, string texture_name) {
-		return sprite_name + "_" + texture_name;
-	}
-
-	private static Sprite replace_sprite(Sprite sprite) {
-		try {
-			if (sprite == null) {
+				this.m_load_failed = true;
 				return null;
 			}
+		}
+
+		private static CustomTextureManager m_instance = null;
+		public static CustomTextureManager Instance {
+			get {
+				if (m_instance == null) {
+					m_instance = new CustomTextureManager();
+				}
+				return m_instance;
+			}
+		}
+		private string m_main_assembly_name;
+		private Dictionary<string, CustomTexture> m_textures = new Dictionary<string, CustomTexture>();
+		private Dictionary<string, Sprite> m_sprites = new Dictionary<string, Sprite>();
+
+		public void initialize(string main_assembly_name) {
+			this.m_main_assembly_name = main_assembly_name;
+			SceneManager.sceneLoaded += this.on_scene_loaded;
+		}
+
+		public void get_texture_paths() {
+			try {
+				string root_dir = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), m_subdir.Value);
+				logger.LogInfo($"Assembling custom texture information from directory, '{root_dir}'.");
+				if (!Directory.Exists(root_dir)) {
+					logger.LogInfo("Directory does not exist; creating.");
+					Directory.CreateDirectory(root_dir);
+				}
+				this.m_textures.Clear();
+				int total_counter = 0;
+				foreach (string sub_dir in Directory.GetDirectories(root_dir)) {
+					string mod_dir = Path.Combine(root_dir, sub_dir);
+					int local_counter = 0;
+					foreach (string file in Directory.GetFiles(mod_dir, "*.png", SearchOption.AllDirectories)) {
+						string key = Path.GetFileNameWithoutExtension(file);
+						string full_path = Path.Combine(mod_dir, file);
+						if (m_textures.ContainsKey(key)) {
+							logger.LogWarning($"* file '{this.m_textures[key]}' replaces '{full_path}' in texture dictionary; the first file will not be used.");
+						}
+						this.m_textures[key] = new CustomTexture(key, full_path);
+						local_counter++;
+					}
+					logger.LogInfo($"--> {mod_dir}: {local_counter} textures.");
+					total_counter += local_counter;
+				}
+				logger.LogInfo($"Found {total_counter} total textures.");
+			} catch (Exception e) {
+				logger.LogError("** get_texture_paths ERROR - " + e);
+			}
+		}
+
+		private void on_scene_loaded(Scene scene, LoadSceneMode mode) {
+			try {
+				Dictionary<Type, List<int>> checked_hashes = new Dictionary<Type, List<int>>();
+				foreach (Component component in Resources.FindObjectsOfTypeAll<Component>()) {
+					if (component is Renderer renderer) {
+
+					} else if (component is MonoBehaviour) {
+						this.replace_members_in_instance<Texture2D>(component, checked_hashes);
+						this.replace_members_in_instance<Sprite>(component, checked_hashes);
+					}
+				}
+			} catch (Exception e) {
+				logger.LogError("** on_scene_loaded ERROR - " + e);
+			}
+		}
+
+		private void replace_members_in_instance<T>(object obj, Dictionary<Type, List<int>> checked_hashes) where T : UnityEngine.Object {
+			try {
+				if (!checked_hashes.ContainsKey(typeof(T))) {
+					checked_hashes[typeof(T)] = new List<int>();
+				}
+				if (obj == null || checked_hashes[typeof(T)].Contains(obj.GetHashCode())) {
+					return;
+				}
+				checked_hashes[typeof(T)].Add(obj.GetHashCode());
+				foreach (FieldInfo field in AccessTools.GetDeclaredFields(obj.GetType())) {
+					try {
+						object val = field.GetValue(obj);
+						if (field.FieldType == typeof(T)) {
+							debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
+							field.SetValue(obj, this.get_replacement<T>((T) val));
+						} else if (field.FieldType == typeof(T[])) {
+							debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
+							List<T> new_items = new List<T>();
+							foreach (T item in (T[]) val) {
+								new_items.Add((T) this.get_replacement<T>(item));
+							}
+							field.SetValue(obj, new_items.ToArray());
+						} else if (field.FieldType.IsGenericType) {
+							if (field.FieldType.Name.StartsWith("List") && field.FieldType.GenericTypeArguments.Length == 1 && field.FieldType.GenericTypeArguments[0] == typeof(T)) {
+								debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
+								ReflectionUtils.enumerate_list_entries(val, delegate (ReflectionUtils.EnumerateListEntriesCallbackParams info) {
+									info.Value = this.get_replacement<T>((T) info.Value);
+									debug_log($"[{info.Index}] = {info.Value} ({(info.Value != null ? info.Value.GetHashCode().ToString() : "---")})");
+									return true;
+								});
+							} else if (field.FieldType.Name.StartsWith("Dictionary") && field.FieldType.GenericTypeArguments.Length == 2 && field.FieldType.GenericTypeArguments[1] == typeof(T)) {
+								debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
+								ReflectionUtils.enumerate_dict_entries(val, delegate (ReflectionUtils.EnumerateDictEntriesCallbackParams info) {
+									info.Value = this.get_replacement<T>((T) info.Value);
+									debug_log($"[{info.Key}] = {info.Value} ({(info.Value != null ? info.Value.GetHashCode().ToString() : "---")})");
+									return true;
+								});
+							}
+						} else if (val != null && field.FieldType.Assembly.GetName().Name == this.m_main_assembly_name && !(val is Enum) && !(val is MonoBehaviour)) {
+							debug_log($"== {obj.GetType().Name}.{field.Name} ({field.FieldType})");
+							this.replace_members_in_instance<T>(val, checked_hashes);
+						}
+					} catch (Exception e) {
+						logger.LogWarning($"** replace_members_in_instance WARNING - unable to process {obj.GetType().Name}.{field.Name} ({field.FieldType}).  Exception: " + e);
+					}
+				}
+			} catch (Exception e) {
+				logger.LogError("** replace_members_in_instance ERROR - " + e);
+			}
+		}
+
+		private string get_sprite_key(string sprite_name, string texture_name) {
+			return sprite_name + "_" + texture_name;
+		}
+
+		private object get_replacement<T>(T original) where T : UnityEngine.Object {
+			try {
+				if (original == null) {
+					debug_log($"get_replacement(original == null); nothing to do.");
+					return original;
+				}
+				if (original is Sprite sprite) {
+					return this.get_replacement_Sprite(sprite);
+				}
+				if (original is Texture2D texture) {
+					return this.get_replacement_Texture2D(texture);
+				}
+			} catch (Exception e) {
+				logger.LogError("** get_replacement ERROR - " + e);
+			}
+			return original;
+		}
+
+		private object get_replacement_Texture2D(Texture2D texture) {
+			string texture_name = texture?.name;
+			if (string.IsNullOrEmpty(texture_name)) {
+				debug_log($"get_replacement_texture(texture_name == null); nothing to do.");
+				return texture;
+			}
+			debug_log($"get_replacement_texture(texture.name: {texture_name})");
+			if (!this.m_textures.ContainsKey(texture_name) || this.m_textures[texture_name].Texture == null) {
+				debug_log($"texture not in custom texture dict; nothing to replace.");
+				return texture;
+			}
+			return this.m_textures[texture_name].Texture;
+		}
+
+		private object get_replacement_Sprite(Sprite sprite) {
 			string texture_name = sprite.texture?.name;
 			if (string.IsNullOrEmpty(texture_name)) {
+				debug_log($"get_replacement_sprite(texture_name == null); nothing to do.");
 				return sprite;
 			}
-			debug_log($"replace_sprite(sprite.name: {sprite.name}, sprite.texture.name: {texture_name})");
+			debug_log($"get_replacement_sprite(sprite.name: {sprite.name}, sprite.texture.name: {texture_name})");
 			string key = get_sprite_key(sprite.name, texture_name);
-			if (m_replaced_sprites.TryGetValue(key, out Sprite new_sprite)) {
-				debug_log($"sprite already replaced");
-				return new_sprite;
+			if (this.m_sprites.TryGetValue(key, out Sprite replaced_sprite)) {
+				debug_log($"returning cached '{key}' sprite.");
+				return replaced_sprite;
 			}
-
-		} catch (Exception e) {
-			logger.LogError("** replace_sprite ERROR - " + e);
+			if (!this.m_textures.ContainsKey(texture_name) || this.m_textures[texture_name].Texture == null) {
+				debug_log($"texture not in custom texture dict; nothing to replace.");
+				return sprite;
+			}
+			Sprite new_sprite = Sprite.Create(
+				this.m_textures[texture_name].Texture,
+				sprite.rect,
+				new Vector2(
+					sprite.pivot.x / sprite.rect.width,
+					sprite.pivot.y / sprite.rect.height
+				),
+				sprite.pixelsPerUnit,
+				0,
+				SpriteMeshType.FullRect,
+				sprite.border,
+				true
+			);
+			new_sprite.name = sprite.name;
+			debug_log($"adding replacement sprite to dict at key '{key}'.");
+			return (this.m_sprites[key] = new_sprite);
 		}
-		return sprite;
+	
 	}
+
 }
