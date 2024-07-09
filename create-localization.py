@@ -1,6 +1,7 @@
 import os
 import sys
 import re
+from google.cloud import translate
 
 CACHE_FILE = "cached_translations"
 
