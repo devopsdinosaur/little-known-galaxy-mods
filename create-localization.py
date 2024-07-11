@@ -1,4 +1,10 @@
-
+# =========================================================================
+# Copyright (c) 2024 devopsdinosaur (devopsdinosaur@gmail.com)
+#
+# This file may not be modified, redistributed, or used for monetary gain
+# without the express written consent of the author.
+# =========================================================================
+#
 #--------------------------------------------------------------------------
 # -- DISCLAIMER --
 #
@@ -16,14 +22,32 @@
 # is absolutely 100% your responsibility to monitor and limit activity.
 #
 #--------------------------------------------------------------------------
+#
+# ** Setup **
+#
+# 1. Create an account and project on Google Cloud that has Cloud Translation
+# API enabled.  Create a 'tmp' directory here and 'project_id' file
+# within it that contains the project ID of your project.
+# 2. Install latest Python 3 version (https://www.python.org/downloads/).
+# 3. Install gcloud CLI (https://cloud.google.com/sdk/docs/install).
+# 4. In VSCode console:
+# $ pip install google-cloud-translate
+# 5. In Google Cloud SDK shell:
+# $ gcloud auth application-default login
+# $ gcloud auth application-default set-quota-project <project-id>
+# 6. Using AssetStudio, extract all the 'English_XXX' TextAssets.  This directory
+# will be used as your <template-dir> in the script call below.
+# 7. This script should be good to run as follows:
+# $ python3 ./create-localization.py <template-dir> <language> <output-dir>
+# ex: python3 ./create-localization.py ./tmp/templates Spanish ./tmp/Spanish
+# * NOTE: <language> is case sensitive and must match one of these:
+# https://developers.google.com/admin-sdk/directory/v1/languages
+# 
 
 import os
 import sys
 import re
 from google.cloud import translate, translate_v2
-
-# To set up default creds for google api (run in Google Cloud SDK shell):
-# gcloud auth application-default login
 
 THIS_DIR = os.path.dirname(__file__)
 TMP_DIR = os.path.join(THIS_DIR, "tmp")
@@ -37,7 +61,25 @@ KEYS_TO_TRANSLATE = [
     "animalSpeciesDescription",
     "animalSpeciesName",
     "birthdayAnnouncement",
+    "collectionName",
+    "emailBody",
+    "emailSubject",
+    "eventDescription",
+    "eventName",
+    "itemDescription",
+    "itemName",
+    "libraryBody",
+    "librarySubtopic",
+    "locationCalendar",
+    "locationCalendarUnknown",
+    "locationDescription",
+    "locationDescriptUnknown",
+    "locationName",
+    "locationNameUnknown",
+    "locationTooltip",
     "optionText",
+    "questDescription",
+    "questName",
     "response",
     "text",
     "unlockBody",
@@ -47,6 +89,7 @@ KEYS_TO_TRANSLATE = [
 ]
 
 LISTS_TO_TRANSLATE = [
+    "goalDescriptions",
     "observations",
     "relationshipStatus",
     "titles",
@@ -79,12 +122,22 @@ class JankyTranslator:
     
     def write_file(self, path, data):
         f = open(path, "w")
-        f.write(data)
+        try:
+            f.write(data)
+        except UnicodeEncodeError as e:
+            # There is definitely a better way to do this, but shouldn't
+            # hit here often and file writes are not frequent.
+            new_data = ""
+            for index in range(len(data)):
+                try:
+                    new_data += chr(int(data[index].encode("utf-8")[0]))
+                except UnicodeEncodeError as e:
+                    pass
+            f.write(new_data)
         f.close()
 
     def load_cache(self):
-        if (os.path.exists(CACHE_FILE)):
-            self.cache = eval(self.read_file(CACHE_FILE))
+        self.cache = eval(self.read_file(CACHE_FILE)) if (os.path.exists(CACHE_FILE)) else {}
         for key in ('languages', 'translations', 'stats'):
             if (key not in self.cache.keys()):
                 self.cache[key] = {}
@@ -134,6 +187,42 @@ class JankyTranslator:
         return self.cache['translations'][self.language_code][text]
 
     def translate_marked_up_string(self, text):
+    
+        def get_next_chunk(index, text):
+            
+            def is_stop_tag(c):
+                return c == '>'
+            
+            def is_stop_variable(c):
+                return not (c.isalpha() or c.isdigit())
+            
+            def is_stop_basic(c):
+                return c in "<$"
+        
+            if (index >= len(text)):
+                return (index, None)
+            stop_check = is_stop_tag if (text[index] == '<') else is_stop_variable if (text[index] == '$') else is_stop_basic
+            chunk = ""
+            while (True):
+                chunk += text[index]
+                index += 1
+                if (index >= len(text) or stop_check(text[index])):
+                    if (index < len(text) - 1 and text[index] == '>'):
+                        return (index + 1, chunk + '>')
+                    break
+            return (index, chunk)
+
+        index = 0
+        chunks = []
+        while (True):
+            index, chunk = get_next_chunk(index, text)
+            if (not chunk):
+                break
+            chunks.append(chunk if (chunk[0] in "<$") else self.translate_string(chunk))
+        return "".join(chunks)
+
+    """
+    def translate_marked_up_string(self, text):
         chunks = []
         index = 0
         chunk = ""
@@ -158,6 +247,8 @@ class JankyTranslator:
             if (chunk != ""):
                 new_chunks.append(chunk if (chunk[0] == '<') else self.translate_string(chunk))
         return "".join(new_chunks)
+    """
+        
         
     def translate_file(self, path):
         log("--> in: " + path)
@@ -234,5 +325,8 @@ def main(argv):
 if (__name__ == "__main__"):
     #sys.exit(main(sys.argv))
     sys.exit(main([
-        "", "tmp/template", "Spanish", "tmp/output"
+        "", 
+        "tmp/template", 
+        "French", 
+        "tmp/output"
     ]))

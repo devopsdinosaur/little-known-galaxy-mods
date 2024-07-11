@@ -137,6 +137,9 @@ public class CustomTexturesPlugin : BaseUnityPlugin {
 
 		private void on_scene_loaded(Scene scene, LoadSceneMode mode) {
 			try {
+				if (!m_enabled.Value) {
+					return;
+				}
 				Dictionary<Type, List<int>> checked_hashes = new Dictionary<Type, List<int>>();
 				foreach (Component component in Resources.FindObjectsOfTypeAll<Component>()) {
 					if (component is Renderer renderer) {
