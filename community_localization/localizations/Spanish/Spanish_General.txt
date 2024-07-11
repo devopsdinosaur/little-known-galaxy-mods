@@ -1,0 +1,6689 @@
+//Crtl + M + A  to collapse all
+//Ctrl + M + S to close a region (dotted area)
+//Ctrl + M + E to open a region
+//Ctrl + K + C comment out block
+//Ctrk + K + U uncomment out block
+//$playerName
+//$shipName
+[
+    //#region EXAMPLES ...........................
+    //example_1
+    {
+        "key": "example_1",
+        "textSet": [
+            {
+                "text": "Hola"
+            },
+            {
+                "text": "¿Quieres comer esto?",
+                "optionOne": {
+                    "optionText": "No",
+                    "response": "Sólo mantenlo por ahora. /n probando segunda línea"
+                },
+                "optionTwo": {
+                    "optionText": "Sí",
+                    "response": "Delicioso, eso estuvo delicioso."
+                }
+            }
+        ]
+    },
+    //example_2
+    {
+        "key": "example_2",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Quieres comer2 esto?",
+                "optionOne": {
+                    "optionText": "No",
+                    "response": "Sólo mantenlo por ahora."
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region MESSAGES ...........................
+    //already_at_location
+    {
+        "key": "already_at_location",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "Ya estás en este planeta."
+            }
+        ]
+    },
+    //can_not_sell_item
+    {
+        "key": "can_not_sell_item",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "Este es un artículo especial y no se puede descartar ni vender."
+            }
+        ]
+    },
+    //collection_too_many
+    {
+        "key": "collection_too_many",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "El museo sólo necesita uno de estos elementos."
+            }
+        ]
+    },
+    //collection_already_donated
+    {
+        "key": "collection_already_donated",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "Ya donaste este artículo."
+            }
+        ]
+    },
+    //confirm_change_display
+    {
+        "key": "confirm_change_display",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Está seguro de que desea cambiar el modo de visualización?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_change_language
+    {
+        "key": "confirm_change_language",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "Cambiar de idioma recargará el juego y perderás cualquier progreso no guardado. ¿Quieres continuar?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_collection
+    {
+        "key": "confirm_collection",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Estás seguro de que quieres regalarle este artículo a Hermy?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_customization
+    {
+        "key": "confirm_customization",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Estás seguro de que deseas aplicar estos cambios?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_demolish
+    {
+        "key": "confirm_demolish",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Estás seguro de que quieres demoler esto? $itemName?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_location
+    {
+        "key": "confirm_location",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Estás seguro de que estás listo para partir?\n\nCombustible requerido: <sprite=6> 10.",
+                "optionOne": {
+                    "optionText": "No importa."
+                },
+                "optionTwo": {
+                    "optionText": "¡Vamos!"
+                }
+            }
+        ]
+    },
+    //confirm_location_grey
+    {
+        "key": "confirm_location_grey",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Quieres cambiarte al Planeta Gris?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_location_utopia
+    {
+        "key": "confirm_location_utopia",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Quieres cambiarte al Planeta Viridis?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_move_animal
+    {
+        "key": "confirm_move_animal",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Estás seguro de que quieres mover el Xeno a esta cápsula?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_name
+    {
+        "key": "confirm_name",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Estás contento con este nombre?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_return_ship
+    {
+        "key": "confirm_return_ship",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Estás seguro de que quieres regresar al barco?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_save_clone
+    {
+        "key": "confirm_save_clone",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Está seguro de que desea crear una copia de este archivo guardado?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_save_delete
+    {
+        "key": "confirm_save_delete",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Está seguro de que desea eliminar este archivo guardado?\n\nADVERTENCIA: ESTO NO SE PUEDE DESHACER Y TAMBIÉN BORRARÁ LAS COPIAS DE SEGURIDAD RELACIONADAS.",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_save_restore
+    {
+        "key": "confirm_save_restore",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Intentas restaurar el guardado con uno de los archivos de respaldo?\n\nADVERTENCIA: Esto sobrescribirá el guardado actual y es posible que pierdas 1 o más días de progreso.",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_sell_animal
+    {
+        "key": "confirm_sell_animal",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Estás seguro de que quieres vender este Xeno?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_purchase
+    {
+        "key": "confirm_purchase",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¿Estás seguro de que quieres comprar este artículo?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_quit
+    {
+        "key": "confirm_quit",
+        "textSet": [
+            {
+                "boxType": "Message",
+                //"text": "Are you sure you want to quit? Any unsaved progress will be lost.",
+                //"text": "Are you sure you want to quit? Saving only occurs when sleeping.",
+                //"text": "Are you sure you want to quit?\nAny progress since sleeping will be lost.",
+                "text": "¿Listo para salir? El progreso no guardado se perderá.\n(El guardado solo se realiza mientras duerme).",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //full_inventory
+    {
+        "key": "full_inventory",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "Tu paquete espacial está lleno."
+            }
+        ]
+    },
+    //main_json_load_error
+    {
+        "key": "main_json_load_error",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¡Ups! Uno de tus archivos guardados está dañado o no es compatible con esta versión del juego. Puedes intentar restaurar una copia de seguridad en el menú Cargar juego.\n\n$saveName\n\n$jsonMessage"
+            }
+        ]
+    },
+    //main_json_save_error
+    {
+        "key": "main_json_save_error",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "Vaya, no se pudo escribir el archivo guardado.\n\n$saveName\n\n$jsonMessage"
+            }
+        ]
+    },
+    //main_low_disc_space_error
+    {
+        "key": "main_low_disc_space_error",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "El espacio disponible en disco es bajo. Libere algo de espacio para evitar errores al guardar."
+            }
+        ]
+    },
+    //main_restore_fail
+    {
+        "key": "main_restore_fail",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "¡Ups! No se encontró una copia de seguridad válida para restaurar este archivo guardado.\n\n$saveName\n\n$jsonMessage"
+            }
+        ]
+    },
+    //main_restore_fail_deserial
+    {
+        "key": "main_restore_deserial",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "Los archivos guardados de copia de seguridad encontrados encontraron errores de deserialización en el intento de restauración."
+            }
+        ]
+    },
+    //main_restore_fail_missing
+    {
+        "key": "main_restore_fail_missing",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "No se encontraron copias de seguridad guardadas con un nombre de archivo coincidente en el directorio de guardado de la copia de seguridad."
+            }
+        ]
+    },
+    //main_restore_fail_null
+    {
+        "key": "main_restore_fail_null",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "Los archivos guardados de respaldo encontrados no contenían datos guardados válidos."
+            }
+        ]
+    },
+    //main_computer_fail_error
+    {
+        "key": "main_computer_fail_error",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "Probablemente esto se debió a una falla en la computadora o un corte de energía."
+            }
+        ]
+    },
+    //main_saves_full
+    {
+        "key": "main_saves_full",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "Vaya, ya tienes 10 archivos guardados. Elimine un archivo guardado existente antes de crear uno nuevo."
+            }
+        ]
+    },
+    //name_blank_error
+    {
+        "key": "name_blank_error",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "No has introducido un nombre válido. Inténtalo de nuevo."
+            }
+        ]
+    },
+    //no_credits
+    {
+        "key": "no_credits",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "No tienes suficientes créditos para realizar esta compra."
+            }
+        ]
+    },
+    //no_fuel
+    {
+        "key": "no_fuel",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "No tienes suficiente combustible para viajar a este destino."
+            }
+        ]
+    },
+    //no_materials
+    {
+        "key": "no_materials",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "No tienes todos los materiales necesarios."
+            }
+        ]
+    },
+    //resolve_overflow
+    {
+        "key": "resolve_overflow",
+        "textSet": [
+            {
+                "boxType": "Message",
+                "text": "Debes resolver elementos adicionales del inventario antes de poder continuar."
+            }
+        ]
+    },
+    //#endregion .........................................
+
+    //#region NOTIFICATIONS ......................
+    //arrived_destination
+    {
+        "key": "arrived_destination",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Hemos llegado a nuestra ubicación hoy."
+            }
+        ]
+    },
+    //day_mode
+    {
+        "key": "day_mode",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Buenos días.\nSimulando el modo diurno."
+            }
+        ]
+    },
+    //day_mode_sat
+    {
+        "key": "day_mode_sat",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "<style=Saturday>¡Es sábado!</style>\nSimulando fin de semana."
+            }
+        ]
+    },
+    //day_tired
+    {
+        "key": "day_tired",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Te sientes un poco cansado hoy..."
+            }
+        ]
+    },
+    //energy_low
+    {
+        "key": "energy_low",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Te sientes cansado."
+            }
+        ]
+    },
+    //ring_fail
+    {
+        "key": "ring_fail",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Sólo los miembros solteros de la tripulación aceptarán este artículo."
+            }
+        ]
+    },
+    //ring_fail_married
+    {
+        "key": "ring_fail_married",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Ya estás en una relación seria."
+            }
+        ]
+    },
+    //date_day_max
+    {
+        "key": "date_day_max",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Ya tuviste una cita hoy."
+            }
+        ]
+    },
+    //date_invite_fail
+    {
+        "key": "date_invite_fail",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Sólo los miembros solteros de la tripulación aceptarán este artículo."
+            }
+        ]
+    },
+    //date_invite_fail_married
+    {
+        "key": "date_invite_fail_married",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Sólo puedes llevar a tu cónyuge a citas."
+            }
+        ]
+    },
+    //date_week_max
+    {
+        "key": "date_week_max",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "ya has tomado $npcName en una cita esta semana."
+            }
+        ]
+    },
+    //friend_acquaintance
+    {
+        "key": "friend_acquaintance",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Tu relación con $npcName ha aumentado a Conocido."
+            }
+        ]
+    },
+    //friend_good
+    {
+        "key": "friend_good",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Tu relación con $npcName ha aumentado a Buen Amigo."
+            }
+        ]
+    },
+    //gift_day_max
+    {
+        "key": "gift_day_max",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "ya has dado $npcName un regalo hoy."
+            }
+        ]
+    },
+    //gift_favorite_found
+    {
+        "key": "gift_favorite_found",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Registro de tripulación:\nRegalo favorito anotado."
+            }
+        ]
+    },
+    //gift_non_crew
+    {
+        "key": "gift_non_crew",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "$npcName no acepta regalos."
+            }
+        ]
+    },
+    //gift_week_max
+    {
+        "key": "gift_week_max",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "ya has dado $npcName 2 regalos esta semana."
+            }
+        ]
+    },
+    //in_transit
+    {
+        "key": "in_transit",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "En camino al próximo destino."
+            }
+        ]
+    },
+    //midnight_warning
+    {
+        "key": "midnight_warning",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "Se hace tarde...\nPronto es hora de acostarse."
+            }
+        ]
+    },
+    //no_microbes
+    {
+        "key": "no_microbes",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "No se han detectado microbios en esta zona."
+            }
+        ]
+    },
+    //out_water
+    {
+        "key": "out_water",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "¡Fuera del agua!"
+            }
+        ]
+    },
+    //inventory_full
+    {
+        "key": "inventory_full",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "Tu paquete espacial está lleno."
+            }
+        ]
+    },
+    //new_book
+    {
+        "key": "new_book",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName agregado a la biblioteca Holo-Sim."
+            }
+        ]
+    },
+    //new_craft
+    {
+        "key": "new_craft",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName agregado al banco de trabajo."
+            }
+        ]
+    },
+    //new_holosim_program
+    {
+        "key": "new_holosim_program",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName añadido a Holo-Sim."
+            }
+        ]
+    },
+    //new_recipe
+    {
+        "key": "new_recipe",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName añadido a la cocina."
+            }
+        ]
+    },
+    //new_customize_player
+    {
+        "key": "new_customize_player",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName añadido al armario."
+            }
+        ]
+    },
+    //new_customize_area
+    {
+        "key": "new_customize_area",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName añadido al decorador."
+            }
+        ]
+    },
+
+    //new_items_store_bunky
+    {
+        "key": "new_items_store_bunky",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName añadido a la tienda de consignación de Bunky."
+            }
+        ]
+    },
+    //new_items_store_friendship
+    {
+        "key": "new_items_store_friendship",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName agregado al stand del Día de la Amistad."
+            }
+        ]
+    },
+    //new_items_store_general
+    {
+        "key": "new_items_store_general",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName agregado a la Tienda General."
+            }
+        ]
+    },
+    //new_items_store_lecafe
+    {
+        "key": "new_items_store_lecafe",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName añadido a Le Café Bot."
+            }
+        ]
+    },
+    //new_items_store_machine
+    {
+        "key": "new_items_store_machine",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName añadido a la tienda de máquinas."
+            }
+        ]
+    },
+    //new_items_store_medical
+    {
+        "key": "new_items_store_medical",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName agregado a la Bahía Médica."
+            }
+        ]
+    },
+    //new_items_store_print
+    {
+        "key": "new_items_store_print",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName ahora disponible en 3Dee Bot."
+            }
+        ]
+    },
+    //new_items_store_restaurant
+    {
+        "key": "new_items_store_restaurant",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName agregado a la cantina de Chip."
+            }
+        ]
+    },
+    //new_items_store_robuy
+    {
+        "key": "new_items_store_robuy",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName añadido a RoBuy."
+            }
+        ]
+    },
+    //new_items_store_spooksie
+    {
+        "key": "new_items_store_spooksie",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "$itemName agregado a la tienda de Spooksie."
+            }
+        ]
+    },
+    //new_crew
+    {
+        "key": "new_crew",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "¡Un nuevo miembro de la tripulación se ha unido a tu equipo!"
+            }
+        ]
+    },
+    //night_mode
+    {
+        "key": "night_mode",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Simulando el modo nocturno."
+            }
+        ]
+    },
+    //notify_item added
+    {
+        "key": "notify_item_added",
+        "TextSet": [
+            {
+                "boxType": "Notification",
+                "text": "Tienes \n<style=Item>$itemName</style>!"
+            }
+        ]
+    },
+    //observation_unlocked
+    {
+        "key": "observation_unlocked",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Observación agregada al registro de la tripulación."
+            }
+        ]
+    },
+    //quest_added
+    {
+        "key": "quest_added",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Misión agregada"
+            }
+        ]
+    },
+    //quest_goals_complete
+    {
+        "key": "quest_goals_complete",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Metas cumplidas"
+            }
+        ]
+    },
+    //quest_complete
+    {
+        "key": "quest_complete",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Misión cumplida"
+            }
+        ]
+    },
+    //quest_updated
+    {
+        "key": "quest_updated",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Misiones actualizadas"
+            }
+        ]
+    },
+    //recharge_active
+    {
+        "key": "recharge_active",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Ahhh... hora de recargar energías."
+            }
+        ]
+    },
+    //recharge_complete
+    {
+        "key": "recharge_complete",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Estás completamente descansado y restaurado."
+            }
+        ]
+    },
+    //tool_level_fail
+    {
+        "key": "tool_level_fail",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "Se requiere herramienta actualizada."
+            }
+        ]
+    },
+    //unlocked_elevator
+    {
+        "key": "unlocked_elevator",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "El ascensor ya está disponible."
+            }
+        ]
+    },
+    //wedding_scheduled
+    {
+        "key": "wedding_scheduled",
+        "textSet": [
+            {
+                "boxType": "Notification",
+                "text": "CPU ha programado tu boda para la próxima semana."
+            }
+        ]
+    },
+    //#endregion ......................................................................
+
+    //#region SHARED BUILDINGS/MACHINES ..........
+    //error_build_indoor
+    {
+        "key": "error_build_indoor",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este $itemCategory Sólo se puede construir EN EL INTERIOR. Dirígete al interior de la cubierta del capitán."
+            }
+        ]
+    },
+
+    //error_build_outdoor
+    {
+        "key": "error_build_outdoor",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este $itemCategory Sólo se puede construir en el CASCO EXTERIOR. Dirígete al casco exterior."
+            }
+        ]
+    },
+    //feeder_generic
+    {
+        "key": "feeder_generic",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Alimentador Xeno.\nAcepta material vegetal."
+            }
+        ]
+    },
+    //timer_day
+    {
+        "key": "timer_day",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "\n\n<style=Timer> falta 1 día.</style>"
+            }
+        ]
+    },
+    //timer_days
+    {
+        "key": "timer_days",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "\n\n<style=Timer> $timer Días restantes.</style>"
+            }
+        ]
+    },
+    //timer_hour
+    {
+        "key": "timer_hour",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "\n\n<style=Timer> Queda aproximadamente 1 hora.</style>"
+            }
+        ]
+    },
+    //timer_hours
+    {
+        "key": "timer_hours",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "\n\n<style=Timer> acerca de $timer horas restantes.</style>"
+            }
+        ]
+    },
+    //timer_minutes
+    {
+        "key": "timer_minutes",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "\n\n<style=Timer> acerca de $timer minutos restantes.</style>"
+            }
+        ]
+    },
+    //#endregion ............................................
+
+    //#region SHARED INFO ........................
+    //beacon_info
+    {
+        "key": "beacon_info",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Punto de control desbloqueado en Shuttle Craft."
+            }
+        ]
+    },
+    //beacon_new
+    {
+
+        "key": "beacon_new",
+        "textSet": [
+            {
+                "boxType": "Reward",
+                "text": "<sprite=22> ¡Punto de control desbloqueado!"
+            }
+        ]
+    },
+    //broken_living_quarters
+    {
+        "key": "broken_living_quarters",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Viviendas rotas. Quizás esto pueda repararse algún día."
+            }
+        ]
+    },
+    //empty_quarters
+    {
+        "key": "empty_quarters",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estos cuartos están desocupados en este momento."
+            }
+        ]
+    },
+    //empty_quarters_sign
+    {
+        "key": "empty_quarters_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Residente:\n<b>Desocupado</b>"
+            }
+        ]
+    },
+    //confirm_consume_drink
+    {
+        "key": "confirm_consume_drink",
+        "equipItemUp": true,
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Quieres beber <style=Item>$itemName</style>?",
+                "optionOne": {
+                    "optionText": "No",
+                    "response": "Sólo mantenlo por ahora."
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_consume_eat
+    {
+        "key": "confirm_consume_eat",
+        "equipItemUp": true,
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Quieres comer <style=Item>$itemName</style>?",
+                "optionOne": {
+                    "optionText": "No",
+                    "response": "Sólo mantenlo por ahora."
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_consume_use
+    {
+        "key": "confirm_consume_use",
+        "equipItemUp": true,
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Quieres utilizar el <style=Item>$itemName</style>?",
+                "optionOne": {
+                    "optionText": "No",
+                    "response": "Sólo mantenlo por ahora."
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_new_location
+    {
+        "key": "confirm_new_location",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Quieres viajar a una nueva ubicación?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_open_wardrobe
+    {
+        "key": "confirm_open_wardrobe",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Quieres personalizar tu apariencia?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_proposal
+    {
+        "key": "confirm_proposal",
+        "equipItemUp": true,
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Estás seguro de que quieres proponer matrimonio?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_recall_board
+    {
+        "key": "confirm_recall_board",
+        "equipItemUp": true,
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Quieres recuperar tu tabla espacial?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_sleep
+    {
+        "key": "confirm_sleep",
+        "textSet": [
+            {
+                "boxType": "Info",
+                //"text": "Ready to save your game and go to sleep?", //" This will save your progress.",
+                //"text": "Do you want to save your game and go to sleep?", //" This will save your progress.",
+                "text": "¿Listo para ir a dormir? Esto guardará tu juego.", //" This will save your progress.",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //door_catdoor
+    {
+        "key": "door_catdoor",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Pequeña trampilla de acceso."
+            }
+        ]
+    },
+    //credit_added
+    {
+        "key": "credit_added",
+        "TextSet": [
+            {
+                "boxType": "Reward",
+                "text": "Tu tienes <sprite=1><style=Credits> $amount créditos</style>!",
+                "itemReward": {
+                    "itemID": "replace",
+                    "amount": 1,
+                    "trackAction": "Reward"
+                }
+            }
+        ]
+    },
+    //item added
+    {
+        "key": "item_added",
+        "TextSet": [
+            {
+                "boxType": "Reward",
+                "text": "Tu tienes $amount <style=Item>$itemName</style>!",
+                "itemReward": {
+                    "itemID": "replace",
+                    "amount": 1,
+                    "trackAction": "Reward"
+                }
+            }
+        ]
+    },
+    //credit_discovered
+    {
+        "key": "credit_discovered",
+        "TextSet": [
+            {
+                "boxType": "Reward",
+                "text": "Encontraste \n<sprite=1><style=Credits> $amount créditos</style>!",
+                "ItemReward": {
+                    "itemID": "replace",
+                    "amount": 1,
+                    "trackAction": "Found"
+                }
+            }
+        ]
+    },
+    //item_discovered
+    {
+        "key": "item_discovered",
+        "TextSet": [
+            {
+                "boxType": "Reward",
+                "text": "Encontraste \n$amount <style=Item>$itemName</style>!",
+                "ItemReward": {
+                    "itemID": "replace",
+                    "amount": 1,
+                    "trackAction": "Found"
+                }
+            }
+        ]
+    },
+    //credit_discovered_single
+    {
+        "key": "credit_discovered_single",
+        "TextSet": [
+            {
+                "boxType": "Reward",
+                "text": "Encontraste \n<sprite=1><style=Credits> 1 crédito</style>!",
+                "ItemReward": {
+                    "itemID": "replace",
+                    "amount": 1,
+                    "trackAction": "Found"
+                }
+            }
+        ]
+    },
+    //item_discovered_single
+    {
+        "key": "item_discovered_single",
+        "TextSet": [
+            {
+                "boxType": "Reward",
+                "text": "Encontraste \n<style=Item>$itemName</style>!",
+                "ItemReward": {
+                    "itemID": "replace",
+                    "amount": 1,
+                    "trackAction": "Found"
+                }
+            }
+        ]
+    },
+    //item_microbe_sample
+    {
+        "key": "item_microbe_sample",
+        "TextSet": [
+            {
+                "boxType": "Info",
+                "text": "Tamaño de la muestra: $amountu"
+            }
+        ]
+    },
+    //item_microbe_sample_super
+    {
+        "key": "item_microbe_sample_super",
+        "TextSet": [
+            {
+                "boxType": "Info",
+                "text": "Tamaño de la muestra: <style=SampleSize>$amountu ¡SÚPER!</style>"
+            }
+        ]
+    },
+    //locked_house
+    {
+        "key": "locked_house",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta habitación está cerrada con llave."
+            }
+        ]
+    },
+    //store_sold_out
+    {
+        "key": "store_sold_out",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este articulo esta agotado. Vuelve a consultar para ver los nuevos artículos próximamente."
+            }
+        ]
+    },
+    //cactus_generic
+    {
+        "key": "cactus_generic",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este es un cactus de la vida real."
+            },
+            {
+                "boxType": "Info",
+                "text": "¡Cuidado, es afilado!"
+            }
+        ]
+    },
+    //sign_construction
+    {
+        "key": "sign_construction",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Precaución: Área en construcción"
+            }
+        ]
+    },
+    //statue_captain
+    {
+        "key": "statue_captain",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "En honor al primer capitán espacial."
+            }
+        ]
+    },
+
+    //wedding_husband
+    {
+        "key": "wedding_husband",
+        "textSet": [
+            {
+                "text": "marido"
+            }
+        ]
+    },
+    //wedding_wife
+    {
+        "key": "wedding_wife",
+        "textSet": [
+            {
+                "text": "esposa"
+            }
+        ]
+    },
+    //#endregion ...........................................................
+
+    //#region DECK BRIDGE ........................
+    //captain_controls
+    {
+        "key": "captain_controls",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Quieres abrir el Mapa Estelar?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //cpu_console  OBSERVATION CPU 1
+    {
+        "key": "cpu_console",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta consola está llena de proyectos personales de CPU. Seguro que tiene muchos programas ejecutándose a la vez."
+            }
+        ]
+    },
+    //statue_rocket
+    {
+        "key": "statue_rocket",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Título: ¡Rock - It!"
+            },
+            {
+                "boxType": "Info",
+                "text": "Artista: Steven"
+            }
+        ]
+    },
+    //#endregion ..................................
+
+    //#region DECK CARGO HOLD ....................
+    //basketball_hoop_rim
+    {
+        "key": "basketball_hoop_rim",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este aro está muy usado y la red se está cayendo a pedazos."
+            }
+        ]
+    },
+    //basketball_bench
+    {
+        "key": "basketball_bench",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Parece que E+P está tallado en el banco con un corazón alrededor."
+            }
+        ]
+    },
+    //cargo_elevator
+    {
+        "key": "cargo_elevator",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Ascensor de carga. Lleva los suministros directamente a la tienda general."
+            }
+        ]
+    },
+    //cpu_storage  OBSERVATION CPU 2
+    {
+        "key": "cpu_storage",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estas cajas de carga están llenas de dispositivos tecnológicos viejos y rotos. La pegatina en el frente dice...\n\n'Propiedad de la CPU: Restauración en progreso'."
+            }
+        ]
+    },
+    //hermy_arrow_sign  OBSERVATION HERMY 0
+    {
+        "key": "hermy_arrow_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este letrero de marquesina tiene vigas de soporte dobladas y solo funcionan la mitad de las luces."
+            }
+        ]
+    },
+    //hermy_shop_sign
+    {
+        "key": "hermy_shop_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<b>¡Los espectaculares coleccionables de Hermy!</b>\n\nAbierto: 9:00 a. m. a 5:00 p. m.\nCerrado los martes."
+            }
+        ]
+    },
+    //hermy_shop_locked
+    {
+        "key": "hermy_shop_locked",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<i>*escritura rayada*</i>\nNo hay visitantes ahora. Vuelve a intentarlo más tarde."
+            }
+        ]
+    },
+    //machine_shop_sign
+    {
+        "key": "machine_shop_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<b>Tienda de máquina</b>\n\nAbierto: 8:00 a. m. a 4:00 p. m.\nCerrado los miércoles."
+            }
+        ]
+    },
+    //machine_shop_locked
+    {
+        "key": "machine_shop_locked",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Lo sentimos estamos cerrados."
+            }
+        ]
+    },
+    //vehicle_pad_broken
+    {
+        "key": "vehicle_pad_broken",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta estación de acoplamiento para vehículos no funciona. Debería ver a Edward sobre las reparaciones."
+            }
+        ]
+    },
+    //vehicle_pad_vacant
+    {
+        "key": "vehicle_pad_vacant",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta plataforma de atraque está vacía."
+            }
+        ]
+    },
+    //#endregion ...................................
+
+    //#region DECK CRYOGEN .......................
+    //old_photo_single
+    {
+        "key": "old_photo_single",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta fotografía es tan antigua que sólo se ve el contorno. Parece que el nombre en la parte inferior dice algo como... CA_____ S__KIE."
+            }
+        ]
+    },
+    //old_photo_family  OBSERVATION SPOOKSIE 1
+    {
+        "key": "old_photo_family",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Otra fotografía antigua. Dos miembros de la tripulación de Space Alliance celebrando y disfrutando de bebidas elegantes."
+            }
+        ]
+    },
+    //#endregion ..................................
+
+    //#region DECK ENGINE ........................
+    //bio_suit_rack
+    {
+        "key": "bio_suit_rack",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Instrucciones: Bio Suit Rack.\n 1. Siempre use traje protector cuando dé servicio a los motores.\n 2. Devuelva los trajes al estante cuando haya terminado.\n 3. No use trajes durante largos períodos de tiempo.\n 4. No dormir en traje."
+            }
+        ]
+    },
+    //cat_hiding_spot  OBSERVATION CAT 2
+    {
+        "key": "cat_hiding_spot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Qué escondite más inteligente para algo pequeño y astuto."
+            }
+        ]
+    },
+    //console_engines
+    {
+        "key": "console_engines",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Mmm? Estas lecturas de la consola son realmente complicadas."
+            },
+            {
+                "boxType": "Info",
+                "text": "Pero creo que todas esas luces intermitentes significan que los motores están funcionando."
+            }
+        ]
+    },
+    //door_spooksie_trainee
+    {
+        "key": "door_spooksie_trainee",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*EXPLORACIÓN...*"
+            },
+            {
+                "boxType": "Info",
+                "text": "Acceso denegado."
+            },
+            {
+                "boxType": "Info",
+                "text": "Solo capitanes REALES. No hay 'aprendices'."
+            }
+        ]
+    },
+    //door_spooksie_novice
+    {
+        "key": "door_spooksie_novice",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*EXPLORACIÓN...*"
+            },
+            {
+                "boxType": "Info",
+                "text": "Acceso denegado."
+            },
+            {
+                "boxType": "Info",
+                "text": "Se detectó el rango de 'novato'. Solo capitanes REALES."
+            }
+        ]
+    },
+    //door_spooksie_rookie
+    {
+        "key": "door_spooksie_rookie",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*EXPLORACIÓN...*"
+            },
+            {
+                "boxType": "Info",
+                "text": "Acceso denegado."
+            },
+            {
+                "boxType": "Info",
+                "text": "Rango típico de 'novato'. Aún no hay paciencia. Solo capitanes REALES."
+            }
+        ]
+    },
+    //door_spooksie_junior
+    {
+        "key": "door_spooksie_junior",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*EXPLORACIÓN...*"
+            },
+            {
+                "boxType": "Info",
+                "text": "Acceso denegado."
+            },
+            {
+                "boxType": "Info",
+                "text": "Rango 'Junior' detectado. ¿Dejarías entrar a un capitán junior? No lo siento. Solo capitanes REALES."
+            }
+        ]
+    },
+    //door_spooksie_skilled
+    {
+        "key": "door_spooksie_skilled",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*EXPLORACIÓN...*"
+            },
+            {
+                "boxType": "Info",
+                "text": "ESCANEAR DE NUEVO..."
+            },
+            {
+                "boxType": "Info",
+                "text": "Acceso denegado."
+            },
+            {
+                "boxType": "Info",
+                "text": "Hmm... has sido detectado como 'Habilitado'. Pero lo siento, todavía no se ha admitido. Solo capitanes REALES."
+            }
+        ]
+    },
+    //door_spooksie_intermediate
+    {
+        "key": "door_spooksie_intermediate",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*EXPLORACIÓN...*"
+            },
+            {
+                "boxType": "Info",
+                "text": "Acceso denegado."
+            },
+            {
+                "boxType": "Info",
+                "text": "Detectando rango 'Intermedio'. Llegando allí, pero todavía no te dejaré entrar. Solo capitanes REALES."
+            }
+        ]
+    },
+    //door_spooksie_seasoned
+    {
+        "key": "door_spooksie_seasoned",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*EXPLORACIÓN...*"
+            },
+            {
+                "boxType": "Info",
+                "text": "Acceso denegado."
+            },
+            {
+                "boxType": "Info",
+                "text": "Detectando rango 'Experimentado'. Mira, te estoy apoyando, de verdad... pero aún no has sido admitido. Solo capitanes REALES."
+            }
+        ]
+    },
+    //door_spooksie_experienced
+    {
+        "key": "door_spooksie_experienced",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*EXPLORACIÓN...*"
+            },
+            {
+                "boxType": "Info",
+                "text": "Acceso todavía denegado, pero impresionante."
+            },
+            {
+                "boxType": "Info",
+                "text": "Desafortunadamente, no puedo hacer excepciones para el rango "Experimentado". Aún no hay acceso. Solo capitanes REALES."
+            }
+        ]
+    },
+    //door_spooksie_lead
+    {
+        "key": "door_spooksie_lead",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*EXPLORACIÓN...*"
+            },
+            {
+                "boxType": "Info",
+                "text": "Acceso denegado."
+            },
+            {
+                "boxType": "Info",
+                "text": "Ya sabes, no es fácil negarle el puesto a un oficial clasificado como 'Líder'... pero solo a capitanes REALES. Vuelve a intentarlo más tarde."
+            }
+        ]
+    },
+    //door_spooksie_senior
+    {
+        "key": "door_spooksie_senior",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*EXPLORACIÓN...*"
+            },
+            {
+                "boxType": "Info",
+                "text": "ESCANEAR DE NUEVO..."
+            },
+            {
+                "boxType": "Info",
+                "text": "ESCANEANDO UNA VEZ MÁS..."
+            },
+            {
+                "boxType": "Info",
+                "text": "Acceso denegado."
+            },
+            {
+                "boxType": "Info",
+                "text": "Rango 'Senior' detectado. Ya casi has llegado... sigue así. Creo que obtendrás acceso pronto. Solo capitanes REALES."
+            }
+        ]
+    },
+    //guide_fuel_collector
+    {
+        "key": "guide_fuel_collector",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta máquina sólo toma <sprite=6> <style=Item>Combustible de materia oscura</style>."
+            }
+        ]
+    },
+    //fuel_added
+    {
+        "key": "fuel_added",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<sprite=6> +$amount combustible"
+            }
+        ]
+    },
+    //rubber_duck
+    {
+        "key": "rubber_duck",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Chirrido."
+            }
+        ]
+    },
+    //#endregion ..................................
+
+    //#region DECK LIVING QUARTERS .............
+    //edward_house_sign
+    {
+        "key": "edward_house_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Residentes:\n<b>Edward, Piper, Kendall y la I-1900</b>"
+            }
+        ]
+    },
+    //kaida_house_sign
+    {
+        "key": "kaida_house_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Residentes:\n<b>Kaida, Chip, Fiji y Poofie.</b>"
+            }
+        ]
+    },
+    //pilot_house_sign
+    {
+        "key": "pilot_house_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Residentes:\n<b>Piloto y brote</b>"
+            }
+        ]
+    },
+    //ripped_dog_toy
+    {
+        "key": "ripped_dog_toy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este juguete para mascotas quedó completamente demolido."
+            }
+        ]
+    },
+    //shinji_house_sign
+    {
+        "key": "shinji_house_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Residente:\n<b>Shinji</b>"
+            }
+        ]
+    },
+    //sign_dog_park
+    {
+        "key": "sign_dog_park",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Parque Puff Puff del Sr. Poofie"
+            }
+        ]
+    },
+    //#endregion ..................................
+
+    //#region DECK RECREATION ....................
+    //community_solar
+    {
+        "key": "community_solar",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esos paneles solares alimentan el jardín comunitario y la casa de Lin."
+            }
+        ]
+    },
+    //lin_house_sign
+    {
+        "key": "lin_house_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Residente:\n<b>lin</b>"
+            }
+        ]
+    },
+    //school_sign
+    {
+        "key": "school_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<b>Aula</b>\n\nAbierto: 9 a.m.-10 p.m."
+            }
+        ]
+    },
+    //school_locked
+    {
+        "key": "school_locked",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "El aula está actualmente cerrada."
+            }
+        ]
+    },
+    //sign_community_garden
+    {
+        "key": "sign_community_garden",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Jardín comunitario\n-L"
+            }
+        ]
+    },
+    //sign_stewarts_place
+    {
+        "key": "sign_stewarts_place",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¡Sonrisa! Estás frente a la cámara."
+            }
+        ]
+    },
+    //soot_house_before
+    {
+        "key": "soot_house_before",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La casa de juegos está vacía por dentro."
+            }
+        ]
+    },
+    //soot_house_friend
+    {
+        "key": "soot_house_friend",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la casa de juegos de Soot."
+            }
+        ]
+    },
+    //soot_flower_01  OBSERVATION SOOT 0
+    {
+        "key": "soot_flower_01",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta flor huele a lavanda y miel."
+            }
+        ]
+    },
+    //soot_flower_02  OBSERVATION SOOT 0
+    {
+        "key": "soot_flower_02",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta flor huele a rosas y naranjas."
+            }
+        ]
+    },
+    //stewart_house_sign
+    {
+        "key": "stewart_house_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Residentes:\n<b>Stewart y Lauren</b>"
+            }
+        ]
+    },
+    //#endregion ....................................
+
+    //#region DECK SHOPS .........................
+    //bulletin_sign
+    {
+        "key": "bulletin_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<b>Junta Comunitaria</b>"
+            }
+        ]
+    },
+    //cienavi_house_sign
+    {
+        "key": "cienavi_house_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Residente:\n<b>Princesa CienaVi</b>"
+            }
+        ]
+    },
+    //daxton_house_sign
+    {
+        "key": "daxton_house_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Residente:\n<b>daxton</b>"
+            }
+        ]
+    },
+    //gym_locked
+    {
+        "key": "gym_locked",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cerrado. Recarga de cintas de correr."
+            }
+        ]
+    },
+    //gym_sign
+    {
+        "key": "gym_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<b>Gimnasio:</b>\n\nAbierto: de 9 a.m. a 10 p.m."
+            }
+        ]
+    },
+    //general_store_locked
+    {
+        "key": "general_store_locked",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cerrado. Lamento que te extrañáramos."
+            }
+        ]
+    },
+    //general_store_sign
+    {
+        "key": "general_store_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<b>Almacén general</b>\n\nAbierto: 9 a. m. a 6 p. m.\nCerrado los sábados."
+            }
+        ]
+    },
+    //holosim_broken
+    {
+        "key": "holosim_broken",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta instalación de simulación holográfica parece de muy alta tecnología y muy deteriorada. Quizás Edward pueda arreglarlo."
+            }
+        ]
+    },
+    //holosim_sign
+    {
+        "key": "holosim_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<b>Instalación de simulación holográfica</b>\n\nAbierto: 24 HORAS"
+            }
+        ]
+    },
+    //lucky_cat
+    {
+        "key": "lucky_cat",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Maneki-neko parece feliz."
+            }
+        ]
+    },
+    //restaurant_sign
+    {
+        "key": "restaurant_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<b>La cantina de Chip</b>\n\nAbierto: 9 a. m. a 12 a. m.\n Descanso: 2 p. m. a 6 p. m."
+            }
+        ]
+    },
+    //salon_broken
+    {
+        "key": "salon_broken",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un escaparate y una vivienda rotos. Quizás esto también pueda repararse algún día."
+            }
+        ]
+    },
+    //salon_locked
+    {
+        "key": "salon_locked",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cerrado. Mientras tanto, mantente increíble."
+            }
+        ]
+    },
+    //salon_sign
+    {
+        "key": "salon_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<b>Boutique Bunky</b>\n\nAbierto: 10 a. m. a 4 p. m.\nCerrado los domingos."
+            }
+        ]
+    },
+    //salon_empty
+    {
+        "key": "salon_empty",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "El escaparate está vacío en este momento."
+            }
+        ]
+    },
+    //salon_empty_sign
+    {
+        "key": "salon_empty_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<b>Escaparate vacante</b>."
+            }
+        ]
+    },
+    //tv_channel_alliance
+    {
+        "key": "tv_channel_alliance", //monday
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<u>Red de la Alianza Espacial Universal</u>\n\nBienvenido a 'Capacitación en el Trabajo' con Universal Space Alliance Network."
+            },
+            {
+                "boxType": "Info",
+                "text": "Si es un capitán en entrenamiento, su mejor fuente de información la encontrará en su práctico Simulador Holográfico..." //If you are a captain in training, we've got you covered. Stay tuned each week for all kinds of tips and tricks folks.
+            },
+            {
+                "boxType": "Info",
+                "text": "...Allí encontrará una BIBLIOTECA.sim con todas sus revistas técnicas y consejos."
+            },
+            {
+                "boxType": "Info",
+                "text": "¡Un Capitán informado es un buen Capitán!"
+            },
+            {
+                "boxType": "Info",
+                "text": "(Nota: no se recomienda dejar que su Holo-Sim se estropee por este motivo)"
+            },
+            {
+                "boxType": "Info",
+                "text": "¡Buena suerte, cadetes!"
+            }
+        ]
+    },
+    //tv_channel_comedy
+    {
+        "key": "tv_channel_comedy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<u>Programa de comedia de huesos divertidos</u>\n\nGracias, gracias. Qué gran audiencia. Prepárense para que les hagan cosquillas en las costillas... ¿Habéis oído lo del esqueleto que no tuvo las agallas para robar el banco?"
+            },
+            {
+                "boxType": "Info",
+                "text": "Ja ja. Este tipo es un puntazo."
+            }
+        ]
+    },
+    //tv_channel_cooking
+    {
+        "key": "tv_channel_cooking",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<u>¡Todos cocinan! Cocinar con Cookie Bot</u>\n\n¡Malditos compañeros de cocina! ¡Bienvenidos de nuevo a Todos Cocinan! con tu anfitrión C00kie B0t."
+            },
+            {
+                "boxType": "Info",
+                "text": "Para los consejos de cocina de hoy, comenzaremos desde cero con una receta familiar actualizada. Esto es lo que necesitará; ¡10 billones de partes de hidrógeno, 5 billones de partes de carbono y una gran olla vieja!"
+            },
+            {
+                "boxType": "Info",
+                "text": "Las recetas parecen bastante complicadas. No sé si debería seguir los consejos de cocina de este Cookie Bot. Será mejor que siga mis propias recetas."
+            }
+        ]
+    },
+    //tv_channel_diy
+    {
+        "key": "tv_channel_diy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<u>Hazlo tú mismo. Creación espacial</u>\n\nBueno, hola. No te vi entrar. Veamos qué pedazo de basura podemos arreglar hoy en D.I.Y. Creación espacial..."
+            },
+            {
+                "boxType": "Info",
+                "text": "Hm... ese robot de construcción tiene herramientas integradas para brazos."
+            }
+        ]
+    },
+    //tv_channel_music
+    {
+        "key": "tv_channel_music",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<u>Música para cadetes espaciales</u>\n\nGrandes ritmos, mucho cabello y un ritmo que no se puede detener. Estas viendo Música para Cadetes Espaciales..."
+            },
+            {
+                "boxType": "Info",
+                "text": "Los sonidos lejanos del estallido de burbujas de ondas de sintetizador llenan tus oídos. Ni siquiera puedes fingir que no te gustan estos ritmos."
+            }
+        ]
+    },
+    //tv_channel_nickg
+    {
+        "key": "tv_channel_nickg",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<u>¡Las verdaderas aventuras de Nickedemus Geronimo!</u>\n\n¡POW! ¡BORRAR! GERONIMOOOOO!"
+            },
+            {
+                "boxType": "Info",
+                "text": "Este programa describe las salvajes aventuras del explorador y superhéroe Nickedemus Geronimo.  ¡Qué personaje!"
+            }
+        ]
+    },
+    //tv_channel_sports
+    {
+        "key": "tv_channel_sports", //sunday
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<u>¡Televisión de pelota deportiva!</u>\n\n¡PUNTUACIÓN! con el único canal dedicado a deportes intergalácticos del universo."
+            },
+            {
+                "boxType": "Info",
+                "text": "¿Se metió la pelota deportiva en el hoyo? ¡Descúbrelo aquí todos los domingos!"
+            }
+        ]
+    },
+    //sign_zen_garden
+    {
+        "key": "sign_zen_garden",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Jardín Zen.\nShhh... Silencio por favor."
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region DECK VIEWING DECK ..................
+    //frances_house_sign
+    {
+        "key": "frances_house_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Residentes:\n<b>frances y doc12</b>"
+            }
+        ]
+    },
+    //medical_bay_locked
+    {
+        "key": "medical_bay_locked",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La Bahía Médica ya está cerrada.\nComuníquese con Frances en caso de emergencia."
+            }
+        ]
+    },
+    //medical_bay_sign
+    {
+        "key": "medical_bay_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<b>Bahía Médica:</b>\n\nAbierto: 10 a. m. a 5 p. m."
+            }
+        ]
+    },
+    //science_lab_locked
+    {
+        "key": "science_lab_locked",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "El laboratorio está cerrado."
+            }
+        ]
+    },
+    //science_lab_sign
+    {
+        "key": "science_lab_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<b>Laboratorio de ciencia:</b>\n\nAbierto: 7 a. m. a 6 p. m."
+            }
+        ]
+    },
+    //view_finder
+    {
+        "key": "view_finder",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Qué vista tan increíble de las estrellas."
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region DECK YOUR DECK .....................
+    //confirm_exit_deck
+    {
+        "key": "confirm_exit_deck",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Quieres ponerte el traje y visitar el casco exterior?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //floor_damage_upgrade_01
+    {
+        "key": "floor_damage_upgrade_01",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Área dañada 01:\nVea a Edward en el taller mecánico para repararlo."
+            }
+        ]
+    },
+    //floor_damage_upgrade_02
+    {
+        "key": "floor_damage_upgrade_02",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Área dañada 02:\nVea a Edward en el taller mecánico para repararlo."
+            }
+        ]
+    },
+    //floor_damage_upgrade_03
+    {
+        "key": "floor_damage_upgrade_03",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Área dañada 03:\nVea a Edward en el taller mecánico para repararlo."
+            }
+        ]
+    },
+    //floor_damage_upgrade_04
+    {
+        "key": "floor_damage_upgrade_04",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Área dañada 04:\nVea a Edward en el taller mecánico para repararlo."
+            }
+        ]
+    },
+    //off_duty_bin_bot
+    {
+        "key": "off_duty_bin_bot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La estación Bin Bot está vacía."
+            }
+        ]
+    },
+    //sign_bin_bot
+    {
+        "key": "sign_bin_bot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estación Bin Bot."
+            }
+        ]
+    },
+    //sign_captains_quarters
+    {
+
+        "key": "sign_captains_quarters",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cuartos del Capitán."
+            }
+        ]
+    },
+    //sign_exit_hatch
+    {
+        "key": "sign_exit_hatch",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Salida exterior del casco."
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region EVENT FRIENDSHIP DAY ...............
+    //ev_frd_box_add
+    {
+        "key": "ev_frd_box_add",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<sprite=24>+Amistad"
+            }
+        ]
+    },
+    //ev_frd_box_confirm
+    {
+        "key": "ev_frd_box_confirm",
+        "equipItemUp": true,
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Añadir tarjeta de amistad a $npcName¿La caja?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //ev_frd_box_guide
+    {
+        "key": "ev_frd_box_guide",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "$npcNameCaja de la Amistad de: Acepta 1 tarjeta de amistad por persona."
+            }
+        ]
+    },
+    //ev_frd_box_max
+    {
+        "key": "ev_frd_box_max",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Ya has puesto una tarjeta de amistad. $npcNameLa caja."
+            }
+        ]
+    },
+    //ev_frd_box_pl_guide
+    {
+        "key": "ev_frd_box_pl_guide",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Tu Caja de la Amistad: Acepta tarjetas de amistad de otros miembros de la tripulación."
+            }
+        ]
+    },
+    //ev_frd_box_pl_full
+    {
+        "key": "ev_frd_box_pl_full",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "No puedes agregar tarjetas de amistad a tu propia caja."
+            }
+        ]
+    },
+    //ev_frd_card_summary
+    {
+        "key": "ev_frd_card_summary",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Tienes $amount Tarjetas de amistad en tu caja."
+            }
+        ]
+    },
+    //ev_frd_card_summary_single
+    {
+        "key": "ev_frd_card_summary_single",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Tienes 1 tarjeta de amistad en tu caja."
+            }
+        ]
+    },
+    //ev_frd_gift_table_avail
+    {
+        "key": "ev_frd_gift_table_avail",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Quieres una galleta de azúcar? Límite de uno por persona por favor...",
+                "optionOne": {
+                    "optionText": "No",
+                    "response": "¿En realidad?"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //ev_frd_gift_table_max
+    {
+        "key": "ev_frd_gift_table_max",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta mesa de postres está llena de pastelitos esponjosos y galletas de azúcar decoradas con colores. Se ha lamido parte del glaseado de uno de los cupcakes."
+            }
+        ]
+    },
+    //ev_frd_holo_heart_display
+    {
+        "key": "ev_frd_holo_heart_display",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Fantásticos accesorios decorativos Holo-Heart en exhibición. Consigue el tuyo hoy en la tienda emergente del Día de la Amistad de Robert. Disponible en rosa y azul."
+            }
+        ]
+    },
+    //ev_frd_lemonade_table_lg
+    {
+        "key": "ev_frd_lemonade_table_lg",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Limonada rosa y amarilla que saciará tu sed y te dará un rápido impulso de energía. Completo con pajita flexible."
+            }
+        ]
+    },
+    //ev_frd_lemonade_table_sm
+    {
+        "key": "ev_frd_lemonade_table_sm",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Mesa de limonada extra para fácil acceso a una bebida refrescante."
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region EVENT NEW YEAR EVE .................
+    //ev_ny_boombox
+    {
+        "key": "ev_ny_boombox",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un boombox clásico. Llena la habitación con un agradable ambiente de música de fiesta."
+            }
+        ]
+    },
+    //ev_ny_champglasses
+    {
+        "key": "ev_ny_champglasses",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Sobre la mesa hay vasos elegantes y brillantes."
+            }
+        ]
+    },
+    //ev_ny_gift_table_max
+    {
+        "key": "ev_ny_gift_table_max",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Solo quedan unos pocos trozos de este pastel de chocolate, pero parece que la mayoría de la gente ya ha comido algunos."
+            }
+        ]
+    },
+    //ev_ny_gift_table_avail
+    {
+        "key": "ev_ny_gift_table_avail",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Quieres un trozo de tarta de chocolate? Advertencia... puede ser adictivo.",
+                "optionOne": {
+                    "optionText": "No",
+                    "response": "¿Está seguro? ¡Es gratis!"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //ev_ny_punchbowl
+    {
+        "key": "ev_ny_punchbowl",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "El ponche de frutas de Nochevieja contiene una mezcla vibrante, dulce y burbujeante."
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region LOCATION GREY ......................
+    //confirm_portal_past
+    {
+        "key": "confirm_portal_past",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Te gustaría volver al pasado?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_relic_add
+    {
+        "key": "confirm_relic_add",
+        "equipItemUp": true,
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Quieres insertar la pieza de reliquia?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //moon_pod
+    {
+        "key": "moon_pod",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una cápsula de investigación móvil de la Alianza Espacial. Estándar emitido para necesidades de pruebas en sitio."
+            }
+        ]
+    },
+    //moon_rover
+    {
+        "key": "moon_rover",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este pequeño vehículo de superficie parece muy polvoriento y muy usado."
+            }
+        ]
+    },
+    //relic_fail
+    {
+        "key": "relic_fail",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "-. ^^... --^ ^^..-"
+            }
+        ]
+    },
+    //sign_digsite
+    {
+        "key": "sign_digsite",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Sitio de excavación (Marcador 105).\n\n-Kaida"
+            }
+        ]
+    },
+    //sign_rocksite
+    {
+        "key": "sign_rocksite",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¡Cuidado!\nZona de tiro de rocas.\n\n-Kaida"
+            }
+        ]
+    },
+    //sign_relic
+    {
+        "key": "sign_relic",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Norte ^ Reliquia misteriosa."
+            }
+        ]
+    },
+
+    //sign_relic2
+    {
+        "key": "sign_relic2",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Sí. Esta es la Reliquia."
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region LOCATION GREY CAVE .................
+    //grey_cave_food
+    {
+        "key": "grey_cave_food",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Unos cuantos rábanos grises y un saco de comida vacío."
+            }
+        ]
+    },
+    //grey_cave_days
+    {
+        "key": "grey_cave_days",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Marcas de conteo y algún tipo de diagrama."
+            }
+        ]
+    },
+    //grey_cave_relic
+    {
+        "key": "grey_cave_relic",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un bonito garabato de la Reliquia."
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region LOCATION OCEAN .....................
+    //ocean_house_address
+    {
+        "key": "ocean_house_address",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "2728 SW Reef Dr."
+            }
+        ]
+    },
+    //ocean_house_noisy
+    {
+        "key": "ocean_house_noisy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*charla fuerte y risas* \nUna casa bastante animada."
+            }
+        ]
+    },
+    //ocean_house_fish_pet
+    {
+        "key": "ocean_house_fish_pet",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Los peces que llevan collares para mascotas nadan en el interior."
+            }
+        ]
+    },
+    //ocean_house_sleepy
+    {
+        "key": "ocean_house_sleepy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Las cortinas de algas están corridas sobre las ventanas y desde el interior se oyen fuertes ronquidos."
+            }
+        ]
+    },
+    //ocean_house_sale
+    {
+        "key": "ocean_house_sale",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "EN VENTA:\n2 dormitorios disponibles en ubicación privilegiada en Reef Dr. Vistas excepcionales del castillo."
+            }
+        ]
+    },
+    //ocean_house_family_name
+    {
+        "key": "ocean_house_family_name",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "FIRMAR:\n¡Bienvenidos a los Cuttletees!"
+            }
+        ]
+    },
+    //ocean_house_plants
+    {
+        "key": "ocean_house_plants",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay un jardín de algas y plantas acuáticas que rodea la casa bajo el agua."
+            }
+        ]
+    },
+    //ocean_house_music
+    {
+        "key": "ocean_house_music",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La música acuática clásica viene desde dentro."
+            }
+        ]
+    },
+    //ocean_castle
+    {
+        "key": "ocean_castle",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La Residencia Real del Reino del Océano"
+            }
+        ]
+    },
+    //ocean_clamshell_01
+    {
+        "key": "ocean_clamshell_01",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una hermosa perla blanca."
+            }
+        ]
+    },
+    //ocean_clamshell_02
+    {
+        "key": "ocean_clamshell_02",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una delicada perla rosa. Está realmente asegurado allí."
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region LOCATION DESERT ...................
+    //weak_transmitter
+    {
+        "key": "weak_transmitter",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un transmisor casero que no parece funcionar... aunque la bombilla sí funciona correctamente."
+            }
+        ]
+    },
+    //dig_site_01
+    {
+        "key": "dig_site_01",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*arañazos*\ndIG siTe alPHa."
+            }
+        ]
+    },
+    //dig_site_02
+    {
+        "key": "dig_site_02",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*arañazos*\ndIG siTe BetA. ¡Excluir!"
+            }
+        ]
+    },
+    //shellship_buried
+    {
+        "key": "shellship_buried",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Shellship dañado."
+            }
+        ]
+    },
+    //shellship_fixed
+    {
+        "key": "shellship_fixed",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Shellship reparado."
+            }
+        ]
+    },
+    //shellship_schematics
+    {
+        "key": "shellship_schematics",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esquemas de un Shellship."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region LOCATION ICE .....................
+    //sign_bunkyhouse
+    {
+        "key": "sign_bunkyhouse",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La familia Bunky."
+            }
+        ]
+    },
+    //ice_snow_castle
+    {
+        "key": "ice_snow_castle",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay una pequeña bandera con una R mayúscula en la parte superior. Junto a ella hay una bandera con una T minúscula que declara una revancha."
+            }
+        ]
+    },
+    //ice_busted_trees
+    {
+        "key": "ice_busted_trees",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estos árboles han sido talados recientemente."
+            }
+        ]
+    },
+    //ice_skating_bench
+    {
+        "key": "ice_skating_bench",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Debajo del banco hay un par de patines con patas gigantes."
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region LOCATION ICE BUNKY HOME ...........
+    //ice_bunky_door
+    {
+        "key": "ice_bunky_door",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cuartos del iglú."
+            }
+        ]
+    },
+    //ice_bunky_dinner
+    {
+        "key": "ice_bunky_dinner",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "El estofado de calabaza está en el menú para la cena."
+            }
+        ]
+    },
+    //ice_bunky_bad_supplies
+    {
+        "key": "ice_bunky_bad_supplies",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Los restos de tela y los suministros están aplastados bajo la pila de nieve."
+            }
+        ]
+    },
+    //ice_bunky_orders
+    {
+        "key": "ice_bunky_orders",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Libros de inventario y pedidos de la ciudad natal de Bunky."
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region LOCATION LAVA .....................
+    //sign_pirates_only
+    {
+        "key": "sign_pirates_only",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Sólo piratas"
+            }
+        ]
+    },
+    //fake_treasure_warning
+    {
+        "key": "fake_treasure_warning",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¡¡¡LADRÓN!!!"
+            },
+            {
+                "boxType": "Info",
+                "text": "...¡SOSTÉNLO JUSTO AHÍ!"
+            }
+        ]
+    },
+    //language_translator
+    {
+        "key": "language_translator",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Traductor de idiomas universal (trabajo en progreso)"
+            }
+        ]
+    },
+    //lava_mothership
+    {
+        "key": "lava_mothership",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Barco de venganza de Caldera"
+            }
+        ]
+    },
+    //lava_shuttle_01
+    {
+        "key": "lava_shuttle_01",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Transportador de grietas. Ingrese la contraseña para ingresar..."
+            }
+        ]
+    },
+    //lava_shuttle_02
+    {
+        "key": "lava_shuttle_02",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Rift Transporter 2. Límpiate los pies."
+            }
+        ]
+    },
+    //lava_cargo_01
+    {
+        "key": "lava_cargo_01",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Preciosa carga. ¡Fuera las manos!"
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region LOCATION UTOPIA ...................
+    //confirm_portal_present
+    {
+        "key": "confirm_portal_present",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Te gustaría volver al presente?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //utopia_alien_home_01
+    {
+        "key": "utopia_alien_home_01",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un cálido resplandor proviene del interior que te hace sentir seguro y acogedor."
+            }
+        ]
+    },
+    //utopia_alien_home_02
+    {
+        "key": "utopia_alien_home_02",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta es la casa de la familia de Soot."
+            }
+        ]
+    },
+    //utopia_alien_home_03
+    {
+        "key": "utopia_alien_home_03",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Supongo que no necesitas una puerta si puedes teletransportarte dentro y fuera de la residencia."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM ACCESS HALL ...................
+    //cat_playful  OBSERVATION CAT 2
+    {
+        "key": "cat_playful",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Parece que alguien jugó demasiado con esta planta."
+            }
+        ]
+    },
+    //sign_accessroom
+    {
+        "key": "sign_accessroom",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Acceso a la habitación"
+            }
+        ]
+    },
+    //#endregion ..................................
+
+    //#region ROOM ACCESS ROOM ...................
+    //cat_food_stash  OBSERVATION CAT 1
+    {
+        "key": "cat_food_stash",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Aquí hay restos de comida elegantes escondidos para otro día."
+            }
+        ]
+    },
+    //cobwebs
+    {
+        "key": "cobwebs",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "No. Este tampoco es un fantasma. Sólo algunas telarañas."
+            }
+        ]
+    },
+    //lifesupport_settings
+    {
+        "key": "lifesupport_settings",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Bip-boop. Todos estos entornos de soporte vital parecen correctos."
+            }
+        ]
+    },
+    //machine_reboot
+    {
+        "key": "machine_reboot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta máquina está atrapada en un ciclo de reinicio."
+            }
+        ]
+    },
+    //#endregion ..................................
+
+    //#region ROOM BUNKY FAMILY ..................
+    //bath_bunky  OBSERVATION BUNKY 0
+    {
+        "key": "bath_bunky",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Montones de alimentos enlatados, pero también una sorprendente cantidad de baños de burbujas perfumados."
+            }
+        ]
+    },
+    //bed_bunky  OBSERVATION BUNKY 2
+    {
+        "key": "bed_bunky",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta ropa de cama es de muy alta calidad y las sábanas son súper sedosas y suaves."
+            }
+        ]
+    },
+    //bedroom_bunky
+    {
+        "key": "bedroom_bunky",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Bunky y Spunky."
+            }
+        ]
+    },
+    //bedroom_rumble
+    {
+        "key": "bedroom_rumble",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para ingresar a la habitación de Rumble and Tumble."
+            }
+        ]
+    },
+    //book_titles
+    {
+        "key": "book_titles",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "TÍTULOS DE TRABAJO:\n\n'A Snowy Dowy Love'\n\n'Romance agridulce'\n\n'Congela ese sentimiento.'"
+            }
+        ]
+    },
+    //boxing_monster  OBSERVATION R&T 0
+    {
+        "key": "boxing_monster",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Rawr, refunfuña, refunfuña. Hay un nombre escrito con un marcador: Nana Frizzle."
+            }
+        ]
+    },
+    //calendar_spunky  OBSERVATION SPUNKY 1
+    {
+        "key": "calendar_spunky",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este calendario está repleto de fechas límite de libros, cumpleaños y todo tipo de detalles familiares."
+            }
+        ]
+    },
+    //comic_book_cover
+    {
+        "key": "comic_book_cover",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Se han metido cómics entre las páginas de estos libros. Complicado."
+            }
+        ]
+    },
+    //dresser_rum_tum  OBSERVATION R&T 1
+    {
+        "key": "dresser_rum_tum",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Aquí hay un certificado brillante que dice: El consejo infantil presenta con orgullo este premio a Rumble & Tumble, el poseedor del récord de Iceladus por el spitball más lejano jamás lanzado."
+            }
+        ]
+    },
+    //fashion_experiments
+    {
+        "key": "fashion_experiments",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estos parecen estilos experimentales aún en proceso."
+            }
+        ]
+    },
+    //fireworks_box  OBSERVATION R&T 2
+    {
+        "key": "fireworks_box",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estos fuegos artificiales seguros para niños parecen haber sido modificados para eliminar sus elementos de seguridad... proceda con precaución."
+            }
+        ]
+    },
+    //fridge_spunky_01
+    {
+        "key": "fridge_spunky_01",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Se ha perforado un agujero en el interior para conectar los dos frigoríficos."
+            }
+        ]
+    },
+    //fridge_spunky_02  OBSERVATION SPUNKY 0
+    {
+        "key": "fridge_spunky_02",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Aquí hay una caja de espinacas que en realidad está llena de deliciosas delicias dulces y saladas."
+            }
+        ]
+    },
+    //ice_chair
+    {
+        "key": "ice_chair",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Se acaba de aplicar una nueva capa de líquido congelante."
+            }
+        ]
+    },
+    //rocket_glue
+    {
+        "key": "rocket_glue",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Todo está pegado al escritorio."
+            }
+        ]
+    },
+    //slingshot
+    {
+        "key": "slingshot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Quebrar. La goma elástica está a punto de romperse."
+            }
+        ]
+    },
+    //snowglobe
+    {
+        "key": "snowglobe",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una pequeña réplica de una impresionante cabaña de nieve."
+            }
+        ]
+    },
+    //spy_poster
+    {
+        "key": "spy_poster",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*...obturador de la cámara... *\n... \n(Grabación de Nickedemus Geronimo) ¡Intruso!... Tu foto acaba de ser compartida con el propietario de este increíble póster. ¡Los superhéroes se unen!"
+            }
+        ]
+    },
+    //stolen_duck
+    {
+        "key": "stolen_duck",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Etiqueta: Propiedad de Stewart. Regrese inmediatamente."
+            }
+        ]
+    },
+    //storage_spunky OBSERVATION SPUNKY 2
+    {
+        "key": "storage_spunky",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Lleno de libros autografiados de novelistas románticos."
+            }
+        ]
+    },
+    //vanity_bunky OBSERVATION BUNKY 1
+    {
+        "key": "vanity_bunky",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Aquí hay cuatro cepillos diferentes, todos con enormes nudos de pelo enredados... ¡Ay!"
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM CIENAVI .......................
+    //bedroom_ciena
+    {
+        "key": "bedroom_ciena",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitará una tarjeta de acceso para ingresar a la habitación de Ciena Vi."
+            }
+        ]
+    },
+    //book_ciena  OBSERVATION CIENAVI 0
+    {
+        "key": "book_ciena",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Notas detalladas sobre todos los miembros de la tripulación, incluido usted. Probablemente sea mejor no seguir leyendo..."
+            }
+        ]
+    },
+    //bookshelf_ciena
+    {
+        "key": "bookshelf_ciena",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Libros de diplomacia con algunas revistas de sociedad de Oceanía colocadas al azar."
+            }
+        ]
+    },
+    //bubble_lamp
+    {
+        "key": "bubble_lamp",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Burbuja... gorgoteo... burbuja.\n\nParece estar añadiendo humedad al aire."
+            }
+        ]
+    },
+    //closet_princess_dresses
+    {
+        "key": "closet_princess_dresses",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este guardarropa está repleto de elegantes vestidos y vestidos de gala."
+            }
+        ]
+    },
+    //crown
+    {
+        "key": "crown",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta es una réplica de la corona real que debe permanecer en el Reino Blue Reef."
+            }
+        ]
+    },
+    //dresser_ciena  OBSERVATION
+    {
+        "key": "dresser_ciena",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "En el cajón superior hay un antiguo alfiler de flor de cerezo envuelto en delicadas telas con una fotografía antigua de una mujer que se parece a Ciena Vi."
+            }
+        ]
+    },
+    //formal_hair
+    {
+        "key": "formal_hair",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Etiqueta: Cabello para ocasiones especiales."
+            }
+        ]
+    },
+    //fridge_ciena
+    {
+        "key": "fridge_ciena",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta nevera está llena de plantas marinas."
+            }
+        ]
+    },
+    //hydration_products
+    {
+        "key": "hydration_products",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Crema de hidratación, crema súper hidratación y crema ultra hidratación."
+            }
+        ]
+    },
+    //vanity_ciena  OBSERVATION
+    {
+        "key": "vanity_ciena",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este cajón está lleno de elegantes collares, aretes, pulseras y joyas sueltas."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM CLASSROOM .....................
+    //bedroom_max
+    {
+        "key": "bedroom_max",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Max."
+            }
+        ]
+    },
+    //book_max  OBSERVATION MAX 0
+    {
+        "key": "book_max",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una lista de datos analógicos de Space Alliance que deben digitalizarse."
+            }
+        ]
+    },
+    //bookshelf_classroom
+    {
+        "key": "bookshelf_classroom",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nEl universo y tú\n\nMujeres pioneras en la ciencia\n\nMatemáticas creativas"
+            }
+        ]
+    },
+    //bookshelf_classroom_small
+    {
+        "key": "bookshelf_classroom_small",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nSolución de problemas de computadoras\n\nManual de pizarra digital\n\nLiteratura clásica"
+            }
+        ]
+    },
+    //standard_desk
+    {
+        "key": "standard_desk",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Escritorio infantil estándar. Ahora con tecnología de bisagra sin pellizcos."
+            }
+        ]
+    },
+    //drawings_classroom
+    {
+        "key": "drawings_classroom",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Adorables dibujos infantiles de una jirafa, algunos amigos y bueno... un buen intento de hacer algo."
+            }
+        ]
+    },
+    //hologram_earth
+    {
+        "key": "hologram_earth",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un holograma de un planeta terrestre ideal que puede albergar muchos tipos de vida."
+            }
+        ]
+    },
+    //poster_copper
+    {
+        "key": "poster_copper",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Poner mineral de cobre en un horno produce cobre metálico. Los metales se pueden utilizar para crear muchas cosas en el espacio."
+            }
+        ]
+    },
+    //sticky_cubby
+    {
+        "key": "sticky_cubby",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este cubículo está pegajoso y tiene pequeñas huellas dactilares por todas partes."
+            }
+        ]
+    },
+    //metal_apple
+    {
+        "key": "metal_apple",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una manzana hecha de metal. Brilla muy bien."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM CRYOGEN .......................
+    //busted_door
+    {
+        "key": "busted_door",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta puerta está destrozada."
+            }
+        ]
+    },
+    //spooksie_documents  OBSERVATION SPOOKSIE 2
+    {
+        "key": "spooksie_documents",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta caja de carga está llena de documentos antiguos de la tripulación. Es evidente que algunos de los datos sobre los miembros han sido manipulados."
+            }
+        ]
+    },
+    //station_vacant
+    {
+        "key": "station_vacant",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estado de la cámara: <color=green>Operacional</color>\n\nOcupante: Vacante"
+            }
+        ]
+    },
+    //station_broken
+    {
+        "key": "station_broken",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estado de la cámara: <color=red>Mal funcionamiento</color>\n\nOcupante: <Error>"
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM CRYOGEN SHOP ..................
+    //spooksie_sign
+    {
+        "key": "spooksie_sign",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<b>Tienda de Spooksie:</b>\n\nAbierto: 4 p.m.-2 a.m."
+            }
+        ]
+    },
+    //thermometer
+    {
+        "key": "thermometer",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Por debajo del punto de congelación."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM DAXTON ........................
+    //bed_daxton  OBSERVATION Daxton 2
+    {
+        "key": "bed_daxton",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay un paquete de seis cervezas debajo de esta cama."
+            }
+        ]
+    },
+    //bedroom_daxton
+    {
+        "key": "bedroom_daxton",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Daxton."
+            }
+        ]
+    },
+    //chalkboard_daxton
+    {
+        "key": "chalkboard_daxton",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Ecuaciones del tablero."
+            }
+        ]
+    },
+    //daxton_treasure
+    {
+        "key": "daxton_treasure",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¡Manos fuera!"
+            }
+        ]
+    },
+    //disassembled_module
+    {
+        "key": "disassembled_module",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un módulo desmontado. Parece que le faltan muchas piezas."
+            }
+        ]
+    },
+    //disassembled_module_02  OBSERVATION Daxton 1
+    {
+        "key": "disassembled_module_02",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Las piezas de este módulo se están reutilizando para construir el otro módulo."
+            }
+        ]
+    },
+    //dresser_empty
+    {
+        "key": "dresser_empty",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "No hay ropa en esta cómoda."
+            }
+        ]
+    },
+    //journal_daxton
+    {
+        "key": "journal_daxton",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*Escrito de Daxton*\n\n<i>Conozca a más personas para que sea más fácil intercambiar piezas.</i>"
+            }
+        ]
+    },
+    //kitchen_daxton_messy  OBSERVATION Daxton 0
+    {
+        "key": "kitchen_daxton_messy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este piso está pegajoso y hay restos de comida por ahí."
+            }
+        ]
+    },
+    //lava_picture
+    {
+        "key": "lava_picture",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Daxton celebrando con sus compañeros piratas."
+            }
+        ]
+    },
+    //messy_cans
+    {
+        "key": "messy_cans",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Latas vacías de refrescos y bebidas energéticas."
+            }
+        ]
+    },
+    //pirate_flag
+    {
+        "key": "pirate_flag",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La bandera de los Piratas de Wrench Rat. Proceda con precaución."
+            }
+        ]
+    },
+    //tv_daxton
+    {
+        "key": "tv_daxton",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Programa de televisión sobre renovación de espacios. \n\nConvierte tu montón de chatarra en algo espectacular. \n\nY más tarde esta noche, Tuercas y tornillos. Los sujetadores que cambiarán tu vida. \n\n¡Estén atentos!"
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM FRANCES DOC12 .................
+    //avo_seed_doc12  OBSERVATION DOC12 1
+    {
+        "key": "avo_seed_doc12",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un A.V.O. La semilla sobresale de uno de los tubos de ensayo."
+            }
+        ]
+    },
+    //bed_doc12
+    {
+        "key": "bed_doc12",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Debajo de la cama hay una muñeca de trapo desgastada."
+            }
+        ]
+    },
+    //bedroom_frances
+    {
+        "key": "bedroom_frances",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Frances."
+            }
+        ]
+    },
+    //bedroom_doc12
+    {
+        "key": "bedroom_doc12",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitará una tarjeta de acceso para ingresar a la habitación del Doc 12."
+            }
+        ]
+    },
+    //book_frances  OBSERVATION FRANCES 2
+    {
+        "key": "book_frances",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Se ha completado un formulario oficial de vacaciones de la Alianza Espacial, pero es de hace dos años."
+            }
+        ]
+    },
+    //bookshelf_frances
+    {
+        "key": "bookshelf_frances",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nAnatomía alienígena\n\nPrótesis y cibernética\n\nAdopción y crianza de los hijos 101"
+            }
+        ]
+    },
+    //bookshelf_frances_doc12
+    {
+        "key": "bookshelf_frances_doc12",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nRomance en el horizonte\n\nCómo ser un buen anfitrión\n\nPsicología humana"
+            }
+        ]
+    },
+    //bookshelf_frances_doc12_small
+    {
+        "key": "bookshelf_frances_doc12_small",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nSudokus\n\nGenealogía"
+            }
+        ]
+    },
+    //chalkboard_frances
+    {
+        "key": "chalkboard_frances",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Datos y ecuaciones matemáticas sobre la detección de virus espaciales."
+            }
+        ]
+    },
+    //clone_info_doc12  OBSERVATION DOC12 2
+    {
+        "key": "clone_info_doc12",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "<i>Un documento antiguo queda abierto en la pantalla de la consola...</i> \n\n-------------CLON DE INSTALACIÓN 1---------------\n\nNOMBRE: Doc12 \n\nSEXO: Femenino \n \nNúmero de secuencia: Clon #12 de 26 \n\nNOTAS: Propiedad intelectual de la instalación 1. Sujeto genéticamente mejorado para capacitación médica e investigación de avance humano. Asignado a Nanny-Bot 12 para su crianza. \n\n-Asunto estándar. \n-Sin anomalías. \n-Sin deterioro de las células. \n-Clon perfecto.\n\n---------------FIN DE LÍNEA-----------------------"
+            }
+        ]
+    },
+    //desk_doc12
+    {
+        "key": "desk_doc12",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Escrito: 'La comparación de la anatomía clonada y la anatomía no clonada no ha mostrado variaciones visibles en la primera observación. Sólo cuando se analiza el ADN se pueden ver las diferencias.'"
+            }
+        ]
+    },
+    //flowers_frances
+    {
+        "key": "flowers_frances",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Nota: Lo pasamos muy bien en nuestra cita y estaba pensando en ti.\n\n-xo Robert."
+            }
+        ]
+    },
+    //fridge_frances
+    {
+        "key": "fridge_frances",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Toneladas de ensaladas y verduras aquí."
+            }
+        ]
+    },
+    //mug_frances  OBSERVATION FRANCES 0
+    {
+        "key": "mug_frances",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta taza tiene algunas manchas de café graves en su interior."
+            }
+        ]
+    },
+    //poster_nutrition
+    {
+        "key": "poster_nutrition",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Afiche de vida saludable a través de la nutrición."
+            }
+        ]
+    },
+    //skeleton_doc12
+    {
+        "key": "skeleton_doc12",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Etiqueta: Esqueleto clon humano."
+            }
+        ]
+    },
+    //skeleton_kitchen
+    {
+        "key": "skeleton_kitchen",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un esqueleto en la cocina me da incluso un poco de miedo."
+            }
+        ]
+    },
+    //storage_frances
+    {
+        "key": "storage_frances",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Reliquias familiares y una fotografía de Frances sosteniendo un diploma con un anciano con bata de laboratorio."
+            }
+        ]
+    },
+    //storage_frances  OBSERVATION FRANCES 1
+    {
+        "key": "storage_frances_02",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "En el interior hay una antigua máquina de hacer helados para niños."
+            }
+        ]
+    },
+    //study_log  OBSERVATION DOC12 0
+    {
+        "key": "study_log",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Problemas matemáticos complejos resueltos con bolígrafo permanente. Tampoco hay calculadora ni ordenador cerca."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM GENERAL STORE .................
+    //bed_jimmy  OBSERVATION JIMMY 2
+    {
+        "key": "bed_jimmy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Debajo de esta cama hay bolsas vacías con raciones de comida y snacks de soja."
+            }
+        ]
+    },
+    //bedroom_jimmy
+    {
+        "key": "bedroom_jimmy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Jimmy."
+            }
+        ]
+    },
+    //bedroom_robert
+    {
+        "key": "bedroom_robert",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Robert."
+            }
+        ]
+    },
+    //book_robert
+    {
+        "key": "book_robert",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBRO:\n\nPautas y reglas para la crianza de los hijos."
+            }
+        ]
+    },
+    //cargo_elevator
+    {
+        "key": "cargo_elevator_store",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este ascensor se conecta con el compartimento de carga para facilitar el transporte."
+            }
+        ]
+    },
+    //desk_jimmy
+    {
+        "key": "desk_jimmy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una solicitud de beca medio llena."
+            }
+        ]
+    },
+    //grilling_robert  OBSERVATION ROBERT 0
+    {
+        "key": "grilling_robert",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "En los armarios hay especias para asar y pinzas variadas."
+            }
+        ]
+    },
+    //frances_pic  OBSERVATION ROBERT 1
+    {
+        "key": "frances_pic",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una bonita foto de Frances. Está en un bonito marco también."
+            }
+        ]
+    },
+    //locker_jimmy  OBSERVATION JIMMY 1
+    {
+        "key": "locker_jimmy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una caja de zapatos llena de botes de película sin revelar está empujada hacia atrás."
+            }
+        ]
+    },
+    //magazines_jimmy
+    {
+        "key": "magazines_jimmy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Libros de paisajes y anuncios de viajes escondidos bajo los registros de recibos de las tiendas."
+            }
+        ]
+    },
+    //paint_swatch_books  OBSERVATION JIMMY 0
+    {
+        "key": "paint_swatch_books",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Muestras de pintura en todos los colores de azul imaginables."
+            }
+        ]
+    },
+    //picture_jimmy
+    {
+        "key": "picture_jimmy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una mujer de aspecto amigable que rodeaba a Jimmy con el brazo cuando era niño."
+            }
+        ]
+    },
+    //savings_bank_robert  OBSERVATION ROBERT 2
+    {
+        "key": "savings_bank_robert",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un pequeño banco lleno de créditos variados. ¿Me pregunto para qué está ahorrando?"
+            }
+        ]
+    },
+    //storage_robert
+    {
+        "key": "storage_robert",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un conjunto de ropa formal, una manta vieja de bebé y un osito de peluche."
+            }
+        ]
+    },
+    //store_accounting_books
+    {
+        "key": "store_accounting_books",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Registro contable de la tienda. Nunca había visto algo tan organizado."
+            }
+        ]
+    },
+    //store_catalogs
+    {
+        "key": "store_catalogs",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Solicitud de catálogos para comerciantes."
+            }
+        ]
+    },
+    //store_register_closed
+    {
+        "key": "store_register_closed",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "El registro está actualmente cerrado."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM GYM ...........................
+    //rock_wall_easy
+    {
+        "key": "rock_wall_easy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Vías de escalada para principiantes: 5,5 - 5,9"
+            }
+        ]
+    },
+    //rock_wall_med
+    {
+        "key": "rock_wall_med",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Vías de escalada intermedias: 5.10a - 5.11b"
+            }
+        ]
+    },
+    //rock_wall_hard
+    {
+        "key": "rock_wall_hard",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Vías de escalada avanzadas: 5.11c - 5.13a. ¡Estas rutas parecen difíciles!"
+            }
+        ]
+    },
+    //yoga_mats
+    {
+        "key": "yoga_mats",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estas esterillas de yoga calientan tus articulaciones mientras te estiras."
+            }
+        ]
+    },
+    //water_cooler
+    {
+        "key": "water_cooler",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "En algunos lugares lo llaman burbujeador."
+            }
+        ]
+    },
+    //weights_table
+    {
+        "key": "weights_table",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estos pesos son todos iguales, pero hay un dial de gravedad que aumenta el efecto de la gravedad sobre el peso."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM HERMY .........................
+    //captain_chair_hermy
+    {
+        "key": "captain_chair_hermy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta silla tipo capitán tiene pequeños agujeros en el asiento."
+            }
+        ]
+    },
+    //control_acceleration
+    {
+        "key": "control_acceleration",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Controles de Shellship.\n\nAcshelleration."
+            }
+        ]
+    },
+    //control_direction
+    {
+        "key": "control_direction",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Controles de Shellship.\n\nGuiño, Cabeceo, Shell."
+            }
+        ]
+    },
+    //control_keyboard
+    {
+        "key": "control_keyboard",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Panel de navegación.\n\nTeclado personalizado para pinchers."
+            }
+        ]
+    },
+    //dice_window
+    {
+        "key": "dice_window",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Tienen un olor a basura rancia."
+            }
+        ]
+    },
+    //maps_hermy
+    {
+        "key": "maps_hermy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estos no son mapas de navegación. Es un mapa antiguo de algo llamado Parque Nacional Olímpico."
+            }
+        ]
+    },
+    //hermy_sign_almost_there
+    {
+        "key": "hermy_sign_almost_there",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Exposiciones... ¡de frente!"
+            }
+        ]
+    },
+    //mushroom_hermy OBSERVATION HERMY 2
+    {
+        "key": "mushroom_hermy",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este kit de hongos para cultivar en casa parece estar muy feliz aquí."
+            }
+        ]
+    },
+    //storage_boxes_1
+    {
+        "key": "storage_boxes_1",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cajas llenas de artículos esponjosos."
+            }
+        ]
+    },
+    //storage_boxes_2
+    {
+        "key": "storage_boxes_2",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cajas llenas de artículos pegajosos."
+            }
+        ]
+    },
+    //storage_boxes_3  OBSERVATION HERMY 1
+    {
+        "key": "storage_boxes_3",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estas cajas están llenas de alimentos en conserva y encurtidos poco atractivos."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM HOLO BEACH ....................
+    //confirm_nap_start
+    {
+        "key": "confirm_nap_start",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Quieres tomar una siesta?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_nap_end
+    {
+        "key": "confirm_nap_end",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Estás listo para despertar?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //cubby_lobster
+    {
+        "key": "cubby_lobster",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Aquí hay una langosta inflable."
+            }
+        ]
+    },
+    //shower_beach
+    {
+        "key": "shower_beach",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una ducha de aclarado con agua a temperatura perfecta."
+            }
+        ]
+    },
+    //sign_holobeach
+    {
+        "key": "sign_holobeach",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Bienvenido a \nFanta-Sea"
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM HOLODECK ......................
+    //empty
+    //#endregion .................................
+
+    //#region ROOM HOLO LIBRARY ..................
+    //bookshelf_empty
+    {
+        "key": "bookshelf_empty",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estos libros no son muy interesantes."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM HOLO SPA ......................
+    //confirm_enter_spa
+    {
+        "key": "confirm_enter_spa",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Quieres entrar al spa?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //confirm_exit_spa
+    {
+        "key": "confirm_exit_spa",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Quieres salir del spa?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM KAIDA CHIP FIJI ...............
+    //army_medals
+    {
+        "key": "army_medals",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Metales de premio:\n\nValencia, Honor, Héroe."
+            }
+        ]
+    },
+    //bedroom_kaida
+    {
+        "key": "bedroom_kaida",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Kaida y Chip."
+            }
+        ]
+    },
+    //bedroom_fiji
+    {
+        "key": "bedroom_fiji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Fiji."
+            }
+        ]
+    },
+    //bionic_parts_kaida
+    {
+        "key": "bionic_parts_kaida",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Variaciones de brazos y piernas biónicos. Algunos tienen características ergonómicas interesantes y otros tienen longitudes ajustables."
+            }
+        ]
+    },
+    //book_chip
+    {
+        "key": "book_chip",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Álbum de recortes de fotografías antiguas, recetas familiares y cartas de amor entre Kaida y Chip."
+            }
+        ]
+    },
+    //book_chip_02  OBSERVATION CHIP 2
+    {
+        "key": "book_chip_02",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Libro: Cómo preparar tu propia cerveza en casa."
+            }
+        ]
+    },
+    //book_fiji_coffee_table  OBSERVATION FIJI 0
+    {
+        "key": "book_fiji_coffee_table",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Libro: La conexión entre los cumpleaños y las estrellas."
+            }
+        ]
+    },
+    //book_kaida_coffee_table OBSERVATION KAIDA 0
+    {
+        "key": "book_kaida_coffee_table",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Libro: Científicos influyentes (uno de los científicos en la parte de atrás es Kaida)"
+            }
+        ]
+    },
+    //bookshelf_fiji  OBSERVATION Fiji 1
+    {
+        "key": "bookshelf_fiji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay paquetes de salsa de soja y platos esparcidos por todos lados."
+            }
+        ]
+    },
+    //bookshelf_fiji_small
+    {
+        "key": "bookshelf_fiji_small",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nVida Comunitaria\n\nTeorías del Alma"
+            }
+        ]
+    },
+    //bookshelf_kaida_family
+    {
+        "key": "bookshelf_kaida_family",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nCocina creativa\n\nElementos raros en el universo\n\nLibro de los Horóscopos"
+            }
+        ]
+    },
+    //desk_kaida
+    {
+        "key": "desk_kaida",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Parece una carta de actualización familiar para los familiares. En realidad, un registro completo de ellos, pero nunca han sido enviados."
+            }
+        ]
+    },
+    //cream_kaida  OBSERVATION KAIDA 1
+    {
+        "key": "cream_kaida",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este tarro casero de crema de cactonut es estupendo para la piel."
+            }
+        ]
+    },
+    //dog_bed_fiji
+    {
+        "key": "dog_bed_fiji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cama puff puff elegante. Hay tanta tontería aquí."
+            }
+        ]
+    },
+    //dreamcatcher_fiji
+    {
+        "key": "dreamcatcher_fiji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Pieza de arte antigua pensada para capturar los malos sueños mientras la persona en la cama de abajo dormía."
+            }
+        ]
+    },
+    //fridge_kaida_family
+    {
+        "key": "fridge_kaida_family",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Muchas sobras y platos experimentales. En la puerta hay un par de contenedores de alimentos crudos."
+            }
+        ]
+    },
+    //instruments_fiji
+    {
+        "key": "instruments_fiji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un violinista. Un cruce entre un violín y una guitarra. Se utiliza para canciones más folklóricas."
+            }
+        ]
+    },
+    //kitchen_pepper  OBSERVATION CHIP 0
+    {
+        "key": "kitchen_pepper",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay 16 tipos diferentes de pimientos en esta cocina."
+            }
+        ]
+    },
+    //locker_chip  OBSERVATION CHIP 1
+    {
+        "key": "locker_chip",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "En el interior hay grabado un certificado de hitos en levantamiento de pesas. La media de Chip es de 200kg... ¡impresionante!"
+            }
+        ]
+    },
+    //locker_kaida  OBSERVATION KAIDA 2
+    {
+        "key": "locker_kaida",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "En el interior hay una mini colección de recuerdos de viajes espaciales, ¡incluida una roca del primer viaje a la luna!"
+            }
+        ]
+    },
+    //portrait_chip_army
+    {
+        "key": "portrait_chip_army",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un antiguo retrato militar de Chip y un grupo de personal militar."
+            }
+        ]
+    },
+    //portrait_kadia_family
+    {
+        "key": "portrait_kaida_family",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Linda foto familiar con Fiji sosteniendo un signo de la paz."
+            }
+        ]
+    },
+    //stars_fiji  OBSERVATION FIJI 2
+    {
+        "key": "stars_fiji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cada una de estas estrellas tiene los nombres de los amigos de Fiji. Tu nombre ha sido añadido a uno de ellos."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM MACHINE SHOP ..................
+    //bedroom_steven
+    {
+        "key": "bedroom_steven",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Steven."
+            }
+        ]
+    },
+    //const_bot
+    {
+        "key": "const_bot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Construction Bot está esperando su próxima tarea."
+            }
+        ]
+    },
+    //toolbox_machine_shop OBSERVATION STEVEN 0
+    {
+        "key": "toolbox_machine_shop",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "CAJA DE HERRAMIENTAS:\n\nMáscara de soldar\n\nUn par de guantes gruesos\n\nSoplete\n\nMás ingredientes"
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM MAX ...........................
+    //book_pet_pictures
+    {
+        "key": "book_pet_pictures",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Big Book of Cute:\n\nMás de 1000 imágenes de adorables cachorros y gatitos." //Including new pet owners tips and tricks to get the most out of your furry friends.
+            }
+        ]
+    },
+    //bookshelf_max
+    {
+        "key": "bookshelf_max",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nÉtica\n\nGrandes filósofos\n\nToma de decisiones sin todos los hechos"
+            }
+        ]
+    },
+    //bowtie_rack
+    {
+        "key": "bowtie_rack",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Surtido de pajaritas con clip. Sin embargo, se quitó el clip y se reemplazó con un imán."
+            }
+        ]
+    },
+    //bowtie_rack_02
+    {
+        "key": "bowtie_rack_02",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Más pajaritas. Tienen colores coordinados según la respuesta del estado de ánimo deseada."
+            }
+        ]
+    },
+    //charging_station_max
+    {
+        "key": "charging_station_max",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estación de carga Android versión AXC.190 con carga turbo. Recarga en la mitad de tiempo."
+            }
+        ]
+    },
+    //closet_max_suits
+    {
+        "key": "closet_max_suits",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este armario está lleno de trajes de diseñador y pantalones a medida."
+            }
+        ]
+    },
+    //closet_max_cashmere
+    {
+        "key": "closet_max_cashmere",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estos cajones están llenos de cachemira."
+            }
+        ]
+    },
+    //costume_larp  OBSERVATION MAX 2
+    {
+        "key": "costume_larp",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Disfraz de rol de acción en vivo completo con espada y escudo de acción."
+            }
+        ]
+    },
+    //dipolma_max
+    {
+        "key": "dipolma_max",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Diploma de docencia expedido por el Departamento de Software de Robótica."
+            }
+        ]
+    },
+    //drinking_bird
+    {
+        "key": "drinking_bird",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una máquina de beber pájaros. ¡Míralo!"
+            }
+        ]
+    },
+    //kid_drawing_max
+    {
+        "key": "kid_drawing_max",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Apreciación del maestro dibujada desde un niño."
+            }
+        ]
+    },
+    //language_certificate
+    {
+        "key": "language_certificate",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Premio por aprender más de 50 idiomas y servir como traductor para la diplomacia interplanetaria."
+            }
+        ]
+    },
+    //laptop_computer_max
+    {
+        "key": "laptop_computer_max",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Tareas calificadas."
+            }
+        ]
+    },
+    //larp_award
+    {
+        "key": "larp_award",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Impresión de Internet para ganar un torneo de rol en vivo."
+            }
+        ]
+    },
+    //magazines_max  OBSERVATION MAX 1
+    {
+        "key": "magazines_max",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Revistas de moda de otoño con fotografías recortadas."
+            }
+        ]
+    },
+    //rubik_cube_max
+    {
+        "key": "rubik_cube_max",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cubo de Rubik con rastreador de tiempo. El tiempo de finalización más rápido registrado es 1/100 de segundo."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM MEDICAL BAY ...................
+    //bookshelf_medical_1
+    {
+        "key": "bookshelf_medical_1",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nEstilos de vida lujosos\n\nGrandes aventuras espaciales\n\nLibro para colorear de gérmenes"
+            }
+        ]
+    },
+    //bookshelf_medical_2
+    {
+        "key": "bookshelf_medical_2",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nEl Doctor Dan y las enfermedades infecciosas\n\nUna colección de bodegones\n\n... Y una caja de rompecabezas a la que le faltan la mayoría de sus piezas."
+            }
+        ]
+    },
+    //calendar_medical
+    {
+        "key": "calendar_medical",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este calendario está lleno de notas sobre resultados de laboratorio."
+            }
+        ]
+    },
+    //lab_coats
+    {
+        "key": "lab_coats",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Batas de laboratorio extra limpias y esterilizadas."
+            }
+        ]
+    },
+    //medicine_cabinet_1
+    {
+        "key": "medicine_cabinet_1",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Aporte extra de medicamentos y vitaminas."
+            }
+        ]
+    },
+    //medicine_cabinet_2
+    {
+        "key": "medicine_cabinet_2",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Medicina para especies no humanas."
+            }
+        ]
+    },
+    //medical_lab_tests
+    {
+        "key": "medical_lab_tests",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Parece que estas pruebas son importantes para Doc12."
+            }
+        ]
+    },
+    //operating_table
+    {
+        "key": "operating_table",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Más seguro de lo que parece."
+            }
+        ]
+    },
+    //poster_make_vitamins
+    {
+        "key": "poster_make_vitamins",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Ponga minerales en una máquina de medicamentos para producir vitaminas."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM MUSEUM ...................
+    //sign_museum
+    {
+        "key": "sign_museum",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¡Bienvenido a Hermy's Spectacular Collectables, que presenta el mundialmente famoso recorrido en audio de Hermy! \n\n- Presione $inputPrimary en cada exhibición para obtener información detallada."
+            }
+        ]
+    },
+    //museum_statue_01
+    {
+        "key": "museum_statue_01",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este pedestal está sospechosamente vacío."
+            }
+        ]
+    },
+    //museum_statue_02
+    {
+        "key": "museum_statue_02",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Museo realizado por: Hermy & $playerName. \n\n'¡Los dos COLECCIONISTAS MÁS MEJORES del universo!'" //This completed collection is made possible by Hermy & $playerName. \n\n'The most ULTIMATE COLLECTORS in the galaxy!'
+            }
+        ]
+    },
+
+    //#endregion .................................
+
+    //#region ROOM LIN ...........................
+    //affirmations_lin  OBSERVATION LIN 2
+    {
+        "key": "affirmations_lin",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Garabatos y notas de afirmación autopositiva están pegados por toda la pared."
+            }
+        ]
+    },
+    //ancient_watering_can
+    {
+        "key": "ancient_watering_can",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta antigua regadera procedente de la Tierra se ha convertido en una jardinera."
+            }
+        ]
+    },
+    //bedroom_mel
+    {
+        "key": "bedroom_mel",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Lin."
+            }
+        ]
+    },
+    //bookshelf_mel_small
+    {
+        "key": "bookshelf_mel_small",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nSeñales aéreas para comunicarse con las plantas\n\nCómo integrarse en mundos alienígenas."
+            }
+        ]
+    },
+    //closet_mel
+    {
+        "key": "closet_mel",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Toneladas de monos de todos los colores."
+            }
+        ]
+    },
+    //desk_mel
+    {
+        "key": "desk_mel",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Entradas de registro sobre la producción de alimentos.\n\nTablas de datos de duración del crecimiento y producción en volúmenes."
+            }
+        ]
+    },
+    //fridge_mel
+    {
+        "key": "fridge_mel",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Lleno de hierbas frescas y verduras de gran tamaño."
+            }
+        ]
+    },
+    //gardenbot_mel
+    {
+        "key": "gardenbot_mel",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Garden Bot está lleno de alegría."
+            }
+        ]
+    },
+    //humidity_lin  OBSERVATION LIN 0
+    {
+        "key": "humidity_lin",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La humedad en esta habitación es bastante alta. ¿Cómo puede soportarlo?"
+            }
+        ]
+    },
+    //journal_mel
+    {
+        "key": "journal_mel",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*Escrito de Lin*\n\n<i>Prueba de fertilizantes caseros 206. El crecimiento de las verduras se disparó, pero el sabor sufre y nadie quiere comerlas.</i>"
+            }
+        ]
+    },
+    //planting_station
+    {
+        "key": "planting_station",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La estación de macetas fertiliza instantáneamente suelos tristes. Invento inteligente."
+            }
+        ]
+    },
+    //spice_poster_lin  OBSERVATION LIN 1
+    {
+        "key": "spice_poster_lin",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Imágenes de diferentes plantas y cómo hacer sabrosas especias con ellas."
+            }
+        ]
+    },
+    //storage_mel
+    {
+        "key": "storage_mel",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una antigua página de redes sociales impresa de los tatarabuelos de Lin que cultivaban en la Tierra: Pumpkin Pumpkins Farm."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM OUTERHULL TOP .................
+    //confirm_enter_deck
+    {
+        "key": "confirm_enter_deck",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¿Listo para volver a entrar?",
+                "optionOne": {
+                    "optionText": "No"
+                },
+                "optionTwo": {
+                    "optionText": "Sí"
+                }
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM PILOT SPROUT ..................
+    //bedroom_pilot
+    {
+        "key": "bedroom_pilot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitará una tarjeta de acceso para ingresar a la habitación del piloto."
+            }
+        ]
+    },
+    //bedroom_sprout
+    {
+        "key": "bedroom_sprout",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para ingresar a la habitación de Sprout."
+            }
+        ]
+    },
+    //book_pilot  OBSERVATION PILOT 1
+    {
+        "key": "book_pilot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este libro analiza teorías avanzadas sobre el futuro de los viajes y la propulsión espaciales."
+            }
+        ]
+    },
+    //bookshelf_sprout
+    {
+        "key": "bookshelf_sprout",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nQuímica avanzada\n\nGeología y gemas raras\n\nReferencias de la cultura pop"
+            }
+        ]
+    },
+    //console_sprout  OBSERVATION SPROUT 0
+    {
+        "key": "console_sprout",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta consola ha sido programada para jugar únicamente juegos de ciencias, matemáticas y acertijos mentales."
+            }
+        ]
+    },
+    //fertilizer_pilot  OBSERVATION PILOT 2
+    {
+        "key": "fertilizer_pilot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este fertilizante casero hecho de amoníaco, melaza y cerveza parece que en ocasiones se agrega a su suministro de agua."
+            }
+        ]
+    },
+    //fishbowl
+    {
+        "key": "fishbowl",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*Escritura de Sprout*\n\n<i>Enrique el amigo pez</i>"
+            }
+        ]
+    },
+    //fridge_pilot
+    {
+        "key": "fridge_pilot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Bolsas de minerales y compost. No muy atractivo..."
+            }
+        ]
+    },
+    //growth_ruler
+    {
+        "key": "growth_ruler",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay pequeñas marcas a lo largo de la regla. El año pasado realmente saltó más alto."
+            }
+        ]
+    },
+    //periodic_table_1_sprout
+    {
+        "key": "periodic_table_1_sprout",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La tabla periódica con pegatinas sobre las que ha estudiado Sprout."
+            }
+        ]
+    },
+    //periodic_table_2_sprout
+    {
+        "key": "periodic_table_2_sprout",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La segunda tabla periódica con los elementos descubiertos más recientemente, incluido el Kaidio."
+            }
+        ]
+    },
+    //plant_light_pilot
+    {
+        "key": "plant_light_pilot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Luz de planta estándar para energía adicional. Es raro recibir luz solar en la inmensidad del espacio."
+            }
+        ]
+    },
+    //plant_light_sprout
+    {
+        "key": "plant_light_sprout",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta luz para plantas tiene un brillo mayor porque también está configurada en modo de luz nocturna."
+            }
+        ]
+    },
+    //picture_baby_sprout
+    {
+        "key": "picture_baby_sprout",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Qué adorable foto de plántula."
+            }
+        ]
+    },
+    //picture_sprout_selfie
+    {
+        "key": "picture_sprout_selfie",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Foto selfie amateur de Sprout."
+            }
+        ]
+    },
+    //picture_treescape
+    {
+        "key": "picture_treescape",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Las junglas tóxicas del planeta natal de Pilot y Sprout."
+            }
+        ]
+    },
+    //rock_collection  OBSERVATION 1
+    {
+        "key": "rock_collection",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La primera colección y pulidora de rocas de Lil Explorer, pero un par de cubículos están vacíos."
+            }
+        ]
+    },
+    //tomato_fight_sprout  OBSERVATION SPROUT 2
+    {
+        "key": "tomato_fight_sprout",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este protector de pantalla tiene una imagen de Sprout y Pilot participando en una pelea grupal masiva de tomates."
+            }
+        ]
+    },
+    //steamer_pilot  OBSERVATION PILOT 0
+    {
+        "key": "steamer_pilot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Todos estos equipos y electrodomésticos de cocina están configurados para cocinar alimentos al vapor."
+            }
+        ]
+    },
+    //tree_pilot
+    {
+        "key": "tree_pilot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este árbol produce una toxina ligera que es fundamental para la existencia de Pilot y Sprout. Si pasas demasiado tiempo aquí, podría tener efectos negativos en ti."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM PIPER EDWARD ..................
+    //bedroom_piper
+    {
+        "key": "bedroom_piper",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Piper y Edward."
+            }
+        ]
+    },
+    //bedroom_kendall
+    {
+        "key": "bedroom_kendall",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Kendall."
+            }
+        ]
+    },
+    //book_crosswords
+    {
+        "key": "book_crosswords",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBRO:\n\nCrucigramas avanzados"
+            }
+        ]
+    },
+    //book_I-1900  OBSERVATION I-1900 2
+    {
+        "key": "book_i1900",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Manual del I-1900...\n\n'¿Sabías que tu nuevo robot I-1900 está fabricado en un 85 % con materiales reciclados? ¡Esperamos que disfrutes de tu I-Bot!'"
+            }
+        ]
+    },
+    //bookshelf_kendall_small
+    {
+        "key": "bookshelf_kendall_small",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nFamoso especialista\n\nPerfilando mentes criminales"
+            }
+        ]
+    },
+    //bookshelf_piper_small
+    {
+        "key": "bookshelf_piper_small",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS\n\nDanzas clásicas\n\nCasos intergalácticos de la Corte Suprema"
+            }
+        ]
+    },
+    //charging_station_I-1900
+    {
+        "key": "charging_station_i1900",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estación de carga robótica versión AXC.10. Úselo solo con modelos I-Bot."
+            }
+        ]
+    },
+    //closet_kendall
+    {
+        "key": "closet_kendall",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hermosa ropa nueva en las perchas y ropa gastada y remendada arrugada en el suelo."
+            }
+        ]
+    },
+    //closet_piper
+    {
+        "key": "closet_piper",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una gran variedad de vestidos y bonitos suéteres. Creo que el último cajón tiene la ropa de Edward."
+            }
+        ]
+    },
+    //console_I-1900  OBSERVATION I-1900 1
+    {
+        "key": "console_i1900",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta consola se conecta a la estación de carga del I-1900 y está programada con películas y programas de televisión antiguos de ciencia ficción."
+            }
+        ]
+    },
+    //dresser_01_edward  OBSERVATION EDWARD 1
+    {
+        "key": "dresser_01_edward",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Aquí hay algunos cartuchos de videojuegos viejos y polvorientos de hace años. ¿Me pregunto si todavía funcionan?"
+            }
+        ]
+    },
+    //dresser_01_piper  OBSERVATION PIPER 1
+    {
+        "key": "dresser_01_piper",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este tocador está lleno de cremas, lociones, productos de belleza y mascarillas faciales de todos los colores para cada ocasión."
+            }
+        ]
+    },
+    //dresser_02_piper  OBSERVATION PIPER 2
+    {
+        "key": "dresser_02_piper",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¡Esta cómoda tiene un cinturón negro de kárate escondido detrás de algo de ropa!"
+            }
+        ]
+    },
+    //dresses_kendall  OBSERVATION KENDALL 1
+    {
+        "key": "dresses_kendall",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Vestidos nuevos con las etiquetas todavía puestas. Uno de ellos incluso ha sido pisoteado con zapatos sucios."
+            }
+        ]
+    },
+    //electrical_edward  OBSERVATION EDWARD 0
+    {
+        "key": "electrical_edward",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Parece que todo el cableado eléctrico y los enchufes de esta sala se han elevado a una altura más conveniente."
+            }
+        ]
+    },
+    //fridge_piper  OBSERVATION PIPER 0
+    {
+        "key": "fridge_piper",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este refrigerador tiene alimentos caros, suplementos nutricionales adicionales y algunos frascos de mermelada de aspecto extraño con la etiqueta "Expo justa: lote de prueba 04"."
+            }
+        ]
+    },
+    //frilly_curtains
+    {
+        "key": "frilly_curtains",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cortinas con volantes autolimpiables."
+            }
+        ]
+    },
+    //laptop_kendall
+    {
+        "key": "laptop_kendall",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*Escrito de Kendall*\n\n<i>Poema\n\nHabía una vez un extraterrestre llamado Sly.\n\nNo le gustaba mucho porque era una mosca espacial.\n\nUn día accidentalmente entró zumbando en un aeródromo.\n\nY el pobre Sly se convirtió en una mancha en el parabrisas de un barco.</i>"
+            }
+        ]
+    },
+    //magazines_kendall
+    {
+        "key": "magazines_kendall",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Catálogos de juguetes cubiertos con pegatinas doradas y grandes círculos rojos alrededor de diferentes juguetes."
+            }
+        ]
+    },
+    //picture_kendall_drawing
+    {
+        "key": "picture_kendall_drawing",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Título: Mi familia\n\nPor: KENdalL"
+            }
+        ]
+    },
+    //picture_I-1900_drawing
+    {
+        "key": "picture_i1900_drawing",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Título: Autorretrato\n\nPor: I-1900"
+            }
+        ]
+    },
+    //picture_steven_drawing
+    {
+        "key": "picture_steven_drawing",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Título: ¡Despegue!\n\nPor: StEvEn Age 4"
+            }
+        ]
+    },
+    //plant_01_I-1900  OBSERVATION I-1900 0
+    {
+        "key": "plant_01_i1900",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta planta está siendo monitoreada con notas sobre un fertilizante verde. Esta planta parece estar prosperando."
+            }
+        ]
+    },
+    //plant_02_I-1900  OBSERVATION I-1900 0
+    {
+        "key": "plant_02_i1900",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta planta está siendo monitoreada con notas sobre un fertilizante rojo. Esta planta parece estar pasando apuros."
+            }
+        ]
+    },
+    //bolts_sculpture
+    {
+        "key": "bolts_sculpture",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Título: Construyendo tornillos de vida\n\nArtista: Steven"
+            }
+        ]
+    },
+    //sugar_stash  OBSERVATION KENDALL 0
+    {
+        "key": "sugar_stash",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay un montón de dulces y bocadillos detrás de esta maceta."
+            }
+        ]
+    },
+    //tea_set
+    {
+        "key": "tea_set",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¡Este juego de té está hecho de plata auténtica!"
+            }
+        ]
+    },
+    //toy_bots  OBSERVATION KENDALL 2
+    {
+        "key": "toy_bots",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Parece que estos robots se están preparando para una pelea."
+            }
+        ]
+    },
+    //vanity_edward  OBSERVATION EDWARD 2
+    {
+        "key": "vanity_edward",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un organizador de pastillas lleno de medicamentos coloridos está encima del tocador."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM PODS ..........................
+    //egg_hatching
+    {
+        "key": "egg_hatching",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Algo esta pasando..."
+            }
+        ]
+    },
+    //pod_water
+    {
+        "key": "pod_water",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Agua dulce."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM SALON .........................
+    //barber_chair_1
+    {
+        "key": "barber_chair_1",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay algunos mechones de pelo en el asiento."
+            }
+        ]
+    },
+    //barber_chair_2
+    {
+        "key": "barber_chair_2",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¡Esta silla también se extiende hacia atrás para un afeitado limpio!"
+            }
+        ]
+    },
+    //hair_dryer_straight
+    {
+        "key": "hair_dryer_straight",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cabello liso instantáneo."
+            }
+        ]
+    },
+    //hair_dryer_curly
+    {
+        "key": "hair_dryer_curly",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cabello rizado instantáneo."
+            }
+        ]
+    },
+    //mirror_talking_fab
+    {
+        "key": "mirror_talking_fab",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*espejo*\n\n<i>¡Estás estupenda!</i>"
+            }
+        ]
+    },
+    //mirror_talking_good
+    {
+        "key": "mirror_talking_good",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*espejo*\n\n<i>¡Luciendo bien!</i>"
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM SCIENCE LAB ...................
+    //book_science
+    {
+        "key": "book_science",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBRO: Lista del laboratorio de ciencias"
+            }
+        ]
+    },
+    //electrode
+    {
+        "key": "electrode",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Apártate, hay mucha energía proveniente de esto."
+            }
+        ]
+    },
+    //isolation_box
+    {
+        "key": "isolation_box",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Se utiliza para mantener aislados materiales sensibles."
+            }
+        ]
+    },
+    //periodic_table_1_science
+    {
+        "key": "periodic_table_1_science",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La tabla periódica clásica."
+            }
+        ]
+    },
+    //periodic_table_2_science
+    {
+        "key": "periodic_table_2_science",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "La segunda tabla periódica con los elementos descubiertos más recientemente, incluido el Kaidio."
+            }
+        ]
+    },
+    //microscope_science
+    {
+        "key": "microscope_science",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Es una muestra del sitio donde se decía que estaba un "fantasma"."
+            }
+        ]
+    },
+    //notes_science
+    {
+        "key": "notes_science",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*Escrito de Kaida*\n\n<i>Los resultados de las muestras microscópicas hasta el momento no son concluyentes.</i>"
+            }
+        ]
+    },
+    //testtubes_science
+    {
+        "key": "testtubes_science",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Las etiquetas están muy organizadas. Será mejor que no los toque y los mezcle."
+            }
+        ]
+    },
+    //water_chamber_1
+    {
+        "key": "water_chamber_1",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cámara de agua 01: Disponible"
+            }
+        ]
+    },
+    //water_chamber_2
+    {
+        "key": "water_chamber_2",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cámara de agua 02: en uso"
+            }
+        ]
+    },
+    //water_chamber_3
+    {
+        "key": "water_chamber_3",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cámara de Agua 03: Prueba de Control"
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM SHINJI ........................
+    //alarm_clock  OBSERVATION SHINJI 1
+    {
+        "key": "alarm_clock",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "El despertador está puesto a las 10 de la mañana."
+            }
+        ]
+    },
+    //arcade_game
+    {
+        "key": "arcade_game",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Raro juego de arcade de pie. Ship Racer, que clásico."
+            }
+        ]
+    },
+    //bedroom_shinji
+    {
+        "key": "bedroom_shinji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Shinji."
+            }
+        ]
+    },
+    //bookshelf_shinji
+    {
+        "key": "bookshelf_shinji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nInjusticia social\n\nEnseñar y trabajar con niños\n\nBrechas de riqueza en la sociedad"
+            }
+        ]
+    },
+    //bookshelf_shinji_small
+    {
+        "key": "bookshelf_shinji_small",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS: \n\nLibera tu potencial\n\nSerie de cómics manga"
+            }
+        ]
+    },
+    //cans_protein
+    {
+        "key": "cans_protein",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Varios batidos de proteínas."
+            }
+        ]
+    },
+    //cooking_pot_shinji OBSERVATION SHINJI 0
+    {
+        "key": "cooking_pot_shinji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay fideos secos y queso en el fondo de esta olla."
+            }
+        ]
+    },
+    //closet_shinji
+    {
+        "key": "closet_shinji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "El abrumador aroma de la colonia te golpea."
+            }
+        ]
+    },
+    //closet_2_shinji
+    {
+        "key": "closet_2_shinji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Lleno de camisetas y gorras con logos caras."
+            }
+        ]
+    },
+    //desk_shinji
+    {
+        "key": "desk_shinji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un montón de correos electrónicos sin respuesta de los padres de Shinji."
+            }
+        ]
+    },
+    //diploma_shinji
+    {
+        "key": "diploma_shinji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Graduado con mención en Negocios."
+            }
+        ]
+    },
+    //greasy_shinji
+    {
+        "key": "greasy_shinji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay mucha grasa de cocina pegada a la superficie."
+            }
+        ]
+    },
+    //hologram_ship
+    {
+        "key": "hologram_ship",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta es una edición de coleccionista."
+            }
+        ]
+    },
+    //laptop_shinji
+    {
+        "key": "laptop_shinji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*Escritura de Shinji*\n\n<i>Carreras potenciales:\n\n<s>Gerente de patrimonio</s>\n\n<s>hacerse cargo del negocio familiar</s>\n\n??</i>"
+            }
+        ]
+    },
+    //picture_kids  OBSERVATION SHINJI 2
+    {
+        "key": "picture_kids",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este dibujo de Shinji fue hecho por Sprout y Kendall y fue enmarcado especialmente."
+            }
+        ]
+    },
+    //surfboard
+    {
+        "key": "surfboard",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta tabla está firmada por un montón de surfistas famosos del universo"
+            }
+        ]
+    },
+    //vanity_shinji
+    {
+        "key": "vanity_shinji",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Aquí hay un montón de productos para la piel y el cabello."
+            }
+        ]
+    },
+    //vr_body_suit
+    {
+        "key": "vr_body_suit",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Body de realidad virtual hecho a medida."
+            }
+        ]
+    },
+    //vr_chair
+    {
+        "key": "vr_chair",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este sistema de realidad virtual puede jugar más de 100 juegos para el propietario."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM SOOT ..........................
+    //blanket_soot  OBSERVATION SOOT 1
+    {
+        "key": "blanket_soot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta manta está deshilachada, pero parece muy querida."
+            }
+        ]
+    },
+    //journal_soot  OBSERVATION SOOT 2
+    {
+        "key": "journal_soot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Aquí hay sólo un montón de símbolos."
+            }
+        ]
+    },
+
+    //dog_bed_soot
+    {
+        "key": "dog_bed_soot",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta es una de las camas Xeno de Fiji."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM STAIRWELL HIDDEN ..............
+
+    //halloween_decor  OBSERVATION SPOOKSIE 0
+    {
+        "key": "halloween_decor",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Estas cajas de carga están llenas de viejos adornos de Halloween."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM STAIRWELLS ....................
+    //empty 
+    //#endregion .................................
+
+    //#region ROOM STEVEN ........................
+    //closet_steven
+    {
+        "key": "closet_steven",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay algunos trajes bonitos y looks profesionales que parecen no usados."
+            }
+        ]
+    },
+    //drawings_kendall_steven
+    {
+        "key": "drawings_kendall_steven",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Dibujos imitadores hechos por Kendall."
+            }
+        ]
+    },
+    //dresser_steven
+    {
+        "key": "dresser_steven",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Ropa muy práctica por dentro, pero la mayor parte tiene manchas de pintura."
+            }
+        ]
+    },
+    //easel_steven
+    {
+        "key": "easel_steven",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este paisaje escénico parece un paraíso para los humanos."
+            }
+        ]
+    },
+    //food_steven  OBSERVATION STEVEN 1
+    {
+        "key": "food_steven",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Una porción de pizza sobrante con algunos aderezos extravagantes."
+            }
+        ]
+    },
+    //horse_sculpture
+    {
+        "key": "horse_sculpture",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Impresionante escultura realizada con chatarra."
+            }
+        ]
+    },
+    //paintings_steven
+    {
+        "key": "paintings_steven",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Aquí hay una gran mezcla de estilos, pero parece que le gustan todos los medios."
+            }
+        ]
+    },
+    //paints_steven  OBSERVATION STEVEN 2
+    {
+        "key": "paints_steven",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay muchos colores metálicos e iridiscentes para hacer que sus pinturas destaquen."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM STEWART LAUREN ................
+    //bed_stewart  OBSERVATION STEWART 2
+    {
+        "key": "bed_stewart",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay platos sucios amontonados debajo de esta cama."
+            }
+        ]
+    },
+    //bedroom_stewart
+    {
+        "key": "bedroom_stewart",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Stewart."
+            }
+        ]
+    },
+    //bedroom_lauren
+    {
+        "key": "bedroom_lauren",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Necesitarás una tarjeta de acceso para entrar a la habitación de Lauren."
+            }
+        ]
+    },
+    //book_open_stewart  OBSERVATION STEWART 1
+    {
+        "key": "book_open_stewart",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Parecen los planos de un invento muy interesante. "Confidencial" está estampado por todas partes."
+            }
+        ]
+    },
+    //bookshelf_stewart
+    {
+        "key": "bookshelf_stewart",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "LIBROS:\n\nFísica y Relatividad\n\nConstrucción de robots\n\nGuía de supervivencia: trabajar con un mal jefe"
+            }
+        ]
+    },
+    //care_package_lauren  OBSERVATION LAUREN 2
+    {
+        "key": "care_package_lauren",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este paquete de atención está lleno de alimentos abundantes y reconfortantes. Firmado 'Con amor, mamá'."
+            }
+        ]
+    },
+    //closet_stewart
+    {
+        "key": "closet_stewart",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Un par de trajes radiactivos gastados."
+            }
+        ]
+    },
+    //desk_lauren
+    {
+        "key": "desk_lauren",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*Escrito de Lauren*\n\n<i><u>Tarjetas semanales:</u>\n\nMarcas de conteo y créditos vencidos."
+            }
+        ]
+    },
+    //dresser_lauren
+    {
+        "key": "dresser_lauren",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Ropa de calle muy elegante."
+            }
+        ]
+    },
+    //dresser_stewart
+    {
+        "key": "dresser_stewart",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Sólo ropa interior en blanco estándar."
+            }
+        ]
+    },
+    //fridge_stewart
+    {
+        "key": "fridge_stewart",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta nevera sólo tiene sobras de la cantimplora."
+            }
+        ]
+    },
+    //journal_stewart  OBSERVATION CPU 0
+    {
+        "key": "journal_stewart",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "*Escrito de Stewart*\n\n<i><u>Reparar CPU:</u>\n\n1. Intente restablecer las preferencias de CPU a los valores predeterminados.\n\n2. Reinstalación completa de protocolos básicos.\n\n3. Intente borrar las cookies.</i>"
+            }
+        ]
+    },
+    //juicer_lauren  OBSERVATION LAUREN 0
+    {
+        "key": "juicer_lauren",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Hay un mini exprimidor integrado en esta cocina."
+            }
+        ]
+    },
+    //locker_lauren  OBSERVATION LAUREN 1
+    {
+        "key": "locker_lauren",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este casillero está lleno de cartas de trucos de magia, accesorios y elementos de broma."
+            }
+        ]
+    },
+    //magazines_lauren
+    {
+        "key": "magazines_lauren",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Diseños de tatuajes, Revistas Magicians Monthly y Estilo de vida."
+            }
+        ]
+    },
+    //magazines_stewart
+    {
+        "key": "magazines_stewart",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Manuales técnicos con piezas tachadas y notas de Stewart corrigiendo sus errores."
+            }
+        ]
+    },
+    //medals_lauren
+    {
+        "key": "medals_lauren",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Premios de fitness para diversos eventos."
+            }
+        ]
+    },
+    //poster_rock_climb
+    {
+        "key": "poster_rock_climb",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Cartel del evento de escalada en roca."
+            }
+        ]
+    },
+    //radio_old OBSERVATION STEWART 0
+    {
+        "key": "radio_old",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta es una radio antigua que puede captar diferentes frecuencias galácticas."
+            }
+        ]
+    },
+    //stickers_lauren
+    {
+        "key": "stickers_lauren",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Geniales pegatinas de espacialismo."
+            }
+        ]
+    },
+    //storage_stewart
+    {
+        "key": "storage_stewart",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Este contenedor está lleno de robots caseros fuera de servicio."
+            }
+        ]
+    },
+    //toolbox_stewart
+    {
+        "key": "toolbox_stewart",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Pequeños equipos de soldadura y una variedad de herramientas especiales."
+            }
+        ]
+    },
+    //treadmill_lauren
+    {
+        "key": "treadmill_lauren",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Esta cinta de correr está programada con listas de reproducción de música hard rock."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM VEHICLE BAY ...................
+    //daxton_ship
+    {
+        "key": "daxton_ship",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "El barco de Daxton"
+            }
+        ]
+    },
+    //extra_spacesuits
+    {
+        "key": "extra_spacesuits",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Trajes espaciales de repuesto y botas de gravedad. Sólo tamaños humanos."
+            }
+        ]
+    },
+    //hoverbike
+    {
+        "key": "hoverbike",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "El corredor espacial de Shinji."
+            }
+        ]
+    },
+    //#endregion .................................
+
+    //#region ROOM YOUR ROOM .....................
+    //empty
+    //#endregion .................................
+
+    //#region SUMMARY END OF DAY .................
+    //captain_eval_intro
+    {
+        "key": "captain_eval_intro",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "¡Es el final del trimestre y el momento de recibir tu Bono de Capitán!"
+            }
+        ]
+    },
+    //captain_review_intro
+    {
+        "key": "captain_review_intro",
+        "textSet": [
+            {
+                "boxType": "Info",
+                "text": "Es el final del trimestre y es hora de su Captain Review. ¿Listo?"
+            }
+        ]
+    }
+    //#endregion .................................
+]

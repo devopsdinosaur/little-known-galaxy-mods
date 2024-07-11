@@ -1,0 +1,811 @@
+[
+    {
+        "npcSaveID": "npc_26",
+        "name": "Soot",
+        "titles": [
+            "???",
+            "???"
+        ],
+        "birthdayAnnouncement": "¿Quizás este sea el cumpleaños de Soot?",
+        "relationshipStatus": [
+            "??"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "UnlockCrew",
+                "unlockHeader": "¡Nuevo miembro de la tripulación!",
+                "unlockTitle": "Hollín",
+                "unlockSubTitle": "???",
+                "unlockSubImage": 1,
+                "unlockBody": "El hollín se ha unido a tu tripulación. Se ha sentido como en casa en el área de juegos de la Cubierta de Recreación."
+            },
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Relaciones",
+                "unlockTitle": "¡Amigos!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 2,
+                "unlockBody": "¡Gran trabajo! El estado de tu relación con Soot ha aumentado al siguiente nivel. Ahora te considera uno de sus amigos y te ha dado una tarjeta de acceso a su casa de juegos."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Relaciones",
+                "unlockTitle": "¡Mejores amigos!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "¡Estrella de oro! El estado de tu relación con Soot ha aumentado otro nivel. Ahora te considera uno de sus mejores amigos."
+            }
+        ],
+        "observations": [
+            "Le gustan las flores de olor dulce.",
+            "Le gusta dormir con una manta de gran tamaño para acurrucarse.",
+            "Puede escribir con mucha soltura en símbolos y formas."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzzz"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "*gruñir, refunfuñar*.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "*confuso* *confuso*"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "...",
+                        "expression": "Confused"
+
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "*¿hollín?* *pop* *pop*"
+
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "...*mirada en blanco...",
+                        "expression": "Angry"
+
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "...*mirada confundida*...",
+                        "expression": "Confused"
+
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "^--^...^--^ ¡hollín, pop!"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*la cara se ilumina de un rosa y un amarillo más profundo*"
+                    },
+                    {
+                        "text": "--^^.... ¡hollín! ^^.."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Hollín... *largo suspiro*...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": ">^^- < ^ ^^^-^ >--.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "^ -^^ ^>> ^^ ^^-<!"
+                    },
+                    {
+                        "text": "*hace un gran gesto con los brazos extendidos en círculos*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*gran bostezo*..."
+                    },
+                    {
+                        "text": "Zzz... ^o^ Zzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "*whssss* *POP* Gogo *Brrrrrr*"
+
+                    },
+                    {
+                        "text": "*sonrojado*",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "^^^<- <<^^&^... *garble*"
+
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "...^^< << --^-^^^..."
+
+                    },
+                    {
+                        "text": "^^-><< ^^ ^^-^ ^< ^^ ... *soot?*",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "*tarareando una canción*...",
+                        "expression": "Happy"
+
+                    },
+                    {
+                        "text": "Hm hm hmmm... hm hm hmmm... hollín.",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "*¡eructar!*",
+                        "expression": "Sad"
+
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "^^< << --^-^^^ -- ^^< you."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*te señala*..."
+                    },
+                    {
+                        "text": "*pequeña sonrisa*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "^^ - ^ ^^^<< ^^ >."
+
+                    },
+                    {
+                        "text": "^ ^-^^ divertido >> < -^^ ^^^ ^- <.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "^^ ^-- < - << ^^ space ^. *points at you*"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*salta a tu alrededor de emoción*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "..."
+                    },
+                    {
+                        "text": "...$playerName.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Amigo amigo. Amigo hollín.",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "..."
+
+                    },
+                    {
+                        "text": "*brrrrr*.. amigo!",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "*mutilar*",
+                        "expression": "Confused"
+
+                    },
+                    {
+                        "text": "... *pop* ¡hollín!"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "¡hollín!"
+
+                    },
+                    {
+                        "text": "*abraza tu pierna con fuerza*",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "¡¡¡Hollín!!! ¡¡¡Hollín!!!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "*la cara se pone rosa* ¡hollín!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "*sonrojado*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "*hollín hollín*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "hollín",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "*pop* ¡hollín!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Muuuuuy."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Hollín."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Mmmmmmmmm..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "*¿mutilar?",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "*mirada confundida*",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Blahhh...",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "*se relame los labios* ¡hollín!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "*salta* ¡hollín!",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+
+        ],
+        "commentary": [
+            //{
+            //    //P_DELIVERGREYRELIC
+            //    "key": "quest_10",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_OCEANCOORDMEETING
+                "key": "quest_17",
+                "textSet": [
+                    {
+                        "text": "*señala hacia la ventana*"
+                    },
+                    {
+                        "text": "¡Muuuuy! >^^. ^",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //{
+            //    //P_VISITENGINEROOM
+            //    "key": "quest_57",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_PRODUCEFUEL
+                "key": "quest_60",
+                "textSet": [
+                    {
+                        "text": "...! ¡Hollín!"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Tienes un <style=Item>Combustible de materia oscura</style>.",
+                        "itemReward": {
+                            "itemID": "item_156",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEOCEAN
+                "key": "quest_8",
+                "textSet": [
+                    {
+                        "text": "*suena un ruido sordo* ^^ -..<",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "... *pop* *confuso* ^^ .. -"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTOCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "*se frota la cabeza*",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "^^.^- ^^.--"
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "*salta emocionado*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "¡Hollín, hollín, hollín!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEDESERT
+                "key": "quest_5",
+                "textSet": [
+                    {
+                        "text": "*pisotea impacientemente*",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_VISITDESERTPLANET
+                "key": "quest_23",
+                "textSet": [
+                    {
+                        "text": "*los colores brillan incontrolablemente*"
+                    },
+                    {
+                        "text": "¡Hollín! ¡Hollín! ¡Hollín! ^..-^",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTDESERTHERMY
+                "key": "quest_18",
+                "textSet": [
+                    {
+                        "text": "*levanta las manos como antenas y hace una mueca*"
+                    },
+                    {
+                        "text": "*risas*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "*mueve las manos en el aire felizmente*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "¡Ojalá, rrrrrr, *pop*!"
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": ".^- ..^<<.-^--.^..."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "*suspiro...*",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "*te niega con la cabeza*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "*chilla de emoción*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "^-^. .^-^"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "*respiracion profunda*",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "^-.^^......",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "...^^< << --^-^^^..."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "*pone cara de enojo y burla...*",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "*relaja la cara* *risas*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "*camina de un lado a otro*",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Hollín... ^.-¡hollín!"
+                    }
+                ]
+            },
+            {
+                //SR_EXPLORE ALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "^-^-.^^! *abrazo*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "^-^- Gracias...gracias ^<.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "^^ Ayuda ->^^",
+                "questDescription": "Parece que Soot está solicitando algunos artículos, pero quién sabe para qué. Trae a Soot los elementos que puedas descifrar de su mensaje.",
+                "goalDescriptions": [
+                    "Dar $amount <style=Item>$goalName</style> al hollín."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "*hollín hollín..."
+                            },
+                            {
+                                "text": "*...¿elementos?"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "*¡hollín!* *BRRRrrr* *POP*... ^^ >>- - ^< ^!",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "*toma el artículo solicitado*"
+                            },
+                            {
+                                "text": "*luce tremendamente feliz*",
+                                "expression": "Happy"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Tu tienes <sprite=1><style=Credits> $amount créditos</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Hollín,\n\nhollín^^->< soot ^^>, >>- ^< -^^ ^->> - >> ^^ -- hollín ^^ - ^ ^^^<< ^^ > ¡pop!\n\n-hollín"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

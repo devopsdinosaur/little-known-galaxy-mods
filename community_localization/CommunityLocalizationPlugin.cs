@@ -81,13 +81,22 @@ public class CommunityLocalizationPlugin : BaseUnityPlugin {
 					return;
 				}
 				ScLocalizationData[] existing_localizations = (ScLocalizationData[]) ReflectionUtils.get_field_value(this.m_manager, "supportedLanguagesData");
-				List<ScLocalizationData> new_localizations = new List<ScLocalizationData>();
+				Dictionary<string, ScLocalizationData> new_localizations = new Dictionary<string, ScLocalizationData>();
+				Dictionary<string, FieldInfo> fields = new Dictionary<string, FieldInfo>();
+				Dictionary<string, bool> loaded_fields = new Dictionary<string, bool>();
+				foreach (FieldInfo field in existing_localizations[0].GetType().GetFields(ReflectionUtils.BINDING_FLAGS_ALL)) {
+					if (!field.Name.EndsWith("JSON")) {
+						continue;
+					}
+					
+				}
 				ScLocalizationData localization;
 				int counter = 0;
 				foreach (string sub_dir in Directory.GetDirectories(root_dir)) {
 					try {
 						localization = GameObject.Instantiate<ScLocalizationData>(existing_localizations[0]);
-						localization.name = sub_dir.Replace("_", " ");
+						localization.name = Path.GetFileName(sub_dir.Replace("_", " "));
+						logger.LogInfo($"--> loading '{localization.name}'.");
 
 						counter++;
 					} catch (Exception e) {

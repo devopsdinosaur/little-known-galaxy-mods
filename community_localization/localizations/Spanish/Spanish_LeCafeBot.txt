@@ -1,0 +1,53 @@
+[
+    {
+        "npcSaveID": "npc_34",
+        "name": "Le CafÃ© Bot",
+        "titles": [
+            ""
+        ],
+        "relationshipStatus": [
+            ""
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "¿Hambriento? Simplemente ordene a través de la ventana cuando esté listo."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+
+            //LECAFEBOT DOES NOT HAVE FRIENDS OR BEST FRIEND BECAUSE HE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            {
+                "key": "RegisterStart_Cafe", //case sensitive because we use the store name Enum to get this key. 
+                "textSet": [
+                    {
+                        "text": "Bienvenido a Le Café Bot. ¿Busca un refrigerio?"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+        ]
+    }
+]

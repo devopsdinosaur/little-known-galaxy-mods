@@ -1,0 +1,1276 @@
+[
+    {
+        "npcSaveID": "npc_25",
+        "name": "Shinji",
+        "titles": [
+            "Alumno"
+        ],
+        "birthdayAnnouncement": "Hoy es el cumpleaños de Shinji.",
+        "relationshipStatus": [
+            "Soltero",
+            "Comprometido",
+            "Casado"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Relaciones",
+                "unlockTitle": "¡Amigos!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 2,
+                "unlockBody": "¡Gran trabajo! El estado de tu relación con Shinji ha aumentado al siguiente nivel. Ahora te considera uno de sus amigos y te ha dado una tarjeta de acceso a su habitación."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Relaciones",
+                "unlockTitle": "¡Mejores amigos!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "¡Estrella de oro! El estado de tu relación con Shinji ha aumentado otro nivel. Ahora te considera uno de sus mejores amigos."
+            },
+            {
+                "unlockKey": "Engaged",
+                "unlockHeader": "Relaciones",
+                "unlockTitle": "¡Comprometido!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 4,
+                "unlockBody": "Shinji aceptó tu propuesta de matrimonio y ahora es tu prometido. La fecha de la boda se acerca pronto. ¡Mejor prepárate!"
+            }
+        ],
+
+        "observations": [
+            "Come demasiados alimentos fritos.",
+            "Odia las madrugadas y es más un ave nocturna.",
+            "Enmarqué un dibujo de los niños del colegio."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Tengo al menos unos años antes de completar mis clases nocturnas con Max, pero voy a alargarlo lo más posible."
+                    },
+                    {
+                        "text": "Es mucho más fácil vivir aquí que lidiar con las constantes evaluaciones de los padres en casa.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "¿Ya tu sabes?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Creo que me vendría bien un nuevo corredor espacial."
+                    },
+                    {
+                        "text": "Los nuevos modelos deberían salir esta temporada y tengo uno en Luxury Lemon Yellow al que le tengo echado el ojo."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "A veces me siento como la niñera no oficial por aquí.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Sprout y Kendall siempre intentan pasar el rato conmigo y es difícil mantener su energía.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "¿Tuviste que estudiar mucho para aprobar el examen de ingreso a capitán?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "¡Sí, fue difícil!",
+                            "response": "Te escucho. Mis padres también me obligaron a tomarlo hace unos años."
+                        },
+                        "optionTwo": {
+                            "optionText": "Para mí es pan comido.",
+                            "response": "*mueve los pies y aparta la mirada de ti* ¡Oh, sí, yo también, por supuesto! Nos obligaron a todos a tomarlo en mi universidad.",
+                            "responseExpression": "Stressed"
+                        }
+                    },
+                    {
+                        "text": "Para ser honesto, me pareció una pérdida de tiempo tomarlo. ¡Nunca querría ser capitán!"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "De hecho pertenezco al Club de Jóvenes Emprendedores."
+                    },
+                    {
+                        "text": "Mi abuelo y mi padre fueron los primeros y me inscribieron."
+                    },
+                    {
+                        "text": "No aprendí mucho sobre negocios, ¡pero ciertamente invertimos en organizar algunas fiestas locas!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Utilizo una mascarilla facial calmante antes de acostarme para mantener mi piel hidratada."
+                    },
+                    {
+                        "text": "Deberías intentarlo alguna vez."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Practiqué muchos deportes diferentes en la escuela privada."
+                    },
+                    {
+                        "text": "Estaba bastante bien, pero nada se me quedó grabado."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "La mayor parte de mi ropa está confeccionada con fibras 100% orgánicas y sostenibles."
+                    },
+                    {
+                        "text": "Tengo la piel sensible."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Comprar en este barco es un poco limitado... pero supongo que me las arreglaré.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Desearía que Robert al menos considerara la idea de realizar pedidos personalizados... *suspira*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Intento lavar y pulir mi corredor espacial todas las semanas."
+                    },
+                    {
+                        "text": "Quiero mantener el trabajo de pintura personalizado en buenas condiciones."
+                    },
+                    {
+                        "text": "Además, un corredor limpio se ve genial.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Ey. ¿Qué pasa?"
+                    },
+                    {
+                        "text": "Probablemente debería estar estudiando para mi clase nocturna, pero Max siempre me da crédito extra si lo ayudo a calificar los trabajos de los niños pequeños."
+                    },
+                    {
+                        "text": "Esos tipos a veces dicen las cosas más tontas en sus informes."
+                    },
+                    {
+                        "text": "Es bastante entretenido.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Cada vez que Sprout viene con Lin, ella siempre sale corriendo.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Al principio pensé que había hecho algo mal, pero ahora creo que es muy tímida."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Obtuve este nuevo juego de simulación de carreras que me permite ingresar las especificaciones de mi corredor espacial real."
+                    },
+                    {
+                        "text": "Este año seré imparable en la carrera anual de socios del club."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Uf, estar en este barco a veces me da dolor de cabeza.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Quiero decir que nunca puedes simplemente ir a la playa o tomarte unas vacaciones desde todo este espacio.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Lauren es genial pero su hermano es muy desagradable.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Sólo porque sea realmente inteligente no lo hace mejor que todos.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Creo que simplemente está celoso de mí para ser honesto.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Diseñé mi propia colonia personal."
+                    },
+                    {
+                        "text": "Es una combinación de hierbas aromáticas, resinas de color ámbar y un toque de azahar."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Sabes $playerName, Me llevo mejor contigo que la mayoría de las personas que conozco."
+                    },
+                    {
+                        "text": "Es genial que nos hayamos convertido en tan buenos amigos.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Desde que te uniste, tengo muchas más actualizaciones interesantes para contarle a la gente cuando hablo con mis amigos y familiares."
+                    },
+                    {
+                        "text": "Están genuinamente apoyando nuestra misión... *pausa incómoda*"
+                    },
+                    {
+                        "text": "...Me refiero a tu misión."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Todavía estoy tratando de descubrir mi lugar en el universo, pero nunca sentí que podía ser yo mismo hasta que subí a esta nave."
+                    },
+                    {
+                        "text": "Me da mucho en qué pensar.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "A veces me dejo atrapar por las redes sociales de mis viejos amigos."
+                    },
+                    {
+                        "text": "Es adictivo ver sus videos y actualizaciones."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Creo que manejas bien tus responsabilidades."
+                    },
+                    {
+                        "text": "Cuando te conocí, pensé que parecías bastante tenso, pero te gusta la gente.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Quizás un día de estos podamos tomarnos unas vacaciones juntos en algún lugar.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Me comunico de vez en cuando con mi familia."
+                    },
+                    {
+                        "text": "Si la presión no aumentaba lo suficiente...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "...ahora todas mis hermanas están casadas así que soy la única soltera que queda.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "No estoy seguro de haber sido un buen ejemplo para los niños de aquí, pero ellos han sido una buena influencia para mí."
+                    },
+                    {
+                        "text": "Con ellos siempre cerca siento que nunca me he portado mejor. *risas*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Un día mis hermanas y yo tendremos que hacernos cargo del negocio familiar.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Pero creo que les preguntaré a mis hermanas si pueden arreglárselas sin mí."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Recientemente mi abuelo y yo hemos tenido una relación mucho mejor."
+                    },
+                    {
+                        "text": "No decimos mucho al respecto, pero parece haber algún tipo de entendimiento."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ENGAGED .....................................
+            {
+                "key": "Engaged",
+                "textSet": [
+                    {
+                        "text": "Sabes, me sorprende lo mucho que espero con ansias la boda en sí.",
+                        "expression": "Romanced"
+                    }
+                ]
+            },
+            {
+                "key": "Engaged",
+                "textSet": [
+                    {
+                        "text": "No quiero ser un novio ni nada por el estilo, pero sería bueno si pudiéramos coordinar nuestro atuendo de boda."
+                    },
+                    {
+                        "text": "No quiero que choquemos en las fotos que le enviamos a mi familia.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Engaged",
+                "textSet": [
+                    {
+                        "text": "Mi familia está iniciando un fondo fiduciario a nuestro nombre en lugar de enviar regalos. Pero quién sabe qué significa eso.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Engaged",
+                "textSet": [
+                    {
+                        "text": "Sé que acordamos posponer una luna de miel para poder quedarnos a bordo."
+                    },
+                    {
+                        "text": "Pero cuando hagamos un viaje, prométeme que podré planificar todos los detalles.",
+                        "expression": "Romanced"
+                    }
+                ]
+            },
+            {
+                "key": "Engaged",
+                "textSet": [
+                    {
+                        "text": "Después de casarnos, espero que siempre podamos ser así de felices.",
+                        "expression": "Romanced"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region MARRIED .....................................
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "Voy a estar trabajando en mi formación de estudiantes docentes, así que si mis libros se interponen en tu camino, házmelo saber."
+                    }
+                ]
+            },
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "Estoy aquí para ayudar cuando pueda, pero todas esas responsabilidades y deberes de la Alianza Espacial no son realmente lo mío."
+                    }
+                ]
+            },
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "Eres la pareja de mis sueños, ¿lo sabías?",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "Pasaré más tiempo en el salón de clases con Max si alguna vez me necesitas."
+                    }
+                ]
+            },
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "Tengo dos platos de especialidad, pasta o hamburguesas vegetarianas."
+                    },
+                    {
+                        "text": "Entonces, cuando sea mi turno de preparar la cena... esas son tus opciones.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "Hola bebé. ¿Sabes lo que amo de ti?"
+                    },
+                    {
+                        "text": "Todo.",
+                        "expression": "Romanced"
+                    }
+                ]
+            },
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "Todavía estoy un poco enojado porque superaste mi puntuación más alta, pero estoy trabajando para recuperar mi título.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Vaya, normalmente soy el único que sabe cómo conseguirme exactamente lo que quiero."
+                    },
+                    {
+                        "text": "Pero esto es bastante acertado, Capitán.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Oye, esto es muy considerado de tu parte."
+                    },
+                    {
+                        "text": "Debes conocerme muy bien después de todo.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "¡Fresco! Ya sabes que dicen que demasiado de algo bueno es malo."
+                    },
+                    {
+                        "text": "Bueno, ¡estoy completamente en desacuerdo!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Dulce. ¡Gracias por esto!"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Oye, lo hiciste bien con este, Capitán...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Puedo ser un poco exigente, pero qué puedo decir, tengo altos estándares."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Gracias por los productos. Siempre me gusta recibir este tipo de cosas."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Muy bien, cosas geniales."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Capital, gracias Cap."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Gracias, Capitán. Normalmente no necesito cosas tan normales, pero aun así... estás bien."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Creo que ya tengo esto en realidad. No estoy seguro de querer otro.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Realmente no me gusta esto. Sí... nunca lo he hecho.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "¿Por qué le darías esto a alguien como yo? Pensé que me conocías al menos un poco mejor que esto.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "Impresionante, gracias por el regalo de cumpleaños.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Y un aviso, espero una gran entrega hoy."
+                    },
+                    {
+                        "text": "Ya sabes, lo habitual... un pastel de cumpleaños gigante, una nueva tabla de surf y probablemente un montón de regalos de parte de la familia extendida."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            //#region SpecialItem_EngagmentRing............................
+            //Accept
+            {
+                "key": "AcceptProposal",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "¿Me estás tomando el pelo?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Esto es Loco...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "¡Te iba a pedir que te casaras conmigo esta noche!",
+                        "expression": "Romanced"
+                    },
+                    {
+                        "text": "No creo que haya nadie más en el universo que me atrape más que tú.",
+                        "expression": "Romanced"
+                    },
+                    {
+                        "text": "Y te amo.",
+                        "expression": "Romanced"
+                    }
+                ]
+            },
+            //AcceptSpouse
+            {
+                "key": "AcceptSpouse_Ring",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "¡Genial, de hecho me compraste un anillo nuevo!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Es incluso mejor que el original.",
+                        "expression": "Romanced"
+                    },
+                    {
+                        "text": "Eres tan considerado que tendré que asegurarme de que nadie más intente robártelo.",
+                        "expression": "Romanced"
+                    }
+                ]
+            },
+            //RejectFriendStatus
+            {
+                "key": "RejectFriendStatus_Ring",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "Esto parece algo repentino...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Parece como si me estuvieras preguntando por las razones equivocadas.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Pero aún podemos conocernos mejor si quieres.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            //RejectCourtshipStatus
+            {
+                "key": "RejectCourtshipStatus_Ring",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "Te estás moviendo demasiado rápido para mí.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Aunque me encantaría seguir saliendo..."
+                    },
+                    {
+                        "text": "Te diré una cosa, incluso seré exclusiva para que podamos tomar esta relación más en serio si eso te hace sentir mejor."
+                    }
+                ]
+            },
+            //RejectHouseStatus
+            {
+                "key": "RejectHouseStatus_Ring",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "No es que no me importe pero...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "...siendo realistas, necesitaremos una casa más grande para vivir si queremos que nuestra relación funcione a largo plazo.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Mis padres tienen 32 habitaciones en su casa y, a veces, todavía siento que necesitan más espacio unos para otros.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SpecialItem_DateInvitation............................
+            //Accept
+            {
+                "key": "Accept_Courtship",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "Sí, por qué no, una cita suena divertida.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Entonces... ¿qué tenías en mente?"
+                    }
+                ]
+            },
+            //AcceptSpouse
+            {
+                "key": "AcceptSpouse_Courtship",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "Sí, vayamos y hagamos algo divertido.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "¡Estoy dispuesto a lo que sea, siempre y cuando tú elijas!"
+                    }
+                ]
+            },
+            //RejectFriendStatus
+            {
+                "key": "RejectFriendStatus_Courtship",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "Estoy saliendo con un par de personas más en este momento.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Creo que eres genial y todo... pero veamos si podemos hacernos amigos primero."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+            //#endregion ..........................................
+
+        ],
+        "commentary": [
+            {
+                //MEET THE CREW
+                "key": "quest_16",
+                "textSet": [
+                    {
+                        "text": "Hola, soy Shinji. Pero en realidad no soy parte del equipo."
+                    },
+                    {
+                        "text": "Mi familia pagó mi alojamiento y comida, así que estoy estudiando de forma remota."
+                    },
+                    {
+                        "text": "Sin ofender, pero desearía que hubieran elegido un barco menos deteriorado. Quiero decir, ¿cuántos años tiene este barco de todos modos?",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Te alcanzaré por ahí, $playerName."
+                    }
+                ]
+            },
+            {
+                //P_VISITGREYPLANET
+                "key": "quest_24",
+                "textSet": [
+                    {
+                        "text": "Entonces, sé que es tu trabajo bajar a la superficie del Planeta Gris y comprobarlo."
+                    },
+                    {
+                        "text": "Pero suena aburrido.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_REPORTTOKAIDA
+                "key": "quest_61",
+                "textSet": [
+                    {
+                        "text": "Tú sigue adelante y haz lo tuyo."
+                    },
+                    {
+                        "text": "Estoy seguro de que recibiré las notas del acantilado sobre lo que está pasando por parte de la tripulación."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTGREYSOOT
+                "key": "quest_19",
+                "textSet": [
+                    {
+                        "text": "Qué pasa...?"
+                    },
+                    {
+                        "text": "No sucede mucho aquí... pero escuché que has estado ocupado."
+                    },
+                    {
+                        "text": "¿Bien por ti, supongo?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            //{
+            //    //P_DELIVERGREYRELIC
+            //    "key": "quest_10",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_OCEANCOORDMEETING
+                "key": "quest_17",
+                "textSet": [
+                    {
+                        "text": "Simplemente estoy luchando por mantenerme despierto hoy.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Creo que necesito un trago para animarme.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Aquí probablemente también necesitarás uno si vas a pasar la reunión de personal..."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Tienes un <style=Item>Café</style>.",
+                        "itemReward": {
+                            "itemID": "item_32",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            //{
+            //    //P_VISITENGINEROOM
+            //    "key": "quest_57",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_PRODUCEFUEL
+                "key": "quest_60",
+                "textSet": [
+                    {
+                        "text": "Entonces, si escuché bien, ¿estás iniciando una fábrica de producción de combustible en tu cubierta?"
+                    },
+                    {
+                        "text": "Bueno, si te sobra algo, a mi nave también le vendría bien una recarga."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEOCEAN
+                "key": "quest_8",
+                "textSet": [
+                    {
+                        "text": "Por fin nos alejamos de esta roca lúgubre."
+                    },
+                    {
+                        "text": "El mejor planeta que he visitado fue Flamingo Fauna World."
+                    },
+                    {
+                        "text": "Puedes imaginarlo, ¿verdad? Bueno, es incluso mejor que eso.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //SR_CATCHMICROBES
+                "key": "quest_64",
+                "textSet": [
+                    {
+                        "text": "Lo siento, creo que estoy un poco fuera de onda estos días..."
+                    },
+                    {
+                        "text": "A veces sobre microbios... para ser honesto, estaba medio dormido cuando me enteré, así que no sé realmente qué está pasando."
+                    }
+                ]
+            },
+            {
+                //P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "Hola Capitán, buena suerte al viajar al nuevo planeta."
+                    },
+                    {
+                        "text": "Mi familia siempre dice que debes dar una buena primera impresión y nunca mostrar debilidades."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTOCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "¡Vamos Capitán, tienes que llevarme al Planeta Blue Reef y al menos dejarme coger una ola o dos!",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Soy un ciclista experimentado, puedo manejarlo."
+                    },
+                    {
+                        "text": "Iré a encerar mi tabla por si acaso.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "Todavía estoy un poco impresionado de que hayas hecho toda esa medicina tú mismo.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "La gente siempre ha hecho ese tipo de cosas por mí."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEDESERT
+                "key": "quest_5",
+                "textSet": [
+                    {
+                        "text": "Parece que cada vez que viajamos por el espacio la recepción de la base de datos del mainframe es terrible.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Mi velocidad de transmisión es simplemente terrible. No es mi intención quejarme...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Pero en cierto modo me arruina el día.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_VISITDESERTPLANET
+                "key": "quest_23",
+                "textSet": [
+                    {
+                        "text": "¿Me necesitas?"
+                    },
+                    {
+                        "text": "Sea lo que sea... ¿Puede esperar hasta más tarde?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTDESERTHERMY
+                "key": "quest_18",
+                "textSet": [
+                    {
+                        "text": "Parece que te comprometiste a ayudar a otra persona."
+                    },
+                    {
+                        "text": "Todavía no estoy seguro de por qué alguien querría tu trabajo.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "Hola Capitán, ¿volveremos pronto a puestos avanzados más grandes?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "No, estoy algo ocupada trabajando aquí.",
+                            "response": "Está bien, está bien, solo me preguntaba..."
+                        },
+                        "optionTwo": {
+                            "optionText": "No, ya estamos en una misión.",
+                            "response": "Lo sé... pero no es que no podamos regresar enseguida."
+                        }
+                    },
+                    {
+                        "text": "...Quiero decir, iba a ofrecerte el boleto extra que acabo de conseguir para la Superhero Expo, pero olvídalo..."
+                    },
+                    {
+                        "text": "Supongo que tendré que atrapar a Nickedemus Geronimo la próxima vez que esté en este cuadrante...",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "Debo decir que realmente estás empezando a crear revuelo por aquí."
+                    },
+                    {
+                        "text": "Has sido una especie de inspiración para mucha gente.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Eso debe sentirse bien."
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": "Entonces, ¿tienes un plan para viajar a este nuevo planeta o simplemente vas a improvisar?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Tengo un plan.",
+                            "response": "Sí, pareces del tipo que planea todo. Apuesto a que también llegas siempre a tiempo a los lugares."
+                        },
+                        "optionTwo": {
+                            "optionText": "Implícalo hasta el final.",
+                            "response": "Bien, creo que lo he estado subestimando, Capitán..."
+                        }
+                    },
+                    {
+                        "text": "Bueno cuéntame cómo te va!"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "Ja, no te daré ninguna pena por ese aterrizaje..."
+                    },
+                    {
+                        "text": "Pero es bueno que trabajes duro para compensarlo."
+                    },
+                    {
+                        "text": "Mira... todos cometemos errores, pero se trata de cómo hacer las paces."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "Escuché que Bunky tiene algunas conexiones con algunos equipos de snowboard de élite..."
+                    },
+                    {
+                        "text": "Habla bien de mí con él, ¿eh?"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "No sé cómo haces para mantener todo este trabajo todos los días.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Creo que pronto me tomaré un día de YO."
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "¿Ya vas al nuevo planeta?"
+                    },
+                    {
+                        "text": "Bueno, buena suerte y trata de no meterte en problemas esta vez.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Ese cofre pirata. Cebo y switch clásicos... ¡era tan obvio!"
+                    },
+                    {
+                        "text": "¿Cómo pudiste caer en eso? $playerName?",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Oye, para que sepas, estar a bordo de este barco ha sido una gran experiencia para mí."
+                    },
+                    {
+                        "text": "Me gustaría permanecer a bordo sin importar lo que suceda en el futuro."
+                    }
+                ]
+            },
+            {
+                //SR_EXPLOREALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "Fuera de vista, $playerName. ¡Lo lograste fuera de la arena con este!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Apuesto a que ahora lo has hecho con Space Alliance..."
+                    },
+                    {
+                        "text": "Si no te asignan la siguiente tarea que deseas, me sorprendería."
+                    }
+                ]
+            }
+
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "Servicios",
+                "questDescription": "Shinji está pidiendo algunos artículos entre paquetes de ayuda de casa. Llévale los artículos que pidió.",
+                "goalDescriptions": [
+                    "Dar $amount <style=Item>$goalName</style> a Shinji."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Viste esa publicación... que bien."
+                            },
+                            {
+                                "text": "Entonces, ¿qué tal? ¿Vas a darme un respiro y ayudarme?"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Genial, estaba empezando a ponerme un poco ansioso y tratando de descubrir cómo arreglármelas."
+                            },
+                            {
+                                "text": "Pero ahora todo vuelve a estar tranquilo.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Tu tienes <sprite=1><style=Credits> $amount créditos</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Hola,\n\nBueno, parece que se me han extraviado un par de cosas y mi próximo paquete de ayuda de casa no llegará hasta la próxima semana. ¿Alguien puede ayudar a un chico?\n\nSigue adelante,\nShinji"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

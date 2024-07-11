@@ -1,0 +1,903 @@
+[
+    {
+        "npcSaveID": "npc_21",
+        "name": "Pilot",
+        "titles": [
+            "Oficial de navegación"
+        ],
+        "birthdayAnnouncement": "Hoy es el día de la brotación del Piloto.",
+        "relationshipStatus": [
+            "Desconocido"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Relaciones",
+                "unlockTitle": "¡Amigos!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 2,
+                "unlockBody": "¡Gran trabajo! El estado de su relación con Pilot ha aumentado al siguiente nivel. Ahora te considera uno de sus amigos y te ha dado una tarjeta de acceso a su habitación."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Relaciones",
+                "unlockTitle": "¡Mejores amigos!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "¡Estrella de oro! El estado de su relación con Pilot ha aumentado otro nivel. Ahora te considera uno de sus mejores amigos."
+            }
+        ],
+        "observations": [
+            "Prefiere cocinar sus alimentos al vapor.",
+            "Tiene un gran interés en la tecnología de propulsión de barcos.",
+            "Combina una pequeña cantidad de amoníaco, melaza y cerveza con su suministro de agua para aumentar su ingesta de nutrientes."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*sonido de silbido*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Si ves al pequeño Sprout por ahí, ten cuidado con él."
+                    },
+                    {
+                        "text": "Su intelecto supera su tamaño, por lo que tiende a adelantarse a sí mismo."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Sprout está creciendo como una mala hierba estos días."
+                    },
+                    {
+                        "text": "Si sigues nuestro árbol genealógico lo suficiente, tenemos algunas otras malas hierbas en el grupo."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Los viajes espaciales no son comunes entre mi especie, pero tengo muy buen sentido de la orientación."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "El piloto automático está activado, Capitán."
+                    },
+                    {
+                        "text": "Sin embargo, CPU y yo todavía tenemos que monitorear las lecturas de los sensores, las comunicaciones de radio hiperespaciales y las funciones generales de la nave todos los días."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "¿Has volado un barco Clase X como este antes?"
+                    },
+                    {
+                        "text": "yo he estado pilotando $shipName Desde hace tantos años, lo siento como una extensión de mis tentáculos."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Uno de los beneficios de estar destinado en un entorno de barco regulado es que paso más tiempo prosperando y menos tiempo en mi fase de dormitorio de invierno."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "De vez en cuando nos encontraremos con perturbaciones espaciales que me harán necesario reajustar nuestro plan de vuelo."
+                    },
+                    {
+                        "text": "Realizo análisis de determinación orbital con frecuencia para corregir estas perturbaciones."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Aprecio a Max como educador."
+                    },
+                    {
+                        "text": "Su capacidad de conocimiento supera con creces la mía, por lo que sé que Sprout tendrá una educación de primer nivel."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Como la mayoría de las cosas, si te tomas el tiempo y te esfuerzas, tus ambiciones agrícolas deberían tener resultados positivos."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Mi especie es bastante sensible a las vibraciones."
+                    },
+                    {
+                        "text": "Con esta característica puedo detectar el más mínimo desequilibrio en las funciones mecánicas y he evitado algunas averías inminentes del sistema."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "A veces no hay nada mejor que un baño de amoniaco, melaza y sales de Epsom."
+                    },
+                    {
+                        "text": "Un baño rápido y podría hacer un doble turno."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Lin está interesado en Sprout y en mí como especialista en estudios botánicos."
+                    },
+                    {
+                        "text": "Mi interés en ella también crece, ya que es un espécimen humano bastante inusual."
+                    },
+                    {
+                        "text": "Una vez experimentó dormir con nuestras lámparas solares y se despertó con la cara roja brillante."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "La CPU siempre confunde las lecturas del acelerómetro y el giroscopio, por lo que nos impulsa o nos hace girar demasiado rápido.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Lógicamente es difícil entender cómo funcionaba este barco antes de que yo subiera a bordo.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Estaba preparado para un retiro más lento en mi mundo natal cuando Sprout me arrastró de regreso al espacio."
+                    },
+                    {
+                        "text": "Tiene tanto espíritu que es bueno que nuestra especie haya desarrollado la movilidad."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Nuestro mundo natal tiene una atmósfera de monóxido de carbono que es demasiado tóxico para que los humanos vivan en la superficie."
+                    },
+                    {
+                        "text": "También tiene el nivel de humedad más alto del sector, por lo que es ideal para tomar un vapor rápido."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Al igual que las pupilas de tus ojos, partes de mi piel pueden contraerse y expandirse para absorber la cantidad óptima de luz."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Espero que no te importe si uso tu lanzadera para practicar habilidades de maniobra más avanzadas."
+                    },
+                    {
+                        "text": "Debo mantener mi certificación de vuelo y registrar la cantidad adecuada de horas de práctica."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Sus esfuerzos en este barco no han pasado desapercibidos, Capitán."
+                    },
+                    {
+                        "text": "Eres una persona trabajadora y concienzuda.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Es agradable pasar tiempo en el Jardín Zen para encontrar una sensación de equilibrio y tranquilidad."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Las vibraciones sonoras fuertes a veces tienen un efecto negativo en mi bienestar.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Por eso utilizo dispositivos de cancelación de ruido para amortiguar algunas frecuencias."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Nuestra familia extendida es tan grande que a cada miembro se le asigna un día al año para enviar una actualización en video."
+                    },
+                    {
+                        "text": "Nos ayuda a mantenernos conectados cuando no estamos en nuestro mundo natal."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "A veces me pregunto si Sprout preferiría volver a ser plantada en su mundo natal.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Le apasionan los viajes espaciales, pero ¿se está perdiendo la oportunidad de crecer con otros como él?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "De todos modos, gracias por escuchar, Capitán."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Le dije a Sprout que si podía cuidar lo suficientemente bien del pez Henry, podría dejarle tener una mascota más grande."
+                    },
+                    {
+                        "text": "Tiene su corazón puesto en un furmonkle, pero espero convencerlo de que consiga una lombriz de tierra gigante o algo más práctico."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Tu estilo de comunicación es bastante bueno considerando que ni siquiera puedes secretar ningún químico oloroso."
+                    },
+                    {
+                        "text": "Esto sería bastante favorable en nuestra sociedad."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "He estado usando tarjetas flash para ayudar a la CPU a descifrar entre los controles del sistema."
+                    },
+                    {
+                        "text": "No va tan rápido como esperaba, pero la perseverancia es clave.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Me siento honrado y agradecido por este extraordinario regalo.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Su consideración es un regalo que siempre atesoraré.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "¡Inspirado! Qué artículo tan espléndido me has regalado.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Este es sin duda un regalo superior a la media. Gracias, Capitán."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Qué artículo tan maravilloso. Estoy en deuda con tu amabilidad.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Su generosidad ha superado mis expectativas y agradezco su contribución a mi felicidad.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Gracias, Capitán. Me aseguraré de compartir esto también con Sprout."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Este es un buen artículo económico. Gracias por considerarme al elegir este regalo."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Tiene mi gratitud y aplaudo sus esfuerzos por incrementar nuestra amistad."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "En mi planeta no nos gustan este tipo de cosas.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "No veo ninguna razón para que me traigas tal artículo.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Capitán, le pido disculpas si nuestras vides se cruzaron, pero esto no es algo que disfruto.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "Mi día de brotación está siendo todo un éxito."
+                    },
+                    {
+                        "text": "Sprout siempre me trae una mezcla de abono nutricional a la cama..."
+                    },
+                    {
+                        "text": "...y ahora me han colmado de regalos. Estoy rebosante de inmensa alegría.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+
+        ],
+
+        "commentary": [
+            {
+                //MEET THE CREW
+                "key": "quest_16",
+                "textSet": [
+                    {
+                        "text": "Saludos, $playerName."
+                    },
+                    {
+                        "text": "Mi nombre real es difícil de pronunciar para los humanos, así que todos me llaman Piloto."
+                    },
+                    {
+                        "text": "Como sugiere el apodo, soy $shipNameOficial de Navegación."
+                    },
+                    {
+                        "text": "Necesito poco descanso para que puedas encontrarme aquí al timón la mayor parte del tiempo."
+                    },
+                    {
+                        "text": "Según nuestra misión, estamos orbitando el esquivo planeta gris."
+                    },
+                    {
+                        "text": "La CPU y yo monitoreamos todo el progreso en la superficie desde el puente."
+                    }
+                ]
+            },
+            {
+                //P_VISITGREYPLANET
+                "key": "quest_24",
+                "textSet": [
+                    {
+                        "text": "Las lecturas del Planeta Gris no son claras."
+                    },
+                    {
+                        "text": "Hay alguna perturbación en nuestros escáneres que parece provenir de algún lugar de la superficie.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                //P_REPORTTOKAIDA
+                "key": "quest_61",
+                "textSet": [
+                    {
+                        "text": "Creo que Kaida tendrá la información que busca."
+                    },
+                    {
+                        "text": "Aunque… estoy interesado en escuchar su análisis yo mismo."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTGREYSOOT
+                "key": "quest_19",
+                "textSet": [
+                    {
+                        "text": "Hemos realizado un escaneo adicional de la superficie del planeta y pudimos encontrar algunos lugares ricos en recursos."
+                    },
+                    {
+                        "text": "Creo que Kaida programó estas nuevas zonas en el panel de control de su Shuttle Craft."
+                    }
+                ]
+            },
+            //{
+            //    //P_DELIVERGREYRELIC
+            //    "key": "quest_10",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_OCEANCOORDMEETING
+                "key": "quest_17",
+                "textSet": [
+                    {
+                        "text": "Estaré listo para la reunión de oficiales cuando esté listo, Capitán."
+                    },
+                    {
+                        "text": "La CPU notificará a todos cuando comience."
+                    }
+                ]
+            },
+            //{
+            //    //P_VISITENGINEROOM
+            //    "key": "quest_57",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_PRODUCEFUEL
+                "key": "quest_60",
+                "textSet": [
+                    {
+                        "text": "Espero que su producción de combustible esté dando resultados satisfactorios."
+                    },
+                    {
+                        "text": "Debo admitir que estoy listo para iniciar el panel de control y probar algunas técnicas de dirección nuevas."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEOCEAN
+                "key": "quest_8",
+                "textSet": [
+                    {
+                        "text": "Superviso todos los controles y sistemas de vuelo mientras estamos en transporte."
+                    },
+                    {
+                        "text": "El más mínimo ajuste puede desviarnos del rumbo rápidamente."
+                    }
+                ]
+            },
+            {
+                //SR_CATCHMICROBES
+                "key": "quest_64",
+                "textSet": [
+                    {
+                        "text": "Como ya habrás oído, Space Alliance otorga créditos adicionales para la investigación de microbios."
+                    },
+                    {
+                        "text": "Sé que Sprout estaba muy emocionado de hacer su parte en la investigación y obtener algunos créditos."
+                    }
+                ]
+            },
+            {
+                //P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "Todos los sistemas funcionan bien y estamos en una órbita estable alrededor del nuevo planeta, Capitán."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTOCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "Nunca supe que otras especies tenían problemas con la percepción y el movimiento como los residentes de Blue Reef.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Mi especie está acostumbrada a balancearse y doblarse ante cualquier fuerza planetaria."
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "Mis felicitaciones por recuperar otra pieza de reliquia, Capitán."
+                    },
+                    {
+                        "text": "Regresar al Planeta Gris puede que no sea tan aventurero, pero será lo mejor para nosotros."
+                    },
+                    {
+                        "text": "Según mi experiencia, el agua salada puede provocar fallos de funcionamiento en los equipos técnicos tras una exposición prolongada.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Tampoco es ideal para mi alimentación personal.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEDESERT
+                "key": "quest_5",
+                "textSet": [
+                    {
+                        "text": "Parece haber algunas ondas solares más fuertes que ocasionalmente alteran las lecturas de nuestros instrumentos."
+                    },
+                    {
+                        "text": "Pero he podido corregir en exceso estas anomalías sin motivo de preocupación."
+                    }
+                ]
+            },
+            {
+                //P_VISITDESERTPLANET
+                "key": "quest_23",
+                "textSet": [
+                    {
+                        "text": "Capitán, no crea nada de lo que la CPU le diga sobre mi desempeño de hoy.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Estamos teniendo un pequeño error de comunicación y él está teniendo una respuesta emocional simulada.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Le traeré algo brillante y nuestra relación se restablecerá como de costumbre."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTDESERTHERMY
+                "key": "quest_18",
+                "textSet": [
+                    {
+                        "text": "Creo que algunos de sus cultivos podrían necesitar esto mientras estemos en órbita alrededor de este planeta."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Tienes 3 <style=Item>Fertilizante</style>.",
+                        "itemReward": {
+                            "itemID": "item_511",
+                            "amount": 3,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "Este planeta desértico tiene una grave deficiencia de compuestos nutricionales adecuados, por lo que cualquier planta que albergues podría necesitar un impulso adicional."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "Ciertamente está tomando decisiones óptimas considerando que esta es su primera tarea como aprendiz."
+                    },
+                    {
+                        "text": "Bastante impresionante por cierto.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "Aprecio su devoción por resolver esta misión, Capitán."
+                    },
+                    {
+                        "text": "Haré mi parte para llevarnos a nuestro próximo destino de manera eficiente y sin problemas."
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": "Me mantendré en alerta máxima y navegaré alrededor de estos grupos mientras te diriges hacia la superficie."
+                    },
+                    {
+                        "text": "Las coordenadas exactas parecen señalar un grupo en particular, por lo que será su zona de aterrizaje."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "Me alegra saber que nadie resultó herido en la reciente colisión del transbordador.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Ofrezco un curso anual de capacitación en vuelo para estudiantes, si alguna vez deseas actualizar tus habilidades de navegación."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "Capitán, ¿Srout está solicitando algún tipo de fiesta infantil llamada pijamada en la que todos dormirían juntos durante la noche?",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "¿Es una buena idea permitir esto?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "¡Divertido! Definitivamente.",
+                            "response": "Veo. Quizás tenga en cuenta tu consejo. Creo que Sprout me dijo que te preguntara, sabiendo que lo aprobarías."
+                        },
+                        "optionTwo": {
+                            "optionText": "¡No! ¡Resistir!",
+                            "response": "Interesante, supuse que podrían ocurrir algunas travesuras a partir de tal evento.",
+                            "responseExpression": "Stressed"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "Capitán, debo informarle que algunas de mis configuraciones de control han sido alteradas esta mañana y hay algún tipo de residuo en los paneles.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Nadie a bordo sabe cómo desbloquear los controles excepto yo y la CPU... y la CPU no está al tanto de estos acontecimientos.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Sin embargo, estos cambios han mejorado nuestra trayectoria, por lo que sólo nos hemos beneficiado de este perpetrador."
+                    },
+                    {
+                        "text": "Dejaré este suceso paranormal en tus capaces manos."
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "Me alegra informarle que hemos llegado sanos y salvos, Capitán."
+                    },
+                    {
+                        "text": "Por favor tenga cuidado en su salida a la superficie del planeta."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Me temo que no puedo ofrecer ningún consejo significativo sobre cómo resolver el conflicto con los piratas."
+                    },
+                    {
+                        "text": "Los métodos para difundir la hostilidad en mi mundo natal no serían apropiados para la mayoría de las especies de mamíferos."
+                    },
+                    {
+                        "text": "Pero te deseo lo mejor."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Todo este viaje me ha recordado mi pasión por la navegación."
+                    },
+                    {
+                        "text": "Espero que sigamos adelante después de haber completado nuestra misión principal."
+                    }
+                ]
+            },
+            {
+                //SR_EXPLOREALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "Realmente muy impresionante, Capitán."
+                    },
+                    {
+                        "text": "Viridis me recuerda a casa. Un planeta tan magnífico lleno de vida vegetal silvestre.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Espero que pases algún tiempo disfrutando de este fenomenal descubrimiento."
+                    },
+                    {
+                        "text": "Parece bien merecido por toda su devoción."
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "pequeño favor",
+                "questDescription": "La casa del piloto se está quedando sin suministros y le vendría bien ayuda para reabastecerse. Entregar los artículos que solicitó en el tablero digital.",
+                "goalDescriptions": [
+                    "Dar $amount <style=Item>$goalName</style> al piloto."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Sus intenciones de contribuir a mi puesto son muy admirables, Capitán."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Estos artículos son muy valorados y serán útiles para Sprout y para mí.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Le invitamos a visitar nuestra casa en cualquier momento, Capitán."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Tu tienes <sprite=1><style=Credits> $amount créditos</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Saludos,\n\nMi residencia se está quedando sin los siguientes artículos y necesitaremos reponer nuestro suministro pronto. Si alguien puede ser de ayuda, entregue estos artículos lo antes posible.\n\nCon gratitud,\nPilot"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

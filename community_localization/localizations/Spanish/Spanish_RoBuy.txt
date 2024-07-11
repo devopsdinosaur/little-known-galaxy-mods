@@ -1,0 +1,102 @@
+[
+    {
+        "npcSaveID": "npc_33",
+        "name": "RoBuy",
+        "titles": [
+            "Robot de ventas itinerante"
+        ],
+        "relationshipStatus": [
+            "No disponible"
+        ],
+        "unlockAnnouncements": [
+        ],
+        "observations": [
+            "Sin observaciones"
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Un paso al frente. Un paso al frente."
+                    },
+                    {
+                        "text": "¡Comprar! ¡Vender! ¡Navegar! ¿Qué puedo conseguirte?"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Productos auténticos garantizados de todas las galaxias aquí, a la vuelta de la esquina."
+                    },
+                    {
+                        "text": "Lo tenemos, si lo quieres. ¿Qué será hoy amigo?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "¿Puedo interesarte en algo para el hogar, la oficina o quizás una nave espacial hiperimpulsora?"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "¡Mézclalos! ¡Combínalos! ¡Cásate con ellos!"
+                    },
+                    {
+                        "text": "Simplemente te encantarán todos mis productos.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Las ofertas pasan volando, así que actúe rápidamente.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Nos estamos vendiendo más rápido que la velocidad de la luz."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //ROBUY DOES NOT HAVE FRIENDS OR BEST FRIEND BECAUSE HE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            {
+                "key": "RegisterStart_Robuy", //case sensitive because we use the store name Enum to get this key. 
+                "textSet": [
+                    {
+                        "text": "Bienvenido, bienvenido, no seas tímido..."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+        ]
+    }
+]

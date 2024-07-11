@@ -1,0 +1,122 @@
+[
+    {
+        "npcSaveID": "npc_35",
+        "name": "King Tide",
+        "titles": [
+            "Rey"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "observations": [
+            ""
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "No me siento tan bien...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "¿El arrecife está girando o soy sólo yo?",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "He sido el Rey del Reino del Arrecife Azul durante los últimos 21 años..."
+                    },
+                    {
+                        "text": "¿O fueron 22 años... uf... oh aletas, no lo recuerdo?"
+                    },
+                    {
+                        "text": "Bueno, mi hija probablemente lo sepa, es mucho mejor con las fechas y los números."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "A menudo salgo a la superficie para estar presente para mi gente."
+                    },
+                    {
+                        "text": "Al estar disponible para ellos, puedo escuchar sus inquietudes y atender mejor sus necesidades."
+                    },
+                    {
+                        "text": "Es mi papel más importante como Rey."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Seguro que es un hermoso día en el Reino ¿no crees?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "¡Tan hermoso!",
+                            "response": "*inhala profundamente* Ahhhh... el aire fresco del mar hará maravillas con tus escamas, créeme.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Lo he visto mejor.",
+                            "response": "¿Es eso así? Quizás no aprecies las maravillas de la humedad como nosotros.",
+                            "responseExpression": "Sad"
+                        }
+                    },
+                    {
+                        "text": "Pero supongo que si tuviera que usar ese traje espacial todo el día sería difícil absorber realmente nuestro maravilloso clima."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //DOES NOT ADVANCE TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE HE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+
+        "nonCrewCommentary": [
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "Es maravilloso no sufrir más la maldición del mal de la tierra."
+                    },
+                    {
+                        "text": "Todo es gracias a usted, Capitán."
+                    },
+                    {
+                        "text": "Siempre será nuestro invitado de honor cuando desee visitarnos."
+                    }
+                ]
+            }
+        ]
+    }
+]
