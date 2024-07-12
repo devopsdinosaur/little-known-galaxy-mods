@@ -1,0 +1,1093 @@
+[
+    {
+        "npcSaveID": "npc_16",
+        "name": "Kendall",
+        "titles": [
+            "Enfant"
+        ],
+        "birthdayAnnouncement": "Aujourd'hui, c'est l'anniversaire de Kendall !",
+        "relationshipStatus": [
+            "Amour secret"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Des relations",
+                "unlockTitle": "Amis!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 2,
+                "unlockBody": "Bon travail! Votre statut relationnel avec Kendall est pass√ au niveau sup√rieur. Elle vous consid√re d√sormais comme un de ses amis et vous a remis une carte d'acc√s √ sa chambre."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Des relations",
+                "unlockTitle": "Meilleurs amis!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "√toile d'or! Votre statut relationnel avec Kendall a atteint un autre niveau. Elle vous consid√re d√sormais comme l‚un de ses meilleurs amis."
+            }
+        ],
+        "observations": [
+            "Aime les aliments sucr√s et les amuse-gueules.",
+            "D√teste toutes ses robes et v√tements girly.",
+            "Met en sc√ne des sc√nes de combat d'action avec ses jouets et d'autres objets int√ressants."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*ronflement*..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Bonjour Capitaine."
+                    },
+                    {
+                        "text": "Viens ici, je vais te dire un secret..."
+                    },
+                    {
+                        "text": "*fait un bruit de pet dans ton oreille*"
+                    },
+                    {
+                        "text": "Ahahaha, je ne peux pas croire que tu sois tomb√ dans le panneau.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Je me dis bien plus vite que je n'en ai l'air. Je peux m√me courir¬!"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Pensez-vous que je suis jolie?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Je pense que oui!",
+                            "response": "Bon sang, je d√teste √a. J'aimerais que ma grand-m√re arr√te d'essayer de mettre des n≈uds stupides dans mes cheveux.",
+                            "responseExpression": "Angry"
+                        },
+                        "optionTwo": {
+                            "optionText": "Euh... pas vraiment.",
+                            "response": "Vraiment? Tu ferais mieux de le penser ! Je pense que nous allons √tre les meilleurs amis. Ma grand-m√re me met toujours des n≈uds stupides sur la t√te.",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "*d√chire ses n≈uds et essuie les mains sales sur ses v√tements*",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Capitaine, saviez-vous que j'ai gagn√ 3 troph√es en karat√ ?"
+                    },
+                    {
+                        "text": "Alors tu ferais mieux d'√tre gentil avec moi ou je pourrais te botter les fesses !"
+                    },
+                    {
+                        "text": "*crie de rire*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Ugggg...",
+                        "expression": "Angry",
+                        "optionOne": {
+                            "optionText": "Qu'est-ce qui ne va pas?",
+                            "response": "Ma grand-m√re dit que je ne peux apporter qu'un seul chariot √ l'heure du th√.",
+                            "responseExpression": "Angry"
+                        },
+                        "optionTwo": {
+                            "optionText": "Pourquoi ce visage boudeur ?",
+                            "response": "Eh bien, je dois d√cider laquelle de mes poup√es je veux amener au th√.",
+                            "responseExpression": "Angry"
+                        }
+                    },
+                    {
+                        "text": "Souffler! Je veux dire... comment puis-je choisir ?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            //#region ACQUAINTANCE.................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Si cela ne tenait qu'√ moi... je peindrais ce navire en vert fluo avec une bande arc-en-ciel sur le devant."
+                    },
+                    {
+                        "text": "Mais grand-p√re dit que nous avons d'autres choses plus importantes √ faire en ce moment...",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Quand je me r√veille, j‚essaie de faire la premi√re chose qui me vient √ l‚esprit et qui me semble amusante."
+                    },
+                    {
+                        "text": "*fait la moue*... mais parfois l'√cole g√ne.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Capitaine, avez-vous d√j√ chant√ une chanson devant un fan ?"
+                    },
+                    {
+                        "text": "C'est super g√nial. Votre voix ressemble √ celle d'un robot¬!",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "J'aime quand c'est √ mon tour d'apporter le go√ter √ l'√cole."
+                    },
+                    {
+                        "text": "I-1900 m'apporte toujours quelque chose de d√licieux."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Parfois, les adultes peuvent √tre grincheux...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "... mais ils √tablissent toutes les r√gles, alors pourquoi ne changent-ils pas simplement leurs propres r√gles¬?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Capitaine, maintenant que nous sommes amis, j'ai un vrai secret pour vous..."
+                    },
+                    {
+                        "text": "*fait un bruit de pet dans ton oreille*"
+                    },
+                    {
+                        "text": "Ahahaha, je t'ai compris¬!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Un jour, quand je serai grand... je veux √tre la personne la plus dure, la plus forte et la plus cool de l'univers."
+                    },
+                    {
+                        "text": "Mais je vais utiliser mes pouvoirs uniquement pour le bien, tout comme toi."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "H√ Capt'n, regarde ce super pansement que j'ai re√u."
+                    },
+                    {
+                        "text": "*te montre son coude avec un bandage ninja de dessin anim√*"
+                    },
+                    {
+                        "text": "Je ne vais jamais l'enlever."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Mon professeur dit que je suis l'un des enfants les plus intelligents de la classe, mais ne le dites pas √ Sprout."
+                    },
+                    {
+                        "text": "Il aime √tre intelligent, alors je le laisse m'aider avec mes devoirs."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "J'aime les ≈uvres de mon fr√re, mais c'est plut√t <i>abbbstruct</i> pour moi."
+                    },
+                    {
+                        "text": "Je pr√f√re les dessins d'extraterrestres."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Capitaine, si jamais vous attrapez un rhume, je peux vous aider √ prendre soin de vous."
+                    },
+                    {
+                        "text": "Vous aurez besoin de beaucoup de repos et malheureusement vous devrez boire ce jus d√go√tant que produit l'I-1900."
+                    },
+                    {
+                        "text": "Mais nous y arriverons ensemble.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Je veux mettre des rayures rose vif dans mes cheveux."
+                    },
+                    {
+                        "text": "Grand-m√re a finalement c√d√ et a dit que peut-√tre l'ann√e prochaine, alors je l'√puise."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Parfois, mon emploi du temps est tout simplement trop charg√ et je dois r√server du temps de jeu sur mon calendrier."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Capitaine, regardez ! *vous montre une callosit√ sur ses jointures*"
+                    },
+                    {
+                        "text": "J'ai une routine d'entra√nement difficile pour pouvoir √tre le meilleur ninja de l'univers."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Euhhh... Capitaine, pouvez-vous dire quels sont les num√ros ici...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "*vous montre un tas de chiffres tach√s*",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "358",
+                            "response": "J'esp√re que tu as raison. Il ne me reste qu'une seule tentative avant que mon compte ne soit verrouill√.",
+                            "responseExpression": "Stressed"
+                        },
+                        "optionTwo": {
+                            "optionText": "863",
+                            "response": "Hmm... je vais essayer."
+                        }
+                    },
+                    {
+                        "text": "Maintenant, tu as oubli√ que tu as vu quelque chose, OK¬?"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Capitaine, devinez quoi ?"
+                    },
+                    {
+                        "text": "*vous montre un d√pliant du camp ninja*"
+                    },
+                    {
+                        "text": "Grand-m√re dit que si j'aide √ la maison, je peux gagner de l'argent et aller au camp de ninja."
+                    },
+                    {
+                        "text": "Je ne pense pas avoir jamais √t√ aussi excit√ de faire la vaisselle de toute ma vie.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Peut-√tre que si je fais des t√ches suppl√mentaires, je pourrai √conomiser suffisamment pour que tu m'accompagnes."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Capitaine, je meurs d'envie de vous dire un secret."
+                    },
+                    {
+                        "text": "Rapproche toi..."
+                    },
+                    {
+                        "text": "*chuchote* Je pense que tu es le meilleur capitaine de l'univers.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "H√ Capt'n, tu veux avoir des tatouages ‚‚‚‚BBF assortis quand je serai plus vieux ?",
+                        "optionOne": {
+                            "optionText": "Certainement!",
+                            "response": "Moi aussi!",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Et les tatouages ‚‚temporaires ?",
+                            "response": "Capitaine, vous n'avez pas √ avoir peur, je vous tiendrai la main.",
+                            "responseExpression": "Confused"
+                        }
+                    },
+                    {
+                        "text": "J'en ai parl√ √ Lauren et elle m'a dit qu'elle le ferait quand je serai assez grande."
+                    },
+                    {
+                        "text": "Oh, mais ne le dis pas √ grand-m√re, sauf si tu veux des ennuis.",
+                        "expression": "Stressed"
+                    }
+
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Capitaine, si I-1900 demande des nouvelles de moi, vous ne savez rien, d'accord ?",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Peut-√tre qu'un jour je deviendrai moi aussi capitaine de vaisseau."
+                    },
+                    {
+                        "text": "J'aurais probablement plus de rencontres sociales avec des glaces √ bord de mon navire."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE  ...................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Ohhh wow."
+                    },
+                    {
+                        "text": "C‚est comme le meilleur cadeau que j‚ai jamais re√u¬!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "OH... MES... √TOILES...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Attends que je montre √a en classe. Tout le monde va √tre TELLEMENT jaloux de moi !"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Capitaine, ce cadeau est tellement cool... Alors, √a doit vouloir dire que je suis votre pr√f√r√, non ?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Parce que c'est un cadeau que vous n'offrirez qu'√ vos co√quipiers pr√f√r√s."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Thaaaank youooooou. *rougit timidement*"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Je marque ce cadeau comme un like d√finitif avec une coche dans mon journal¬!"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "OOoOOOOOOoooooo, trop cool, merci, Capitaine.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "C'est pour moi? *te donne un coup de pouce*"
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Peut-√tre que je ferai quelque chose avec √a..."
+                    },
+                    {
+                        "text": "...mais il lui faudra quelques paillettes pour le rendre scintillant."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Oh cool, j'ai toujours h√te de voir ce que tu pourrais m'apporter !"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Euh. Dois-je le prendre ? C'est un peu d√gueulasse.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Capitaine, ce n'est pas un cadeau tr√s cool.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Ce n'est pas parce que je suis petite que j'aime tout ce que tu sais.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Oh... je pensais que tu allais me donner autre chose... *d√√u*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "CAPITAINE!! J'ADORE LES CADEAUX D'ANNIVERSAIRE ! MERCI!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Je parie que tu ne peux pas deviner quel √ge j'ai. Grand-m√re dit que tu ne devrais jamais dire ton √ge √ personne mais..."
+                    },
+                    {
+                        "text": "Je vais avoir beaucoup de bougies cette ann√e sur mon g√teau... plus que jamais !",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+
+        ],
+        "commentary": [
+            {
+                //MEET THE CREW
+                "key": "quest_16",
+                "textSet": [
+                    {
+                        "text": "√tes-vous vraiment capitaine ?",
+                        "optionOne": {
+                            "optionText": "Oui",
+                            "response": "Wow, c'est cool."
+                        },
+                        "optionTwo": {
+                            "optionText": "Non",
+                            "response": "√tes-vous une sorte de faux alors ?",
+                            "responseExpression": "Confused"
+                        }
+                    },
+                    {
+                        "text": "Vous ne croyez pas aux fant√mes, n'est-ce pas ?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Je crois.",
+                            "response": "Vraiment? Ce navire fait des craquements la nuit, mais j'ai trop peur pour me lever et voir de quoi il s'agit.",
+                            "responseExpression": "Stressed"
+                        },
+                        "optionTwo": {
+                            "optionText": "Certainement pas!",
+                            "response": "Ah moi non plus ! *d√tourne le regard* Je demandais juste parce que parfois j'entends des bruits la nuit, mais c'est probablement mon imagination... imagination.",
+                            "expression": "Confused"
+                        }
+                    },
+                    {
+                        "text": "Mon grand-p√re dit que c'est parce que ce navire est si vieux et a besoin de r√parations... mais il est vieux et il ne fait pas de grincements..."
+                    }
+                ]
+            },
+            {
+                //P_VISITGREYPLANET
+                "key": "quest_24",
+                "textSet": [
+                    {
+                        "text": "Allez-vous vraiment sur cette plan√te grise ?",
+                        "optionOne": {
+                            "optionText": "Oui",
+                            "response": "Je parie que vous allez voir toutes sortes de rochers sympas et peut-√tre m√me des monstres. Waouh... c'est cool."
+                        },
+                        "optionTwo": {
+                            "optionText": "Non",
+                            "response": "Allez-vous delliguter ? Je veux dire Del-Ugate ? Vous savez, cette chose que vous pouvez faire en tant que capitaine lorsque vous dirigez d'autres personnes pour faire votre travail."
+                        }
+                    }
+                ]
+            },
+            {
+                //P_REPORTTOKAIDA
+                "key": "quest_61",
+                "textSet": [
+                    {
+                        "text": "N'est-ce pas amusant de creuser autour d'une nouvelle plan√te ?"
+                    },
+                    {
+                        "text": "Mon grand-p√re ne me laisse descendre que sur certaines plan√tes, mais c'est toujours super amusant pour moi !"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTGREYSOOT
+                "key": "quest_19",
+                "textSet": [
+                    {
+                        "text": "Capitaine, ce petit extraterrestre est-il seul l√-bas ?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Je vais peut-√tre lui faire un dessin."
+                    }
+                ]
+            },
+            //{
+            //    //P_DELIVERGREYRELIC
+            //    "key": "quest_10",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_OCEANCOORDMEETING
+                "key": "quest_17",
+                "textSet": [
+                    {
+                        "text": "Peut-√tre que si je reste vraiment silencieux, je pourrai m'asseoir dans un coin pour votre r√union¬?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Mais grand-m√re a dit non... et je parie que quelqu'un me d√noncerait... *long soupir*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //{
+            //    //P_VISITENGINEROOM
+            //    "key": "quest_57",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_PRODUCEFUEL
+                "key": "quest_60",
+                "textSet": [
+                    {
+                        "text": "Comment se fait-il qu'on ne puisse pas encore partir ? Comment peux-tu supporter d'attendre...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "C'est comme quand il faut attendre pour ouvrir les cadeaux le jour de son anniversaire.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Vous vous r√veillez t√t, mais vous devez quand m√me attendre que tout le monde soit debout... *huff*",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEOCEAN
+                "key": "quest_8",
+                "textSet": [
+                    {
+                        "text": "Je porte mon bracelet porte-bonheur et je le porterai jusqu'√ notre arriv√e."
+                    },
+                    {
+                        "text": "Je le porte toujours quand nous partons en voyage, pour porter chance."
+                    }
+                ]
+            },
+            {
+                //SR_CATCHMICROBES
+                "key": "quest_64",
+                "textSet": [
+                    {
+                        "text": "Capitaine, nous avons √tudi√ les microbes √ l'√cole une fois..."
+                    },
+                    {
+                        "text": "... mais je ne pense pas pouvoir trop t'aider, tu ferais mieux d'en parler √ Doc12 ou Kaida."
+                    }
+                ]
+            },
+            {
+                //P_VISITOOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "Quand tu iras visiter cette nouvelle plan√te, ram√ne-moi un cadeau, OK ? ... S'IL VOUS PLA√T..."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTOCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "*renifle* Capitaine... descendre sur cette plan√te oc√anique vous faisait sentir un peu le poisson, vous devriez prendre un bain.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "Et voil√, Capitaine..."
+                    },
+                    {
+                        "text": "*te donne un autocollant √toile dor√e*"
+                    },
+                    {
+                        "text": "Je les re√ois dans mes devoirs lorsque je fais du bon travail, alors j'ai pens√ que vous devriez en avoir un.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEDESERT
+                "key": "quest_5",
+                "textSet": [
+                    {
+                        "text": "Whoosh, c'est reparti...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "J'aime cr√er mes propres effets sonores lorsque le vaisseau rebondit et vole dans l'espace."
+                    }
+                ]
+            },
+            {
+                //P_VISITDESERTPLANET
+                "key": "quest_23",
+                "textSet": [
+                    {
+                        "text": "Es-tu s√r que tu n'as pas besoin que je descende sur la plan√te avec toi ?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "J'ai besoin que tu maintiennes le fort ici.",
+                            "response": "Mais c'est trop facile, tout le monde m'√coute d√j√...",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "La prochaine fois peut-√tre...",
+                            "response": "C'est juste quelque chose que les adultes disent aux enfants pour dire non.",
+                            "responseExpression": "Sad"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_REQUESTDESERTHERMY
+                "key": "quest_18",
+                "textSet": [
+                    {
+                        "text": "Capitaine, devez-vous m'en dire plus sur cette cr√ature que vous avez trouv√e l√-bas ?"
+                    },
+                    {
+                        "text": "Est-ce qu'il est gentil? Est-il dr√le ? Je parie qu'il a l'air dr√le...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "... mais je ne lui dirais pas √a en face, bien s√r."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "Capitaine, j'esp√re que vous avez une cachette secr√te pour stocker cette relique afin qu'elle soit en s√curit√."
+                    },
+                    {
+                        "text": "J'ai une cachette secr√te, mais je suis d√sol√ que vous ne puissiez pas utiliser la mienne."
+                    },
+                    {
+                        "text": "Si je vous disais o√ il se trouve, ce ne serait √videmment plus un secret."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "Capitaine, j'ai err√ partout sur le navire pour r√cup√rer des trucs qui pourraient vous √tre utiles."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Tu en as 10 <style=Item>Pi√ces recycl√es</style>.",
+                        "itemReward": {
+                            "itemID": "item_128",
+                            "amount": 10,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Tu en as 2 <style=Item>Fil</style>.",
+                        "itemReward": {
+                            "itemID": "item_177",
+                            "amount": 2,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Vous avez un <style=Item>Bloc de ferraille</style>.",
+                        "itemReward": {
+                            "itemID": "item_142",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "Je voulais juste aider.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": "NOUS SOMMES ICI !! J'ai h√te de voir ce qu'il y a l√-bas !",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "D√P√CHEZ-VOUS CAPITAINE. Je ne peux pas attendre √ternellement¬!",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "Capitaine, √ quoi ressemblent Rumble et Tumble¬?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Ils ont l'air gentils.",
+                            "response": "OK, bien, alors je pourrai √tre le leader du groupe si jamais nous sortons ensemble."
+                        },
+                        "optionTwo": {
+                            "optionText": "Ils semblent √tre des ennuis.",
+                            "response": "Ohhhhh ouais, je connais le genre. *soupire*",
+                            "responseExpression": "Angry"
+                        }
+                    },
+                    {
+                        "text": "Je veillerai √ garder tout le monde en ligne.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "Savez-vous combien de morceaux de glace j'ai compt√ depuis la fen√tre alors que j'√tais en orbite autour d'Icelade¬?",
+                        "optionOne": {
+                            "optionText": "500",
+                            "response": "*rires* Plus haut¬!",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "1000",
+                            "response": "Fermer!"
+                        }
+                    },
+                    {
+                        "text": "C'√tait comme plus d'un millier..."
+                    },
+                    {
+                        "text": "Et cela aurait √t√ encore plus, mais je me suis en quelque sorte assoupi pendant un moment."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "Avez-vous d√j√ essay√ de sauter pendant que le navire est en mouvement¬?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "C'est tellement fou."
+                    },
+                    {
+                        "text": "Mais je ne peux pas non plus m'arr√ter de le faire... *saute*"
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "J'esp√re que vous trouverez cette chose que nous cherchons sur cette nouvelle plan√te."
+                    },
+                    {
+                        "text": "Soot est comme l‚un de mes meilleurs amis, donc je veux m‚assurer que tout se passe bien.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Ces pirates ont les noms les plus cool qui soient !",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Personne ne me prendra au s√rieux avec un nom comme Kendall..."
+                    },
+                    {
+                        "text": "Je l'ai donc r√duit √ deux noms de pirates..."
+                    },
+                    {
+                        "text": "Lequel aimes-tu?",
+                        "optionOne": {
+                            "optionText": "Enfant Chuckster",
+                            "response": "Ouais, parce que je vais te jeter les fesses si tu te moques de moi ou de mes amis !",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "P√pite Ninja",
+                            "response": "OK, j'ai not√ votre vote. Apr√s tout, les petits ninjas sont les plus dangereux.",
+                            "responseExpression": "Happy"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Capitaine, vous l'avez fait. Enfin, presque... mais tu es tellement proche."
+                    },
+                    {
+                        "text": "Soot est √galement tr√s excit√, il n'arr√te pas de me r√veiller la nuit pour me montrer son √clat particulier."
+                    }
+                ]
+            },
+            {
+                //SR_EXPLOREALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "Capitaine, je suis tellement heureuse que nous ayons reconstitu√ cette relique.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Et... maintenant tu es aussi le h√ros de Soot parce qu'il peut √ nouveau retrouver sa famille."
+                    },
+                    {
+                        "text": "*visage s√rieux* Je ne sais pas ce que je ferais si je me perdais et que je ne pouvais pas voir ma famille.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Vous ne laisseriez pas cela m'arriver, n'est-ce pas, Capitaine ?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Jamais",
+                            "response": "Ouais, c'est bien parce que je ne voudrais pas non plus te quitter."
+                        },
+                        "optionTwo": {
+                            "optionText": "Je ne sais pas...",
+                            "response": "Je plaisante, tu sais que tu serais perdu sans MOI.",
+                            "responseExpression": "Angry"
+                        }
+                    },
+                    {
+                        "text": "En fait, je vais te dire un secret puisque tu as fait du si bon travail et tout..."
+                    },
+                    {
+                        "text": "Tu es aussi mon h√ros.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "AIDE...",
+                "questDescription": "Aidez Kendall avec les √l√ments qu'elle a demand√s sur le tableau num√rique. Elle a promis d'√tre meilleures amies si vous l'aidiez aussi.",
+                "goalDescriptions": [
+                    "Donner $amount <style=Item>$goalName</style> √ Kendall."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Alors vous avez vu mon post ! Comme c'est cool."
+                            },
+                            {
+                                "text": "Faites-moi savoir quand vous aurez ce que je recherche."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Pas question, c'est exactement ce que je voulais. Vous √tes le meilleur, Capitaine¬!",
+                                "expression": "Happy"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount cr√dits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "BONJOUR les amis...\n\nJ'aurais vraiment besoin d'aide pour obtenir quelques √l√ments. Si tu peux m'apporter ces choses, je serai ton meilleur ami pour toujours.\n\n :) -Kendall"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+
+]

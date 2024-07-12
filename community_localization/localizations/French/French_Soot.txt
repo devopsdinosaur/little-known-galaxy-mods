@@ -1,0 +1,811 @@
+[
+    {
+        "npcSaveID": "npc_26",
+        "name": "Soot",
+        "titles": [
+            "???",
+            "???"
+        ],
+        "birthdayAnnouncement": "C'est peut-être l'anniversaire de Soot ?",
+        "relationshipStatus": [
+            "??"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "UnlockCrew",
+                "unlockHeader": "Nouveau membre d'équipage !",
+                "unlockTitle": "Suie",
+                "unlockSubTitle": "???",
+                "unlockSubImage": 1,
+                "unlockBody": "Soot a rejoint votre équipage. Il s'est installé dans l'aire de jeux du pont récréatif."
+            },
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Des relations",
+                "unlockTitle": "Amis!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 2,
+                "unlockBody": "Bon travail! Votre statut relationnel avec Soot est passé au niveau supérieur. Il vous considère désormais comme l'un de ses amis et vous a donné une carte d'accès à sa salle de spectacle."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Des relations",
+                "unlockTitle": "Meilleurs amis!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Étoile d'or! Votre statut relationnel avec Soot a atteint un autre niveau. Il vous considère désormais comme l'un de ses meilleurs amis."
+            }
+        ],
+        "observations": [
+            "Aime les fleurs odorantes.",
+            "Aime dormir avec une couverture surdimensionnée pour se blottir.",
+            "Peut écrire très efficacement des symboles et des formes."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzzz"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "*grogner, grogner*.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "*brouillé* *brouillé*"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "...",
+                        "expression": "Confused"
+
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "*suie ?* *pop* *pop*"
+
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "...*regard vide...",
+                        "expression": "Angry"
+
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "...*regard confus*...",
+                        "expression": "Confused"
+
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "^--^...^--^ suie, pop !"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*le visage brille d'un rose et d'un jaune plus profonds*"
+                    },
+                    {
+                        "text": "--^^.... Suie ! ^^.."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "De la suie... *long soupir*...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "> ^^ - < ^ ^^^-^ >--.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "^ -^^ ^>> ^^ ^^-<!"
+                    },
+                    {
+                        "text": "*fait un grand geste en étendant les bras en rond*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*gros bâillement*..."
+                    },
+                    {
+                        "text": "Zzz... ^o^ Zzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "*whssss* *POP* Gogo *Brrrrrr*"
+
+                    },
+                    {
+                        "text": "*rougit*",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "^^^<- <<^^&^... *garble*"
+
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "...^^< << --^-^^^..."
+
+                    },
+                    {
+                        "text": "^^ -><< ^^ ^^-^ ^< ^^ ... *soot?*",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "*fredonne une chanson*...",
+                        "expression": "Happy"
+
+                    },
+                    {
+                        "text": "Hm hm hmmm... hm hm hmmm... suie de suie.",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "*rot!*",
+                        "expression": "Sad"
+
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "^^< << --^-^^^ -- ^^< you."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*vous montre du doigt*..."
+                    },
+                    {
+                        "text": "*petit sourire*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "^^ - ^ ^^^<< ^^ >."
+
+                    },
+                    {
+                        "text": "^ ^-^^ amusant >> < -^^ ^^^ ^- <.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "^^ ^-- < - << ^^ space ^. *points at you*"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*saute autour de toi avec enthousiasme*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "..."
+                    },
+                    {
+                        "text": "...$playerName.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Ami ami. Ami fuligineux.",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "..."
+
+                    },
+                    {
+                        "text": "*brrrrr*.. mon ami !",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "*brouillage*",
+                        "expression": "Confused"
+
+                    },
+                    {
+                        "text": "... *pop* De la suie !"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "De la suie!"
+
+                    },
+                    {
+                        "text": "*serre fermement ta jambe*",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Suie!!! Suie!!!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "*le visage devient rose* Suie !",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "*rougit*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "*suie suie*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Suie de suie",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "*pop* De la suie !",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Tellement."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Suie."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "hum hum hum..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "*brouillage?",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "*regard confus*",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Blahhhh...",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "*fait claquer les lèvres* De la suie !",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "*houblon* Suie !",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+
+        ],
+        "commentary": [
+            //{
+            //    //P_DELIVERGREYRELIC
+            //    "key": "quest_10",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_OCEANCOORDMEETING
+                "key": "quest_17",
+                "textSet": [
+                    {
+                        "text": "*montre la fenêtre*"
+                    },
+                    {
+                        "text": "Tellement ! >^^. ^",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //{
+            //    //P_VISITENGINEROOM
+            //    "key": "quest_57",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_PRODUCEFUEL
+                "key": "quest_60",
+                "textSet": [
+                    {
+                        "text": "...! Suie!"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Vous avez un <style=Item>Carburant de matière noire</style>.",
+                        "itemReward": {
+                            "itemID": "item_156",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEOCEAN
+                "key": "quest_8",
+                "textSet": [
+                    {
+                        "text": "*un grondement* ^^ -..<",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "... *pop* *brouillage* ^^ .. -"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTOCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "*se frotte la tête*",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "^^.^- ^^.--"
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "*saute partout avec enthousiasme*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "De la suie, de la suie, de la suie !",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEDESERT
+                "key": "quest_5",
+                "textSet": [
+                    {
+                        "text": "*tape du pied avec impatience*",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_VISITDESERTPLANET
+                "key": "quest_23",
+                "textSet": [
+                    {
+                        "text": "*les couleurs brillent de manière incontrôlable*"
+                    },
+                    {
+                        "text": "Suie! Suie! Suie! ^..-^",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTDESERTHERMY
+                "key": "quest_18",
+                "textSet": [
+                    {
+                        "text": "*lève les mains comme des antennes et fait une grimace*"
+                    },
+                    {
+                        "text": "*rires*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "*agite joyeusement les mains en l'air*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "souhait, rrrrrr, *pop* !"
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": ".^- ..^<<.-^--.^..."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "*soupir...*",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "*secoue la tête*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "*couine d'excitation*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "^-^. .^-^"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "*profonde respiration*",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "^-.^^......",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "...^^< << --^-^^^..."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "*fait une grimace moqueuse en colère...*",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "*détend le visage* *rire*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "*fait les cent pas*",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Suie... ^.- suie !"
+                    }
+                ]
+            },
+            {
+                //SR_EXPLORE ALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "^-^-.^^! *câlin*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "^-^- Merci...vous ^<.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "^^ Aide ->^^",
+                "questDescription": "On dirait que Soot demande quelques articles, mais qui sait pourquoi. Apportez à Soot les éléments que vous pouvez déchiffrer de son message.",
+                "goalDescriptions": [
+                    "Donner $amount <style=Item>$goalName</style> à la suie."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "*Suie, suie..."
+                            },
+                            {
+                                "text": "*...articles?"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "*Suie !* *BRRRrrr* *POP*... ^^ >>- - ^< ^!",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "*prend l'article demandé*"
+                            },
+                            {
+                                "text": "*a l'air follement heureux*",
+                                "expression": "Happy"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Suie,\n\nSuie^^->< soot ^^>, >>- ^< -^^ ^->> - >> ^^ -- fuligineux ^^ - ^ ^^^<< ^^ > pop !\n\n-Suie"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

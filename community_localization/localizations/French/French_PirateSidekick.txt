@@ -1,0 +1,104 @@
+[
+    {
+        "npcSaveID": "npc_41",
+        "name": "Sadie the Goat",
+        "titles": [
+            "Pirate de l'espace"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*renifle, grogne*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Juste pour que vous le sachiez, si cela ne tenait qu'à moi, nous vous aurions probablement mis dans la louche de lave dès le début.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Mais Bonny sait ce qu'elle fait."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Ne t'inquiète pas. Tu es bien dans mon livre maintenant, gamin. Bonny et Daxton semblent t'apprécier, alors tu es avec moi aussi."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Saviez-vous que vivre près de la lave présente de nombreux avantages ?"
+                    },
+                    {
+                        "text": "Vous n’avez jamais froid, vous pouvez cuisiner un repas chaud à tout moment et recycler les objets est un jeu d’enfant."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "J'ai appris au robot traducteur comment se battre."
+                    },
+                    {
+                        "text": "Ce n'est pas très rapide, mais si vous êtes coincé par ça... c'est la fin du jeu. Vous perdrez certainement ce tour."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //NEVER ADVANCES TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+        "nonCrewCommentary": [
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Tu l'as deviné, Matey. J'ai reçu mon surnom parce que j'aime donner un coup de tête à mes ennemis. Haha, de bons moments !"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Je baisse le signal d'alerte du rouge au jaune maintenant que la menace immédiate a été dissoute."
+                    },
+                    {
+                        "text": "Je suppose que je suis content que nous ne t'ayons pas trempé dans la lave..."
+                    }
+                ]
+            }
+        ]
+    }
+]

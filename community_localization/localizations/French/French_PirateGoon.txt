@@ -1,0 +1,114 @@
+[
+    {
+        "npcSaveID": "npc_45",
+        "name": "Pirate Goon",
+        "titles": [
+            "Pirate de l'espace"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*renifle, grogne*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Ce n’est pas parce que vous avez accepté de nous aider que nous vous faisons encore confiance.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Les actions sont plus éloquentes que les mots et vous ne voulez voir aucune action de ce côté-là... croyez-moi.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Les choses deviennent déjà trop calmes ici depuis que nous avons fait la paix avec ces extraterrestres."
+                    },
+                    {
+                        "text": "Je ferais mieux de trouver un nouveau passe-temps... peut-être le vol à la tire ?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Cela fait partie de mon devoir de maintenir le navire principal bien approvisionné et fonctionnel."
+                    },
+                    {
+                        "text": "Une bataille peut commencer à tout moment, alors mieux vaut être préparé."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "J'expérimente de nouvelles recettes de bombes puantes."
+                    },
+                    {
+                        "text": "Mais Bonny a dit que je n'étais plus autorisé à faire des tests près du camp."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //NEVER ADVANCES TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+        "nonCrewCommentary": [
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Vous avez obtenu un accès temporaire à notre camp de base, mais n'oubliez pas...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Je t'ai à l'œil, alors n'essaye rien.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Nous allons probablement faire la fête jusque tard dans la soirée grâce à vous."
+                    },
+                    {
+                        "text": "Pour ma part, j'attends avec impatience une nuit sans patrouilles constantes."
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,470 @@
+[
+    {
+        "npcSaveID": "npc_3",
+        "name": "Kitty",
+        "titles": [
+            "???",
+            "Crew Member"
+        ],
+        "birthdayAnnouncement": "Today is $npcName's birthday.",
+        "relationshipStatus": [
+            "??"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "UnlockCrew",
+                "unlockHeader": "New Crew Member!",
+                "unlockTitle": "$npcName",
+                "unlockSubTitle": "Crew Member",
+                "unlockSubImage": 1,
+                "unlockBody": "This cat has joined your crew and is taking residence in your quarters. Meow."
+            },
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 0,
+                "unlockBody": "Great job! Your relationship status with $npcName has increased to the next level. You are now considered a friend."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Best Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Gold star! Your relationship status with $npcName has increased another level. You are now considered a best friend."
+            }
+        ],
+
+        "observations": [
+            "Likes to wander but not too far from its territory.",
+            "Kind of a picky eater.",
+            "Always interested in different things to play with."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*Zzrrrr*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Meow, meow."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "*ignores you*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "*watches your moves closely...*",
+                        "optionOne": {
+                            "optionText": "Pet"
+                        },
+                        "optionTwo": {
+                            "optionText": "Play"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Chirp, chirp."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "*stares in anticipation...*",
+                        "optionOne": {
+                            "optionText": "Pet"
+                        },
+                        "optionTwo": {
+                            "optionText": "Play"
+                        }
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*tail sticks straight up with intrigue...*",
+                        "optionOne": {
+                            "optionText": "Pet"
+                        },
+                        "optionTwo": {
+                            "optionText": "Play"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*does a slow stretch in front of you...*"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Meowwwwww. *rumbling* Meow."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*makes a low purring sound...*",
+                        "optionOne": {
+                            "optionText": "Pet"
+                        },
+                        "optionTwo": {
+                            "optionText": "Play"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*chattering... snuggles*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Purr... *cuddles*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "*bounces arounds and swipes at your hand*",
+                        "optionOne": {
+                            "optionText": "Pet"
+                        },
+                        "optionTwo": {
+                            "optionText": "Play"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Purr... Meow..."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Clicking and chattering..."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "*snuggles its head on your hand...*",
+                        "expression": "Happy",
+                        "optionOne": {
+                            "optionText": "Pet"
+                        },
+                        "optionTwo": {
+                            "optionText": "Play"
+                        }
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*rolls around the floor*"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*rubs self around your legs in a figure eight pattern...*",
+                        "optionOne": {
+                            "optionText": "Pet"
+                        },
+                        "optionTwo": {
+                            "optionText": "Play"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*licks your arm and hand for a while*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*poses pretty and twitches ears...*",
+                        "optionOne": {
+                            "optionText": "Pet"
+                        },
+                        "optionTwo": {
+                            "optionText": "Play"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*gives you a slow cat-eyed blink*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "*jumps on your lap and rolls over...*",
+                        "expression": "Happy",
+                        "optionOne": {
+                            "optionText": "Pet"
+                        },
+                        "optionTwo": {
+                            "optionText": "Play"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Meow. *sticks its tail in your face*"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "*sprawls out over your feet, making it difficult to get work done...*",
+                        "optionOne": {
+                            "optionText": "Pet"
+                        },
+                        "optionTwo": {
+                            "optionText": "Play"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Purrrrr... *licks your hand*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "*pounces quickly with lots of excitement...*",
+                        "optionOne": {
+                            "optionText": "Pet"
+                        },
+                        "optionTwo": {
+                            "optionText": "Play"
+                        }
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "*snatches quickly*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "*leaps up with joy*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Meow, meow, meow!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "*perks up*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Purr...",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "*plays happily with this item*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Meow...?"
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "*sniffs the item for a while before taking it*"
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "*licks the item some, but then loses interest quickly*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "*ignores the gift and leaves it on the ground*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Shriek!",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "*turns away from your gift*",
+                        "expression": "Confused"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ]
+    }
+]

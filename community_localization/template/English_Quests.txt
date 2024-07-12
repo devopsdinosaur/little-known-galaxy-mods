@@ -1,0 +1,4610 @@
+//Ctrl + M + A to collapse all
+//Ctrl + M + E to expand section after clicking ... box
+//Ctrl + M + S to close a region (dotted area)
+//Ctrl + M + E to open a region
+//Ctrl + K + C comment out block
+//Ctrk + K + U uncomment out block
+//$playerName
+//$shipName
+
+[
+    //#region P_ARRIVE DESERT .................................
+    {
+        "questKey": "quest_5",
+        "questName": "Journey Onward",
+        "questDescription": "Head towards the new location unlocked by the Relic.",
+        "goalDescriptions": [
+            "Arrive at the new location."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "I knew it! Because you inserted that new Relic piece, we've just been sent new coordinates.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I wonder what lies ahead for us.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I'm adding these new coordinates to your star map now. You can select this new destination when you are ready to go."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "The adventure in the air is just too exciting."
+                    },
+                    {
+                        "text": "With all this pent-up excitement, I hope you don't mind if I do a loop-de-loop with the ship from time to time."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_ARRIVE ICE ....................................
+    {
+        "questKey": "quest_6",
+        "questName": "New Coordinates",
+        "questDescription": "Continue the journey and head to the new location unlocked by the Relic.",
+        "goalDescriptions": [
+            "Arrive at the new location."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Captain... these new coordinates look more like a cluster of planets on my radar, rather than a singular planet.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I can't quite get a reading on its surface, but I'll program these into your star map now.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "I'm hoping this next location isn't as hot as the Desert Dunes Planet.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "My fans were working so hard there, I sounded like an airplane.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_ARRIVE LAVA ...................................
+    {
+        "questKey": "quest_7",
+        "questName": "End of the Road?",
+        "questDescription": "Head towards the new location unlocked by the Relic.",
+        "goalDescriptions": [
+            "Arrive at the new location."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "New coordinates coming in now, they are being added to your star map."
+                    },
+                    {
+                        "text": "By the looks of that Relic, I wonder... will this be our last destination?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Your star map has grown a lot, and we have a really great map of this space sector now.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "On long trips, sometimes I like to play the license plate game with other space ships."
+                    },
+                    {
+                        "text": "I'll let you know if I see any."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_ARRIVE OCEAN ..................................
+    {
+        "questKey": "quest_8",
+        "questName": "Travel Days",
+        "questDescription": "We are on our way to the new location unlocked by the Relic. Waiting is the hardest part.",
+        "goalDescriptions": [
+            "Arrive at the new location."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Captain, we're on our way!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "It feels so good to be on the move again."
+                    },
+                    {
+                        "text": "You can monitor our progress in the star map, but I'll be sure to update you personally when we arrive!"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Zipping through space by the seat of our collective pants! I love it!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Pilot can get us anywhere we're headed, and I'll continue to monitor ship vitals as usual."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_DELIVER DESERT RELIC ..........................
+    {
+        "questKey": "quest_9",
+        "questName": "Desert Relic Piece",
+        "questDescription": "Take the Relic piece Hermy gave you to the Relic.",
+        "goalDescriptions": [
+            "Take the <style=Item>$goalName</style> to the Relic."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "What! So... Hermy had the Relic piece all along?!",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Captain... did you know this whole time?"
+                    },
+                    {
+                        "text": "As soon as we head back to the Grey Planet, we can see where this new Relic piece might take us."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "I've got all my algorithms firing while trying to solve this mystery."
+                    },
+                    {
+                        "text": "It's not going so well, though...",
+                        "expression": "Sad"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_DELIVER GREY RELIC ............................
+    {
+        "questKey": "quest_10",
+        "questName": "Missing Piece",
+        "questDescription": "Take the Relic piece Soot gave you to the Relic and see what happens.",
+        "goalDescriptions": [
+            "Take the <style=Item>$goalName</style> to the Relic."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Remember to take the Relic piece Soot gave you to the Relic."
+                    },
+                    {
+                        "text": "The suspense is killing me!"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_DELIVER ICE RELIC .............................
+    {
+        "questKey": "quest_11",
+        "questName": "Ice Relic Piece",
+        "questDescription": "Take Bunky's Relic piece to the Relic.",
+        "goalDescriptions": [
+            "Take the <style=Item>$goalName</style> to the Relic."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Buddy! You found another Relic piece!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "What?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "You have to admit that Bunky character has a great personality!"
+                    },
+                    {
+                        "text": "I'm standing by to head back to the Relic when you are!"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "I should probably have a special outfit for in-transit days, don't you think?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I bet you could whip up something really cool for me with those new fabrics I saw you making."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_DELIVER LAVA RELIC ............................
+    {
+        "questKey": "quest_12",
+        "questName": "Mysterious Artifact",
+        "questDescription": "Take the Space Pirate's Relic piece to the Relic.",
+        "goalDescriptions": [
+            "Take the <style=Item>$goalName</style> to the Relic."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Captain, we did it yet again!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Not only did we get the Relic Piece we were after, but we even made a few unlikely friends."
+                    },
+                    {
+                        "text": "But... do you think this is the last Relic Piece?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "We're going to have to bring it back to the Relic and find out what happens, I suppose."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Just what do you think this Relic piece is going to reveal for us?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "We have been just about everywhere now. What could possibly be next?"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_DELIVER OCEAN RELIC ...........................
+    {
+        "questKey": "quest_13",
+        "questName": "Mysterious Artifact",
+        "questDescription": "Take the Blue Reef Planet's Relic piece back to the Relic on the Grey Planet.",
+        "goalDescriptions": [
+            "Take the <style=Item>$goalName</style> to the Relic."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Captain, we've done it!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I'm so glad their scholars took such good care of this Relic piece before we got here. It practically looks brand new!"
+                    },
+                    {
+                        "text": "Well, I'm sure if we take this back to the Relic, it could unlock more clues."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "That new Relic piece sure is a pretty color of blue."
+                    },
+                    {
+                        "text": "It reminds me of our friends on the Blue Reef Planet."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_MEET THE CREW .................................
+    {
+        "questKey": "quest_16",
+        "questName": "Meet the Crew",
+        "questDescription": "Introduce yourself to the crew.",
+        "goalDescriptions": [
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName.",
+            "Talk to $goalName."
+        ],
+
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Remember to introduce yourself to everyone on the crew."
+                    },
+                    {
+                        "text": "You can open the <style=Tab>Quest</style> <sprite=11> tab and click on any of your quests for additional details, or to check your progress."
+                    },
+                    {
+                        "text": "Using the <style=Tab>Map</style> <sprite=14> tab can also help you locate the living quarters of someone you are looking for."
+                    },
+                    {
+                        "text": "I will have more to go over with you once you have met everyone."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Great job Captain, I'm glad to see you have met everyone.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Remember to check in with your crew often."
+                    },
+                    {
+                        "text": "They may need a helping hand, and can offer you advice from time to time, too."
+                    },
+                    {
+                        "text": "In fact, I think Edward just mentioned that your shuttle craft should be up and running now."
+                    },
+                    {
+                        "text": "You can use it to travel down to the Grey Planet and start investigating the Relic."
+                    },
+                    {
+                        "text": "I've been researching the elements on the surface to see if I can make any scientific connections."
+                    },
+                    {
+                        "text": "So far though, I haven't picked up on anything significant.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "But before you head down, let me give you some tools to take with you."
+                    },
+                    {
+                        "text": "This Shovel is useful to dig up sandy areas on the surface."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got a <style=Item>Shovel</style>!",
+                        "itemReward": {
+                            "itemID": "item_145",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "And take this Laser Blaster to break up rocks or defend yourself from any aggressive critters you may run into."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got a <style=Item>Laser Blaster</style>!",
+                        "itemReward": {
+                            "itemID": "item_79",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "I'm going to stay onboard and continue my research in the lab."
+                    },
+                    {
+                        "text": "Head to the Shuttle Bay when you are ready and Edward will meet you there."
+                    },
+                    {
+                        "text": "Good luck, $playerName!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "It's so nice to pass along some of the responsibilities to you now."
+                    }
+                ]
+            },
+            {
+                "key": "LockAwayShip",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "......*Note*......\n\nCaptain,\n\nI'm installing the latest firmware update on your shuttle craft. It should be available soon.\n\n-Edward"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_OCEAN COORD MEETING ...........................
+    {
+        "questKey": "quest_17",
+        "questName": "Crew Meeting",
+        "questDescription": "Head to the Bridge and assemble the crew to discuss the new coordinates sent from the Relic.",
+        "goalDescriptions": [
+            "Talk to $goalName."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "...Error...recalibrating...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "...Data incoming...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Woah... Captain, you are not going to believe this...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I... I... I think the Relic just sent us coordinates to a new planet!",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Freaky...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Hurry back to the Bridge! We need to hold a senior officers meeting right away to discuss what we should do with these new coordinates.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Captain, welcome back. Are you ready to start the senior officer meeting?",
+                        "optionOne": {
+                            "optionText": "No"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_REQUEST DESERT HERMY ..........................
+    {
+        "questKey": "quest_18",
+        "questName": "Fixing the Shellship",
+        "questDescription": "Hermy was digging for museum-quality artifacts when a huge sandstorm blew through and destroyed his shellship. Lend a hand by bringing him some sturdy materials for repairs.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style> made from Jute."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "How are the materials coming along?"
+                    },
+                    {
+                        "text": "I should have my ship ready for repairs soon, but it's hard to not get distracted."
+                    },
+                    {
+                        "text": "If you find any valuable treasures out there, make sure to hold onto them for me."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Welcome back! And you say the materials are ready? Remarkable!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Well, well, quick -- hand them over here..."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_REPORT TO KAIDA ...............................
+    {
+        "questKey": "quest_61",
+        "questName": "Report Back to Kaida",
+        "questDescription": "Report back to Kaida with your discovery and discuss a plan to help Soot.",
+        "goalDescriptions": [
+            "Talk to $goalName."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Captain, I heard you have made an amazing discovery."
+                    },
+                    {
+                        "text": "CPU told me everything... about the hidden cave and Soot sleeping inside."
+                    },
+                    {
+                        "text": "It does open up a lot more questions, doesn't it?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "...but I am glad you have decided to prioritize helping Soot above all else."
+                    },
+                    {
+                        "text": "Since we don't know much about Soot or his diet, Chip suggested we bring him a couple of different food options to start."
+                    },
+                    {
+                        "text": "Chip has updated your mission log with his food recommendations."
+                    },
+                    {
+                        "text": "If you need more materials to build planters, Pilot and I scanned the Grey Planet and found new uncharted areas that are sure to be full of useful resources."
+                    },
+                    {
+                        "text": "I have programmed these new areas into your shuttle craft, so feel free to start exploring."
+                    },
+                    {
+                        "text": "OK, good luck Captain. I will handle ship duties up here while you get to work."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_REQUEST GREY SOOT .............................
+    {
+        "questKey": "quest_19",
+        "questName": "Help Soot",
+        "questDescription": "Grow and deliver some food to help Soot. Maybe he can tell us more about the Relic once he's fed.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "..."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "*stomach grumbling*",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Soot... soot...",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "*sniff, sniff*"
+                    },
+                    {
+                        "text": "*perks up*...",
+                        "expression": "Happy"
+                    }
+
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_REQUEST ICE BUNKY .............................
+    {
+        "questKey": "quest_20",
+        "questName": "Fighting Off the Cold",
+        "questDescription": "Help Bunky recover his winter supplies, and find him a replacement anniversary gift to exchange with the Relic piece.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style> made in the Kitchen.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Operation Supply Recovery is going well, but I still haven't found that Relic piece yet."
+                    },
+                    {
+                        "text": "Don't get stressed again though... I won't give up."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Oh, are you done gathering supplies already?",
+                        "optionOne": {
+                            "optionText": "No"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_REQUEST LAVA PIRATE ...........................
+    {
+        "questKey": "quest_21",
+        "questName": "Decoding the Message",
+        "questDescription": "The Lava Lakes Pirates believe they are under attack. Earn their trust by bringing them radiated crops and materials to finish building their translator. We should visit Lin's Quarters for help.",
+        "goalDescriptions": [
+            "Visit Lin's Quarters to learn about radiated crops.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "We have been preparing for an attack ever since we arrived on this planet and received this strange message."
+                    },
+                    {
+                        "text": "This place really seems to suit us, so we're not leaving without a fight!"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Do you have the materials we requested?",
+                        "optionOne": {
+                            "optionText": "No"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_REQUEST OCEAN KING ............................
+    {
+        "questKey": "quest_22",
+        "questName": "Land Sickness Cure",
+        "questDescription": "The people of the Blue Reef Planet are land sick. Once cured, King Tide may be able to tell us more about the Relic pieces. We should visit the Medical Bay for help.",
+        "goalDescriptions": [
+            "Check in with Frances in the Medical Bay.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style> using a Medicine Machine."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Ugghhh. It helps to just keep my head down sometimes.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "I sure hope you have luck finding a cure for this sickness.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "What's this? You have brought us items to cure our land sickness?"
+                    },
+                    {
+                        "text": "This is fantastic news!",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_PRODUCE FUEL ..................................
+    {
+        "questKey": "quest_60",
+        "questName": "Ready for Departure",
+        "questDescription": "Help Stewart produce enough fuel and begin the journey to the new location unlocked by the Relic.",
+        "goalDescriptions": [
+            "Produce 5 more <style=Item>Dark Matter Fuel</style> and deposit them in the ship's dark matter fuel tank.",
+            "Use your Captain's Chair to start the journey to the new location."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Thanks, Stewart..."
+                    },
+                    {
+                        "text": "Uh... hello?... Stewart?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Anyhoo... I'll add these new tasks to your mission log so you can get ready for our journey."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "As long as we have enough fuel, you can travel anytime you want. Just pop into your Captain's Chair and open up the Star Map."
+                    },
+                    {
+                        "text": "I usually stock up on things to do during long trips since it can get quiet around here."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_VISIT DESERT PLANET ...........................
+    {
+        "questKey": "quest_23",
+        "questName": "Discover a New World",
+        "questDescription": "Board your shuttle craft and head down to the new location.",
+        "goalDescriptions": [
+            "Go down to the new location.",
+            "Investigate the planet's surface."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Wakey-wakey!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "We have arrived at our destination, and there's a big beautiful planet out there ready to be explored."
+                    },
+                    {
+                        "text": "Pilot and I are just about to..."
+                    },
+                    {
+                        "text": "*off-speaker* What?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "*off-speaker* No Pilot, I'm over-correcting the orbit...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "*off-speaker* ...Wait, don't push that...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Uh... Captain, I gotta go. We'll be in orbit in a few minutes.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "This new planet looks pretty dusty and dry. The bright rays coming off it are giving me a computer tan."
+                    },
+                    {
+                        "text": "Is that a thing? Well... maybe it is... I don't know.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_VISIT ENGINE ROOM .............................
+    {
+        "questKey": "quest_57",
+        "questName": "Fuel Production",
+        "questDescription": "Meet Stewart in the Engine Room to learn how to make fuel for the ship.",
+        "goalDescriptions": [
+            "Go to the Engine Room."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "I can't show you how to make fuel here...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "*sigh* As I said before, you will have to come down to the Engine Room.",
+                        "expression": "Angry"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_VISIT GREY PLANET .............................
+    {
+        "questKey": "quest_24",
+        "questName": "The Grey Planet",
+        "questDescription": "Edward has finished updating your shuttle craft. Take your new shuttle down to the Grey Planet and do some investigating.",
+        "goalDescriptions": [
+            "Visit the Grey Planet.",
+            "Look for clues on the surface."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "We are orbiting the Grey Planet now, so if you head to the Shuttle Bay, you can take your shuttle craft down to the surface anytime."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_VISIT ICE PLANET ..............................
+    {
+        "questKey": "quest_25",
+        "questName": "The Planet Below",
+        "questDescription": "Board your shuttle craft and head down to the new location.",
+        "goalDescriptions": [
+            "Go down to the new location."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "C-c-captain, we're here, but this place is giving me the chills.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Be careful when you head down there.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Holding steady in orbit, Captain. All systems are a go for you to disembark on your shuttle craft."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_VISIT LAVA PLANET .............................
+    {
+        "questKey": "quest_26",
+        "questName": "Explorer Badge",
+        "questDescription": "Board your shuttle craft and head down to the new location.",
+        "goalDescriptions": [
+            "Go down to the new location.",
+            "Investigate the planet's surface."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Sorry for the bumpy ride on our way here, but we made it.",
+                        "optionOne": {
+                            "optionText": "What bumps?",
+                            "response": "Oh, you didn't notice... um, nevermind then.",
+                            "responseExpression": "Confused"
+                        },
+                        "optionTwo": {
+                            "optionText": "Are you some kind of daredevil?!",
+                            "response": "So nice of you to notice. I did take stunt processor classes in prep school.",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "As a bonus, I programmed some special maneuvers into your shuttle craft to avoid any more accidents...                \nwait, did I?"
+                    },
+                    {
+                        "text": "Now I'm not sure...            \nbut either way it's ready to take down to the planet!"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "I don't know about you, but I feel like we've really hit our groove on this space exploration thing."
+                    },
+                    {
+                        "text": "As soon as you go down to this next planet, I'm going to add another entry in my diary to dish all about it."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region P_VISIT OCEAN PLANET ............................
+    {
+        "questKey": "quest_27",
+        "questName": "The Unknown Planet",
+        "questDescription": "Board your shuttle craft and head down to the new location.",
+        "goalDescriptions": [
+            "Go down to the new location.",
+            "Investigate the planet's surface."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Good morning, sunshine!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "We made it to our next location and are now orbiting a brand-new planet."
+                    },
+                    {
+                        "text": "Your shuttle craft is ready to take you down to the surface when you are ready."
+                    },
+                    {
+                        "text": "And I'll be on hand if you need me, anytime..."
+                    },
+                    {
+                        "text": "Good luck, Captain!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "We are orbiting the new planet, so take your shuttle craft down to the surface to see what is going on down there."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_CREW BUNKY FAMILY 01 ..........................
+    {
+        "questKey": "quest_29",
+        "questName": "A Little Drafty.",
+        "questDescription": "Bunky seems unsettled, or is considering something. Go check in with him and see what he's thinking.",
+        "goalDescriptions": [
+            "Talk to $goalName."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        //!!IMPORTANT!! if this dialogue changes copy and paste this dialogue into CREW BUNKY 02 close dialogue as well since they could both be called for this under a rare circumstance.
+                        "text": "After you, Little Buddy. We are ready to go when you are."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion ..............................................
+
+    //#region S_CREW BUNKY FAMILY 02 ..........................
+    {
+        "questKey": "quest_30",
+        "questName": "New Business Owners",
+        "questDescription": "The Bunky family would like to join your crew and start a new business adventure. See Edward in the Machine Shop about repairing the storefront quarters and return to Bunky when the space is available.",
+        "goalDescriptions": [
+            "Restore the <style=Upgrade>$goalName</style> for Bunky's family."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Ha! Little Buddy! I knew you wouldn't want to fly off and just leave us like that."
+                    },
+                    {
+                        "text": "In fact... I had been really thinking this over..."
+                    },
+                    {
+                        "text": "The Bunky family should be moving onto another volunteer post and starting our next adventure."
+                    },
+                    {
+                        "text": "But Spunky and I have doubts about moving to another isolated rock and starting the same routine again.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I want to give the little furballs a chance to be part of a real community and play with other kids their age. They should learn that there is more to life outside of just the ice belt."
+                    },
+                    {
+                        "text": "I'd like to know if I can help out on $shipName in some way, and have the Bunky family join your journey.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I can tackle any task you can throw at me, and would love to be helpful! What do you say?",
+                        "optionOne": {
+                            "optionText": "We do have an empty storefront.",
+                            "response": "Really?! I would be great at running a shop!",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "We can find something.",
+                            "response": "You can?! That's great! In fact, I've always kinda thought about starting my own business, you know! Being your own boss... chatting with customers...",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "People always tell me I have a welcoming personality."
+                    },
+                    {
+                        "text": "And the family? The wife and kids have been bouncing off the walls to meet the rest of your crew!"
+                    },
+                    {
+                        "text": "We can be packed up and ready to go whenever the space is available. You just give us the high sign."
+                    },
+                    {
+                        "text": "Now I can't wait to tell the little furballs. We'll see you REAL soon, Captain.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Ho ho! You can count on me to run that shop like you wouldn't believe. You just let us know when your ship is ready for us."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Oh! The storefront and new quarters are all ready for us? You guys have outdone yourself!"
+                    },
+                    {
+                        "text": "Ho ho, now we are talking. Honey! Kids! Are you ready?!"
+                    },
+                    {
+                        "text": "Thank you, Captain. I already have a great business plan for the new store, too. Just you wait and see!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        //!!IMPORTANT!! if this dialogue changes copy and paste this dialogue into CREW BUNKY 01 close dialogue as well since they could both be called for this under a rare circumstance.
+                        "text": "After you, Little Buddy. We are ready to go when you are."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_CREW CIENAVI 01 ...............................
+    {
+        "questKey": "quest_31",
+        "questName": "Princess in Waiting",
+        "questDescription": "CienaVi looks like she might need something. Go check in with her and see what she wants.",
+        "goalDescriptions": [
+            "Talk to $goalName."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        //!!IMPORTANT!! if this dialogue changes copy and paste this dialogue into CREW CIENAVI 02 close dialogue as well since they could both be called for this under a rare circumstance.
+                        "text": "I keep telling everyone I don't need a going away party. They can just throw me a welcome home party when I return."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion ..............................................
+
+    //#region S_CREW CIENAVI 02 ...............................
+    {
+        "questKey": "quest_32",
+        "questName": "Leaving the Pond",
+        "questDescription": "CienaVi wants to accompany you on your mission and represent her people in space. See Edward in the Machine Shop about repairing some fancy crew quarters and return to CienaVi when the space is available.",
+        "goalDescriptions": [
+            "Restore the <style=Upgrade>$goalName</style> for CienaVi."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Thank you again $playerName, for helping the Blue Reef Kingdom."
+                    },
+                    {
+                        "text": "Everyone is feeling much better and I finally feel like I can get back to normal life again."
+                    },
+                    {
+                        "text": "But I guess that's just the thing...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "I have been waiting for the right opportunity to travel among the stars myself, and better represent my people."
+                    },
+                    {
+                        "text": "And you know, the Relic piece sure does mean a lot to my people. We all are a little curious about the Relic itself."
+                    },
+                    {
+                        "text": "So, I was thinking... maybe this is the perfect time to join your vessel.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Do you think you would have space for someone like me onboard?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "We'd be happy to have you.",
+                            "response": "Wonderful! Then it's a win-win for everyone."
+                        },
+                        "optionTwo": {
+                            "optionText": "Are you sure they wouldn't miss you?",
+                            "response": "Well... I suppose they would, but I've made up my mind. This is the right decision."
+                        }
+                    },
+                    {
+                        "text": "I am hopeful you have something suitable for me up there..."
+                    },
+                    {
+                        "text": "I'm not too picky... but please, nothing too small, or too crowded. Oh, and being close to amenities would be nice too."
+                    },
+                    {
+                        "text": "I can have my valet bring up my belongings as soon as you have things in order."
+                    },
+                    {
+                        "text": "Well, I better go start packing! See you soon... Captain."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "It's really hard to decide what to pack.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "I might need to buy some more luggage."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Everything is ready for me to join your ship? Great timing!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I'll have my valet transport my things up, and I'll follow shortly."
+                    },
+                    {
+                        "text": "I just need to freshen up a bit, I want to make a good first impression onboard."
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        //!!IMPORTANT!! if this dialogue changes copy and paste this dialogue into CREW CIENAVI 01 close dialogue as well since they could both be called for this under a rare circumstance.
+                        "text": "I keep telling everyone I don't need a going away party. They can just throw me a welcome home party when I return."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_CREW DAXTON 01 ................................
+    {
+        "questKey": "quest_33",
+        "questName": "Daxton",
+        "questDescription": "Find out what Daxton wants to talk to you about. Visit him down on the Lava Lakes Planet",
+        "goalDescriptions": [
+            "Talk to $goalName."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    //!!IMPORTANT!! if this dialogue changes copy and paste this dialogue into CREW DAXTON 02 close dialogue as well since they could both be called for this under a rare circumstance.
+                    {
+                        "text": "I am just doing a final security check before departing on my shuttle."
+                    },
+                    {
+                        "text": "I will meet you up there, Capt'n."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion ..............................................
+
+    //#region S_CREW DAXTON 02 ................................
+    {
+        "questKey": "quest_34",
+        "questName": "Security Officer",
+        "questDescription": "Daxton wants to join your mission to achieve his dream of becoming a Space Alliance officer. See Edward about repairing some officer quarters, and return to Daxton when the space is available.",
+        "goalDescriptions": [
+            "Restore the <style=Upgrade>$goalName</style>.",
+            "Restore the <style=Upgrade>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "$playerName, hey there."
+                    },
+                    {
+                        "text": "You know, it <i>is</i> kind of ironic, us meeting out here on this lava rock... don't you think?"
+                    },
+                    {
+                        "text": "We might be able to help one another again, actually."
+                    },
+                    {
+                        "text": "I noticed that you might want a little more muscle on your crew. *crosses arms*"
+                    },
+                    {
+                        "text": "I mean, we did capture you like it was nothing, so you might want to think about boosting your security."
+                    },
+                    {
+                        "text": "That's where I come in. I could be a great security officer aboard your ship."
+                    },
+                    {
+                        "text": "Most people don't even try to mess with me, so you would be much safer with me by your side."
+                    },
+                    {
+                        "text": "And in return, I only have a small favor to ask."
+                    },
+                    {
+                        "text": "My people have always been civil with factions like your Space Alliance, but we generally tend to steer clear of them."
+                    },
+                    {
+                        "text": "But the thing is...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "...I've always been kind of interested in joining a setup like Space Alliance, myself.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "It's true. I love Bonny and the clan as my own family, but it's not the same. There's no real mission with a good cause, like the one you are a part of."
+                    },
+                    {
+                        "text": "I think I am ready to move on, and Bonny says she supports my decision too."
+                    },
+                    {
+                        "text": "I bet if I had your recommendation, I'd have a pretty good shot at getting through admissions, huh?"
+                    },
+                    {
+                        "text": "So what do you say? Can I join your crew?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Sure, why not?!",
+                            "response": "I knew you would agree.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "How about a probation trial?",
+                            "response": "That seems fair in my book."
+                        }
+                    },
+                    {
+                        "text": "Great! It's a deal. I will just need some Officers Quarters and a place for my shuttle craft onboard. Then I'm all yours."
+                    },
+                    {
+                        "text": "I like you, Capt'n. I'll have your back from now on, and you can count on me.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I'll start saying my goodbyes to the gang then, and I will be ready to join you as soon as those quarters are ready."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Do you think I should tell everyone else the truth? That I'm leaving to join the Space Alliance?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Maybe I'll be vague about it...",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Ready for take-off, $playerName.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I'll get settled in and start patrolling the ship right away. Oh, and thanks again. This means a lot to me."
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    //!!IMPORTANT!! if this dialogue changes copy and paste this dialogue into CREW DAXTON 01 close dialogue as well since they could both be called for this under a rare circumstance.
+                    {
+                        "text": "I am just doing a final security check before departing on my shuttle."
+                    },
+                    {
+                        "text": "I will meet you up there, Capt'n."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_CREW HERMY 01 .................................
+    {
+        "questKey": "quest_35",
+        "questName": "Restless Hermy",
+        "questDescription": "Hermy is looking restless. Go speak with him and double-check that everything is still alright.",
+        "goalDescriptions": [
+            "Talk to $goalName."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    { //!!IMPORTANT!! if this dialogue changes copy and paste this dialogue into CREW HERMY 02 close dialogue as well since they could both be called for this under a rare circumstance.
+
+                        "text": "Yes, yes! I'm on my way up now. I know this is an exciting day for you, too."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion ..............................................
+
+    //#region S_CREW HERMY 02 .................................
+    {
+        "questKey": "quest_36",
+        "questName": "Traveling Museum",
+        "questDescription": "Hermy would like to collaborate with you on your mission as a traveling museum curator. See Edward in the Machine Shop about repairing the vehicle docking stations and return to Hermy when the space is available.",
+        "goalDescriptions": [
+            "Restore the <style=Upgrade>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Oh, Captain! I know we just said our goodbyes, but I just can't do it...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "...I can't let you leave with that Relic piece and go on a great archaeological adventure without me!",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "I bet you are going to find all kinds of amazing artifacts that you won't even know what to do with."
+                    },
+                    {
+                        "text": "No offense, but I bet you would just sell them off for a few measly credits.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "What you really need is a knowledgeable and cunning museum curator, like me."
+                    },
+                    {
+                        "text": "So what I propose is this..."
+                    },
+                    {
+                        "text": "...the opportunity to open 'Hermy's Spectacular Collectables' aboard $shipName!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "It will be the FIRST EVER space traveling museum! Oh, if only my mother could see me now. *tearing up*"
+                    },
+                    {
+                        "text": "What do you think?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Great idea, we could use a museum!",
+                            "response": "Oh great, I'm glad you see the mutual benefits to this situation."
+                        },
+                        "optionTwo": {
+                            "optionText": "Ehh, don't you want to stay here?",
+                            "response": "Absolutely not! It's all about location, location, location!"
+                        }
+                    },
+                    {
+                        "text": "All I need is a working vehicle docking station in your Cargo & Shuttle Bay to park my shellship."
+                    },
+                    {
+                        "text": "I'll stay here and finish fixing everything up so I can make it up to your vessel."
+                    },
+                    {
+                        "text": "Just let me know when you have things in order."
+                    }
+
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "I wonder how much I could charge for admission.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I'll have to crunch some numbers..."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "The docking station is ready for me to come aboard! Oh Captain, I've been waiting for this day."
+                    },
+                    {
+                        "text": "You don't mind if I call you Captain, do you?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I'll be on my way up to $shipName very soon."
+                    },
+                    {
+                        "text": "See you later... Captain... hehehe"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        //!!IMPORTANT!! if this dialogue changes copy and paste this dialogue into CREW HERMY 01 close dialogue as well since they could both be called for this under a rare circumstance.
+                        "text": "Yes, yes! I'm on my way up now. I know this is an exciting day for you, too."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_CREW SOOT 01 ..................................
+    {
+        "questKey": "quest_62",
+        "questName": "Growing Up",
+        "questDescription": "Soot and his Guardian look like they might want to discuss a new arrangement with you.",
+        "goalDescriptions": [
+            "Talk to $goalName."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Active text"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Oh, $playerName. I'm glad you came to find us."
+                    },
+                    {
+                        "text": "We are overjoyed to have Soot back home again."
+                    },
+                    {
+                        "text": "But the thing is...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "...Soot says that he has grown very fond of you and your crew.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "He really considers you a part of his family now, and so do we."
+                    },
+                    {
+                        "text": "Soot tells us that he wants to stay on $shipName, and be a part of your crew for a while longer."
+                    },
+                    {
+                        "text": "And since the time warp is open, our powers will keep us linked to him at all times now. No matter where he may be in the galaxy, we will be able to remain in touch."
+                    },
+                    {
+                        "text": "So, would you be willing to continue hosting him on your journey?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Yes! We would love to keep him aboard.",
+                            "response": "That's marvelous. We know that he is in the best of hands.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Again?",
+                            "response": "Yes. We believe that he has a lot left to learn from you, and that he will be in good hands."
+                        }
+                    },
+                    {
+                        "text": "Then it's settled. Soot will stay on your ship while you are traveling, and when you are orbiting Viridis he will stay down here with us on the planet's surface."
+                    },
+                    {
+                        "text": "Thank you again for being such a strong role model for Soot."
+                    },
+                    {
+                        "text": "We look forward to hearing all about his adventures with you."
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "Soot is very excited to have two families now."
+                    },
+                    {
+                        "text": "Thank you again, $playerName.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion ..............................................
+
+    //#region S_DESERT TELESCOPE...............................
+    {
+        "questKey": "quest_14",
+        "questName": "Constructing a Telescope",
+        "questDescription": "Mechi, the Transmitter Bot on the Desert Dunes Planet, wants to construct a telescope to enjoy in its retirement. Bring it the supplies it needs to finish the job.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "*BEEP BOOP!* You came back!"
+                    },
+                    {
+                        "text": "Boy, am I glad to see you again...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Oh! I bet you didn't realize I could talk, did you?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Well... that pesky crab was carting me around all over the universe and I just needed a break.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "I decided to go into sleep mode for a while after my transmitting signal gave out."
+                    },
+                    {
+                        "text": "I had a good run as a transmitter for many years. But transmitting here, transmitting there, transmitting everywhere! Sheesh, it was never ending.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "So I have to tell you, when my signal finally died out, that was the best thing that ever happened to me!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I've had so much free time since then. *BOOP BOOP*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "In fact, I consider this planet to be the perfect place for my retirement days ahead."
+                    },
+                    {
+                        "text": "It's hot, quiet, crab-free, and..."
+                    },
+                    {
+                        "text": "...it has a great view of the night sky! *BEEP BEEP!*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "You see, I consider myself something of a passionate star gazer."
+                    },
+                    {
+                        "text": "I've been trying to construct a telescope so I can enjoy my galaxy-gazing even more. But I just can't seem to find some of the materials I need."
+                    },
+                    {
+                        "text": "These stubby legs don't help me get around much, either. *BOOP BEEP*",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "But as a captain of a starship, I bet you run across all kinds of items. Shoot, you might even have them up there on your ship right now."
+                    },
+                    {
+                        "text": "I sure would appreciate the help with finding some of these things. I'll be sure to reward you once you find the items, too."
+                    },
+                    {
+                        "text": "I'm not as stingy as a certain past employer I once knew...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Anyways, I'll be here. Feel free to swing by anytime. *BEEP BOOP* And please let me know if you find any of those telescope building items."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "*BEEP BEEP* We had a very clear sky last night. I can't wait to spend hours looking through my telescope."
+                    },
+                    {
+                        "text": "You'll probably need to look for the items I need on other planets, though. Trust me, I've checked around here plenty.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Yes, yes, and yes! It's all here! *BEEP BOOP!*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "You really did find everything I needed to build a galaxy-class telescope."
+                    },
+                    {
+                        "text": "Now I just need to tinker around for a while to get everything constructed properly."
+                    },
+                    {
+                        "text": "Thanks, $playerName. You're a real pal!"
+                    },
+                    {
+                        "text": "Now, let me see. What do I have that could repay your kindness? Hmm, maybe these...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I dug up these old things but have no use for them."
+                    },
+                    {
+                        "text": "Though they should still be worth at least something at the ol' trading posts..."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 1,500 (slightly damaged) credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 1500,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "And you know... star gazing is not just for old retired robots."
+                    },
+                    {
+                        "text": "I'll keep a spot open right next to me here, if you would like to join me someday."
+                    },
+                    {
+                        "text": "Don't work too hard, $playerName. *BEEP BOOP*"
+                    },
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "*BOOP BOOP* The batteries from this generator will help constantly rotate my telescope to compensate for the Desert Dune's natural rotation."
+                    },
+                    {
+                        "text": "This way, I can track any stars I'd like throughout the whole night. Oh, joy!",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_ICE HOMESTEADING ..............................
+    {
+        "questKey": "quest_15",
+        "questName": "A New Homestead",
+        "questDescription": "Bertie from the Iceladus Cluster is moving into a perfectly good, abandoned igloo. Bring her a few machines and furniture items to get her settled in.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Squeak! Who are you?"
+                    },
+                    {
+                        "text": "Are you a local around here?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "No",
+                            "response": "I didn't think so. I'm sure I would have remembered someone so tall and good looking. *blushes*"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes",
+                            "response": "You are? Well, welcome to my new home, neighbor!",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "My name's Bertie. Local woodland critter and belle of the forest. Squeak, squeak!"
+                    },
+                    {
+                        "text": "I accidentally burrowed into this residence a few days ago. I think its cozy nature called out to me.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Just look around. You can tell it was abandoned, by the previous owners. Uh huh... abandoned alright. Squeak."
+                    },
+                    {
+                        "text": "Can you believe someone deserted it, just because of that small roof leak?",
+                        "optionOne": {
+                            "optionText": "I'm shocked.",
+                            "response": "Squeak, squeak! Yeah, it was quite a find for me. I count my lucky acorns every day."
+                        },
+                        "optionTwo": {
+                            "optionText": "I wouldn't know anything about it!",
+                            "response": "Hmm, that's a weird thing to say. Anyway...",
+                            "responseExpression": "Confused"
+                        }
+                    },
+                    {
+                        "text": "With a homestead like this, I will be able to put down some roots and not have to burrow to new spots all the time."
+                    },
+                    {
+                        "text": "Huff... But I find myself in quite the jam with so many things to sort out.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "I'm just a small critter. Squeak! It all feels so overwhelming.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "I should prioritize getting some planters for growing food, but I could also use a few decorative items for storing my things, too..."
+                    },
+                    {
+                        "text": "Hey. You wouldn't happen to know where I could get some of these things, would you?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "I can help you out.",
+                            "response": "You could? Squeak! An extra pair of paws would really make a big difference.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Hmm... could be tricky.",
+                            "response": "Yes, it is quite tricky, but I'll give you my wish list, just in case you find anything out there I could use."
+                        }
+                    },
+                    {
+                        "text": "Of course, if you find some of these items, I would be willing to share some of my acorn stash with you."
+                    },
+                    {
+                        "text": "Squeak! Look at the time. I better get back to work. I still have to set up my sleeping nest in the bedroom."
+                    },
+                    {
+                        "text": "Feel free to stop by anytime for a visit, or to warm yourself by the fire.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Bye!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "I love a good adventure in the forest, but I think I'm ready to finally settle down now."
+                    },
+                    {
+                        "text": "This place is already beginning to feel like home.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Welcome back, $playerName. Squeak!"
+                    },
+                    {
+                        "text": "Did you really find all the machines and decorations on my wish list?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "What a wonderful housewarming gift! It would have taken me months to find and craft these items myself.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "First I find this amazing place, and then I meet such a chummy and helpful pal. I must be one lucky critter!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Well hang on, let me see... I know I have some acorns I can give you around here somewhere...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <style=Item>25 acorns</style>!",
+                        "itemReward": {
+                            "itemID": "item_980",
+                            "amount": 25,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "Oh, and the previous owners left a few things here that I don't need. Feel free to take these things with you too..."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got a <style=Item>Bag O' Marbles</style>!",
+                        "itemReward": {
+                            "itemID": "item_286",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got 3<style=Item> Electro Plasma</style>!",
+                        "itemReward": {
+                            "itemID": "item_119",
+                            "amount": 3,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 1,000 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 1000,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "Great. Those things were just taking up valuable space around here."
+                    },
+                    {
+                        "text": "Squeak, squeak! Thanks again, $playerName. Come back anytime for a visit!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "Now that I have all these new machines and decorations, I can start arranging things how I want."
+                    },
+                    {
+                        "text": "Squeak! I just love interior decorating."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_LAVA PUMPKIN CARVING ..........................
+    {
+        "questKey": "quest_37",
+        "questName": "Pumpkin Carving",
+        "questDescription": "Sadie the Goat has fallen in love with the human tradition of carving pumpkins. Bring her the materials she needs to create some scary jack-o-lanterns.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Oh, there you are, $playerName. I've been waiting to parley with you again."
+                    },
+                    {
+                        "text": "I need to ask... have you ever decorated or carved a pumpkin?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Of course.",
+                            "response": "I knew it! You strike me as someone who's got a good head under that helmet-thing.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Never have.",
+                            "response": "Hmm... then we might have to learn how it works together."
+                        }
+                    },
+                    {
+                        "text": "I've been reading about this pumpkin carving tradition in some of your history books, and I have to say, it sounds like my kind of scheme."
+                    },
+                    {
+                        "text": "If I saw a bunch of scary faced jack-o-lanterns looming around, I would think twice about looting that particular camp."
+                    },
+                    {
+                        "text": "Can you see it now? Chilling pumpkins, lurking all around our planet. Hahaha!"
+                    },
+                    {
+                        "text": "Perhaps we can even use them as booby traps in the future. The possibilities are endless!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Bonny has made this task my priority, so I need to start outlining scary pumpkin faces right away."
+                    },
+                    {
+                        "text": "But I also need someone to actually grow the pumpkins, and get us the supplies."
+                    },
+                    {
+                        "text": "Not just any old boring pumpkins, either. I need RADIATED pumpkins with an eerie color to make them extra terrifying."
+                    },
+                    {
+                        "text": "What do you say? Would you be up for a trade of jack-o-lantern supplies for credits?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Let's do it.",
+                            "response": "*slaps you on the back* Bonzer, $playerName! Good choice.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Nah, I'm too busy.",
+                            "response": "*rolls eyes* Well, if you're playing hardball, I'm not going to increase the credits amount. So, take it or leave it. Your choice.",
+                            "responseExpression": "Sad"
+                        }
+                    },
+
+                    {
+                        "text": "Here's the list of stuff I would need... *gives you a crumpled list of items*"
+                    },
+
+                    {
+                        "text": "Remember... the uglier and scarier the pumpkins, the better... so you don't need to go growing any prize-winning gourds on me."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "I came up with a few great outlines for pumpkin faces already. I can't wait to see what monstrous pumpkins you can grow for us."
+                    },
+                    {
+                        "text": "You know... these pumpkins could make great camera holders for extra surveillance around camp, too."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "$playerName, you're back, and with an armful too!"
+                    },
+                    {
+                        "text": "I see the pumpkins are finally here. Look at that creepy color. I bet they will even glow in the dark with all those extra cosmic rays baked in.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "*flicks the pumpkins with her finger*"
+                    },
+                    {
+                        "text": "Yup. Good deep sound. These will make great spooky gourds around our camp."
+                    },
+                    {
+                        "text": "I not only have their gruesome faces ready to carve, but the details of the booby traps too."
+                    },
+                    {
+                        "text": "I'll send you the passcode for their deactivation when they're done..."
+                    },
+                    {
+                        "text": "*shrugs* ...if I remember, that is.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Now, here are your credits. A deal's a deal..."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 1,500 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 1500,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "If I were you, I'd probably use those credits to rig some of your own jack-o-lantern booby traps, too."
+                    },
+                    {
+                        "text": "Catch you later, $playerName. Watch your back out there."
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "Bonny might raise my rank if these jack-o-lanterns turn out as I expect."
+                    },
+                    {
+                        "text": "'Sadie the Goat: Jr. Space Pirate Captain' sure has a nice ring to it.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_MUSEUM INTRO ..................................
+    {
+        "questKey": "quest_56",
+        "questName": "Empty Museum",
+        "questDescription": "Hermy's Spectacular Collectables needs collectables for display, and he is looking for donations.",
+        "goalDescriptions": [
+            "Donate any 3 collectables to Hermy's museum. He will mark any items of interest in your inventory."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "I should have planned better before I opened the museum, I suppose.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "But with your help, I'm sure I'll have a museum to be proud of soon. Thanks, Captain."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Thank you! Thank you! The items you brought me are just perfect for my museum. I can already see the crowds gathering from light-years away just to see these!"
+                    },
+                    {
+                        "text": "You can always stop by and take a look at them on display, anytime you like."
+                    },
+                    {
+                        "text": "But this is just the beginning, of course. More collectables will be necessary to keep the demanding public at bay."
+                    },
+                    {
+                        "text": "Acquisition is now my top priority, so don't forget to bring me anything else interesting you find on your adventures."
+                    },
+                    {
+                        "text": "One day I know that I will have an entire completed museum collection.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 150 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 150,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "I can't hardly wait until people have to book their admission tickets in advance. Can you imagine? \n\n*drifts off daydreaming*"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_OCEAN LUNCHBOXES ..............................
+    {
+        "questKey": "quest_4",
+        "questName": "Little Dweller Lunchboxes",
+        "questDescription": "One of the guards in the Ocean Kingdom has had trouble pleasing his kids with his lackluster lunchboxes. Bring him some kid-approved lunchtime favorite foods.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Ugh... hey, $playerName. I'm not feeling so good again these days."
+                    },
+                    {
+                        "text": "It's not the land sickness though... I've got that covered, thanks to you."
+                    },
+                    {
+                        "text": "Let me ask you a question. Do you have kids?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Sure do.",
+                            "response": "Oh, then you will understand that they can test every ounce of patience you have."
+                        },
+                        "optionTwo": {
+                            "optionText": "Not me.",
+                            "response": "Well, let me tell you... they sure can wear on your last nerve."
+                        }
+                    },
+                    {
+                        "text": "My spouse put me in charge of preparing the kids' lunchboxes, right before they head off to school every day."
+                    },
+                    {
+                        "text": "But they are so picky! They just won't eat anything I prepare.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Once, they disliked my lunch packs so much, that they started a giant food fight in the hall with them.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "What am I going to do?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "If I have to sit in that headmaster's office one more time, I think I might lose it!",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Hey... do you think you could create some kid-friendly lunchboxes for me?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Maybe?",
+                            "response": "I'm willing to try anything at this point, to be honest."
+                        },
+                        "optionTwo": {
+                            "optionText": "I got you covered.",
+                            "response": "You're kidding, right?! I'm so relieved just to hear you say that!",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "Just avoid anything with seaweed, or noodles, or cucumber..."
+                    },
+                    {
+                        "text": "*thinks* You know what?...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I'll just trust that you've got this lunchbox dilemma covered."
+                    },
+                    {
+                        "text": "Thanks, $playerName. You're a real-life preserver."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "I hope you're having better luck with new recipes for the kids than I am.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Yesterday's lettuce wraps ended up all over the shuttle bus...",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Are these the lunchbox items for the kids?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Let me see... hmm... It seems so simple."
+                    },
+                    {
+                        "text": "I guess it makes sense. Kids don't really want complicated food, huh?"
+                    },
+                    {
+                        "text": "Why didn't I think of this?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "My kids are going to be so excited to take these to school now. They'll probably even show off to their friends!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "And if it's really this simple, I can make them myself from now on, too. That will save us a bundle on our monthly food bill.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I really owe you, $playerName. I feel like the least I can do is offer you some credits for these great lunchboxes."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 1,500 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 1500,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "But in my opinion, having a peaceful home with two little ones is priceless.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Thanks again, $playerName.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "I haven't felt this calm all month. I feel like celebrating with a warm salt soak later tonight.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_TBD COORDINATES .............................NOT USING YET
+    {
+        "questKey": "quest_63",
+        "questName": "",
+        "questDescription": "",
+        "goalDescriptions": [
+            ""
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": ""
+                    },
+                    {
+                        "text": ""
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_SCIENCE RESEARCH 01 GREY.......................
+    {
+        "questKey": "quest_39",
+        "questName": "Scientific Research",
+        "questDescription": "Bring planet resource samples to Kaida.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Hi, good timing. If you're not too busy, I have additional scientific research that I could use your assistance with."
+                    },
+                    {
+                        "text": "Can you bring me a supply of stone and soil samples to analyze?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "All the planets in these sectors of space are unexplored, and there is a lot to learn here."
+                    },
+                    {
+                        "text": "Thanks, $playerName. I'll definitely make it worth your time."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "How is the stone and soil collecting coming along?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "I'm working on it.",
+                            "response": "I can use all the help I can get with my research."
+                        },
+                        "optionTwo": {
+                            "optionText": "I'm having trouble...",
+                            "response": "You can travel to new locations using your shuttle craft to find more resources. Use your Laser Blaster to break stones, or your Shovel to find soil samples."
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Ah, you brought the items I requested. Yes, these samples look like prime candidates for research."
+                    },
+                    {
+                        "text": "Thank you again. I will get these items straight under the microscope.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "This should cover the costs."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 200 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 200,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "I'm hoping we can make use of some of these materials to further our mission."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_SCIENCE RESEARCH 02 OCEAN......................
+    {
+        "questKey": "quest_50",
+        "questName": "Scientific Research",
+        "questDescription": "Bring Blue Reef Planet related samples to Kaida.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "You are correct. The Blue Reef Planet has a lot of resources to take stock of."
+                    },
+                    {
+                        "text": "Cataloguing and documenting what we are finding is going to keep me busy for weeks."
+                    },
+                    {
+                        "text": "I'm very excited, but a little overwhelmed to be honest.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Would you want to contribute to my studies by collecting a few samples for us?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I will update your mission log again with the details."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Salt water is especially hard on machine parts, you know.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "I'll have to keep my workspace even cleaner than usual with all of these ocean samples you have agreed to bring me."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "The Blue Reef supplies are here. Perfect timing. I'm at a good stopping point on my other tasks and these items look very interesting."
+                    },
+                    {
+                        "text": "Good job, Captain.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "...oh! I don't know about you, but when I have ore samples like this, processing one batch at a time is incredibly slow."
+                    },
+                    {
+                        "text": "I asked Edward to modify a new furnace for us that can accept multiple batches of ore at a time."
+                    },
+                    {
+                        "text": "Not only will it store more ore, but the advanced machine can process each item faster as well. It's a real time saver."
+                    },
+                    {
+                        "text": "I'll send a copy of the Advanced Furnace data to your workbench as my way of showing appreciation."
+                    },
+                    {
+                        "text": "Thanks again for your assistance.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "Now I guess I should get busy looking at these Blue Reef samples."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_SCIENCE RESEARCH 03 DESERT.....................
+    {
+        "questKey": "quest_51",
+        "questName": "Scientific Research",
+        "questDescription": "Bring Desert Dunes Planet related samples to Kaida.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Yes, I'm going to be working exclusively on Desert Dunes research for a bit now."
+                    },
+                    {
+                        "text": "It is another very unique planet type that we have little data on."
+                    },
+                    {
+                        "text": "I am wondering if you could assist me again in collecting some items to study."
+                    },
+                    {
+                        "text": "Do you have time to supply me with a few Desert Dunes Planet samples?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Of course.",
+                            "response": "Excellent. It will make things go much faster to work on this with some assistance. I will update your mission log now."
+                        },
+                        "optionTwo": {
+                            "optionText": "I am a bit busy, actually.",
+                            "response": "Believe me, I completely understand. I will update your mission log, but only take on what you can handle. We are all here to support you too, Captain."
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "The Desert Dunes Planet was first catalogued by Hermy? Hmmm...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I should talk to Hermy about his experiences on the surface. It might save some research time."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Oh, thank you. These Desert Dunes samples were just what I was looking for."
+                    },
+                    {
+                        "text": "Your help has been much appreciated.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Honestly, I did not expect to be bouncing around from location to location when we were first assigned to study the Grey Planet."
+                    },
+                    {
+                        "text": "It seemed like a stationary assignment, and our fuel supply needs were fairly low."
+                    },
+                    {
+                        "text": "That certainly has changed. So, I have asked Edward to create another advanced machine for us to better accommodate our traveling missions."
+                    },
+                    {
+                        "text": "An Advanced Dark Matter Fuel Refiner will make the processing of fuel a lot easier, and faster too. Check out your workbench for the new data."
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "Thanks for collecting those items. It means I can stay here and focus on a few of the experiments I am running instead."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_SCIENCE RESEARCH 04 ICE........................
+    {
+        "questKey": "quest_52",
+        "questName": "Scientific Research",
+        "questDescription": "Bring Iceladus Cluster related samples to Kaida.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Hey $playerName, I'm glad you found me."
+                    },
+                    {
+                        "text": "I could use your help once again to gather some Iceladus Cluster samples for our research."
+                    },
+                    {
+                        "text": "The mission log will be updated as usual with a few items that I am looking for. Thank you.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Collecting the Iceladus Cluster supplies might be a little harder with the extreme weather conditions on the planet."
+                    },
+                    {
+                        "text": "Please be safe, and take your time when exploring.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Fantastic. I can start researching into these items right away."
+                    },
+                    {
+                        "text": "Thank you again, $playerName... and I have another reward for your hard work, actually.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "A new machine is now available to us. This Freezer was inspired by our discovery of the Iceladus Cluster and can freeze a variety of food items."
+                    },
+                    {
+                        "text": "Give it a try."
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "So much science to do! This research never ends."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_SCIENCE RESEARCH 05 LAVA.......................
+    {
+        "questKey": "quest_53",
+        "questName": "Scientific Research",
+        "questDescription": "Bring Lava Lakes Planet related samples to Kaida.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Captain, do you have a second?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I think we could use another supply run in order to study the Lava Lakes Planet better."
+                    },
+                    {
+                        "text": "I'll update your log now, so if you find any of these resources down on the surface, I'd appreciate your help.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "All of these planets don't appear to be directly connected to each other. But the resources we have been collecting do complement each other in my database.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I hope you are holding up okay with your research on the Lava Lakes."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Ah yes, these samples will do just fine."
+                    },
+                    {
+                        "text": "Well done, Captain.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "..."
+                    },
+                    {
+                        "text": "Yes? Did you need something else?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Oh, that's right! I did have something for you. I'm glad you reminded me."
+                    },
+                    {
+                        "text": "There is another new and very useful crafting machine that we can add to our workbench, discovered right here."
+                    },
+                    {
+                        "text": "It's a machine for generating batteries using just cosmic and solar rays."
+                    },
+                    {
+                        "text": "*typing*... \n\nUpdating workbench now..."
+                    },
+                    {
+                        "text": "...okay, now it should be available."
+                    },
+                    {
+                        "text": "Enjoy.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "These resources are quite heavy, aren't they? Thanks again for collecting everything."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_SCIENCE RESEARCH 06 UTOPIA.....................
+    {
+        "questKey": "quest_54",
+        "questName": "Scientific Research",
+        "questDescription": "Bring Viridis Planet related samples to Kaida.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "This really is something, isn't it? The Viridis planet was hidden in time right here all along."
+                    },
+                    {
+                        "text": "It does mathematically make sense. I mean, on paper it is possible. But...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "...we are going to need a whole team of scientists to study this phenomenon, now.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Haha. Wow. One thing at a time, Kaida.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "This planet is here, right now, so we should take advantage. You know what this means."
+                    },
+                    {
+                        "text": "Can you bring me a supply of Viridis Planet samples to analyze this time around?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I'm updating your mission log one more time with the requests."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "This planet is what we have been searching for all along."
+                    },
+                    {
+                        "text": "Bringing these Viridis resources side by side in the lab with the Grey Planet samples is going to be unbelievable!"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Oh! You've brought all of the Viridis resources! I need to clear my work station immediately.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "$playerName. I normally consider myself a fairly composed person, but this is a very rare opportunity. I know you understand."
+                    },
+                    {
+                        "text": "I feel like a junior officer all over again, and I can't wait to update Space Alliance with more of our findings."
+                    },
+                    {
+                        "text": "..."
+                    },
+                    {
+                        "text": "But you, Captain."
+                    },
+                    {
+                        "text": "You made all this research possible. You are not only a top scientist, but a great leader too."
+                    },
+                    {
+                        "text": "And because of all your efforts... we received extra funding from Space Alliance to continue our work.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 2500 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 2500,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "Also... over the course of our travels, I have gathered quite a collection of additional samples that I don't need anymore."
+                    },
+                    {
+                        "text": "Consider these a thank you in return for bringing me so many things in the past..."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <style=Item>Rare Meteorites</style>!",
+                        "itemReward": {
+                            "itemID": "item_90",
+                            "amount": 2,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got more <style=Item>Rare Meteorites</style>!",
+                        "itemReward": {
+                            "itemID": "item_276",
+                            "amount": 2,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got even more <style=Item>Rare Meteorites</style>!",
+                        "itemReward": {
+                            "itemID": "item_271",
+                            "amount": 2,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got additional <style=Item>Rare Meteorites</style>!",
+                        "itemReward": {
+                            "itemID": "item_273",
+                            "amount": 2,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got extra additional <style=Item>Rare Meteorites</style>!",
+                        "itemReward": {
+                            "itemID": "item_275",
+                            "amount": 2,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Surprise! You got excessive amounts of <style=Item>Rare Meteorites</style>!",
+                        "itemReward": {
+                            "itemID": "item_280",
+                            "amount": 2,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "I'll catch you in the labs, Captain!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "What an adventure. I will be able to confirm so many theories by examining some of these Viridis samples."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_START PRODUCING 02 OCEAN ......................
+    {
+        "questKey": "quest_40",
+        "questName": "Growing Ocean Crops",
+        "questDescription": "Bring Lin a variety of Blue Reef Planet crops.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Ugh. The crew is going to revolt if we have to keep eating our stale old food rations, and I can't blame them.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "We could use the variety in our diet, but that means more crops too."
+                    },
+                    {
+                        "text": "Say, would you like to improve your green thumb again?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "If you bring me some fresh produce unique to the Blue Reef Planet, I think we can turn morale around a bit here."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "It might take a bit longer to grow some crops than others."
+                    },
+                    {
+                        "text": "But keep tending to them, and I swear it'll be worth the wait.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Hey, you've impressed me again. These Blue Reef crops will liven up our dinner menu for sure."
+                    },
+                    {
+                        "text": "As a way to say thanks, I might be able to offer you some help, too..."
+                    },
+                    {
+                        "text": "Watering plants daily can be a big task, so sometimes I like to build Garden Bots to do some of the work."
+                    },
+                    {
+                        "text": "A Garden Bot can water four planters every morning, so you'll have time for more important things."
+                    },
+                    {
+                        "text": "They are programmed with different watering configurations; just press $inputSecondary before placing the Garden Bot to pick which one you want."
+                    },
+                    {
+                        "text": "I will send the crafting details to your workbench so that you can create your own."
+                    },
+                    {
+                        "text": "Thanks again, $playerName.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "I'll get this produce over to Chip later today, and then it's up to him."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_START PRODUCING 03 DESERT .....................
+    {
+        "questKey": "quest_46",
+        "questName": "Growing Desert Crops",
+        "questDescription": "Bring Lin a variety of Desert Dunes Planet crops.",
+        "goalDescriptions": [
+            "Grow $amount <style=Item>$goalName</style>.",
+            "Grow $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "A new planet means new crops for us. Would you want to help out with some planting again?"
+                    },
+                    {
+                        "text": "I want to try out the new crop varieties of the Desert Dunes Planet, of course, but..."
+                    },
+                    {
+                        "text": "...have you noticed that the soil on this planet is kinda... rough? The vegetation here gets by with very little soil nutrients, from what I can tell.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "But I bet we could improve the quality of our crops if we added a bit of fertilizer. Fertilizer is key to getting super quality crops."
+                    },
+                    {
+                        "text": "If you don't mind getting your hands messy, that is.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Here are a couple to get you started."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got 2 <style=Item>Fertilizer</style>!",
+                        "itemReward": {
+                            "itemID": "item_511",
+                            "amount": 2,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "Adding this to your planter will definitely increase your chances of growing a super quality crop."
+                    },
+                    {
+                        "text": "Good luck, and happy gardening."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Humph... I swear these seed packs from Robert are half sand... what is a girl to do?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Please don't tell Robert I said anything though. I know he's trying.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Hi. You've really done it again. These desert crops look just great.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "It's almost as if these tasks are too easy for you. Haha."
+                    },
+                    {
+                        "text": "If you want a real challenge, try growing some tree crops next."
+                    },
+                    {
+                        "text": "Tree planters work just like regular planters, actually. But patience is key when growing trees since they take quite a long time to mature."
+                    },
+                    {
+                        "text": "I'll update your workbench with the Tree Planter data and a few other new things I've discovered. Enjoy!"
+                    },
+                    {
+                        "text": "Thanks, $playerName. It's nice having another plant enthusiast around.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "That fertilizer seemed to really make the crops shine, didn't it?"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_START PRODUCING 04 ICE ........................
+    {
+        "questKey": "quest_47",
+        "questName": "Growing Ice Crops",
+        "questDescription": "Bring Lin a variety of super Iceladus Cluster crops.",
+        "goalDescriptions": [
+            "Grow $amount <style=Item>$goalName</style>.",
+            "Grow $amount <style=Item>$goalName</style>.",
+            "Grow $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Ice plant seeds are available to grow now that we have discovered the Iceladus Cluster."
+                    },
+                    {
+                        "text": "Hmmm... I think we can get this icy produce to grow aboard our ship, too.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "No, I'm sure we can make it work."
+                    },
+                    {
+                        "text": "But... sorry to ask... would you, um...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "...wanna help me grow some produce again?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "*smile* I thought you would never ask.",
+                            "response": "Oh, thank you. We can really learn a lot from these icy crops, and also expand our food sources again."
+                        },
+                        "optionTwo": {
+                            "optionText": "*frown* I thought you would ask.",
+                            "response": "Oh, sorry Captain! Only if you are free... I uh... don't want to overstep. Just, if you have some extra time is all.",
+                            "responseExpression": "Stressed"
+                        }
+                    },
+                    {
+                        "text": "The ship and crew will really benefit from these new varieties. I'll update your mission log with the requests."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "I have a really cute set of gardening mittens from back home I have been looking forward to wearing."
+                    },
+                    {
+                        "text": "I think these icy crops are just the occasion to try them out."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Oh, these crops smell wonderful. It looks like you were able to grow all the ice crops we needed.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "And I have a nice surprise for you, too."
+                    },
+                    {
+                        "text": "I wanted to share the latest crafting data I have discovered... Superior Garden Bots!"
+                    },
+                    {
+                        "text": "Superior Garden Bots are like other Garden Bots, but just... superior.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "These little bots can water a really, really large area."
+                    },
+                    {
+                        "text": "Edward said it would be hard to create a superior bot because the water output pressure exceeded the battery-pulse-something...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "But... with some of his help and some new parts, we finally got it to work!"
+                    },
+                    {
+                        "text": "Oh! Just don't forget to press $inputSecondary to pick your preferred configuration when you set up these Superior Garden Bots."
+                    },
+                    {
+                        "text": "All of our crops are going to be so happy now.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "I'll deliver these ice crops to Chip myself."
+                    },
+                    {
+                        "text": "But I'm going to make sure you get the credit for growing them, of course. That's the least I can do. *giggles*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Thanks again, $playerName. You are so sweet to always help me like this."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_START PRODUCING 05 LAVA .......................
+    {
+        "questKey": "quest_48",
+        "questName": "Growing Lava Crops",
+        "questDescription": "Bring Lin a variety of Lava Lakes Planet crops.",
+        "goalDescriptions": [
+            "Grow $amount <style=Item>$goalName</style>.",
+            "Grow $amount <style=Item>$goalName</style>.",
+            "Grow $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Hey Captain, would you be interested in growing some lava crops with me?"
+                    },
+                    {
+                        "text": "The varieties are so interesting on the Lava Lakes Planet, I just can't wait to get started.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Actually... that's not totally true..."
+                    },
+                    {
+                        "text": "I have already started!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Lava crops, and radiated crops too! I was way too excited to sleep, so I planned out exactly what plants we should grow for the ship."
+                    },
+                    {
+                        "text": "And don't deny it, I know you like this stuff too, or you wouldn't be helping me all the time."
+                    },
+                    {
+                        "text": "Okay, I'm adding my list to your mission log for when you have time to help."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "You know, even un-radiated Lava Lakes plants fight back, so be warned."
+                    },
+                    {
+                        "text": "Little thorns or intense spice can be their way of defending themselves."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Wow. These lava crops look great, and I know how much work they take to grow.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Oh my! The radiated crops are something wonderful too, aren't they?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Since they have a higher value and energy output, I hope you feel they are worth growing in the future."
+                    },
+                    {
+                        "text": "In fact, I have new crafting details for Outer Hull Garden Bots that I can send to your workbench to make it a little easier."
+                    },
+                    {
+                        "text": "I haven't even tried them myself yet, but they come with a special casing to survive on the outer hull."
+                    },
+                    {
+                        "text": "Thanks for all your help, Captain.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "I can't wait to try out these new Outer Hull Garden Bots myself. I love using my trusty watering pack, but I can't be everywhere all at once."
+                    },
+                    {
+                        "text": "You know how it is.",
+                        "expression": "Stressed"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_START PRODUCING 06 UTOPIA .....................
+    {
+        "questKey": "quest_49",
+        "questName": "Growing Viridis Crops",
+        "questDescription": "Bring Lin a variety of Viridis Planet crops.",
+        "goalDescriptions": [
+            "Grow $amount <style=Item>$goalName</style>.",
+            "Grow $amount <style=Item>$goalName</style>.",
+            "Grow $amount <style=Item>$goalName</style>.",
+            "Grow $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "The Viridis planet is a utopian dream for a botanist like me."
+                    },
+                    {
+                        "text": "This is simply amazing.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I don't know if I'm more excited to study these new plant varieties or to taste them."
+                    },
+                    {
+                        "text": "Chip and I would love it if you can help us grow some additional Viridis produce to supplement our food supply again."
+                    },
+                    {
+                        "text": "Here's what we could use this time..."
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "The Viridis produce really reminds me of home, I think."
+                    },
+                    {
+                        "text": "We have really found a special place here among the Viridians, and they are so lovely to share it with us."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "You have grown the Viridis crops that we needed."
+                    },
+                    {
+                        "text": "Everyone is going to really love this, and Chip is planning a feast for us.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Captain... I mean..."
+                    },
+                    {
+                        "text": "$playerName. *blushes*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Having you join our crew has really changed my life in ways you can't imagine."
+                    },
+                    {
+                        "text": "It's been wonderful sharing my experience with you and learning about all these fantastical plants on our adventures."
+                    },
+                    {
+                        "text": "I think it is safe to say that you have truly mastered the art of gardening and I have nothing left to teach you."
+                    },
+                    {
+                        "text": "Congratulations. You have really earned it."
+                    },
+                    {
+                        "text": "I am unlocking a few more things on your workbench to continue your gardening as usual, but I have another special gift for you as well..."
+                    },
+                    {
+                        "text": "In my family there have been a long line of farmers, gardeners, and botanists before me."
+                    },
+                    {
+                        "text": "We have a tradition we pass down once a member has reached the master gardener status."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got a <style=Item>Straw Hat</style>!",
+                        "itemReward": {
+                            "itemID": "item_184",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "Haha. It's the hat I was given when I graduated from school and first joined our ship."
+                    },
+                    {
+                        "text": "Now I'd love for you to have it."
+                    },
+                    {
+                        "text": "Thanks again, Master Gardener, $playerName. *smile*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "Well. There are just so many produce choices now."
+                    },
+                    {
+                        "text": "The hard part for us master gardeners is going to be to decide what to grow next, huh?",
+                        "expression": "Confused"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region S_UTOPIA TARDIGRADE FARM.........................
+    {
+        "questKey": "quest_38",
+        "questName": "Tardigrade Farm",
+        "questDescription": "One of the Viridian Residents wants to create a small tardigrade farm. Bring them some materials to build a suitable habitat and a few tardigrades to get the farm started.",
+        "goalDescriptions": [
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>.",
+            "Collect $amount <style=Item>$goalName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "Hi, $playerName. I'm so glad you stopped by, because I think I've finally made my decision."
+                    },
+                    {
+                        "text": "I've decided to get a pet. Well, a few pets I should say...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Have you ever run across a near-microscopic animal called a tardigrade?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Yes.",
+                            "response": "Oh, then you already know all about them and how to find them."
+                        },
+                        "optionTwo": {
+                            "optionText": "No, a what?",
+                            "response": "Tardigrade. Sometimes they're called water bears or moss piglets. They can be found using a microbe detector, but they can be difficult to catch."
+                        }
+                    },
+                    {
+                        "text": "I just love the little guys. They are resilient, tough, and just so darn cute! I think they would make great little companions.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I know that tardigrades can live in almost any environment..."
+                    },
+                    {
+                        "text": "But I think I'll make my pets a little more comfortable."
+                    },
+                    {
+                        "text": "First, I'll need to create a cozy habitat for them. Next, I'll gather some food. And then of course acquire some friendly tardigrades who would like to move in."
+                    },
+                    {
+                        "text": "Hmm, the list just keeps getting longer. Being a pet owner sure comes with a lot of responsibilities.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Perhaps I could use some help getting started."
+                    },
+                    {
+                        "text": "Would you like to help me build a tardigrade pet farm?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Sounds exciting, I'm in.",
+                            "response": "Super! We can even pick out names for them together when they arrive.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Maybe another time.",
+                            "response": "Oh, I understand. You probably have a lot more important things to do as a spaceship captain. Well, I'll give you the details in case you change your mind.",
+                            "responseExpression": "Stressed"
+                        }
+                    },
+                    {
+                        "text": "I promise I'll take very good care of the little guys and make them feel right at home here."
+                    },
+                    {
+                        "text": "Let's see... a couple of these, one of those rock things, and some of that material... Yup, that should do it."
+                    },
+                    {
+                        "text": "I'll give your computing unit the details of what I need to create the best environment. Then I'll just need some tardigrades to complete the farm."
+                    },
+                    {
+                        "text": "Thanks, $playerName. I can't wait to be an official pet owner!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Hmm... I'm still deciding which part of my house has the optimal living conditions for the tardigrade farm."
+                    },
+                    {
+                        "text": "I want everything to be perfect for them.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "$playerName, you brought the tardigrades today... look how cute they are!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Hey little guys. We're going to be the best of friends in no time.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Plus all these materials you brought me will be perfect for them to get settled in."
+                    },
+                    {
+                        "text": "Hmm, now we just have to decide on their final names...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Since there are four of them, we need four names."
+                    },
+                    {
+                        "text": "I've narrowed it down to a couple of choices, but I need your help to make the final decisions."
+                    },
+                    {
+                        "text": "First up, this little guy looks like the tiniest in the group."
+                    },
+                    {
+                        "text": "Which name do you like better?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Little Bear",
+                            "response": "I like it! It's so adorable with the 'little' part, but the 'bear' part still makes it sound tough."
+                        },
+                        "optionTwo": {
+                            "optionText": "Nano Bear",
+                            "response": "Yes, it reminds me how incredibly small and tough they are at the same time."
+                        }
+                    },
+                    {
+                        "text": "Now this one, it doesn't seem to want to move around as much as the others."
+                    },
+                    {
+                        "text": "What do you think about these name ideas?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Tardy",
+                            "response": "Haha, yes. That really fits its personality well I think.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Slow Mo",
+                            "response": "You're right! Look how slow it moves its little legs.",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "OK, this one has an extra scrunched face, maybe we should name him after their moss piglet nickname."
+                    },
+                    {
+                        "text": "How about one of these names?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Piggles",
+                            "response": "*laughs* I'm glad you picked this one because it makes me giggle just saying it.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Pigtunia",
+                            "response": "Good choice, it feels like the perfect name for such a sweet tardigrade.",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "And last but not least, this one looks like the leader of the bunch."
+                    },
+                    {
+                        "text": "I thought one of these names might be a good fit.",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Bossy Mossy",
+                            "response": "Yeah, I think this one will be kind of bossy in the habitat. I'll have to keep an eye on things."
+                        },
+                        "optionTwo": {
+                            "optionText": "$playerName Jr.",
+                            "response": "Yes! It's only appropriate that the leader of the group should be named after you $playerName.",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "Thanks, $playerName. You really helped make my dream of becoming a pet owner come true.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "*talking to tardigrades* Come on guys. Let's go get settled in now.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 1,500 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 1500,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "So far all the tardigrades are getting along really well."
+                    },
+                    {
+                        "text": "I really enjoy watching them wander around their new home.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region SR_COLLECT MICROBES .............................
+    {
+        "questKey": "quest_55",
+        "questName": "Microbe Seeking",
+        "questDescription": "Help Frances monitor the health of the ship's microbiome by catching some microbes with your Microbe Detector.",
+        "goalDescriptions": [
+            "Catch $amount <style=Item>$goalName</style> microbe.",
+            "Catch $amount <style=Item>$goalName</style> microbe.",
+            "Catch $amount <style=Item>$goalName</style> microbe.",
+            "Catch $amount <style=Item>$goalName</style> microbe."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "I hope you are having some luck finding different microbes."
+                    },
+                    {
+                        "text": "Remember to equip your Microbe Detector and press $inputPrimary to activate a new scan."
+                    },
+                    {
+                        "text": "A red symbol means no microbes are detected in your area so try moving to a new spot and doing another scan."
+                    },
+                    {
+                        "text": "A yellow arrow means head in the indicated direction to find the microbe."
+                    },
+                    {
+                        "text": "Once you detect a microbe, the DNA identifier will start processing."
+                    },
+                    {
+                        "text": "To identify the DNA of a microbe, just press $inputPrimary to stop the sequencing ring when it passes over the light target ring."
+                    },
+                    {
+                        "text": "To be honest, I was never very good at catching them before they escaped!"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Captain, great work.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "You found some very interesting microbe specimens for the lab and I can't wait to learn more about them."
+                    },
+                    {
+                        "text": "Remember, any microbes you give to Bin Bot will be delivered to the Medical Bay at night and I will send you some credits for your effort."
+                    },
+                    {
+                        "text": "Keep up the great work."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 250 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 250,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "Every microorganism has a unique set of qualities to study..."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region SR_EXPLORE ALL ..................................
+    {
+        "questKey": "quest_2",
+        "questName": "Master Explorer",
+        "questDescription": "Now that the mystery of the Relic has been solved, Space Alliance would like you to continue exploring all the planets. Reach zone 30 at each destination.",
+        "goalDescriptions": [
+            "Reach zone 30 on the Grey Planet.",
+            "Reach zone 30 on the Blue Reef Planet.",
+            "Reach zone 30 on the Desert Dunes Planet.",
+            "Reach zone 30 on the Iceladus Cluster.",
+            "Reach zone 30 on the Lava Lakes Planet.",
+            "Reach zone 30 on the Viridis Planet."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Space Alliance is so proud of our mission that they want us to keep exploring these new worlds."
+                    },
+                    {
+                        "text": "Now we get to see everything there is to see!",
+                        "expression": "Happy"
+                    }
+
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Whew! What an achievement, Captain!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Now that we have explored more of these amazing worlds, I can share this data with everyone at Space Alliance..."
+                    },
+                    {
+                        "text": "Processing... ",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Data sent!"
+                    },
+                    {
+                        "text": "Wait... incoming transmission...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 5,000 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 5000,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "Space Alliance has commended you for all of your hard work, and this is a small token of their appreciation."
+                    },
+                    {
+                        "text": "Great job, Captain! You have officially completed all of our assigned Space Alliance missions."
+                    },
+                    {
+                        "text": "You deserve a little break for once, so feel free to kick back and spend some time on yourself."
+                    },
+                    {
+                        "text": "If Space Alliance sends over any new mission objectives, I will be sure to let you know right away!"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "I must be the happiest computing unit in all of Space Alliance.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion ..............................................
+
+    //#region SR_EXPLORE END GREY .............................
+    {
+        "questKey": "quest_45",
+        "questName": "Explorer's Club",
+        "questDescription": "Sprout is making a map of the Grey Planet to show to his exploration club. Help him finish his project by exploring all the checkpoints on the Grey Planet.",
+        "goalDescriptions": [
+            "Unlock the Checkpoint at zone 1.",
+            "Unlock the Checkpoint at zone 5.",
+            "Unlock the Checkpoint at zone 10.",
+            "Unlock the Checkpoint at zone 15."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "When you reach an exploration checkpoint $shipName automatically collects those coordinates and information about the location."
+                    },
+                    {
+                        "text": "The other club members will be very impressed when I deliver a detailed map of the Grey Planet."
+                    }
+
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Captain, YOU DID IT!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "$shipName just sent me a new report with the final data on the Grey Planet's surface."
+                    },
+                    {
+                        "text": "I can't wait to finish my report and show my map to the club."
+                    },
+                    {
+                        "text": "I'm a shoo-in for the exploration merit award and they might even make me club leader for the month."
+                    },
+                    {
+                        "text": "Science is just the best.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Thanks, Captain!"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 100 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 100,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "Once a year the explorer's club tries to coordinate an event, but most of the time we just use galaxy chat for our club meetings."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion ..............................................
+
+    //#region SR_FIRST GIFT ...................................
+    {
+        "questKey": "quest_41",
+        "questName": "Gift Giving",
+        "questDescription": "Part of being a good captain is showing your crew how much you appreciate them. Talk to 5 crew members and give someone a gift to show them your gratitude.",
+        "goalDescriptions": [
+            "Talk to 5 different crew members.",
+            "Give someone a gift."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Have you decided who you should give a gift to yet?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Just equip the item you want to gift and press $inputSecondary on a crew member to give it to them."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Isn't spending time with the crew rewarding?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Your relationships with the crew will increase the more you talk to them."
+                    },
+                    {
+                        "text": "And everyone loves getting a gift from time to time."
+                    },
+                    {
+                        "text": "Speaking of... I have a gift for you too."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 50 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 50,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "I hope this brightens your day."
+                    },
+                    {
+                        "text": "Talk to you soon."
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "Being the Social Coordinator is such a rewarding job."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion ..............................................
+
+    //#region SR_FIXER UPPER ..................................
+    {
+        "questKey": "quest_42",
+        "questName": "Fixer Upper",
+        "questDescription": "Your Captain's Deck is looking rough. Use the Restoration Ray to clean up 10 holes or garbage piles. Then inform CPU of the progress.",
+        "goalDescriptions": [
+            "Use the Restoration Ray to restore 10 damaged areas on your deck."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": "$playerName, I hope you are settled in and ready to get started."
+                    },
+                    {
+                        "text": "I know your deck has seen better days so I thought you could use this...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "...handy Restoration Ray!"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got a <style=Item>Restoration Ray</style>!",
+                        "itemReward": {
+                            "itemID": "item_136",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "This tool can be used to clean up small damaged areas quickly."
+                    },
+                    {
+                        "text": "To use it, press $inputPrimary and hold."
+                    },
+                    {
+                        "text": "Using tools takes energy, so keep an eye on your energy bar <sprite=4> and don't overexert yourself in one day."
+                    },
+                    {
+                        "text": "Give it a try for yourself, and let me know if you have any luck."
+                    },
+                    {
+                        "text": "When you're done in here, head to the Bridge next to meet our Sr. Science Officer. She's been eager to meet with you too."
+                    }
+
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "How is the repair job on your Captain's Deck coming along?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Remember to hold down on the button to keep the Restoration Ray running.\n\nSome items take longer to restore than others."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Great job fixing up your deck so far."
+                    },
+                    {
+                        "text": "To restore areas that are too large for the Restoration Ray check in with Edward in the Machine Shop."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 50 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 50,
+                            "trackAction": "Reward"
+                        }
+
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got 10 <style=Item>Recycled Parts</style>!",
+                        "itemReward": {
+                            "itemID": "item_128",
+                            "amount": 10,
+                            "trackAction": "Reward"
+                        }
+                    }
+
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "Seems like the work around here is never done.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "LockYourDeckToStairwell01",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "This is not the way to the Bridge. Head to the Bridge first."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion ..............................................
+
+    //#region SR_HATCH ANIMAL .................................
+    {
+        "questKey": "quest_1",
+        "questName": "Hatch a Xeno",
+        "questDescription": "Build a Xeno Pod, put an egg into the incubator, and wait to see what happens.",
+        "goalDescriptions": [
+            "Hatch a Xeno egg."
+        ],
+        "questDialogue": [
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Congratulations Captain! I heard you have a new addition on your deck now.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "If your Puff Puff is anything like mine, you are in for a real treat."
+                    },
+                    {
+                        "text": "Remember, there are other kinds of Xeno out there, so keep a look out for more eggs."
+                    },
+                    {
+                        "text": "And now that you have an extra mouth to feed, here is a little congratulations gift for food or any other supplies you need."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 500 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 500,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "Oh... I can't wait to sneak a peek... they are just so cute when they're babies.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region SR_HOME REDECORATING ............................
+    {
+        "questKey": "quest_3",
+        "questName": "Home Decorating",
+        "questDescription": "Piper wants to make sure you feel at home, and has encouraged you to build a couch and a plant to make your space cozier.",
+        "goalDescriptions": [
+            "Build a $goalName on your workbench.",
+            "Build a $goalName on your workbench."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "How is the decorating coming along?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "If you need inspiration, I'm sure you can get online and see what other people have done with their space!"
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Captain, are you finished decorating already?"
+                    },
+                    {
+                        "text": "I hope it feels good to get more settled... and I have to admit, I think you are fitting right in!"
+                    },
+                    {
+                        "text": "Oh, I know redecorating can be tight on the purse strings, so here are a few credits to keep you going.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "I won't take no for an answer..."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 150 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 150,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "Decorating is so much fun. There are some things I'd like to freshen up in our quarters, too."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion ..............................................
+
+    //#region SR_START PRODUCING 01 GREY ......................
+    {
+        "questKey": "quest_43",
+        "questName": "Growing Crops",
+        "questDescription": "Use the planter and seeds to grow the crops Lin requested.",
+        "goalDescriptions": [
+            "Grow $amount <style=Item>$goalName</style> to give to Lin."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "How are the potatoes coming along?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Remember plants need to be watered every day while they grow."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Great job on growing your first plants! These are not bad looking potatoes, either."
+                    },
+                    {
+                        "text": "Since it was such a good attempt, I'll pay you a little more than they're actually worth."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 150 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 150,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "Remember, you can buy other seeds types from Robert in the store when you want to grow more plants for us."
+                    },
+                    {
+                        "text": "When we're orbiting the Grey Planet or traveling, we'll be limited to the standard-issued Space Alliance seeds."
+                    },
+                    {
+                        "text": "But who knows what seed types we might run across in the future!",
+                        "expression":  "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Closed",
+                "textSet": [
+                    {
+                        "text": "You can craft different machines and decorations on your workbench too. That will help you produce a variety of items."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion ..............................................
+
+    //#region SR_VISIT GENERAL STORE ..........................
+    {
+        "questKey": "quest_44",
+        "questName": "General Store",
+        "questDescription": "Visit the General Store located on the Plaza Deck for an introduction.",
+        "goalDescriptions": [
+            "Head to the General Store."
+        ],
+        "questDialogue": [
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            },
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Hey Captain! As you explore the ship, don't forget to introduce yourself to our General Store Manager, Robert, on the Plaza Deck."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": " "
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region T_BRING ITEMS ...................................
+    {
+        "questKey": "quest_58",
+        "questName": "Items Needed Ad",
+        "questDescription": "Help your crew by bringing them the items they requested on the bulletin.",
+        "goalDescriptions": [
+            "Deliver $item <style=Item>$itemName</style>."
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": "Thanks for helping me acquire the items I'm looking for."
+                    },
+                    {
+                        "text": "Just let me know when you have what I need."
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": "Just what I was looking for, thanks for your help."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got <sprite=1><style=Credits> 100 credits</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 100,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Bulletin",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion ..............................................
+
+    //#region T_KILL ENEMIES ..................................
+    {
+        "questKey": "quest_59",
+        "questName": "Kill Creeps",
+        "questDescription": "",
+        "goalDescriptions": [
+            ""
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            },
+            {
+                "key": "Bulletin",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion ..............................................
+
+    //#region T_FIND MICROBES .................................
+    {
+        "questKey": "quest_28",
+        "questName": "Find Microbes",
+        "questDescription": "",
+        "goalDescriptions": [
+            ""
+        ],
+        "questDialogue": [
+            {
+                "key": "Active",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            },
+            {
+                "key": "Completed",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            },
+            {
+                "key": "Bulletin",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            }
+        ]
+    }
+    //#endregion ..............................................
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "npcSaveID": "npc_35",
+        "name": "King Tide",
+        "titles": [
+            "King"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "observations": [
+            ""
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "I'm not feeling so good...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Is the reef spinning or is it just me?",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "I have been the King of the Blue Reef Kingdom for the last 21 years..."
+                    },
+                    {
+                        "text": "Or was it 22 years... ugh... oh flippers I can't remember."
+                    },
+                    {
+                        "text": "Well my daughter probably knows, she's much better with dates and numbers."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "I often come to the surface to be present for my people."
+                    },
+                    {
+                        "text": "By being available to them I can hear their concerns and better serve their needs."
+                    },
+                    {
+                        "text": "It is my most important role as King."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "It sure is a beautiful day in the Kingdom don't you think?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "So beautiful!",
+                            "response": "*deep inhale* Ahhhh... the fresh sea air will do wonders for your scales, trust me.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "I've seen better.",
+                            "response": "Is that so? Perhaps you don't appreciate the wonders of humidity like we do.",
+                            "responseExpression": "Sad"
+                        }
+                    },
+                    {
+                        "text": "But I guess if I had to wear that spacesuit all day it would be hard to really absorb our wonderful climate."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //DOES NOT ADVANCE TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE HE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+
+        "nonCrewCommentary": [
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "It's so wonderful to no longer be cursed with land sickness."
+                    },
+                    {
+                        "text": "It's all thanks to you, Captain."
+                    },
+                    {
+                        "text": "You will always be our honored guest anytime you wish to visit."
+                    }
+                ]
+            }
+        ]
+    }
+]

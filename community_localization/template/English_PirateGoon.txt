@@ -1,0 +1,114 @@
+[
+    {
+        "npcSaveID": "npc_45",
+        "name": "Pirate Goon",
+        "titles": [
+            "Space Pirate"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*snorting, grunting*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Just because you agreed to help us does not mean we trust you yet.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Actions speak louder than words and you don't want to see any action from this end... trust me.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Things are already getting too quiet around here since we've made peace with those aliens."
+                    },
+                    {
+                        "text": "I better find a new hobby... maybe pick-pocketing?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "It's part of my duty to keep the main ship well-stocked and functioning."
+                    },
+                    {
+                        "text": "A battle could start at any moment so best to be prepared."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "I'm experimenting with some new stink bomb recipes."
+                    },
+                    {
+                        "text": "But Bonny said I'm not allowed to do testing near camp anymore."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //NEVER ADVANCES TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+        "nonCrewCommentary": [
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "You have been granted temporary access to our base camp but remember...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "I've got my eye on you, so don't try anything.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "We'll probably be celebrating into the evening thanks to you."
+                    },
+                    {
+                        "text": "I for one am looking forward to a night without constant patrol shifts."
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "npcSaveID": "npc_41",
+        "name": "Sadie the Goat",
+        "titles": [
+            "Space Pirate"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*snorting, grunting*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Just so you know, if was up to me, we would have probably just put you in the lava dipper from the start.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "But Bonny knows what she's doing."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Don't worry. You're okay in my book now, kid. Bonny and Daxton seem to like you, so you're in with me too."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Did you know living near lava has a lot of benefits?"
+                    },
+                    {
+                        "text": "You never get cold, you can cook a hot meal at any time, and recycling things is a cinch."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "I taught the translator bot how to fight."
+                    },
+                    {
+                        "text": "It's not very quick, but if you get pinned down by it... it's game over. You definitely will lose that round."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //NEVER ADVANCES TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+        "nonCrewCommentary": [
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "You guessed it, Matey. I got my nickname because I like to headbutt my enemies. Haha, good times!"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "I'm lowering the alert signal from red to yellow now that the immediate threat has been dissolved."
+                    },
+                    {
+                        "text": "I guess I'm glad we didn't lava dip you..."
+                    }
+                ]
+            }
+        ]
+    }
+]

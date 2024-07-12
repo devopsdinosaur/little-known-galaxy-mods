@@ -1,0 +1,1314 @@
+[
+    {
+        "npcSaveID": "npc_7",
+        "name": "Doc12",
+        "titles": [
+            "Jr. Medical Officer"
+        ],
+        "birthdayAnnouncement": "Today is Doc12's creation date.",
+        "relationshipStatus": [
+            "Single",
+            "Engaged",
+            "Married"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 2,
+                "unlockBody": "Great job! Your relationship status with Doc12 has increased to the next level. She now considers you one of her friends and has given you an access card to her room."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Best Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Gold star! Your relationship status with Doc12 has increased another level. She now considers you one of her very best friends."
+            },
+            {
+                "unlockKey": "Engaged",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Engaged!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 4,
+                "unlockBody": "Doc12 has accepted your proposal for marriage and is now your fiancé. The wedding date is approaching soon. Better get ready!"
+            }
+        ],
+        "observations": [
+            "Can solve complex math problems in her head.",
+            "Has an A.V.O. seed sprouting in a cup.",
+            "She is a perfectly designed clone with many identical siblings."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Oh. Hello, $playerName."
+                    },
+                    {
+                        "text": "I don't really like hanging out, but Frances said I should try and be nice to you.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "So... hi there."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "How did you discover what kind of hobbies you enjoy?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I was instructed to learn medicine, but I don't think it classifies as a hobby."
+                    },
+                    {
+                        "text": "Although, completing lab tests is something I always look forward to."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "I um... don't have anything interesting to say really. I should probably just get going for now."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "I guess it's not really very common to have a number in your name, is it?"
+                    },
+                    {
+                        "text": "I'm not really sure what else to tell people, but it makes sense to me."
+                    },
+                    {
+                        "text": "It was the order I was born in, so that was the name and number they gave me."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Living with Frances suits me well and she always says we're a family."
+                    },
+                    {
+                        "text": "I guess you would consider her kind of like my adoptive mother."
+                    },
+                    {
+                        "text": "I guess I consider her my mother too."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "I still take night classes with Max but it's more for observation."
+                    },
+                    {
+                        "text": "I suppose Max isn't the best crewmate to learn emotional behavior from, but he is very good at breaking it down."
+                    },
+                    {
+                        "text": "Plus, watching Shinji's behavior keeps us both fascinated most of the time."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "I have very strict quarantine rules whenever I am performing lab work."
+                    },
+                    {
+                        "text": "Sometimes I even do the research on the outer hull just to make sure there is no chance of a breach."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Frances really likes to do a family dinner between the two of us from time to time."
+                    },
+                    {
+                        "text": "She keeps saying that one day I will remember these as bonding moments and will perform the ritual for my own chosen family."
+                    },
+                    {
+                        "text": "I guess the passage of time will make things clearer."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "I try to optimize my sleep at night by turning off all electronics that emit blue light at least 25 minutes before I fall asleep."
+                    },
+                    {
+                        "text": "There are a lot of health benefits to getting a proper amount of sleep every night."
+                    },
+                    {
+                        "text": "My sisters and I may be genetically enhanced, but we are still human after all."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Don't you find small talk difficult?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "And because we're in space we can't even discuss atmospheric weather or temperatures.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "I found a book of crossword puzzles Frances must have given up on."
+                    },
+                    {
+                        "text": "I don't see why everyone makes such a fuss over them.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I finished the whole book in about a week."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Sometimes I think you try a little too hard to be friends with everyone.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Jimmy and I are hanging out more because our parents are getting closer."
+                    },
+                    {
+                        "text": "It is fairly easy to notice the hormone responses in them when they are together."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Recently I have started to experience some interesting dreams."
+                    },
+                    {
+                        "text": "Frances said my 'emotional side' and 'individuality' would start to develop since leaving the cloning facility. But... I didn't expect it to be like this."
+                    },
+                    {
+                        "text": "These dreams are very confusing, so I am mapping them in a diary for later analysis.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "These are some ideas I came up with that I might turn into a hobby outside of work. Which one of them appeals to you the most?",
+                        "optionOne": {
+                            "optionText": "Knot Tying",
+                            "response": "I agree, it's very fascinating. Did you know there are literally thousands of different ways to tie a knot?"
+                        },
+                        "optionTwo": {
+                            "optionText": "Cryptography",
+                            "response": "Do you even know what it is? I was thinking about constructing and analyzing my own protocol to secure private messaging."
+                        }
+                    },
+                    {
+                        "text": "I wonder if I can memorize everything there is to know."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "You don't plan on leaving this post any time soon, do you?"
+                    },
+                    {
+                        "text": "It would be a real disappointment to everyone if you left. I am growing fond of your companionship.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "The trick to being a good multi-tasker is organization."
+                    },
+                    {
+                        "text": "If everything is organized and filed correctly in a digital binder you won't forget the little things.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Normally I wouldn't like your clothing style, but for some reason I think it works for you."
+                    },
+                    {
+                        "text": "I was always used to wearing what my other cloned siblings wore."
+                    },
+                    {
+                        "text": "Except for our identification number tags of course. Those were unique."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Some humans experience color blindness, but I actually have the unique ability to see a couple of additional colors that most people cannot see."
+                    },
+                    {
+                        "text": "I would describe them as a 'red-green' and a 'yellow-blue'."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Did you know that all human beings are 99.9% identical in their genetic makeup?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Even with all of our differences in appearance, behavior, and predispositions; we are more similar than different."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "The other day I noticed that Frances was kind of overwhelmed."
+                    },
+                    {
+                        "text": "Actually, I was surprised I had noticed..."
+                    },
+                    {
+                        "text": "...but it gave me a good feeling to take some of the work off of her plate.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Are you going to be in the restaurant later?"
+                    },
+                    {
+                        "text": "Some of the crew members have invited me to go and I'm finding I enjoy listening to their stories."
+                    },
+                    {
+                        "text": "I don't have a lot of unique experiences to share, but everyone does seem fascinated in hearing what it was like growing up with so many identical siblings."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "I rarely tell anyone this, but I keep my original number tag from my childhood inside my lab coat pocket."
+                    },
+                    {
+                        "text": "I'm not sure if it's a habit or I am experiencing some kind of emotional attachment to it.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Besides Frances, I don't know if anyone knows me better than you."
+                    },
+                    {
+                        "text": "I appreciate the bond we have formed so far on our journey together. Friendship really is a very warm feeling.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Frances is letting me conduct my own clinical study soon."
+                    },
+                    {
+                        "text": "I've done all the research I can on the topic, but a lot of it will just come down to my own instincts."
+                    },
+                    {
+                        "text": "I think I'm ready, thanks to all your support as well.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ENGAGED .....................................
+            {
+                "key": "Engaged",
+                "textSet": [
+                    {
+                        "text": "I'm still not sure why we don't just fill out the marriage certificate."
+                    },
+                    {
+                        "text": "But I guess we can do the ceremony if it makes everyone onboard happy.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Engaged",
+                "textSet": [
+                    {
+                        "text": "Frances and the other women aboard are making such a fuss over me since the wedding is so close."
+                    },
+                    {
+                        "text": "Is this normal behavior?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Don't say anything, but between you and me, it's kind of creepy.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Engaged",
+                "textSet": [
+                    {
+                        "text": "Frances is helping me pack up my room so I can move in with you after the wedding."
+                    },
+                    {
+                        "text": "It's a nice gesture, but every time she packs a photo she starts crying.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Engaged",
+                "textSet": [
+                    {
+                        "text": "I hope you don't snore, but if you do, I'll do some research and we'll get to the medical cause of it."
+                    }
+                ]
+            },
+            {
+                "key": "Engaged",
+                "textSet": [
+                    {
+                        "text": "I have this fluttery feeling about our wedding coming up.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I guess you bring out my emotions more than most people. *blushes*",
+                        "expression": "Romanced"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region MARRIED .....................................
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "Married life is a lot easier than everyone says.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "But it's probably because you just accept me for who I am."
+                    }
+                ]
+            },
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "I like our chemical attraction.",
+                        "expression": "Romanced"
+                    }
+                ]
+            },
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "If you have time later, I'd love to run some medical theories I've been researching past you."
+                    },
+                    {
+                        "text": "You always help me think through what steps are next in my work.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "Sometimes the attachment I have to you makes me nervous... so it better be mutual."
+                    }
+                ]
+            },
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "I think the best part of being married is the teamwork involved."
+                    },
+                    {
+                        "text": "I bet we could even assemble furniture together without fighting.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "I'm kind of glad I'm married now, because I think it gives Frances a chance to focus on her happiness too."
+                    }
+                ]
+            },
+            {
+                "key": "Married",
+                "textSet": [
+                    {
+                        "text": "Sorry. I love you, but I just need some alone time right now.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "You really got this for me? I really like it.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Thank you, $playerName. This item has a lot of significant value for me.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "This is too nice of a present..."
+                    },
+                    {
+                        "text": "...and I don't know how to thank someone properly so I guess I should just say, 'Thank you'.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "By giving this item to me you have unknowingly helped me with my tasks. I really value efficiency.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Huh, I think I like this item. It's giving me a warm feeling.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Hey, I get this for myself all the time. You have great observational skills.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "This is a nice surprise. You make interesting and complex choices, don't you?",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "This seems very pragmatic and an acceptable gift."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "OK."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "You seem to be waiting for some kind of emotional response so...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "...thanks for bringing this by."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Thanks, but don't worry about it. I'm not very good at giving gifts either.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "This gift is unacceptable. I would prefer to not receive it in the future.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "I feel something for this gift, but what is this emotion?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Repulsive? ...yeah... I think I feel repulsed by this gift.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "Thank you for the birthday present."
+                    },
+                    {
+                        "text": "You seem to be good at remembering social obligations to the crew members."
+                    },
+                    {
+                        "text": "I not only appreciate your gift, but your attention to details.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            //#region SpecialItem_EngagmentRing............................
+            //Accept
+            {
+                "key": "Accept_Ring",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "For me?"
+                    },
+                    {
+                        "text": "This is so very traditional of you... but I have to say, quite a nice gesture."
+                    },
+                    {
+                        "text": "It does make sense for us to co-habitat... and, in fact, I think I like you as well.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Let's do it then, let's get married...",
+                        "expression": "Romanced"
+                    },
+                    {
+                        "text": "...but just don't get too sappy on me, OK?"
+                    }
+                ]
+            },
+            //AcceptSpouse
+            {
+                "key": "AcceptSpouse_Ring",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "You really don't have to give me tokens of affection like this."
+                    },
+                    {
+                        "text": "I feel confident in our relationship.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //RejectFriendStatus
+            {
+                "key": "RejectFriendStatus_Ring",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "Oh wow, this is awkward. We don't know each other well enough to get married right now.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //RejectCourtshipStatus
+            {
+                "key": "RejectCourtshipStatus_Ring",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "I think I'm supposed to have some kind of emotional attachment before we get married... right?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "When I see you, I'm not sure about my feelings. Perhaps if we go out on a date, we might be able to grow our connection more.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            //RejectHouseStatus
+            {
+                "key": "RejectHouseStatus_Ring",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "Really? It's not that I don't like you but...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "...I don't know if there would be enough room in your living quarters for both of us right now.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Maybe the timing is just not right yet.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SpecialItem_DateInvitation............................
+            //Accept
+            {
+                "key": "Accept_Courtship",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "This is actually a convenient time to participate in this ritual.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Please share the agenda you have arranged.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //AcceptSpouse
+            {
+                "key": "AcceptSpouse_Courtship",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "I suppose it is good practice in a serious relationship to continue spending time with one another."
+                    },
+                    {
+                        "text": "Do you have a preference for our date?",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //RejectFriendStatus
+            {
+                "key": "RejectFriendStatus_Courtship",
+                "equipItemUp": true,
+                "textSet": [
+                    {
+                        "text": "We barely know one another so...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I am not interesting at this time.",
+                        "expression": "Sad"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+            //#endregion ..........................................
+
+        ],
+        "commentary": [
+            {
+                //MEET THE CREW
+                "key": "quest_16",
+                "textSet": [
+                    {
+                        "text": "You must be the new captain we have been expecting for a while now."
+                    },
+                    {
+                        "text": "I am the Junior Medical Officer and will be tracking your medical records throughout our journey."
+                    },
+                    {
+                        "text": "I do not have any additional data on your assigned mission."
+                    },
+                    {
+                        "text": "*Awkward pause* Goodbye.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                //P_VISITGREYPLANET
+                "key": "quest_24",
+                "textSet": [
+                    {
+                        "text": "When you go down to planetary surfaces, you should bring some extra sealant for your spacesuit, just in case."
+                    },
+                    {
+                        "text": "A lot of foreign bacteria and particles can incapacitate you within hours if exposed."
+                    }
+                ]
+            },
+            {
+                //P_REPORTTOKAIDA
+                "key": "quest_61",
+                "textSet": [
+                    {
+                        "text": "Captain! *points at your dusty shoes*",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Please make sure to limit the number of contaminants you bring back aboard this ship."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTGREYSOOT
+                "key": "quest_19",
+                "textSet": [
+                    {
+                        "text": "Why do you need to grow different kinds of food again?"
+                    },
+                    {
+                        "text": "Food Rations have all the nutrients you need for a day and are adequately flavored."
+                    }
+                ]
+            },
+            //{
+            //    //P_DELIVERGREYRELIC
+            //    "key": "quest_10",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_OCEANCOORDMEETING
+                "key": "quest_17",
+                "textSet": [
+                    {
+                        "text": "I still don't understand... why did you bring that alien, Soot, aboard?"
+                    },
+                    {
+                        "text": "Without a proper study, we do not know if the alien is compatible with the lifeforms aboard this vessel.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //{
+            //    //P_VISITENGINEROOM
+            //    "key": "quest_57",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_PRODUCEFUEL
+                "key": "quest_60",
+                "textSet": [
+                    {
+                        "text": "I imagine we will be leaving orbit soon once you've filled the ship's fuel tanks."
+                    },
+                    {
+                        "text": "I will make a note of it in our log so we have a record of external factors when making medical assessments."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEOCEAN
+                "key": "quest_8",
+                "textSet": [
+                    {
+                        "text": "As we journey through space, you might want to take this opportunity to improve morale around here."
+                    },
+                    {
+                        "text": "Studies show stress can be a major contributor to serious illness, so I consider it part of your duty as captain to reduce those levels."
+                    }
+                ]
+            },
+            {
+                //SR_CATCHMICROBES
+                "key": "quest_64",
+                "textSet": [
+                    {
+                        "text": "Captain, Frances informed me that you will be assisting us with microbe research."
+                    },
+                    {
+                        "text": "Please do not forget to check the microbe board in the science lab from time to time."
+                    },
+                    {
+                        "text": "I often review the data found on that board when conducting my own research as well."
+                    }
+                ]
+            },
+            {
+                //P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "Oh, are we at the planet already? I lost track of time."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTOCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "Captain, I am pleased you are helping the people of the Blue Reef Kingdom, and I'd advise you to not delay your efforts."
+                    },
+                    {
+                        "text": "Land sickness is caused when the brain is agitated by perceptual incongruity and releases a series of stress hormones."
+                    },
+                    {
+                        "text": "I'd be interested in experiencing it so I could improve my 'bedside manner'."
+                    },
+                    {
+                        "text": "Frances said I should work on it."
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "Satisfactory job on obtaining another relic piece."
+                    },
+                    {
+                        "text": "Your interpersonal skills seem to be useful to acquire other's trust."
+                    },
+                    {
+                        "text": "I have been documenting some of your methods for future use."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEDESERT
+                "key": "quest_5",
+                "textSet": [
+                    {
+                        "text": "Captain, I have to say traveling in space does boost a healthy amount of adrenaline across the crew."
+                    },
+                    {
+                        "text": "I am monitoring my own personal levels and trying to see similar results but so far nothing significant."
+                    },
+                    {
+                        "text": "Frances says I'm thinking too logically instead of 'living in the moment'. Whatever that means...?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                //P_VISITDESERTPLANET
+                "key": "quest_23",
+                "textSet": [
+                    {
+                        "text": "I will see you when you return from your trip to the planet's surface... oh and..."
+                    },
+                    {
+                        "text": "...please inform the medical bay immediately if you find any other inhabitants experiencing illness like before."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTDESERTHERMY
+                "key": "quest_18",
+                "textSet": [
+                    {
+                        "text": "Some people are complimenting you on your kind offer to help the arthropod on the surface."
+                    },
+                    {
+                        "text": "Kindness is something I am still trying to practice too... So I wanted you to have this...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got a <style=Item>Jute</style>.",
+                        "itemReward": {
+                            "itemID": "item_77",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    },
+                    {
+                        "text": "I heard that the arthropod was in need of this material, so I thought you could pass it along for me."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "Captain, compliments to you on your success acquiring another one of the mission relic pieces."
+                    },
+                    {
+                        "text": "You are solidifying the benefit of your existence more and more.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "Frances likes to be on the move and I guess I do too."
+                    },
+                    {
+                        "text": "Watching the stars fly past my window gives me a calming feeling I don't have when we are in orbit.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": "I would like to assist Kaida with her scientific evaluation of this new planet."
+                    },
+                    {
+                        "text": "It shouldn't disrupt my medical duties, but I'll log my absence on the medical roster so Frances can find me just in case."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "I find it interesting that the Bunky Family has been living in isolation with nobody but themselves."
+                    },
+                    {
+                        "text": "But now that I think about it...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "That actually sounds like something I might enjoy."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "I think if I had to choose a permanent habitat, I would prefer a cooler planet instead of a warmer one."
+                    },
+                    {
+                        "text": "The brain functions more clearly in cold climates, and freezing temperatures can be ideal for storing lab samples."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "Even though we are getting closer to accomplishing the primary mission..."
+                    },
+                    {
+                        "text": "Make sure you take time for yourself to rest and recharge your mental health."
+                    },
+                    {
+                        "text": "Very few people can work as efficiently as me."
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "Captain, would you like a vitals check before you depart?",
+                        "optionOne": {
+                            "optionText": "Yes please.",
+                            "response": "*scans your body*... Temperature... normal, Oxygen levels...  normal, Blood pressure... a little high but within normal range."
+                        },
+                        "optionTwo": {
+                            "optionText": "No thanks.",
+                            "response": "That is ill advised but your complexion is good and you seem to be functioning at full capacity.",
+                            "responseExpression": "Sad"
+                        }
+                    },
+                    {
+                        "text": "Just take some deep breaths and focus your mind before departing."
+                    },
+                    {
+                        "text": "You are cleared for duty."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "I am programming some new surgical techniques into our databases."
+                    },
+                    {
+                        "text": "Clearly, you have no aversion to risk-taking and you seem to invite trouble, so we might need them.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "I have to admit, I am experiencing curiosity about these relic pieces.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I find it fascinating that simple acts of kindness can produce such impressive results."
+                    }
+                ]
+            },
+            {
+                //SR_EXPLOREALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "Captain, your personal magnetism is very attractive and charming."
+                    },
+                    {
+                        "text": "You can relate and build trust with others so easily."
+                    },
+                    {
+                        "text": "I think that is why we have accomplished this mission with such success and charisma.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "This has been a personal journey for me as well... and thanks to you, I have learned a lot about how to open up more to others.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "Objects Request",
+                "questDescription": "Doc12 posted for help on the bulletin after Frances told her that delegating could manage her workload more efficiently. Help her obtain what she has requested.",
+                "goalDescriptions": [
+                    "Give $amount <style=Item>$goalName</style> to Doc12."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Posting on the bulletin does seem to be an efficient way to delegate some of my tasks like Frances suggested."
+                            },
+                            {
+                                "text": "You are here to help, correct?"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "You brought my bulletin requests. Yes, this is satisfactory and will accomplish my end goal."
+                            },
+                            {
+                                "text": "I thank you for your services. You may offer your support again in the future if needed."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "You got <sprite=1><style=Credits> $amount credits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "To whom it may concern,\n\nI am seeking specific objects that I will purchase on delivery. Please bring the following to my attention if you are interested.\n\nCordially,\nDoc12"
+                            }
+                        ]
+                    }
+                ]
+            },
+            //#endregion ..............................................
+            //#region T_FIND MICROBES ............................
+            {
+                "questKey": "quest_28",
+                "questName": "Microbe Request",
+                "questDescription": "Doc12 requested a certain type of microbe to be caught for a clinical study. Inform her once they have been caught.",
+                "goalDescriptions": [
+                    "Catch $amount <style=Item>$goalName</style> microbes."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Yes, about my bulletin request. Catching new microbes is critical to my clinical studies."
+                            },
+                            {
+                                "text": "I do appreciate your efforts to track them down for me."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Just in time. I was beginning to worry you had abandoned my bulletin request."
+                            },
+                            {
+                                "text": "So you were able to find those microbe types aboard the ship?"
+                            },
+                            {
+                                "text": "Perfect. That is all I needed to know and I will add this data into my research documents now."
+                            },
+                            {
+                                "text": "I will make an additional note that you were quite helpful too. Thank you."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "You got <sprite=1><style=Credits> $amount credits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Notice to all crewmates,\n\nI am conducting another clinical study and would be interested to know if a certain type of microbe could be caught in a timely manner. The outcome may benefit us all greatly, so any participation is encouraged.\n\nCordially,\nDoc12"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

@@ -38,11 +38,24 @@
 # 6. Using AssetStudio, extract all the 'English_XXX' TextAssets.  This directory
 # will be used as your <template-dir> in the script call below.
 # 7. This script should be good to run as follows:
-# $ python3 ./create-localization.py <template-dir> <language> <output-dir>
-# ex: python3 ./create-localization.py ./tmp/templates Spanish ./tmp/Spanish
-# * NOTE: <language> is case sensitive and must match one of these:
-# https://developers.google.com/admin-sdk/directory/v1/languages
-# 
+# $ python3 ./recreate-localizations
+#
+# To add a langauge for translation, uncomment the "Gibberish" line in the
+# LANGUAGES list below and run the script.  The script will not recognize
+# the language (obviously =) and will print out a list of valid language
+# names.  Add the language exactly as it's printed in the output to the
+# LANGUAGES list and re-comment the "Gibberish" line.  Run the script 
+# again, and it should start translating.
+
+LANGUAGES = (
+    # "Gibberish",
+    "Chinese (Simplified)",
+    "French",
+    "German",
+    "Korean",
+    "Portuguese",
+    "Spanish",
+)
 
 import os
 import sys
@@ -53,6 +66,8 @@ THIS_DIR = os.path.dirname(__file__)
 TMP_DIR = os.path.join(THIS_DIR, "tmp")
 PROJECT_ID_FILE = os.path.join(TMP_DIR, "project_id")
 CACHE_FILE = os.path.join(TMP_DIR, "cache")
+TEMPLATE_DIR = os.path.join(THIS_DIR, "template")
+OUT_DIR = os.path.join(THIS_DIR, "localizations")
 
 KEYS_TO_TRANSLATE = [
     "achievementDescription",
@@ -110,7 +125,6 @@ class JankyTranslator:
         self.language = language
         self.language_code = None
         self.out_dir = os.path.join(out_dir, self.language)
-        os.makedirs(self.out_dir, exist_ok = True)
         self.project_id = self.read_file(PROJECT_ID_FILE).strip()
         self.translate_parent = "projects/%(project_id)s/locations/global" % self.__dict__
         
@@ -121,6 +135,7 @@ class JankyTranslator:
         return data
     
     def write_file(self, path, data):
+        os.makedirs(os.path.dirname(path), exist_ok = True)
         f = open(path, "w")
         try:
             f.write(data)
@@ -137,7 +152,11 @@ class JankyTranslator:
         f.close()
 
     def load_cache(self):
-        self.cache = eval(self.read_file(CACHE_FILE)) if (os.path.exists(CACHE_FILE)) else {}
+        self.cache = {}
+        try:
+            self.cache = eval(self.read_file(CACHE_FILE))
+        except:
+            pass
         for key in ('languages', 'translations', 'stats'):
             if (key not in self.cache.keys()):
                 self.cache[key] = {}
@@ -152,7 +171,7 @@ class JankyTranslator:
             if (self.language_code is None):
                 if (do_raise):
                     for key, val in self.cache['languages'].items():
-                        log("%s: %s" % (key, val))
+                        log(key)
                     log("** set_language_code ERROR - unknown language '%(language)s'; see list above." % self.__dict__)
                     sys.exit(1)
                 return False
@@ -219,7 +238,7 @@ class JankyTranslator:
             if (not chunk):
                 break
             chunks.append(chunk if (chunk[0] in "<$") else self.translate_string(chunk))
-        return "".join(chunks)
+        return "".join(chunks).replace('"', "'")
  
     def translate_file(self, path):
         log("--> in: " + path)
@@ -281,23 +300,28 @@ class JankyTranslator:
                     self.translate_file(full_path)
         except KeyboardInterrupt as e:
             log("\n* Keyboard interrupt")
+            sys.exit(1)
         finally:
             log("Accumulated Total Chars Translated: %dK" % (self.cache['stats']['total_chars_translated'] / 1000))
             self.write_cache()
         return 0
 
 def main(argv):
-    argc = len(argv)
-    if (argc < 4):
-        log("usage: %s <template-dir> <language> <out-dir>" % argv[0])
-        return 1
-    return JankyTranslator(argv[1], argv[2], argv[3]).run()
+    for language in LANGUAGES:
+        JankyTranslator(TEMPLATE_DIR, language, OUT_DIR).run()
+    return 0
+    #argc = len(argv)
+    #if (argc < 4):
+    #    log("usage: %s <template-dir> <language> <out-dir>" % argv[0])
+    #    return 1
+    #return JankyTranslator(argv[1], argv[2], argv[3]).run()
+
 
 if (__name__ == "__main__"):
-    #sys.exit(main(sys.argv))
-    sys.exit(main([
-        "", 
-        "tmp/template", 
-        "Korean", 
-        "tmp/output"
-    ]))
+    sys.exit(main(sys.argv))
+    #sys.exit(main([
+    #    "", 
+    #    "tmp/template", 
+    #    "French", 
+    #    "tmp/output"
+    #]))

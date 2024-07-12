@@ -1,0 +1,976 @@
+[
+    {
+        "npcSaveID": "npc_12",
+        "name": "Hermy",
+        "titles": [
+            "???",
+            "Museum Curator"
+        ],
+        "birthdayAnnouncement": "Today is Hermy's birthday.",
+        "relationshipStatus": [
+            "Dedicated Hermit"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "UnlockCrew",
+                "unlockHeader": "New Crew Member!",
+                "unlockTitle": "Hermy",
+                "unlockSubTitle": "Museum Curator",
+                "unlockSubImage": 1,
+                "unlockBody": "Hermy has joined your crew! He is bringing his traveling museum with him and setting up shop in the Shuttle Bay."
+            },
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 0,
+                "unlockBody": "Great job! Your relationship status with Hermy has increased to the next level. He now considers you one of his friends."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Best Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Gold star! Your relationship status with Hermy has increased another level. He now considers you one of his very best friends."
+            }
+        ],
+        "observations": [
+            "Prefers imperfect objects.",
+            "Likes to stockpile preserved, fermented, and pickled foods for long excursions.",
+            "Has a home growing mushroom kit that seems to be thriving."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "I feel like I have sand stuck to me everywhere...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "No matter how much I tidy up, I keep finding more piles of it in the shellship.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDER AFTER .............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "I'm up and running again, but this planet is pretty dire."
+                    },
+                    {
+                        "text": "I'm ready to start my next adventure."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "I've been scuttling around this part of space for half a century if I recall."
+                    },
+                    {
+                        "text": "Keep an eye out for any antiques for me, eh?"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "My Cockle Ship has a lot more storage than you might think."
+                    },
+                    {
+                        "text": "I installed all kinds of hidden compartments."
+                    },
+                    {
+                        "text": "Oh, wait, um, I mean there is just lots of space... why would I hide anything.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Where did I put that hammer? You didn't take it did you?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Last thing I need is a friend with sticky pinchers.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "My museum is open for all to enjoy, but perhaps I need to post some do not touch signs."
+                    },
+                    {
+                        "text": "The younger visitors that are still in their development stages... seem a little unstable.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "I could watch antique shows for hours."
+                    },
+                    {
+                        "text": "It just goes to show you never know where you will find a priceless treasure."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "You know... it's a little slippery on this ship for someone with crab legs."
+                    },
+                    {
+                        "text": "Good thing I have incredible balance."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "There is nothing more relaxing than cuddling up with a warm humid sea sponge."
+                    },
+                    {
+                        "text": "Try it... you'll see what I mean."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "My shellship is very durable, but I still give it a coat of mineral oil regularly to keep it in top condition."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Most of my relatives still live within scuttling distance of each other."
+                    },
+                    {
+                        "text": "I'm kind of the hermit of the family and like to live alone."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Captain, please inform the crew not to plug their console devices into my shellship.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "The energy outputs are just not compatible.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Most of my species are great collectors. We have an annual Collector's Festival to trade and see each other's treasures."
+                    },
+                    {
+                        "text": "It's the greatest event of the year.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "On Saturday nights I like to listen to my radio show."
+                    },
+                    {
+                        "text": "They're mostly mysteries or spooky tales, but every once in a while they'll throw in a great sci-fi episode."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Don't forget your favorite crab when you are exploring all those new worlds."
+                    },
+                    {
+                        "text": "No treasure is too small, great treasures come in small shells."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "When I was a young crab, I had a poster of The Great Cornelius."
+                    },
+                    {
+                        "text": "He was the most famous collector of all time."
+                    },
+                    {
+                        "text": "Perhaps one day, little aspiring crabs might have my poster up on their domes as well."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "I like to complete the Starzette's monthly puzzle, but I always break my pencils.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "They need a larger crab-friendly version so I can properly write in the solutions."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "In a perfect universe, everything has a purpose or can be repurposed."
+                    },
+                    {
+                        "text": "Think of all the treasures we take for granted every day."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "I sent free admission tickets to my museum back to my relatives."
+                    },
+                    {
+                        "text": "I doubt anyone would actually be able to visit, but this way they'll be proud I'm working hard on being a great collector."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Don't worry... if we ever ran out of space for new collectables, I could always consider expanding the shellship."
+                    },
+                    {
+                        "text": "I think I could add at least one more floor and still get it off the ground."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Ugh... I'm entering into a molting phase so excuse my crabbiness.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "I better stock up on some corn cobs for the extra cellulose."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Your deck sure has a lot of interesting things to look at up there..."
+                    },
+                    {
+                        "text": "It seems my collecting habits have rubbed off on you!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Do I have your loyalty, Captain?",
+                        "optionOne": {
+                            "optionText": "Sure?",
+                            "response": "*gives you a deep stare down* Well OK then.",
+                            "responseExpression": "Angry"
+                        },
+                        "optionTwo": {
+                            "optionText": "Why do you ask?",
+                            "response": "Sharp, always on your toes, I like that."
+                        }
+                    },
+                    {
+                        "text": "I need to put down a beneficiary on my insurance form and I think I can trust you to make sure my collection doesn't fall into the wrong claws."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "A crab's rite of passage is when the entire family helps build their first collector's ship."
+                    },
+                    {
+                        "text": "I had over 256 relatives helping me with my ship when I was a young crab.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "I know you will help me build the greatest collection of all time."
+                    },
+                    {
+                        "text": "In some ways, that might make YOU the most valuable asset I've acquired."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Captain, what do you think of this old shell?",
+                        "optionOne": {
+                            "optionText": "Still looks good to me.",
+                            "response": "Think so? Well good, it's been with me so long I couldn't think of parting with it."
+                        },
+                        "optionTwo": {
+                            "optionText": "It's getting kind of worn out.",
+                            "response": "Oh no, I guess you're right. I'll have to keep an antenna out for new shells... but maybe I'll just keep this one as backup anyways.",
+                            "responseExpression": "Stressed"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "If you ever want to go to the Great Garbage World with me one day it sure would be a lot of fun."
+                    },
+                    {
+                        "text": "I've only seen pictures of it in travel brochures, but can you even imagine what we might find in all that rubbish?"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "I must be dreaming to get such a great gift. QUICK! Someone pinch me so I know this is for real.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "If I had known before that you would be bringing me such valuables, I would have joined your crew ages ago.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Is it possible for a crab to fall in love with an item?"
+                    },
+                    {
+                        "text": "I think I'm about as close as it gets.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "I have to say... I really like getting these kinds of goodies."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Thank you! What a good find there! It's items like this that keep me going and excited about collecting.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Yes this is just the thing I needed to jazz things up around here. Thanks, Captain."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Thanks, nice condition too."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "I love all gifts big and small!"
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Oh goodie, another object acquired. I will now find a proper place for it."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Pretty common stuff here. Even I'm not a collector of this.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Boring.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Captain... you kind of got my hopes up for nothing.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "Oh, more gifts for me...? What a day, what a day!"
+                    },
+                    {
+                        "text": "I love my birthday!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "These birthday rituals you have of gift-giving and indulging in sugar are probably the best inventions since leg warmers."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            {
+                "key": "greeting_donor",
+                "textSet": [
+                    {
+                        "text": "Welcome to Hermy's Spectacular Collectables. Do you have something you'd like to donate?"
+                    }
+                ]
+            },
+            {
+                "key": "greeting_complete",
+                "textSet": [
+                    {
+                        "text": "Welcome to Hermy's Spectacular Collectables. Feel free to browse the museum at your leisure."
+                    }
+                ]
+            },
+            {
+                "key": "greeting_rewards_miss",
+                "textSet": [
+                    {
+                        "text": "Welcome to Hermy's Spectacular Collectables. I'm glad you are here because I've found a few discrepancies in my records..."
+                    },
+                    {
+                        "text": "These kinds of things happen all the time, so let's get these things sorted right now."
+                    }
+                ]
+            },
+            {
+                "key": "greeting_rewards_continue",
+                "textSet": [
+                    {
+                        "text": "Now that things are settled... do you have something you'd like to donate?"
+                    }
+                ]
+            },
+            {
+                "key": "greeting_rewards_end",
+                "textSet": [
+                    {
+                        "text": "Now that things are settled... feel free to browse the museum at your leisure."
+                    }
+                ]
+            },
+            //Single donation text can be overwritten by specific text found on the collection text JSON. This will only be used if no text is specified in the Collection JSON.
+            {
+                "key": "donation_single_start",
+                "textSet": [
+                    {
+                        "text": "How amazing..."
+                    },
+                    {
+                        "text": "Would you like to hear more about this object?",
+                        "optionOne": {
+                            "optionText": "No"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "donation_single_no_details",
+                "textSet": [
+                    {
+                        "text": "Hmmm... I don't have much information on this object."
+                    },
+                    {
+                        "text": "I'll have to do some more research and get back to you."
+                    }
+                ]
+            },
+            {
+                "key": "donation_multi_start",
+                "textSet": [
+                    {
+                        "text": "Oh, multiple donations... you are too kind."
+                    },
+                    {
+                        "text": "I will begin displaying these right away."
+                    },
+                    {
+                        "text": "Check out the audio tour in the museum if you would like more information about these items."
+                    }
+                ]
+            },
+            {
+                "key": "donation_continue",
+                "textSet": [
+                    {
+                        "text": "Do you have any other items to donate?",
+                        "optionOne": {
+                            "optionText": "No"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "farewell",
+                "textSet": [
+                    {
+                        "text": "Thanks for stopping by, I hope you enjoy all the exhibits.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+        ],
+        "commentary": [
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "So should I expect a surge in museum patrons while we are in space?"
+                    },
+                    {
+                        "text": "I'm sure everyone gets bored and would love to stop off at my museum?... Right?... Right?"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "Do you think there will be some opportunities for collecting once we arrive at the new location?"
+                    },
+                    {
+                        "text": "I hope you can keep an antenna out for me."
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": "Here, here, take these in case you want to put in a few extra overtime hours down on that new planet..."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got 2 <style=Item>Tomatoes</style>.",
+                        "itemReward": {
+                            "itemID": "item_169",
+                            "amount": 2,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "You found a family on an ice planet too you say?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I remember my water dwelling days, but how can anything survive with frozen water?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Actually, I'm not a big fan of any kind of water anyways...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "I failed my swimming lessons as a small crab and was teased so much, I didn't re-enroll.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "If we're heading back to that relic thingy, I might pick up a couple of those grey radishes."
+                    },
+                    {
+                        "text": "Kaida gave me a few and I think I acquired a taste for that bland root vegetable."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "Captain, I don't mean to nitpick, but my navigation controls are showing me there is a more efficient way to our next destination.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "But I guess it's up to you if you want to take the scenic route.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "I'll be here either way...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "...just patiently waiting for new museum quality pieces.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "Yeah, yeah, have you been to the surface yet...",
+                        "optionOne": {
+                            "optionText": "Yes",
+                            "response": "Oh gooooodie, I can't wait to see what you bring me..."
+                        },
+                        "optionTwo": {
+                            "optionText": "No",
+                            "response": "Well I can't always hold your pinchers... get going... you can do it.",
+                            "responseExpression": "Angry"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "So, I heard you ran into some tough negotiators down on that lava planet..."
+                    },
+                    {
+                        "text": "...here is the secret..."
+                    },
+                    {
+                        "text": "...just pretend like you don't actually care about what you're looking for."
+                    },
+                    {
+                        "text": "...or was it to pretend like you have something they want?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "...oh, maybe it was to pretend like you have already found what you want.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "It just comes naturally for me so it's hard to break it down to others."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Captain, friend, mate..."
+                    },
+                    {
+                        "text": "You're going to give me a peek at the new relic piece, aren't you?",
+                        "optionOne": {
+                            "optionText": "Depends",
+                            "response": "You're such a tough shell to crack... OK, I'll be on my best behavior.",
+                            "responseExpression": "Stressed"
+                        },
+                        "optionTwo": {
+                            "optionText": "No",
+                            "response": "No fair. You know me too well. *gives you shifty eyes*",
+                            "responseExpression": "Angry"
+                        }
+                    }
+                ]
+            },
+            {
+                //SR_EXPLOREALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "Captain, attendance has been lagging...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Did something happen?",
+                        "expression": "Stressed",
+                        "optionOne": {
+                            "optionText": "Yes, we completed our mission!",
+                            "response": "You did! I knew those relic pieces would be the ticket all along.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Soot has found his family!",
+                            "response": "Great news, that little guy always made me laugh.",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "So a celebration is in order, I might have something around here somewhere..."
+                    },
+                    {
+                        "text": "*digs through boxes and blows dust in your face*"
+                    },
+                    {
+                        "text": "Oh sorry, well... I'll keep looking... but way to go, Captain!",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "Always Looking",
+                "questDescription": "Hermy is in need of a few specific items this time, but will also take museum donations anytime.",
+                "goalDescriptions": [
+                    "Give $amount <style=Item>$goalName</style> to Hermy."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "I'm glad to see my bulletin post made it to you."
+                            },
+                            {
+                                "text": "I kept accidentally hitting delete instead of post, but I must have gotten it right at least once."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Oh you brought my items! This is just excellent, yes, just excellent.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "I hope this compensation is satisfactory."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "You got <sprite=1><style=Credits> $amount credits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Bipedals...\n\nWhile   I'm ALLways accepting donations AT the museum.   Today... specifically, I am in need Of the followING items. EVERY-thing is negotiable... too.\n\n-herMy"
+                            }
+                        ]
+                    }
+                ]
+            },
+            //#endregion ..............................................
+            //#region T_KILL ENEMIES .............................
+            {
+
+                "questKey": "quest_59",
+                "questName": "Excavation Thieves",
+                "questDescription": "Hermy has spotted a few creatures taking off with what could be precious museum artifacts.",
+                "goalDescriptions": [
+                    "Zap $amount <style=Item>$goalName</style> for Hermy."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Oh, it's you who accepted my bulletin request, huh?"
+                            },
+                            {
+                                "text": "It's good to know I'm not the only one around here that sees the urgency of this matter.",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "I will sleep better knowing you are going to stop those wildlife brutes.",
+                                "expression": "Stressed"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "You zapped those critters for me? Ahhhh, what a load off my shell! "
+                            },
+                            {
+                                "text": "I bet you showed those museum-stealing brutes what's what.",
+                                "expression": "Angry"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "You got <sprite=1><style=Credits> $amount credits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            },
+                            {
+                                "text": "Huh..."
+                            },
+                            {
+                                "text": "Not to sound ungrateful, but I am surprised you didn't bring me any artifacts back..."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "ATtensION!\n\nThis is UNACCEPTable! I havE PersssonallYY wit-NESSed these BRUTeS running off with important OBJectS of history. I AM not sure what They need ArTiFActs for BUT we better PuT a ST OP to IT!\n\nSTRESS Molting!\n-herMy"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

@@ -1,0 +1,1055 @@
+[
+    {
+        "npcSaveID": "npc_11",
+        "name": "Frances",
+        "titles": [
+            "Chief Medical Officer"
+        ],
+        "birthdayAnnouncement": "Today is Frances's birthday.",
+        "relationshipStatus": [
+            "It's Complicated"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 2,
+                "unlockBody": "Great job! Your relationship status with Frances has increased to the next level. She now considers you one of her friends and has given you an access card to her room."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Best Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Gold star! Your relationship status with Frances has increased another level. She now considers you one of her very best friends."
+            }
+        ],
+        "observations": [
+            "Uses an old Space Alliance coffee mug that is full of coffee stains.",
+            "Storing an old snow cone machine from her childhood.",
+            "Has a vacation request slip form filled out from 2 years ago but was never submitted."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "I can help with any medical needs you might have."
+                    },
+                    {
+                        "text": "Stop by the Medical Center for a checkup anytime."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Hi. How are things going on the ship for you?"
+                    },
+                    {
+                        "text": "Remember not to over work yourself."
+                    },
+                    {
+                        "text": "Stress is as bad as any other illness.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Make sure you always use a space suit graded for at least 50,000 SPF before going out into space."
+                    },
+                    {
+                        "text": "Humans have such fragile skin."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "I like to go rock climbing from time to time in the gym."
+                    },
+                    {
+                        "text": "It's a great whole-body workout and it relaxes my mind since there's more puzzle solving involved than you might think."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "I probably drink too much coffee but we all have our faults I guess.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "How else would I have gotten through medical training?"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Before we were stationed here, Doc12 and I traveled around serving communities that needed medical services."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*sigh*... Sometimes when new medical posts are published, I get a little overwhelmed with all the new data to absorb.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "But, if I keep rereading the material the information starts to stick in my brain."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "I wish I wanted to make more nutritious meals, but I don't always feel like it."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "My favorite type of vacation is going to different cities and exploring the urban sights."
+                    },
+                    {
+                        "text": "I'm not really a beach person..."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Make sure to take breaks when your body needs it."
+                    },
+                    {
+                        "text": "We all have our limits and as long as you are trying your best, that is all you can ask of yourself."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "$playerName, you are such a hard worker..."
+                    },
+                    {
+                        "text": "If you ever want to switch careers and go into medicine, I think you'd be a great addition to the team."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "When Kaida reached out and told me about the opening aboard this ship, I wasn't sure if it would be a good fit."
+                    },
+                    {
+                        "text": "But now I think working with one community gives Doc12 and myself a chance to make some lasting friends."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "$playerName, can I ask you a personal question...?"
+                    },
+                    {
+                        "text": "What do you think of Robert?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Great guy!",
+                            "response": "Yeah? I'm so glad you think so!"
+                        },
+                        "optionTwo": {
+                            "optionText": "Kind of a stick in the mud.",
+                            "response": "*shocked look*... Hahahahaha. Yes, I guess I could see why you say that.",
+                            "responseExpression": "Confused"
+                        }
+                    },
+                    {
+                        "text": "There is just something about him that makes me really enjoy my time with him."
+                    },
+                    {
+                        "text": "*blushes*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "I'm still training Doc12 to become a doctor but it's really up to her."
+                    },
+                    {
+                        "text": "I don't want her to feel obligated just because those scientists started her on this path."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Sometimes natural remedies can be just as effective as chemical medications."
+                    },
+                    {
+                        "text": "Just remember to always listen to what your body is telling you."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Hi Captain, thanks for checking in with me. You are such a good friend.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Everything is well on my end, but don't forget to check in with other crew members too."
+                    },
+                    {
+                        "text": "I heard they really appreciate it."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "I love falling asleep with a movie on..."
+                    },
+                    {
+                        "text": "But then I usually get startled awake when some crazy action scene plays out, haha."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "I can be fairly handy when I need to be."
+                    },
+                    {
+                        "text": "My father was a really good inventor, so he taught me a few things."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "I never overbook my appointments so I can be available in case of emergencies."
+                    },
+                    {
+                        "text": "Most of the time I just end up restocking the medical cabinets or reviewing new research."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Hi Captain, how are you feeling today?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Feeling good.",
+                            "response": "That's great to hear. I'm glad you are prioritizing your health.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Feeling bad.",
+                            "response": "Hmm... *scans you*... Nothing alarming is coming up, but make sure you drink lots of fluids and get some extra rest."
+                        }
+                    },
+                    {
+                        "text": "If anything changes just come and see me again."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "To be honest, I didn't know if I ever wanted children."
+                    },
+                    {
+                        "text": "But Doc12 has been one of the best things that has ever happened to me."
+                    },
+                    {
+                        "text": "I just hope I'm not letting her down sometimes.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "I first started being interested in medicine watching my father build bionic implants."
+                    },
+                    {
+                        "text": "He was such a talented engineer and I admired how much he improved people's lives."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "I'm working on a presentation to give at the next doctor's summit, but I kind of hate public speaking."
+                    },
+                    {
+                        "text": "Now I'm starting to feel sick.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "The secret to happiness is lots of laughter."
+                    },
+                    {
+                        "text": "But not too much, I have a weak bladder, hahahaha.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "I'm working on some modifications for Kaida's implants... "
+                    },
+                    {
+                        "text": "*sarcastic*... but she's already such a powerhouse it might not be a good idea. *winks*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Oh, for me?!"
+                    },
+                    {
+                        "text": "How did you know I love this so much? This is very thoughtful, thank you.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "What a delightful surprise this is. I just adore this gift!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Wow! Thank you for bringing me such a meaningful and special gift.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Oh great! This is such a delight. Thanks, Captain.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Wow, such a thoughtful young captain you are.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "I guess I am kind of a sucker for this. I appreciate it.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Thank you. This is nice."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Okie dokie, I'll make good use of this."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "You can't have enough of this so I'm always happy to have extras on hand."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Thanks, but a gift like this might be better for someone else next time.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Eh... sorry, I'm not very good at hiding what I'm thinking.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "But hey, I know you tried.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Maybe we got our wires crossed, but I don't really need this.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "You remembered my birthday!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "The whole crew has made an effort to make my day special."
+                    },
+                    {
+                        "text": "Thank you, Captain, for being the cherry on top of the ice cream sundae.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            {
+                "key": "RegisterStart_Medical", //case sensitive because we use the store name Enum to get this key. 
+                "textSet": [
+                    {
+                        "text": "Welcome Captain, looking for something to keep your energy up?"
+                    }
+                ]
+            },
+            {
+                "key": "RejectProposalFriend", //engagement_ring
+                "textSet": [
+                    {
+                        "text": "Wow, I don't think you actually meant to give this to me. Sigh...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Oh, just ignore me.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "It just would be nicer if it came from someone else.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Thanks anyways.",
+                        "expression": "Sad"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+        ],
+        "commentary": [
+            {
+                //MEET THE CREW
+                "key": "quest_16",
+                "textSet": [
+                    {
+                        "text": "Can I help you?"
+                    },
+                    {
+                        "text": "Oh, you're the new captain. Of course."
+                    },
+                    {
+                        "text": "I'm Frances, Chief Medical Officer. You can come see me in the clinic anytime you need help."
+                    },
+                    {
+                        "text": "My daughter is also a junior medical officer onboard. She's around here somewhere."
+                    },
+                    {
+                        "text": "Oh, and be careful down on that Grey Planet. I swear the last captain was reckless on purpose just so he could get reassigned to a fancier post.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_VISITGREYPLANET
+                "key": "quest_24",
+                "textSet": [
+                    {
+                        "text": "After reviewing your medical records, you should be in top shape to head down to the Grey Planet whenever you are ready."
+                    },
+                    {
+                        "text": "This is your first assignment off-ship so be extra careful.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "We don't want things to get off to a rocky start."
+                    }
+                ]
+            },
+            {
+                //P_REPORTTOKAIDA
+                "key": "quest_61",
+                "textSet": [
+                    {
+                        "text": "Don't let me keep you from your duties."
+                    },
+                    {
+                        "text": "I have plenty of work on the ship keeping me busy."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTGREYSOOT
+                "key": "quest_19",
+                "textSet": [
+                    {
+                        "text": "Don't worry, I'll be monitoring your vitals while you are down on the Grey Planet."
+                    },
+                    {
+                        "text": "Your space suit reports all your activities and levels in real time to my medical database."
+                    }
+                ]
+            },
+            //{
+            //    //P_DELIVERGREYRELIC
+            //    "key": "quest_10",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_OCEANCOORDMEETING
+                "key": "quest_17",
+                "textSet": [
+                    {
+                        "text": "I only attended a senior's officer meeting once when it got so heated that someone passed out from frustration."
+                    },
+                    {
+                        "text": "Oh, but don't stress now, we don't want you to end up in sick bay too on your first meeting."
+                    }
+                ]
+            },
+            //{
+            //    //P_VISITENGINEROOM
+            //    "key": "quest_57",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_PRODUCEFUEL
+                "key": "quest_60",
+                "textSet": [
+                    {
+                        "text": "Hey, maybe next time you run into Stewart, you could get him to stop in from time to time."
+                    },
+                    {
+                        "text": "He avoids me so well I forget he's on the ship at all sometimes.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEOCEAN
+                "key": "quest_8",
+                "textSet": [
+                    {
+                        "text": "I usually change the nutrient vitamins when we are traveling in space."
+                    },
+                    {
+                        "text": "I've noticed adding a little lavender to the mix helps people who are more nervous when flying."
+                    }
+                ]
+            },
+            //{
+            //    //SR_CATCHMICROBES
+            //    "key": "quest_64",
+            //    "textSet": [
+            //        {
+            //            "text": ""
+            //        },
+            //    ]
+            //},
+            {
+                //P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "$playerName, happy travels. We're all rooting for you!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTOCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "Captain, I'll be in the medical bay doing research on the causes of landsickness."
+                    },
+                    {
+                        "text": "But I hope this helps in the meantime..."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got 5 <style=Item>Minerals</style>.",
+                        "itemReward": {
+                            "itemID": "item_91",
+                            "amount": 5,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "Great job, Captain. My latest reports say everyone on the surface is already showing signs of improvement."
+                    },
+                    {
+                        "text": "Now you can understand why I decided to become a doctor, huh?"
+                    },
+                    {
+                        "text": "Helping people get better is one of the greatest feelings in life.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEDESERT
+                "key": "quest_5",
+                "textSet": [
+                    {
+                        "text": "I wonder what the connection is between all these planets and the Relic pieces?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Whatever the connection is, I'll be ready to assist whoever needs me!"
+                    }
+                ]
+            },
+            {
+                //P_VISITDESERTPLANET
+                "key": "quest_23",
+                "textSet": [
+                    {
+                        "text": "I don't know about you, but I could hardly sleep the last few nights.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "And then I look over and Doc12 is sleeping like a rock.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "I'm so tired... I would give anything to sleep like that.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTDESERTHERMY
+                "key": "quest_18",
+                "textSet": [
+                    {
+                        "text": "I've never met an arthropod species like the one you met down on the surface."
+                    },
+                    {
+                        "text": "I asked Doc12 to pull any relative materials on similar species."
+                    },
+                    {
+                        "text": "Just in case, we will start studying what we can find right away."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "Another job well done, but you don't need to hear that from me I suppose."
+                    },
+                    {
+                        "text": "Hopefully you will take a day off soon for your own health..."
+                    },
+                    {
+                        "text": "But... will you is the question?",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "You have things so well under control these days, I might even have time to continue my research on alien fungus."
+                    },
+                    {
+                        "text": "If I could find a way to alter its appetite to eat pollutants or other harmful substances, this bad microbe would actually become quite beneficial."
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": "*yawn*..."
+                    },
+                    {
+                        "text": "Are you heading down soon? Wait what day is today?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Ugh, I need some coffee...",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "This ice planet reminds me of when I was a little girl. My dad and I would get all bundled up and go ice skating."
+                    },
+                    {
+                        "text": "I loved it so much... perhaps I'll sneak away and dust off the old skates while we're in orbit.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "Captain, you will be happy to know I have seen a vast improvement in the physical and mental health of the crew."
+                    },
+                    {
+                        "text": "I think a lot of people underestimate stress and job fulfillment as an important factor to one's well-being."
+                    },
+                    {
+                        "text": "So whatever you are doing, keep it up. The crew seems to be responding well."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "Captain, can I have your opinion?"
+                    },
+                    {
+                        "text": "If you were going on a date... would you dress up or keep it casual?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Dress up!",
+                            "response": "Yeah? I kind of wanted to. Plus, I have just the right thing!",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Casual, definitely",
+                            "response": "Yeah... better to just be yourself, right?"
+                        }
+                    },
+                    {
+                        "text": "Thanks, Captain. Wish me luck."
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "I think you can handle yourself down there on this new planet's surface."
+                    },
+                    {
+                        "text": "We all have come this far together and I have complete confidence in you, Captain."
+                    },
+                    {
+                        "text": "Uhhh... just remember to double check your...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "No, no, never mind. You got this!"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Captain, my initial bio readings on those pirates are showing some interesting results..."
+                    },
+                    {
+                        "text": "It appears that they have naturally higher dopamine and adrenaline levels. Meaning, their mood could change often and quickly.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Scientifically, it would be a good idea to stay alert when speaking with them.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "I'm so glad I took this assignment."
+                    },
+                    {
+                        "text": "Not only do I get to do what I love and help people..."
+                    },
+                    {
+                        "text": "But the thrill of solving this mystery is a once-in-a-lifetime experience.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //SR_EXPLOREALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "There is our hero!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Well done, Captain... *claps hands for you*"
+                    },
+                    {
+                        "text": "I am really proud of you and this entire crew for a job well done.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "We all deserve to appreciate our victories in life."
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "Help Needed",
+                "questDescription": "Frances has been so busy and could use some help acquiring a few items.",
+                "goalDescriptions": [
+                    "Give $amount <style=Item>$goalName</style> to Frances."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Oh great, sounds like you found some time to help me out with that bulletin request."
+                            },
+                            {
+                                "text": "Sometimes I don't know how you manage it all, but good for you."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Oh, you found my items? Great, this really takes a huge load off my plate.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "You and the crew are always my first priority after all."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "You got <sprite=1><style=Credits> $amount credits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Hi Crew,\n\nI've had my hands full recently and could use some help acquiring the following. My door is always open if you need anything as well!\n\nTake care,\nFrances"
+                            }
+                        ]
+                    }
+                ]
+            },
+            //#endregion ..............................................
+            //#region T_FIND MICROBES ............................
+            {
+                "questKey": "quest_28",
+                "questName": "Microbiome Monitoring",
+                "questDescription": "Frances could use help catching microbes. Inform her once these types have been caught and the microbe balance has been restored.",
+                "goalDescriptions": [
+                    "Catch $amount <style=Item>$goalName</style> microbes."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Oh... I'm so glad someone saw my bulletin request."
+                            },
+                            {
+                                "text": "It's hard to get away from the Medical Bay sometimes to catch these microbes."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Wonderful you've caught those extra microbes that I requested! Thanks for letting me know.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "I am so relieved that you are also paying close attention to the microbiome health of our ship."
+                            },
+                            {
+                                "text": "You can feel free to keep the microbes you've caught, we just needed to reduce their numbers."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "You got <sprite=1><style=Credits> $amount credits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Hi Crew,\n\nMy scans have shown an imbalance in our ship's microbiome recently. If anyone has free time, can you catch and remove these excess microbes?\n\nStay Healthy!\nFrances"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

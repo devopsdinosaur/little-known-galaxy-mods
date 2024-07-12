@@ -1,0 +1,129 @@
+[
+    {
+        "npcSaveID": "npc_37",
+        "name": "Ocean Resident",
+        "titles": [
+            "Resident"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "I'm getting a little dizzy again so please don't ask me too many questions.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Sooo dizzy... everything is just spinning... endlessly. \n\nThis must be the end for me.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "I love coming to the surface to collect shells for my home."
+                    },
+                    {
+                        "text": "I have a whole wall I'm covering in my own special shell art."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "I have to keep up my training..."
+                    },
+                    {
+                        "text": "I'm the captain of the Flying Gurnard swim team, and we have a big meet coming up."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Sometimes I love wandering the reefs looking for hidden treasures in the sand."
+                    },
+                    {
+                        "text": "But I always keep a watch out for those cranky Clams... those creeps are the worst."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //NEVER ADVANCES TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE HE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+        "nonCrewCommentary": [
+            {
+                // P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "I feel...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "*puts head down*",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //P_OCEANKING
+            {
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "Ughh... Do you really think you can help cure this land sickness?",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "If you do, you'll be the most popular person in the whole kingdom.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "After feeling so miserable before, I'm so grateful just to be back to work gathering our own supplies again!"
+                    }
+                ]
+            }
+        ]
+    }
+]

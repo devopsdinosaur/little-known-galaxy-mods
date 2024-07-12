@@ -1,0 +1,900 @@
+[
+    {
+        "npcSaveID": "npc_24",
+        "name": "Rumble & Tumble",
+        "titles": [
+            "Enfants",
+            "Enfants"
+        ],
+        "birthdayAnnouncement": "Aujourd'hui, c'est l'anniversaire de Rumble & Tumble.",
+        "relationshipStatus": [
+            "Certainement pas..."
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "UnlockCrew",
+                "unlockHeader": "Nouveaux membres d'équipage !",
+                "unlockTitle": "Grondement et dégringolade",
+                "unlockSubTitle": "Enfants",
+                "unlockSubImage": 1,
+                "unlockBody": "Rumble & Tumble ont rejoint votre équipe ! Ils emménagent avec leur famille dans les quartiers situés au-dessus de la devanture du magasin sur le Plaza Deck."
+            },
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Des relations",
+                "unlockTitle": "Amis!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 2,
+                "unlockBody": "Bon travail! Votre statut relationnel avec Rumble & Tumble est passé au niveau supérieur. Ils vous considèrent désormais comme un de leurs amis et vous ont glissé une carte d'accès à leur chambre."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Des relations",
+                "unlockTitle": "Meilleurs amis!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Étoile d'or! Votre statut relationnel avec Rumble & Tumble a atteint un autre niveau. Ils vous considèrent désormais comme l’un de leurs meilleurs amis."
+            }
+        ],
+        "observations": [
+            "Leur jouet de frappe a été nommé d'après leur ancienne nounou.",
+            "Détenez le record du gamin Icelade pour le spitball le plus loin.",
+            "J'aime modifier les feux d'artifice de sécurité pour les rendre moins sûrs."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzz..., Zzzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Une fois, nous avons également fait un trou à travers un mur."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "J'espère que nous n'aurons pas à rester trop longtemps sur cet avant-poste.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "C'est tellement ennuyeux ici.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Salut. *tous les deux sourient*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Nous avons surtout une grosse dent.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "OUIWW. Arrête ça! MAMAN!!!",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "*se battre entre eux*",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Max n'est pas amusant à l'école.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Son temps de réaction est inférieur à 1 seconde et il n'est jamais troublé par nos réponses.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Nous avons utilisé tellement de bons matériaux sur lui... un tel gâchis.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Un jour, nous construirons un vaisseau spatial meilleur que celui-ci."
+                    },
+                    {
+                        "text": "Ouais, et le nôtre n'aura pas de processeur maladroit qui tombe toujours en panne."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Pouvez-vous nous différencier ?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Rumble a une teinte de fourrure verte.",
+                            "response": "Oui, bien sûr, vous l'avez compris, Capitaine. N'oubliez pas cela."
+                        },
+                        "optionTwo": {
+                            "optionText": "Tumble a une teinte de fourrure verte.",
+                            "response": "C'est vrai, Capitaine. Rien ne vous échappe."
+                        }
+                    },
+                    {
+                        "text": "*les deux rient l'un de l'autre.*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*les yeux écarquillés et tremblant*...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Tant de bonbons...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "...nous avons trouvé tellement de bonbons aujourd'hui !",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Nous avons eu une fois une évaluation de personnalité par un jeu d'arcade qui disait que nous étions passionnés et assertifs..."
+                    },
+                    {
+                        "text": "Tumble : Ugh, quelle machine boiteuse...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Rumble : Ouais... Je suis content que nous l'ayons renversé pour sauver leurs crédits à d'autres enfants.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Tumble : Achou !! *éternue directement dans la fourrure de Rumble.*"
+                    },
+                    {
+                        "text": "Rumble : Dégueulasse !! Tu es parfois le pire frère.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Tumble : Oups, désolé... *a l'air contrarié*",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Nous sommes les meilleurs dans les courses à trois."
+                    },
+                    {
+                        "text": "La dernière course que nous avons gagnée, nous avons reçu un gros ruban de 1ère place et un prix du tableau des prix."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Notre matière préférée à l’école est probablement les cours de simulation de vol."
+                    },
+                    {
+                        "text": "Je pense que nous pourrions réaliser de très belles cascades si nous n'étions pas exclus du panneau de commande du vaisseau."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Vous ne nous dénonceriez pas, n'est-ce pas ?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Certainement pas.",
+                            "response": "Je savais que nous pouvions faire confiance à ton drôle de visage.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Dépend.",
+                            "response": "C'est quelque chose que dirait un raide.",
+                            "responseExpression": "Angry"
+                        }
+                    },
+                    {
+                        "text": "Nous ne dénoncerions jamais quelqu'un à moins qu'il ne s'en prenne à nous d'abord."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Tumble : Je serai un expert en démolition quand je serai grand et Rumble va construire les engins explosifs."
+                    },
+                    {
+                        "text": "Rumble : Non, je pensais que j'allais être l'expert et que tu étais le constructeur.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Tumble : Nuhuh.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Rumble : Euh.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "*se lance dans une querelle*",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Nous avons volé ce livre à notre mère et il est devenu notre nouveau favori."
+                    },
+                    {
+                        "text": "*vous montre un livre parental sur les enfants hyperactifs*"
+                    },
+                    {
+                        "text": "Il contient de nombreux bons conseils et des choses que nous n'avions même jamais pensé essayer !",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Maman essaie toujours d'introduire des légumes dans notre dîner... c'est tellement frustrant.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Alors on a mis des bonbons explosifs dans son café du matin."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Vous savez Capitaine, vous pouvez toujours venir chez nous et jouer avec nos jouets."
+                    },
+                    {
+                        "text": "On ne laisse pas venir n'importe qui, tu sais... mais on te fait confiance."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*rire commun... échanger des regards*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Rumble : Devrions-nous le dire... ?"
+                    },
+                    {
+                        "text": "Tumble : *hausse les épaules... * Je suppose que le capitaine est cool..."
+                    },
+                    {
+                        "text": "Rumble : OK... Capitaine, saviez-vous à quel point c'est amusant de cacher les clés des gens quand ils ne regardent pas...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Tumble : Ouais... ils se blâment et disent toutes sortes de gros mots.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Rumble : Ouais... nous avons appris tellement de nouveaux mots, c'est très éducatif !",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Waouh, Capitaine. Qui vous a convaincu de travailler si dur ? Vous travaillez très dur...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "J'espère que vous êtes au moins bien payé."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Rumble : J'aime votre coiffure, Capitaine.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Tumble : Hé ! J'allais le dire..."
+                    },
+                    {
+                        "text": "Rumble : Eh bien... je l'aime plus que toi."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Notre père a dit qu'il allait nous aider chacun à construire une voiture de derby sur neige pour que nous puissions organiser une course en famille."
+                    },
+                    {
+                        "text": "Rumble : Je vais peindre un serpent sur le mien et l'appeler La Vipère.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Tumble : Et je mets un dragon jaune sur le mien et je l'appellerai The Blaze.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Rumble : Piper est gentille... elle nous a donné des sortes de bâtons de coloration en cire."
+                    },
+                    {
+                        "text": "Tumble : Ils étaient vraiment délicieux... *tire la langue arc-en-ciel*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Si jamais quelqu'un cause des problèmes sur ce vaisseau, nous pourrions lui donner une leçon avec notre lance-pierre.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Nous aimons même ce Sprout..."
+                    },
+                    {
+                        "text": "... c'est un gros con, mais personne n'a le droit de le déranger à part nous."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Peut-être qu'un jour nous vous montrerons notre rendez-vous secret."
+                    },
+                    {
+                        "text": "Mais il faudrait d'abord vous initier au groupe..."
+                    },
+                    {
+                        "text": "...et il y a une période de bizutage.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Nous aimons construire des maquettes de fusées, mais parfois nous nous laissons un peu emporter par la colle."
+                    },
+                    {
+                        "text": "Tumble : Une fois, Rumble l'a coincé dans ma fourrure.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Rumble : Non !",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Notre mère a dit que si nous évitions les ennuis pendant une semaine entière, elle nous procurerait des capes de super-héros assorties."
+                    },
+                    {
+                        "text": "Uuuggg, l'attente est la partie la plus difficile, mais nous voulons ces capes !",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Nous venons de recevoir l'édition limitée #342 de la série de bandes dessinées The Hidden Snow Monsters.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Il était même livré avec des autocollants, mais nous ne les utiliserions jamais."
+                    },
+                    {
+                        "text": "Nous devons le garder en parfait état."
+                    },
+                    {
+                        "text": "Nous vous laisserons le tenir si vous acceptez de porter des gants."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Ohhhh ! Oh, nous le voulions tellement !",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Oh mon Dieu! On promet de partager, hein."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Waouh, c'est le meilleur !",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Notre mère ne nous laisserait jamais ça, mais nous garderons cela secret entre nous, n'est-ce pas ?!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Rumble : Je pense que c'est peut-être mon truc préféré de tous les temps.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Tumble : Hé, j'allais dire ça !",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Rumble : C'est bon, on peut aimer ça tous les deux."
+                    },
+                    {
+                        "text": "Chute : OK."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Yay! Cadeaux!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "*secoue violemment le cadeau*"
+                    },
+                    {
+                        "text": "Tumble : *rires*... trop cool.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Tumble : Hé Rumble, regarde ! Maintenant, nous n'avons plus besoin de convaincre notre père de nous procurer ça."
+                    },
+                    {
+                        "text": "Rumble : Ouisssssss, vous avez bien fait, Capitaine.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Très bien, c'est cool."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Pour nous! Ce sera amusant de jouer avec..."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Donne-moi, donne-moi."
+                    },
+                    {
+                        "text": "Ouais, c'est primo... à bientôt, Capitaine."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Brut. *dépose un cadeau sur le sol*",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "C'est nul, capitaine !",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Rumble : *te tire la langue*",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Uuuuugghh, maman dit que nous sommes censés être polis quand nous recevons quelque chose... alors...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "...merci pour ce cadeau stupide.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "Rumble : Cool, Capitaine. Tu m'as offert un cadeau d'anniversaire !",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Tumble : Non... le capitaine m'a offert le cadeau d'anniversaire.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Rumble : Eh bien, je ne vous le donne pas..."
+                    },
+                    {
+                        "text": "Tumble : RETONNEZ-LE !!",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "*se dispute pour un cadeau*",
+                        "expression": "Angry"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+
+        ],
+        "commentary": [
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "Alors, c'est quoi ce truc que notre père t'a donné de toute façon ?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Un morceau d'une relique mystérieuse.",
+                            "response": "Woah... alors pourquoi vous l'a-t-il donné et pas à nous ?",
+                            "responseExpression": "Confused"
+                        },
+                        "optionTwo": {
+                            "optionText": "Je ne suis pas sûr moi-même.",
+                            "response": "Alors pourquoi t'ont-ils nommé capitaine ?"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "Capitaine, chaque fois que nous arriverons sur la nouvelle planète... n'oubliez pas vos jumeaux préférés si vous voyez quelque chose de cool."
+                    },
+                    {
+                        "text": "Tiens... si tu jettes les cornichons tu peux utiliser le pot pour nous rapporter quelque chose."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Tu en as 1 <style=Item>Cornichons</style>.",
+                        "itemReward": {
+                            "itemID": "item_239",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "C'est notre première aventure dans un nouveau monde."
+                    },
+                    {
+                        "text": "Eh bien... à l'exception de la sombre planète grise, mais c'est une planète tellement boiteuse que nous voulons la refaire.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Nous espérons que cette prochaine planète méritera d’être évoquée."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Ces bandits ne nous semblent pas si coriaces...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Un mouvement rapide avec notre fronde et ils chanteraient un air différent...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Voulez-vous qu'on vienne là-bas avec vous la prochaine fois, Capitaine ?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Je te garderai en attente...",
+                            "response": "*excité* C'est vrai ! Oui capitaine! Nous sommes prêts à tout moment !",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Je ne pense pas que tes parents approuveraient.",
+                            "response": "Mec, tu es un capitaine tellement carré. Comment n'as-tu pas été battu quand tu étais enfant ?",
+                            "responseExpression": "Sad"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Je pense que l'aventure nous convient aussi !"
+                    },
+                    {
+                        "text": "Quand nous serons vieux comme toi, peut-être serons-nous aussi capitaines de notre propre navire."
+                    },
+                    {
+                        "text": "En plus, deux têtes valent mieux qu’une après tout.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //SR_EXPLOREALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "Waouh, Capitaine. Tu aurais dû être ici...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "D'abord, la planète grise a commencé à trembler... et puis...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "BAMB !!!!! Des explosions de lumière partout et c'était comme si nous étions dans une sorte de tunnel lumineux avec la planète se transformant à gauche et à droite !",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "J'aimerais que nous puissions le refaire. Vous allez avoir du mal à surpasser cette expérience !",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Maman a dit que nous pourrions bientôt descendre rendre visite à Soot à la surface..."
+                    },
+                    {
+                        "text": "... mais elle a aussi dit que nous devions faire preuve de notre meilleur comportement toute la semaine pour pouvoir y aller... psssshh"
+                    },
+                    {
+                        "text": "*rouleau des yeux unifié*",
+                        "expression": "Angry"
+                    }
+                ]
+            }
+        ],
+        "nonCrewCommentary": [
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "Qui es-tu?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Ohhh, es-tu le capitaine de l'espace qui a détruit notre maison avec ses mauvaises compétences de pilotage ?",
+                        "optionOne": {
+                            "optionText": "Coupable.",
+                            "response": "Ça nous va. Papa est trop distrait pour nous faire faire nos corvées maintenant."
+                        },
+                        "optionTwo": {
+                            "optionText": "C'était juste un accident.",
+                            "response": "Ouais, nous avons déjà utilisé cette excuse, mais maman et papa ne se sont laissés prendre qu'une seule fois. Vous aurez besoin d'une nouvelle excuse si cela se reproduit, mais faire semblant de pleurer est également utile."
+                        }
+                    },
+                    {
+                        "text": "Nous devons y aller. Nous devons terminer notre fort de boules de neige."
+                    }
+                ]
+            },
+            {
+                //S_CREW BUNKY FAMILY 02
+                "key": "quest_30",
+                "textSet": [
+                    {
+                        "text": "*chantant* Nous allons vivre sur un vaisseau spatial ! Nous allons vivre sur un vaisseau spatial !",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "Surprise secrète",
+                "questDescription": "Rumble et Tumble ont posté sur le tableau numérique à la recherche d'objets qu'ils prétendent être une surprise... mais qui sait vraiment.",
+                "goalDescriptions": [
+                    "Donner $amount <style=Item>$goalName</style> à Rumble & Tumble."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "*ricane* Alors tu vas nous aider à obtenir les objets que nous avons demandés..."
+                            },
+                            {
+                                "text": "...OK si tu veux..."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Tumble : Waouh ! Écoutez Rumble, le capitaine nous a apporté ce que nous avions demandé.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Rumble : Vous voyez, je vous ai dit que nous aurions dû demander plus."
+                            },
+                            {
+                                "text": "Tumble : Quoi qu'il en soit, nous pouvons faire en sorte que cela fonctionne..."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Bonjour les adultes,\n\nL'un de vous peut-il nous aider à trouver des objets pour une surprise ? Nous ne pouvons pas vous dire à quoi ça sert car sinon ce ne serait pas une surprise bien sûr.\n\nSourires,\nRumble & Tumble"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

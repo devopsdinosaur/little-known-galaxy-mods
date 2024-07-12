@@ -1,0 +1,979 @@
+[
+    {
+        "npcSaveID": "npc_13",
+        "name": "I-1900",
+        "titles": [
+            "Crew Member"
+        ],
+        "birthdayAnnouncement": "Today is I-1900's manufacturing date.",
+        "relationshipStatus": [
+            "Not Applicable"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 0,
+                "unlockBody": "Great job! Your relationship status with I-1900 has increased to the next level. She now considers you one of her friends."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Best Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Gold star! Your relationship status with I-1900 has increased another level. She now considers you one of her very best friends."
+            }
+        ],
+        "observations": [
+            "Likes to experiment with homemade fertilizers for her home garden.",
+            "Enjoys watching old sci-fi shows about space travel.",
+            "Composed of 85% recycled materials."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*automated response* Recharging in progress."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "May I assist you with anything?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "What's new?",
+                            "response": "We have not received any new items in our residence today. Nothing new here."
+                        },
+                        "optionTwo": {
+                            "optionText": "How are you?",
+                            "response": "I am functioning at optimal efficiency, thanks for asking."
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Piper and Edward are my family."
+                    },
+                    {
+                        "text": "They take care of me, and I take care of them."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Today is a great day, and I am still well within warranty."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "I am programmed to identify every detail."
+                    },
+                    {
+                        "text": "Any safety hazards will be identified with a yellow or red alert."
+                    },
+                    {
+                        "text": "These kinds of hazards must be remedied as soon as possible."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "I am classified as a Home Assistant Bot, but with my recent upgrades I could be also be considered a Friendly Companion Bot. :)"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "I can remotely control all of the kitchen appliances in my residence."
+                    },
+                    {
+                        "text": "*click*..."
+                    },
+                    {
+                        "text": "See... I just started the hot water pot."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "If new funding is ever allocated for ship improvements, I would appreciate ramp installations in the stairwells.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "An update is available for your Home Assistant Bot. Would you like to schedule the update tonight?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Yes",
+                            "response": "Thank you, your update has been scheduled."
+                        },
+                        "optionTwo": {
+                            "optionText": "No",
+                            "response": "Thank you, a reminder has been set to notify you again at a later date."
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "When my wheels are in motion, I have a .002 second reaction time."
+                    },
+                    {
+                        "text": "Please take that delay into account when approaching me while in motion."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "My casing has a special compartment to store attachments and adapters to keep my model compatible with other electronic devices."
+                    },
+                    {
+                        "text": "But every year it gets harder to fit the new components.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Setting a standard for electronic configurations would be more ideal."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "I am a certified tea sommelier so I know how to identify different types of tea, taste, and brew using the proper techniques."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "I am programmed with many folktale stories for children."
+                    },
+                    {
+                        "text": "But I use my improvision circuits to change some of the stories."
+                    },
+                    {
+                        "text": "The origin and original content is sometimes quite disturbing.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Edward has altered my safety protocols."
+                    },
+                    {
+                        "text": "Otherwise I would not allow him to use such dangerous machinery while on the job.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "I find growing plants an enjoyable pastime."
+                    },
+                    {
+                        "text": "Plants have direct and logical needs compared to other living beings."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Piper has to help clean my air filter once a month because too much dust can negatively affect my performance.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "She always says I'm the only robot she knows that is allergic to dust."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Home Assistant Bots like myself can be built in a variety of colors when purchasing."
+                    },
+                    {
+                        "text": "When I was added to the family, Steven's favorite color was bubblegum pink so that was how my color was assigned."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Sometimes loose hair strands get tangled in my wheels and need to be removed."
+                    },
+                    {
+                        "text": "It's not a pleasant experience.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "I must recharge my battery every night to maintain optimal performance."
+                    },
+                    {
+                        "text": "I have a backup power supply, but my productivity drops to only 35%."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Kendall put a heart sticker over one of my serial numbers again."
+                    },
+                    {
+                        "text": "I should be more upset by this act of vandalism, but I know she is just expressing her affections."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "One of my potted plants bloomed today."
+                    },
+                    {
+                        "text": "It is the best feeling to get a positive result when gardening.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Your interest in maintaining my primary function has been noted and appreciated."
+                    },
+                    {
+                        "text": "I will continue to support your function as well."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Piper insists that Kendall does some of the household chores."
+                    },
+                    {
+                        "text": "I of course supervise and instruct Kendall diligently, but she always ends up getting me to complete the work.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Piper is giving me dance lessons so she can practice without Edward present."
+                    },
+                    {
+                        "text": "With a built-in amplifier, I am able to play music to accompany any dancing style."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "If you would like a perfect cup of tea, I first need to know the origin of your ancestors."
+                    },
+                    {
+                        "text": "Some tea brewing traditions are more regimented than others but the best method is..."
+                    },
+                    {
+                        "text": "*ERROR* Please hit reset.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "I keep these material belongings extra safe.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "*opens up side panel revealing drawings and pictures of Steven, Kendall, and I-1900 from different time periods*"
+                    },
+                    {
+                        "text": "*also a newly attached picture of you and I-1900*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "*bleeeep*... FAVORABLE GIFT ACCEPTED:",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "My happiness sensors are spiking off the chart. Internal warnings are sounding off in delight.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Please consider using I-1900 services again soon."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "This is the perfect gift for my model type. Your gift is now being appreciated.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "This is one of my favorite gifts of all time. My day will now be enhanced with happiness.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Switching to delight mode. This is a delightful gift. What a delightful gesture.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "*bleeeep*... PERSONAL GIFT ACCEPTED:"
+                    },
+                    {
+                        "text": "This gift is an above average gift. Your efforts to build a relationship have now been recorded."
+                    },
+                    {
+                        "text": "Thank you for using I-1900 services."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "This is a generous donation, also known as a good deed, or kind act."
+                    },
+                    {
+                        "text": "I have a favorable reaction to this item.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Thank you user for this article of offering. Gift is now being stored for safe keeping."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "*bleeeep*... AVERAGE GIFT ACCEPTED:"
+                    },
+                    {
+                        "text": "This is a standard sharing of resources and will contribute to our household."
+                    },
+                    {
+                        "text": "Thank you for using I-1900 services."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Thank you for this kind delivery."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "*bleeeep*... RUBBISH ACCEPTED:",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "I will dispose of this rubbish in the airlock at once.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Thank you for using I-1900 services."
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "This gift has been marked as do not accept in my preference settings.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Please dispose of elsewhere in the future.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "I am unaware of what to do with such an item.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "It is part of my dislike array and I have no use for it.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "Thank you for the birthday gift.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I will store it on the designated gift table until Piper says I can open my presents."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            {
+                "key": "KissConfirm",
+                "textSet": [
+                    {
+                        "text": "Welcome to I-1900's kissing services booth.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Would you like to purchase a kiss for <sprite=1><style=Credits> 10 credits</style>?",
+                        "optionOne": {
+                            "optionText": "No"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "KissFailCredits",
+                "textSet": [
+                    {
+                        "text": "ERROR... you do not have enough credits to make this purchase. Please try again later.",
+                        "expression": "Stressed"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+
+        ],
+        "commentary": [
+            {
+                //MEET THE CREW
+                "key": "quest_16",
+                "textSet": [
+                    {
+                        "text": "I-1900 here. Programmed assistant for the family unit."
+                    },
+                    {
+                        "text": "*SCANNING...*"
+                    },
+                    {
+                        "text": "You are not programmed into my directory.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "*SCANNING AGAIN...*",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Your facial scan and fingerprints will be stored as GUEST USER."
+                    },
+                    {
+                        "text": "Thank you for stopping by!"
+                    }
+                ]
+            },
+            {
+                //P_VISITGREYPLANET
+                "key": "quest_24",
+                "textSet": [
+                    {
+                        "text": "It is best to practice all safety protocols to the exact specification of the owner's manual."
+                    },
+                    {
+                        "text": "I suggest you read the Shuttle Craft manual before you depart."
+                    },
+                    {
+                        "text": "Let's see. That manual is only 1500 pages long. An easy overnight read."
+                    }
+                ]
+            },
+            {
+                //P_REPORTTOKAIDA
+                "key": "quest_61",
+                "textSet": [
+                    {
+                        "text": "Oh. You have found some 'soot' down on the Grey Planet?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I clean our ship quarters regularly to avoid such dirt accumulation. Cleaning is one of my primary functions."
+                    },
+                    {
+                        "text": "I am sorry to say that my schedule is full at the moment though. Perhaps another crew member will be able to assist you this time with your 'soot' problem."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTGREYSOOT
+                "key": "quest_19",
+                "textSet": [
+                    {
+                        "text": "Any new strangers will need to be programmed into my directory with their friend status before I will allow them to enter my residence."
+                    }
+                ]
+            },
+            //{
+            //    //P_DELIVERGREYRELIC
+            //    "key": "quest_10",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_OCEANCOORDMEETING
+                "key": "quest_17",
+                "textSet": [
+                    {
+                        "text": "I will transcribe your meeting after it has concluded and include it in our family bulletin."
+                    }
+                ]
+            },
+            //{
+            //    //P_VISITENGINEROOM
+            //    "key": "quest_57",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_PRODUCEFUEL
+                "key": "quest_60",
+                "textSet": [
+                    {
+                        "text": "Learning to craft machines is a useful practical skill."
+                    },
+                    {
+                        "text": "I have been practicing myself, but Edward usually interrupts my efforts.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "In addition, he does not follow the assembly instructions so it makes it difficult to the learn the proper procedures.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEOCEAN
+                "key": "quest_8",
+                "textSet": [
+                    {
+                        "text": "Please be aware that Kendall and Sprout have been found playing hide and seek near and within your Shuttle Craft."
+                    },
+                    {
+                        "text": "Thorough cargo checks will be necessary before you depart this ship until further notice."
+                    }
+                ]
+            },
+            {
+                //SR_CATCHMICROBES
+                "key": "quest_64",
+                "textSet": [
+                    {
+                        "text": "I come with my own microbe detection tool, but it is not as advanced as your equipment."
+                    },
+                    {
+                        "text": "I am only capable of detecting household allergens and dust."
+                    }
+                ]
+            },
+            {
+                //P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "Depart safely and return promptly."
+                    },
+                    {
+                        "text": "The crew will be unsettled until you return."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTOCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "I have enjoyed reviewing the new Blue Reef seeds Robert is offering in the store."
+                    },
+                    {
+                        "text": "I am downloading relevant information about their growing patterns from the local residents you have been in contact with."
+                    },
+                    {
+                        "text": "I may attempt to grow these new plants in my next gardening cycle."
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "You have been performing at excellent efficiency, so you deserve to take a break.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got a <style=Item>Earl Grey Tea</style>.",
+                        "itemReward": {
+                            "itemID": "item_50",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEDESERT
+                "key": "quest_5",
+                "textSet": [
+                    {
+                        "text": "One of my mobility wheels was recently damaged by debris from a broken structure.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "I would suggest you improve the state of this vessel to avoid these mishaps in the future.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_VISITDESERTPLANET
+                "key": "quest_23",
+                "textSet": [
+                    {
+                        "text": "I will be going about my duties as usual today."
+                    },
+                    {
+                        "text": "Changing routines as much as you do would be very difficult with my current settings."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTDESERTHERMY
+                "key": "quest_18",
+                "textSet": [
+                    {
+                        "text": "You must be programmed with a desire to help others as well."
+                    },
+                    {
+                        "text": "It is one of my favorite parts of my programming too.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "All of the additional space travel has impacted my family units in a positive way."
+                    },
+                    {
+                        "text": "It must be something in the cosmos effecting their mood stabilizers."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "I have stabilizers to help keep myself balanced when we hit any turbulence in space."
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": "The percentage of planets with a habitat suitable for your species is quite small."
+                    },
+                    {
+                        "text": "I am built to handle most planetary environments and can take your place if needed."
+                    },
+                    {
+                        "text": "However, my diplomatic relationships program is still under development."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "I have been notified an accident has occurred on the planet's surface.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "I am programmed to handle many emergency protocols... processing..."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got a <style=Item>First Aid Kit</style>.",
+                        "itemReward": {
+                            "itemID": "item_86",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "You have an above average rating for efficiently and quality of work."
+                    },
+                    {
+                        "text": "I am delighted to see you thriving so well.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "I make sure all of the meals I prepare are nutritionally balanced for each individual family unit."
+                    },
+                    {
+                        "text": "So I cannot process why Edward steals food from Steven's plate when he thinks I'm not looking.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "Please remember to set a good example for the smaller units aboard this ship as you venture off."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Unfortunately, I am not able to translate the message you received from the pirates.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "It is not one of my supported written languages, but I will run my basic decoder on it just in case."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Once all of the relic pieces are reunited, we may understand more about its purpose."
+                    },
+                    {
+                        "text": "Or so Piper had speculated... there are no real facts to support her statement."
+                    }
+                ]
+            },
+            {
+                //SR_EXPLOREALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "My mood sensors have exceeded their limits and I am delighted to be part of such enthusiasm!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "You have accomplished a great achievement and you have my admiration."
+                    },
+                    {
+                        "text": "*prints message on small piece of paper*..."
+                    },
+                    {
+                        "text": "<size=12>CONGRATULATIONS\n\nX0 0110\nI-1900</size>",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "Assistance Required",
+                "questDescription": "I-1900 is requiring assistance to attain certain items. Gain friendship with I-1900 by bringing him the items listed.",
+                "goalDescriptions": [
+                    "Give $amount <style=Item>$goalName</style> to I-1900."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Your acceptance of my request meets my standard protocols and is acceptable."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "*SCANNING... accepts items*\n\nUpdating log databases..."
+                            },
+                            {
+                                "text": "Thank you for supporting I-1900. Your personnel file has been updated with a favorable mark.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "You got <sprite=1><style=Credits> $amount credits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Guest Users,\n\nI am requiring assistance to attain the items outlined below. Any contributions will be logged positively into my personnel database.\n\nThank you for your consideration,\nI-1900"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

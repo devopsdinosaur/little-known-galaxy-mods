@@ -1,6 +1,50 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using UnityEngine;
+using BepInEx.Logging;
+
+public static class UnityUtils {
+
+    public static bool list_descendants(Transform parent, Func<Transform, bool> callback, int indent, Action<object> log_method) {
+        Transform child;
+        string indent_string = "";
+        for (int counter = 0; counter < indent; counter++) {
+            indent_string += " => ";
+        }
+        for (int index = 0; index < parent.childCount; index++) {
+            child = parent.GetChild(index);
+            log_method(indent_string + child.gameObject.name);
+            if (callback != null) {
+                if (callback(child) == false) {
+                    return false;
+                }
+            }
+            list_descendants(child, callback, indent + 1, log_method);
+        }
+        return true;
+    }
+
+    public static bool enum_descendants(Transform parent, Func<Transform, bool> callback) {
+        Transform child;
+        for (int index = 0; index < parent.childCount; index++) {
+            child = parent.GetChild(index);
+            if (callback != null) {
+                if (callback(child) == false) {
+                    return false;
+                }
+            }
+            enum_descendants(child, callback);
+        }
+        return true;
+    }
+
+    public static void list_component_types(Transform obj, Action<object> log_method) {
+        foreach (Component component in obj.GetComponents<Component>()) {
+            log_method(component.GetType().ToString());
+        }
+    }
+}
 
 public static class ReflectionUtils {
 
@@ -140,6 +184,55 @@ public static class ReflectionUtils {
             }
             if (!callback.Invoke(callback_params)) {
                 break;
+            }
+        }
+    }
+}
+
+public class PluginUpdater : MonoBehaviour {
+
+    private static PluginUpdater m_instance = null;
+    public static PluginUpdater Instance {
+        get {
+            return m_instance;
+        }
+    }
+    private class UpdateInfo {
+        public string name;
+        public float frequency;
+        public float elapsed;
+        public Action action;
+    }
+    private List<UpdateInfo> m_actions = new List<UpdateInfo>();
+    private ManualLogSource m_logger;
+
+    public static PluginUpdater create(GameObject parent, ManualLogSource logger) {
+        if (m_instance != null) {
+            return m_instance;
+        }
+        m_instance = parent.AddComponent<PluginUpdater>();
+        m_instance.m_logger = logger;
+        return m_instance;
+    }
+
+    public void register(string name, float frequency, Action action) {
+        m_actions.Add(new UpdateInfo {
+            name = name,
+            frequency = frequency,
+            elapsed = frequency,
+            action = action
+        });
+    }
+
+    public void Update() {
+        foreach (UpdateInfo info in m_actions) {
+            if ((info.elapsed += Time.deltaTime) >= info.frequency) {
+                info.elapsed = 0f;
+                try {
+                    info.action();
+                } catch (Exception e) {
+                    this.m_logger.LogError((object) $"PluginUpdater.Update.{info.name} Exception - {e.ToString()}");
+                }
             }
         }
     }

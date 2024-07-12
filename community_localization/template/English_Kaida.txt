@@ -1,0 +1,1047 @@
+[
+    {
+        "npcSaveID": "npc_15",
+        "name": "Kaida",
+        "titles": [
+            "Chief Science Officer"
+        ],
+        "birthdayAnnouncement": "Today is Kaida's birthday.",
+        "relationshipStatus": [
+            "Married"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 2,
+                "unlockBody": "Great job! Your relationship status with Kaida has increased to the next level. She now considers you one of her friends and has given you an access card to her room."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Best Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Gold star! Your relationship status with Kaida has increased another level. She now considers you one of her very best friends."
+            }
+        ],
+        "observations": [
+            "Was published in a scientific book.",
+            "Keeps a jar of homemade cactonut skin cream by her desk.",
+            "Collects space travel memorabilia and has a rock from the 1st trip to the moon!"
+        ],
+
+        "dialogue": [
+            //#region RESTING ........................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzz..."
+                    }
+                ]
+            },
+            //#endregion .............................................
+
+            //#region STRANGER .......................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "I'm always looking for help..."
+                    },
+                    {
+                        "text": "Stop by the science lab if you want to see some new experiments."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "It's a big ship. My work is never done."
+                    },
+                    {
+                        "text": "Keep me posted on your end, Captain."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "I dragged Chip and Fiji to a science conference once."
+                    },
+                    {
+                        "text": "Trust me, you have never seen more bored and disappointed faces in your life."
+                    },
+                    {
+                        "text": "It still cracks me up to think about it.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Frances helps me maintain my bionic implants."
+                    },
+                    {
+                        "text": "She's always coming up with new ways of making them more efficient and easier to manage."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "I try to send updates to the scientific community once a year with any new discoveries I've made."
+                    },
+                    {
+                        "text": "I've been published and given accolades a few times which was super exciting."
+                    },
+                    {
+                        "text": "Ah, the thrill of science!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion .............................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "I take very detailed notes when I work."
+                    },
+                    {
+                        "text": "Sometimes a small detail is the key to solving a difficult problem."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Frances sometimes asks me to introduce x factors into Doc12's testing circuits."
+                    },
+                    {
+                        "text": "I know she wants to make sure Doc12 maintains safety and alertness on the job but..."
+                    },
+                    {
+                        "text": "...I think Doc12 is on to us so I'm a little afraid to get caught.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Did you know you can make your own bouncy balls at home?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "All you need is glue, borax powder, cornstarch, and water."
+                    },
+                    {
+                        "text": "Fiji and I used to make them together when she was little..."
+                    },
+                    {
+                        "text": "...I kind of miss those days.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Hi $playerName, how are things going today?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Terrific",
+                            "response": "Glad to hear it. Nothing beats a productive day!",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Not great.",
+                            "response": "Oh no! Try not to get frustrated and just take things one at a time. That always helps me get back on track.",
+                            "responseExpression": "Confused"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Make sure to upgrade your tools when you can."
+                    },
+                    {
+                        "text": "The instruments we work with are the foundation for our success."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND .........................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Fiji is always waking me up with her morning meditation music.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Is it bad that I find it more irritating than relaxing? Haha.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "But at least it helps me get an early start on the workday."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "I wish we never implemented a family voting system in my house.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "The result is always 2 against 1 and I think you can guess who's always on the short side... right here.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "There is just so much new data to process I have my hands full."
+                    },
+                    {
+                        "text": "I might be pulling another late night!"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Working in the scientific field carries a lot of ethical responsibility."
+                    },
+                    {
+                        "text": "And I am committed to only advancing the prosperity and knowledge of the universe."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "CPU and I go way back. I actually worked with him long before I even boarded this ship.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "He really cracks me up and usually gets me what I need on time, usually."
+                    }
+                ]
+            },
+            //#endregion .............................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Our home planet was struggling with a lot of conflicts when I was growing up.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "So I try not to take the little things in life for granted."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "I used to secretly read Fiji's young adult fiction books after she finished one."
+                    },
+                    {
+                        "text": "But now that she is older and doesn't read them as much, I'll have to find a new way to get my hands on the latest books.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Maybe in a few years I will teach a Space Alliance chemistry course or something..."
+                    },
+                    {
+                        "text": "As Chip would put it... I'd like to drop some knowledge bombs on the next generation."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "I try to cook at least once a week to give Chip a break."
+                    },
+                    {
+                        "text": "But if the recipe takes longer than 20 minutes I'm out.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "I've worked on a few space stations before, but working on a spaceship is a lot more exciting."
+                    },
+                    {
+                        "text": "Being on the edge of new discoveries is what I live for.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND .....................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "I'm not really interested in being a full-time captain, so it's great you came aboard."
+                    },
+                    {
+                        "text": "I like to spend as much time in the lab as possible."
+                    },
+                    {
+                        "text": "We make such a great dynamic duo.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "I had the greatest parents growing up, and they always supported my interests."
+                    },
+                    {
+                        "text": "It can be tough sometimes, but I hope Fiji knows how much I actually support her music.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "It took me a long time to adapt to my implants, but now I feel bad for people that don't have these superhuman abilities!"
+                    },
+                    {
+                        "text": "Chip's positivity really helped me through those early days so I was very grateful to him."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Fiji has always been so anxious to settle down, but it's hard to accept it.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "It just feels safer to me to always be able to be on the move."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Did you know I met Chip on the day he got his King Ravioli title?"
+                    },
+                    {
+                        "text": "Don't let him fool you about it though..."
+                    },
+                    {
+                        "text": "He got that title because on pasta night he would fill one ravioli with super-hot peppers and whoever got that ravioli had to do the dishes."
+                    },
+                    {
+                        "text": "But it kept backfiring because he got that special ravioli more than anyone else."
+                    },
+                    {
+                        "text": "I felt so bad for him I started helping him do the dishes and I've helped him ever since.",
+                        "expression": "Happy"
+                    }
+                ]
+
+            },
+            //#endregion .............................................
+
+            //#region GIFTLOVE .......................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "This is amazing. Thanks!"
+                    },
+                    {
+                        "text": "You've got this gift giving thing down to a science now. *wink*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Oh wow, this is spot on! I wish Chip could take a few pointers from you on buying gifts for me.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "You have the special touch."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Awesome, I love this. Am I that obvious?",
+                        "expression": "Happy"
+                    }
+
+                ]
+            },
+            //#endregion .............................................
+
+            //#region GIFTLIKE .......................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Thank you, I like these."
+                    },
+                    {
+                        "text": "You must be in a good mood, Captain."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "I can't imagine anyone who wouldn't like this. Thanks, Captain."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Oh, Captain. Thanks for making my life aboard this ship a little nicer. This really helps a lot.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion .............................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "It's always nice to get a gift from time to time."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Hey thanks. I appreciate you sharing your stuff with us, Captain."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "It sure is nice to feel appreciated. Thanks, Captain."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE ....................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "I don't like this.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "I never understood the appeal of this type of thing really.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Not a big fan of this, but maybe once you get to know me better, you'll understand.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Oh, I guess thanks... but you REALLY don't have to next time...",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion .............................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "Oh, is it my birthday? I always forget."
+                    },
+                    {
+                        "text": "Well thanks for the present and the heads up..."
+                    },
+                    {
+                        "text": "Chip is probably planning some kind of surprise and it's always better if I prepare myself to be surprised.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //#region SPECIALTY.......................................
+            //empty
+            //#endregion .............................................
+        ],
+        "commentary": [
+            //{
+            //    //P_VISITGREYPLANET
+            //    "key": "quest_24",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            //{
+            //    //P_REPORTTOKAIDA
+            //    "key": "quest_61",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_REQUESTGREYSOOT
+                "key": "quest_19",
+                "textSet": [
+                    {
+                        "text": "I hope you're finding all the resources you need from the Grey Planet to assist you with your food production."
+                    },
+                    {
+                        "text": "There is a strong possibility Soot is native to the planet, and he might be the clue to telling us more about what happened down there."
+                    },
+                    {
+                        "text": "I just have so many questions that still need answering.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I better get back to my research, and you probably have to focus on your assignment too, I guess."
+                    }
+                ]
+            },
+            //{
+            //    //P_DELIVERGREYRELIC
+            //    "key": "quest_10",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_OCEANCOORDMEETING
+                "key": "quest_17",
+                "textSet": [
+                    {
+                        "text": "CPU has been sending me reminders every hour that we're going to have a senior officers meeting soon.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "He's certainly excited about something... or he's malfunctioning again.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I'll have Stewart check him out, just in case."
+                    }
+                ]
+            },
+            //{
+            //    //P_VISITENGINEROOM
+            //    "key": "quest_57",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_PRODUCEFUEL
+                "key": "quest_60",
+                "textSet": [
+                    {
+                        "text": "Oh, sorry about that little spat between Stewart and I during the meeting...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "He's just such a stick-in-the-mud, but we always make up later.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Even though he drives me nuts, I wouldn't know what to do without him."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEOCEAN
+                "key": "quest_8",
+                "textSet": [
+                    {
+                        "text": "Captain, I have been trying to study Soot... when he stands still that is..."
+                    },
+                    {
+                        "text": "...his speech patterns are very complex, but it all just sounds like baby talk to me."
+                    },
+                    {
+                        "text": "I'll keep you posted if I learn anything new."
+                    }
+                ]
+            },
+            {
+                //SR_CATCHMICROBES
+                "key": "quest_64",
+                "textSet": [
+                    {
+                        "text": "I am happy to hear you are diving right into the world of science and scanning for microbes.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Did you know Space Alliance will give you extra rewards if you catch certain amounts of microbes?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Just check out the microbe board in the science lab to see what the requirements are."
+                    }
+                ]
+            },
+            {
+                //P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "This new planet is still uncharted by Space Alliance so getting a good scan of the planet will immediately update our databases with all kinds of useful information."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTOCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "Just amazing... another planet discovered with another civilization to study, I can hardly wait to get started."
+                    },
+                    {
+                        "text": "CPU's scans are telling us that the Blue Reef Planet is covered in a super ocean."
+                    },
+                    {
+                        "text": "And the various reefs cover a staggering 72.3% of that. I have never seen anything like it."
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "Hey Captain, I'm glad I caught you..."
+                    },
+                    {
+                        "text": "I might need that relic piece for analysis or at least I'll grab some readings from it if you don't mind.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "It seems to have an energy field surrounding it I've never encountered.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Oh and by the way..."
+                    },
+                    {
+                        "text": "My 10-year anniversary since joining Space Alliance is coming up so I technically have a day off coming up soon."
+                    },
+                    {
+                        "text": "Chip's got the whole day planned already... but let me know if you need something anyways."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEDESERT
+                "key": "quest_5",
+                "textSet": [
+                    {
+                        "text": "I picked up a few meteorites down on the Blue Reef Planet."
+                    },
+                    {
+                        "text": "But I haven't had a chance to extract anything from them yet..."
+                    },
+                    {
+                        "text": "Maybe you have time?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got 2 <style=Item>Common Meteorites</style>.",
+                        "itemReward": {
+                            "itemID": "item_89",
+                            "amount": 2,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_VISITDESERTPLANET
+                "key": "quest_23",
+                "textSet": [
+                    {
+                        "text": "Captain, once you have made the initial landing to this new planet's surface, I would love to head down and get some samples."
+                    },
+                    {
+                        "text": "I promise to stay out of the way. You won't even see me down there, that's how fast I'll be."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTDESERTHERMY
+                "key": "quest_18",
+                "textSet": [
+                    {
+                        "text": "Captain, CPU filled me on Hermy's situation..."
+                    },
+                    {
+                        "text": "I know you have it under control so I was wondering..."
+                    },
+                    {
+                        "text": "Do you think Hermy would allow me to poke around his excavation sites?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "He seems kind of touchy.",
+                            "response": "OK, that's why I wanted to ask you first. ",
+                            "responseExpression": "Sad"
+                        },
+                        "optionTwo": {
+                            "optionText": "I bet he wouldn't mind at all.",
+                            "response": "Great, maybe I'll check it out then. I'll tell him you said it was OK if he asks."
+                        }
+                    },
+                    {
+                        "text": "I certainly wouldn't want to get on his bad side."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "I don't know if you have checked in with Soot recently, but he seems very alert today.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "It might be my imagination, but I think his colors get more vibrant when he is near something pertaining to the Relic.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Maybe I'll try and take some hue and brightness readings from him on our way back to the Grey Planet to see if there is any merit to my observations."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "I wonder if there will be any similarities between our next location and the Blue Reef Kingdom or Desert Dunes?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "The Grey Planet and the Blue Reef Planet are so different they hardly have anything in common.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Maybe that is what they will all have in common... the fact that they are not similar at all... *drifts off in thought*...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "...I have to go write some things down, see you later."
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": "Have a few things on the backlog today, but go ahead and head down to the planet surface whenever you are ready."
+                    },
+                    {
+                        "text": "I'll be around though if you have any emergencies."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "Do you know how to create some of the materials Bunky is asking for?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I figured you're the expert around here now, but I think Edward can help you with a Kitchen upgrade if you still need one."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "You really have a way with people that I don't understand."
+                    },
+                    {
+                        "text": "Sometimes I feel like I get along better with my lab equipment and notebooks."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "These new coordinates are a little strange, but I think CPU and I have analyzed them correctly."
+                    },
+                    {
+                        "text": "Just a heads up that there is a very small chance when we get there, we are in the wrong place...",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "I'm going to get started right away on analyzing the data from this lava planet and seeing if there is any connection to the others we have visited."
+                    },
+                    {
+                        "text": "They all seem unique and different from one another."
+                    },
+                    {
+                        "text": "But it just makes my job more interesting!"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "I really dislike pirates and people who tend to be overly aggressive.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "It reminds me of some of the difficult times back on our home world.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "But I don't like to talk about it too much.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Captain, you did it! I can't wait to see what happens when we reunite the final relic piece.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I better get my expedition pack ready right away."
+                    }
+                ]
+            },
+            {
+                //SR_EXPLORE ALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "The Relic, the pieces, the Viridians, and Soot? Have we really uncovered it all?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I'm going to have to absorb all this information, but..."
+                    },
+                    {
+                        "text": "I think Space Alliance will be very pleased with our mission to say the least."
+                    },
+                    {
+                        "text": "Fantastic job Captain. I am proud to be your Number Two.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "Personal Request",
+                "questDescription": "Kaida is looking for a few items. Probably for research or maybe something personal? Bring her the items she has requested.",
+                "goalDescriptions": [
+                    "Give $amount <style=Item>$goalName</style> to Kaida."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Well this is a switch. Isn't the second in command supposed to help you out? Thanks for picking up my bulletin request."
+                            },
+                            {
+                                "text": "But to be honest, I'd really appreciate your help if you have what I'm looking for."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Oh, you collected everything for me? Perfect, this is exactly what I was looking for.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "I just need to make some small modifications now..."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "You got <sprite=1><style=Credits> $amount credits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Crewmates,\n\nI'm looking for the items listed below. If anyone has extras they can spare, just send it my way.\n\nWith sincere thanks,\nKaida"
+                            }
+                        ]
+                    }
+                ]
+            },
+            //#endregion ..............................................
+            //#region T_KILL ENEMIES .............................
+            {
+                "questKey": "quest_59",
+                "questName": "Local Wildlife",
+                "questDescription": "Kaida's science equipment keeps getting messed up by the local wildlife. See if you can scare them off for her.",
+                "goalDescriptions": [
+                    "Zap $amount <style=Item>$goalName</style> for Kaida."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Oh great, you accepted my bulletin request. Well, see what you can do to scare off those little guys."
+                            },
+                            {
+                                "text": "Every time they knock over or steal one of my instruments, I end up analyzing all kinds of bad data.",
+                                "expression": "Stressed"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "You finished my bulletin request? Awesome. Hopefully you gave them a good enough scare to keep their distance."
+                            },
+                            {
+                                "text": "I'm not holding my breath though..."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "You got <sprite=1><style=Credits> $amount credits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Hey Crew,\n\nIf anyone could help run off some of the local wildlife I'd appreciate it. They keep disrupting and stealing my science equipment.\n\nThanks,\nKaida"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

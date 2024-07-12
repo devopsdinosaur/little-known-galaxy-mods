@@ -1,0 +1,2292 @@
+[
+    //#region COLLECTION MAIN ...................................
+    {
+        "collectionKey": "collection_1",
+        "collectionName": "Collection principale",
+        "collectionDialogue": [
+            //collectionReward_0
+            {
+                "key": "collectionReward_0",
+                "textSet": [
+                    {
+                        "text": "Attendez! Ce n'est pas tout..."
+                    },
+                    {
+                        "text": "Capitaine..."
+                    },
+                    {
+                        "text": "...Le jour est enfin arrivé."
+                    },
+                    {
+                        "text": "Et maintenant que c'est là... je ne sais pas quoi dire. \n*s'étouffe*"
+                    },
+                    {
+                        "text": "La collection principale est complète, terminée, remplie à ras bord d'expositions exceptionnelles pour le plaisir de tous.",
+                        "expression": "happy"
+                    },
+                    {
+                        "text": "Les objets de collection spectaculaires d'Hermy sont vraiment..."
+                    },
+                    {
+                        "text": "<size=14>SPECTACULAIRE!!</size>",
+                        "expression": "happy"
+                    },
+                    {
+                        "text": "Pour fêter ça, j'ai une petite surprise que je vous ai préparée..."
+                    },
+                    {
+                        "text": "Jetez un dernier coup d'œil à l'étage et dites-moi si vous remarquez quelque chose de différent à propos d'une certaine statue centrale. *te fait un clin d'oeil de crabe*"
+                    },
+                    {
+                        "text": "Quel magnifique historien et explorateur vous avez été. Vous avez gagné votre propre place dans l’histoire des musées…"
+                    },
+                    {
+                        "text": "...juste à mes côtés, ton crustacé préféré, Hermy.",
+                        "expression": "happy"
+                    }
+                ]
+            }
+        ],
+        "miniCollections": [
+            //MINI COLLECTION ARTIFACTS ...................................................................
+            {
+                "miniCollectionKey": "miniCollection_1",
+                "miniCollectionName": "Ancient Artifacts",
+                "miniCollectionDialogue": [
+                    //collection_sign
+                    {
+                        "key": "collection_sign",
+                        "textSet": [
+                            {
+                                "boxType": "Info",
+                                "text": "<style=MuseumArtifact>Collection d'objets anciens</style>\n\nCette collection présente des artefacts de mondes et de civilisations passés. Une machine à remonter le temps rare dans l'histoire et les mondes de ceux qui nous ont précédés !\n\n$amountCompare Collecté"
+                            }
+                        ]
+                    },
+                    //donation_single_start
+                    {
+                        "key": "donation_single_start",
+                        "textSet": [
+                            {
+                                "text": "Oh wow, un artefact historique et intéressant."
+                            },
+                            {
+                                "text": "Aimeriez-vous entendre quelques faits amusants sur cet artefact ?",
+                                "optionOne": {
+                                    "optionText": "Non"
+                                },
+                                "optionTwo": {
+                                    "optionText": "Oui"
+                                }
+                            }
+                        ]
+                    },
+                    //collectionReward_1
+                    {
+                        "key": "collectionReward_1",
+                        "textSet": [
+                            {
+                                "text": "Je ne sais pas si vous avez visité l'étage du musée récemment, mais les choses se mettent vraiment en place.",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Le <style=MuseumArtifact>Collection d'objets anciens</style> a les prémices de quelque chose de grand en préparation."
+                            },
+                            {
+                                "text": "Maintenant, je sais que nous avons encore besoin de plus d'articles, alors n'allons pas trop loin..."
+                            },
+                            {
+                                "text": "Mais pour vous montrer mon appréciation pour vos récents dons, voici un petit quelque chose sur moi.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 400,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    //collectionReward_2
+                    {
+                        "key": "collectionReward_2",
+                        "textSet": [
+                            {
+                                "text": "Maintenant, avant de vous enfuir... laissez-moi voir...",
+                                "expression": "confused"
+                            },
+                            {
+                                "text": "Oui, c'est vrai, notre <style=MuseumArtifact>Collection d'objets anciens</style> commence vraiment à prendre forme."
+                            },
+                            {
+                                "text": "Les admissions sont en hausse et je commence même à entendre des critiques positives sur l'exposition.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Puisque nous formons un si bon duo, je voulais partager avec vous une partie des bénéfices du musée."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 800,
+                                    "trackAction": "Reward"
+                                }
+                            },
+                            {
+                                "text": "J'espère que ce fut une expérience motivante pour vous. Celui dans lequel vous envisagerez de donner davantage d’artefacts à l’avenir."
+                            }
+                        ]
+                    },
+                    //collectionReward_3
+                    {
+                        "key": "collectionReward_3",
+                        "textSet": [
+                            {
+                                "text": "$playerName, pouvez-vous croire tout ce que nous avons accompli ?",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Notre <style=MuseumArtifact>Collection d'objets anciens</style> s'est vraiment agrandi, et il y en a pour tous les goûts !",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Entre vous et moi, je n'ai vu aucune autre collection dans l'univers qui se compare même à ce niveau."
+                            },
+                            {
+                                "text": "Mais ne nous contentons pas du bien, visons le bien !"
+                            },
+                            {
+                                "text": "Voici donc une petite récompense supplémentaire cette fois-ci. Peut-être pourrez-vous l'utiliser pour acquérir quelques artefacts supplémentaires."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 1200,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    //collectionReward_4
+                    {
+                        "key": "collectionReward_4",
+                        "textSet": [
+                            {
+                                "text": "Et... est-ce possible ?",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Capitaine, j'ai des nouvelles plutôt excitantes pour nous."
+                            },
+                            {
+                                "text": "Ce dernier don l'a fait !"
+                            },
+                            {
+                                "text": "C'est exact! Nous avons terminé le <style=MuseumArtifact>Collection d'objets anciens</style>!"
+                            },
+                            {
+                                "text": "Nous sommes certains de faire parler de nous maintenant. Compléter et posséder une collection aussi prestigieuse...",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "J'ai hâte de passer le mot !",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Et je dois vous remercier, Capitaine."
+                            },
+                            {
+                                "text": "Permettez-moi de vous exprimer mes remerciements à travers un petit témoignage d'appréciation. Vous l'avez vraiment mérité."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 5000,
+                                    "trackAction": "Reward"
+                                }
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <style=Item>Chapiteau promotionnel d'Hermy : artefacts anciens</style>!",
+                                "itemReward": {
+                                    "itemID": "item_1468",
+                                    "amount": 1,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "museumItemDialogues": [
+                    //artifact_alien_farm_tool
+                    {
+                        "key": "item_group_281",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Outil de ferme extraterrestre</style>\nPour vous, cela ressemble peut-être à un vieux bâton, mais des outils comme celui-ci auraient rendu l'agriculture beaucoup plus simple pour les travailleurs du passé."
+                            },
+                            {
+                                "text": "Consacrer moins d’efforts à la production alimentaire aurait permis de consacrer plus de temps au développement des arts, de la littérature et de la culture."
+                            },
+                            {
+                                "text": "Cela a dû être une période passionnante de leur histoire, d’accord. Je me demande quels futurs outils nous proposerons pour nous faciliter la vie."
+                            }
+                        ]
+                    },
+                    //artifact_alien_stickerbook
+                    {
+                        "key": "item_group_282",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Livre d’autocollants extraterrestres</style>\nQuelle trouvaille rare d'avoir un livre d'autocollants avec tous les autocollants en parfait état."
+                            },
+                            {
+                                "text": "Ces autocollants auraient appartenu à un enfant ou à un adulte enjoué et auraient normalement été collés sur des documents, des meubles ou d'autres objets appréciés."
+                            },
+                            {
+                                "text": "Ce propriétaire les a cependant conservés ensemble pour former une collection complète."
+                            },
+                            {
+                                "text": "Celui qui l'a apprécié a apprécié la joie de collectionner, alors j'aimerais penser que nous aurions été de bons amis.",
+                                "expression": "Happy"
+                            }
+                        ]
+                    },
+                    //artifact_alien_talon
+                    {
+                        "key": "item_group_283",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Serre extraterrestre</style>\nLes grandes bêtes de la planète des Lacs de Lave perdent leurs serres à chaque cycle d'accouplement pour éviter de se blesser mutuellement."
+                            },
+                            {
+                                "text": "Mais ces griffes acérées repoussent rapidement et ne font pas le poids face à la plupart de leurs proies."
+                            },
+                            {
+                                "text": "C'est une bonne chose qu'ils s'intéressent peu aux crustacés."
+                            }
+                        ]
+                    },
+                    //artifact_ancient_coins
+                    {
+                        "key": "item_group_284",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Pièces anciennes</style>\nDes pièces anciennes comme celles-ci étaient utilisées pour le commerce entre la plupart des gens avant la création du système de crédit spatial universel."
+                            },
+                            {
+                                "text": "C’était bien cette époque-là. Un crabe comme moi pourrait marchander avec les meilleurs d'entre eux.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Le troc est cependant encore très courant sur de nombreuses planètes éloignées."
+                            },
+                            {
+                                "text": "Mais comme chaque planète possède ses propres ressources, cela peut rendre difficile le commerce dans ces endroits. Fais-moi confiance."
+                            }
+                        ]
+                    },
+                    //artifact_autographed_book
+                    {
+                        "key": "item_group_285",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Livre dédicacé</style>\nAu sein du Royaume du Récif Bleu, Bubble VonVi était un célèbre auteur et scientifique qui a découvert comment accélérer la croissance des coraux."
+                            },
+                            {
+                                "text": "On dit que ses recherches ont contribué à elles seules à restaurer et à préserver les coraux du récif bleu lorsque leur planète a subi des décennies de vagues de chaleur."
+                            },
+                            {
+                                "text": "Grâce à ses techniques, les gens peuvent désormais cultiver de nombreux types de coraux pour leur maison 50 fois plus rapidement que la normale."
+                            }
+                        ]
+                    },
+                    //artifact_bag_of_marbles
+                    {
+                        "key": "item_group_286",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Sac O'Marbres</style>\nDifférents jeux de billes ont existé à travers les millénaires et semblent également s'étendre à différentes planètes et espèces."
+                            },
+                            {
+                                "text": "Les billes peuvent être lancées, rebondies, placées dans des labyrinthes, lancées, tirées ou même courues les unes contre les autres."
+                            },
+                            {
+                                "text": "Les possibilités sont infinies, mais je préfère simplement les collectionner."
+                            }
+                        ]
+                    },
+                    //artifact_bigfoot_photo
+                    {
+                        "key": "item_group_287",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Photo de gros pied</style>\nDe simples photographies de Bigfoot comme celle-ci semblent toujours attirer une foule d'humains dans les musées."
+                            },
+                            {
+                                "text": "Il est connu dans la communauté spatiale pour avoir été un voyageur pionnier et avoir visité de nombreuses planètes différentes tout au long de sa vie."
+                            },
+                            {
+                                "text": "Son espèce vit sur une planète isolée et a une durée de vie très longue par rapport à la plupart des créatures vivantes."
+                            },
+                            {
+                                "text": "Certains disent que Bigfoot a vécu près de 5 000 ans, mais d'autres disent qu'il vit encore aujourd'hui."
+                            }
+                        ]
+                    },
+                    //artifact_circuit_board
+                    {
+                        "key": "item_group_288",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Circuit imprimé</style>\nToute la technologie Space Pirate est très appréciée car elle est généralement fabriquée à partir des matériaux les plus résistants de l'univers."
+                            },
+                            {
+                                "text": "Ce circuit imprimé pourrait provenir d’une navette ou d’une autre machine volante."
+                            }
+                        ]
+                    },
+                    //artifact_data_disc
+                    {
+                        "key": "item_group_10",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Disque de données</style>\nLes disques de données étaient autrefois utilisés pour stocker toutes sortes d'informations, puis transmis aux ordinateurs pour les lire."
+                            },
+                            {
+                                "text": "À l’époque, les ordinateurs ne pouvaient pas se connecter automatiquement entre eux."
+                            },
+                            {
+                                "text": "Les informations devaient donc être collées sur ces frisbees et échangées."
+                            },
+                            {
+                                "text": "Malheureusement, ce disque semble en mauvais état et les informations qu'il contenait autrefois sont très probablement perdues."
+                            }
+                        ]
+                    },
+                    //artifact_fossil_imprint
+                    {
+                        "key": "item_group_7",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Empreinte fossile</style>\nCela ressemble à l'empreinte d'une ancienne créature qui parcourait autrefois la planète grise."
+                            },
+                            {
+                                "text": "Il a dû y avoir une vie plus diversifiée sur la planète grise à un moment donné. Il se pourrait même qu’il s’agisse d’une créature aquatique, à en juger par son apparence.",
+                                "expression": "Confused"
+                            }
+                        ]
+                    },
+                    //artifact_gaming_console
+                    {
+                        "key": "item_group_289",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Console de jeu XT80</style>\nMême si cette console est un modèle plus ancien, elle présente toujours une grande valeur pour les amateurs de jeux vidéo."
+                            },
+                            {
+                                "text": "Les jeux vidéo sont un passe-temps favori des Furballs, jeunes et vieux, les jours de neige."
+                            },
+                            {
+                                "text": "L'acquisition de ces vieilles machines permet à leurs propriétaires de jouer à tous leurs jeux préférés de leur enfance."
+                            },
+                            {
+                                "text": "De plus, ces vieilles consoles sont pratiquement indestructibles et fonctionnent toujours même après avoir été déposées sur le sol dur d'un musée.",
+                                "expression": "Happy"
+                            }
+                        ]
+                    },
+                    //artifact_medallion
+                    {
+                        "key": "item_group_290",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Médaillon</style>\nD'après mes recherches, les pointes de ces médaillons représentent différentes compétences et professions de guerrier."
+                            },
+                            {
+                                "text": "Chaque médaillon est spécialement réalisé et j'espère que nous pourrons faire honneur à son propriétaire en appréciant sa gloire dans ce musée."
+                            }
+                        ]
+                    },
+                    //artifact_micro_black_hole
+                    {
+                        "key": "item_group_8",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Micro trou noir</style>\nReculez ! Il s’agit d’un véritable trou noir de mécanique quantique !"
+                            },
+                            {
+                                "text": "Saviez-vous que la gravité à l’intérieur d’un trou noir est si intense que même la lumière ne peut s’en échapper ?"
+                            },
+                            {
+                                "text": "Celui-ci est très petit et semble cependant stable."
+                            },
+                            {
+                                "text": "Mais cela pourrait quand même faire beaucoup de dégâts s’il n’est pas manipulé correctement, alors ne le faites pas trop trembler.",
+                                "expression": "Stressed"
+                            }
+                        ]
+                    },
+                    //artifact_music_box
+                    {
+                        "key": "item_group_292",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Boîte à musique</style>\nCette boîte à musique nécessite que tous ses composants soient immergés dans l'eau pour fonctionner."
+                            },
+                            {
+                                "text": "Étant donné que la plupart des sons générés sous l’eau restent sous l’eau, cette belle mélodie ne peut être entendue correctement que sous la mer."
+                            },
+                            {
+                                "text": "C'est une mélodie fantastique de vibrations, de nuances douces et de sifflements."
+                            },
+                            {
+                                "text": "J'enregistrerais bien un extrait de musique, mais ce n'est tout simplement pas la même chose que de l'entendre la tête plongée sous l'eau."
+                            }
+                        ]
+                    },
+                    //artifact_painting
+                    {
+                        "key": "item_group_293",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Peinturer avec les doigts</style>\nLes pierres peintes comme celles-ci constituent un élément durable de l'histoire de la planète Desert Dune."
+                            },
+                            {
+                                "text": "Celui-ci a été créé avec de l'encre aux couleurs vives sur une dalle rocheuse, c'est pourquoi il a été conservé toutes ces années."
+                            },
+                            {
+                                "text": "J'aime imaginer ce que l'artiste a pu observer lorsqu'il a réalisé ce tableau. Aussi, je parie que c'était un peu compliqué."
+                            }
+                        ]
+                    },
+                    //artifact_playing_cards
+                    {
+                        "key": "item_group_294",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Jouer aux cartes</style>\nVous penseriez qu'une simple partie de cartes dans l'après-midi serait une façon relaxante de passer le temps, n'est-ce pas ?"
+                            },
+                            {
+                                "text": "Faux! Les jeux de cartes entre membres de clans pirates peuvent donner lieu à des batailles féroces qui peuvent durer des jours si les matchs sont trop serrés pour être disputés."
+                            },
+                            {
+                                "text": "Ils trouveront peut-être cela tranquillement, mais je resterai à l'écart de ce match !"
+                            }
+                        ]
+                    },
+                    //artifact_postcard
+                    {
+                        "key": "item_group_295",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Viridis Carte postale</style>\nUne carte postale est un excellent moyen de dire bonjour à quelqu'un qui reste chez vous lorsque vous êtes en vacances.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Scannez simplement le dos de la carte pour envoyer numériquement votre message d'accueil depuis n'importe quel endroit, n'importe où, n'importe quand !"
+                            }
+                        ]
+                    },
+                    //artifact_pretty_necklace
+                    {
+                        "key": "item_group_296",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Joli collier</style>\nSeuls les coquillages les plus prisés sont utilisés dans les bijoux Blue Reef, ce qui rend ce collier très désirable."
+                            },
+                            {
+                                "text": "Il est également collé avec un adhésif naturel fabriqué à partir d’une bactérie présente dans les eaux océaniques."
+                            },
+                            {
+                                "text": "Cette colle est si collante qu'elle peut lier deux vaisseaux spatiaux ensemble, même avec une petite quantité. Ainsi, cette belle pièce devrait durer plusieurs vies."
+                            }
+                        ]
+                    },
+                    //artifact_robot_toy
+                    {
+                        "key": "item_group_11",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Jouet robot</style>\nHmmm... ce jouet robot semble être une sorte d'objet de divertissement enfantin."
+                            },
+                            {
+                                "text": "Découvrez ses mécaniques sympas. Amusant!",
+                                "expression": "Happy"
+                            }
+                        ]
+                    },
+                    //artifact_snowshoes
+                    {
+                        "key": "item_group_297",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Raquettes</style>\nCes raquettes usées sont des accessoires courants dans les climats glacials. Les boules de poils sont connues pour les transmettre de génération en génération."
+                            },
+                            {
+                                "text": "Attacher des raquettes sous vos pieds aide à répartir votre poids sur une plus grande surface."
+                            },
+                            {
+                                "text": "Avec plus de neige supportant votre poids corporel, vous risquez moins de vous enfoncer profondément dans un tas de neige."
+                            },
+                            {
+                                "text": "Dommage... ceux-ci semblent cependant ne venir que par paires.",
+                                "expression": "Sad"
+                            },
+                            {
+                                "text": "J'aurais besoin d'un lot de 6 pour que cela fonctionne pour moi."
+                            }
+                        ]
+                    },
+                    //artifact_space_probe
+                    {
+                        "key": "item_group_9",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Sonde spatiale</style>\nLes sondes spatiales sont un excellent moyen de collecter des données spatiales sans trop sortir de votre shell."
+                            },
+                            {
+                                "text": "La plupart des habitants de l’espace les ignorent lorsqu’ils passent, mais pas moi ! Je les collectionne tout de suite !",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "De toute façon, les vieilles sondes comme celles-ci finissent toujours par s’écraser sur des astéroïdes ou des planètes désertes."
+                            },
+                            {
+                                "text": "Qui sait si celui-ci est originaire de la planète grise ou de loin ?"
+                            }
+                        ]
+                    },
+                    //artifact_starflux_piece
+                    {
+                        "key": "item_group_298",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Pièce de flux stellaire</style>\nCette pièce Starflux semble être une sorte de technologie Relic. C’est sûr."
+                            },
+                            {
+                                "text": "Peut-être une sorte de lien matériel avec les différents systèmes solaires, ou époques ? Eh bien... c'est un mystère pour moi.",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Cet objet unique en son genre est accompagné d'une énigme à résoudre !",
+                                "expression": "Happy"
+                            }
+                        ]
+                    },
+                    //artifact_statue_piece
+                    {
+                        "key": "item_group_299",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Pièce de statue</style>\nCette statue fantastique semble être le buste d'un leader ou d'un personnage autrefois important."
+                            },
+                            {
+                                "text": "Ce n’est pas un mauvais gars, n’est-ce pas ?"
+                            },
+                            {
+                                "text": "La civilisation a dû disparaître il y a longtemps, mais cette pièce nous donne un aperçu de ce à quoi elle devait ressembler à l'époque."
+                            }
+                        ]
+                    },
+                    //artifact_timepiece
+                    {
+                        "key": "item_group_301",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Montre temporelle</style>\nLes montres temporelles originales comptent en fait les heures en fonction de la quantité de lumière du jour vue lorsqu'une planète tourne autour de son axe et de son orbite."
+                            },
+                            {
+                                "text": "Mais cette montre semble bien plus compliquée."
+                            },
+                            {
+                                "text": "De temps en temps, il a tendance à passer à une autre dimension avant de revenir, donc je suis heureux que vous puissiez le voir aujourd'hui."
+                            }
+                        ]
+                    },
+                    //artifact_twighlight Flute
+                    {
+                        "key": "item_group_304",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Flûte du Crépuscule</style>\nCette flûte crépusculaire est l'un des instruments les plus compliqués de l'univers connu."
+                            },
+                            {
+                                "text": "Sa mélodie change selon différents environnements, à différents moments et selon différents contextes gravitationnels."
+                            },
+                            {
+                                "text": "Sur certaines planètes, les concerts ont lieu tôt le matin et sur d’autres au milieu de la nuit. Tout dépend des facteurs externes."
+                            },
+                            {
+                                "text": "Cela me semble beaucoup de travail acharné.",
+                                "expression": "Sad"
+                            }
+                        ]
+                    },
+                    //artifact_vhs_tape
+                    {
+                        "key": "item_group_306",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Cassette VHS</style>\nCette cassette VHS contient un long métrage familial qui semble être classé PG. Je pense que le film est censé être visionné à des fins de divertissement."
+                            },
+                            {
+                                "text": "On dit que de nombreux souvenirs d’enfance sont liés à jamais à ces choses anciennes."
+                            },
+                            {
+                                "text": "Cependant, il semble y avoir des vidéos personnelles d'une famille Furball enregistrées à la fin de ce film."
+                            }
+                        ]
+                    },
+                    //artifact_warp_core
+                    {
+                        "key": "item_group_307",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Noyau de distorsion</style>\nCet ancien noyau de distorsion est un excellent exemple de la façon dont les voyages spatiaux sont possibles aujourd'hui."
+                            },
+                            {
+                                "text": "Un noyau de distorsion est capable de plier l'espace-temps et permet essentiellement de voyager plus rapidement que la vitesse de la lumière en raccourcissant la distance entre l'origine et la destination."
+                            },
+                            {
+                                "text": "Cela me fait vraiment mal à la tête rien que d’y penser.",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Mais sans cette technologie, les voyages dans l’espace prendraient des éternités au lieu de plusieurs jours, et les relations interstellaires auraient rarement existé."
+                            }
+                        ]
+                    },
+                    //artifact_water_flippers
+                    {
+                        "key": "item_group_308",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Palmes d'eau</style>\nCes palmes aquatiques peuvent aider le porteur à se déplacer beaucoup plus rapidement dans l'eau si ses appendices manquent de véritables nageoires ou toiles."
+                            },
+                            {
+                                "text": "Ils aident à enseigner aux enfants de Blue Reef comment devenir de bons nageurs plus tard dans la vie."
+                            },
+                            {
+                                "text": "Je vais devoir les essayer moi-même."
+                            }
+                        ]
+                    },
+                    //artifact_whale_tooth
+                    {
+                        "key": "item_group_309",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Dent de baleine</style>\nContrairement à la plupart des baleines, les baleines du récif bleu perdent leurs dents à mesure qu'elles grandissent."
+                            },
+                            {
+                                "text": "Ces trésors difficiles à trouver sont chéris dans le Royaume du Récif Bleu ainsi que dans de nombreuses autres cultures des systèmes solaires environnants."
+                            },
+                            {
+                                "text": "Bonne trouvaille !",
+                                "expression": "Happy"
+                            }
+                        ]
+                    },
+                    //artifact_wishbone
+                    {
+                        "key": "item_group_310",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumArtifact>Wishbone</style>\nLes civilisations anciennes croyaient que les oiseaux avaient des pouvoirs magiques et pouvaient prédire l'avenir."
+                            },
+                            {
+                                "text": "Lorsqu'un oiseau mourait, ce type d'os était exposé au soleil et les gens faisaient des vœux dessus."
+                            },
+                            {
+                                "text": "Mais les souhaits sont une chose puissante, vous le savez. Finalement, se chamailler sur ces souhaits mènerait à des bagarres !"
+                            },
+                            {
+                                "text": "Chacun s'emparant de l'objet, il devenait courant que deux adversaires s'affrontent dans un défi visant à diviser l'os en deux."
+                            },
+                            {
+                                "text": "Seul le vainqueur qui obtiendrait le plus gros morceau d’os verrait son souhait exaucé."
+                            }
+                        ]
+                    }
+                ]
+            },
+            //MINI COLLECTION GLITZY GEMS .................................................................
+            {
+                "miniCollectionKey": "miniCollection_2",
+                "miniCollectionName": "Glitzy Gems",
+                "miniCollectionDialogue": [
+                    //collection_sign
+                    {
+                        "key": "collection_sign",
+                        "textSet": [
+                            {
+                                "boxType": "Info",
+                                "text": "<style=MuseumGem>Collection de pierres précieuses fastueuses</style>\n\nAvec des joyaux éblouissants de tout l’univers. Ces merveilles brillantes sont encore considérées comme précieuses sur certaines planètes, mais même sans valeur monétaire, elles sont jolies à regarder.\n\n$amountCompare Collecté"
+                            }
+                        ]
+                    },
+                    //donation_single_start
+                    {
+                        "key": "donation_single_start",
+                        "textSet": [
+                            {
+                                "text": "Ohh, une pierre précieuse belle et précieuse."
+                            },
+                            {
+                                "text": "Souhaitez-vous en savoir plus sur cette pierre précieuse ?",
+                                "optionOne": {
+                                    "optionText": "Non"
+                                },
+                                "optionTwo": {
+                                    "optionText": "Oui"
+                                }
+                            }
+                        ]
+                    },
+                    //collectionReward_5
+                    {
+                        "key": "collectionReward_5",
+                        "textSet": [
+                            {
+                                "text": "Vous savez, Capitaine, nous n'avons peut-être que quelques joyaux dans le <style=MuseumGem>Collection de pierres précieuses fastueuses</style>, mais ils volent vraiment la vedette."
+                            },
+                            {
+                                "text": "Les observateurs auront besoin de lunettes de soleil pour protéger leurs yeux de toutes ces pierres précieuses brillantes... *s'éloigne avec émerveillement*",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Toutes les grandes collections commencent petit, c'est pourquoi je voulais simplement célébrer cette mini-étape."
+                            },
+                            {
+                                "text": "Voici un petit don de ma part pour vous."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 400,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    //collectionReward_6
+                    {
+                        "key": "collectionReward_6",
+                        "textSet": [
+                            {
+                                "text": "Oh, et juste pour que vous le sachiez, faire don de toutes ces pierres précieuses au <style=MuseumGem>Collection de pierres précieuses fastueuses</style> c'est pour la bonne cause."
+                            },
+                            {
+                                "text": "Partager ces trésors rares avec tout le monde a plus de valeur que les pierres précieuses elles-mêmes, n'est-ce pas ?",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Mais... en tant que crabe des affaires, je comprends la tentation de vendre ces petites merveilles au lieu de me les apporter."
+                            },
+                            {
+                                "text": "Alors je vous ai préparé une petite compensation pour que vous vous sentiez valorisé et tout ça..."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 800,
+                                    "trackAction": "Reward"
+                                }
+                            },
+                            {
+                                "text": "Maintenant, n'oubliez pas qu'il y en a toujours plus d'où cela vient. *montre une poche de son sac à dos*"
+                            }
+                        ]
+                    },
+                    //collectionReward_7
+                    {
+                        "key": "collectionReward_7",
+                        "textSet": [
+                            {
+                                "text": "Ouah. J'ai remarqué que nous avons découvert suffisamment de joyaux dans le <style=MuseumGem>Collection de pierres précieuses fastueuses</style> qu'il a franchi cette ligne magique dans mes livres."
+                            },
+                            {
+                                "text": "Tu sais ce que ça veut dire?",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Il est temps de publier de nouveaux supports marketing mettant en vedette ces nouveaux joyaux !",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Oh... et bien sûr, cela signifie aussi un jour de paie pour vous."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 1200,
+                                    "trackAction": "Reward"
+                                }
+                            },
+                            {
+                                "text": "Vous voir tenir ces crédits au-dessus de votre tête avec enthousiasme fait toujours ma journée."
+                            }
+                        ]
+                    },
+                    //collectionReward_8
+                    {
+                        "key": "collectionReward_8",
+                        "textSet": [
+                            {
+                                "text": "Oh! Mes enregistrements peuvent-ils être corrects ?",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "C'est vrai! Nous avons rassemblé toutes les pierres précieuses pour le <style=MuseumGem>Collection de pierres précieuses fastueuses</style>!",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Des collectionneurs du monde entier feront bientôt la queue dans notre Shuttle Bay pour admirer une si magnifique collection de pierres précieuses.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Et je n'aurais pas pu le faire sans vous, Capitaine."
+                            },
+                            {
+                                "text": "Ces pierres précieuses seront des objets de collection précieux tant qu’elles seront sous ma garde."
+                            },
+                            {
+                                "text": "Tiens, prends ces témoignages de mon appréciation. Je te dois beaucoup de temps !"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 5000,
+                                    "trackAction": "Reward"
+                                }
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <style=Item>Chapiteau promotionnel d'Hermy : Glitzy Gems</style>!",
+                                "itemReward": {
+                                    "itemID": "item_1469",
+                                    "amount": 1,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "museumItemDialogues": [
+                    //gem_amber_resin
+                    {
+                        "key": "item_group_311",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Résine Ambrée</style>\nL'ambre est en fait fabriqué à partir de résine d'arbre fossilisée qui peut durcir pour donner la pierre précieuse que vous voyez aujourd'hui. Ce n'est même plus collant."
+                            },
+                            {
+                                "text": "Les scientifiques aiment aussi beaucoup l’ambre. La résine gluante peut piéger les matières végétales et animales à l’intérieur avant qu’elles ne durcissent."
+                            },
+                            {
+                                "text": "Cela le préserve pour toujours, comme une capsule temporelle du passé !",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Regardez attentivement pour voir si vous pouvez voir quelque chose à l'intérieur de celui-ci."
+                            }
+                        ]
+                    },
+                    //gem_aquamarine
+                    {
+                        "key": "item_group_312",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Joyau du marin</style>\nCette aigue-marine bleu clair est en fait une variante d'un minéral. Un minéral appelé Béryl."
+                            },
+                            {
+                                "text": "Ces pierres précieuses peuvent devenir assez grosses, pesant même jusqu'à 250 livres !"
+                            },
+                            {
+                                "text": "Les civilisations anciennes pensaient que cette pierre précieuse guérirait la paresse, fournirait un regain d’énergie ou assurerait la sécurité d’un marin en mer. C'est pour cela qu'on lui a valu le surnom de Sailor's Gem."
+                            },
+                            {
+                                "text": "Peut-être que ce joyau nous protégera également lors de nos voyages spatiaux..."
+                            }
+                        ]
+                    },
+                    //gem_bismuth
+                    {
+                        "key": "item_group_313",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Bismuth</style>\nLe bismuth est un métal d'apparence très extraterrestre, mais il a de nombreuses utilisations intéressantes."
+                            },
+                            {
+                                "text": "Lorsque le bismuth est à l’état solide comme celui-ci, il est naturellement repoussé par les champs magnétiques."
+                            },
+                            {
+                                "text": "Ceci est utile lors de l’entrée dans des ports spatiaux avec des entrées magnétiques. Tous les vaisseaux spatiaux utilisent du bismuth sur leurs coques extérieures pour naviguer en toute sécurité dans ces ports."
+                            },
+                            {
+                                "text": "Il est également non toxique et on le trouve donc couramment dans les cosmétiques, les alliages et même les médicaments utilisés pour soulager les maux de ventre."
+                            }
+                        ]
+                    },
+                    //gem_bloodstone
+                    {
+                        "key": "item_group_314",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Pierre de sang</style>\nLa pierre de sang est certes effrayante et un peu mystérieuse, mais elle tire en fait son nom pour une raison intéressante."
+                            },
+                            {
+                                "text": "Cette pierre contient beaucoup d’oxyde de fer, qui peut être utilisé sur toutes coupures ou éraflures pour ralentir le saignement."
+                            },
+                            {
+                                "text": "Aussi...",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "...c'est MAUDIT ! Maudit par un horrible serment de sang dont on ne parle jamais, surtout tard dans la nuit lors d'une pleine lune...",
+                                "expression": "Angry"
+                            },
+                            {
+                                "text": "...",
+                                "expression": "Angry"
+                            },
+                            {
+                                "text": "Hé hé hé. Sa présence étrange en fait également un excellent accessoire pour raconter des histoires effrayantes.",
+                                "expression": "Happy"
+                            }
+                        ]
+                    },
+                    //gem_bubble_stone
+                    {
+                        "key": "item_group_315",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Pierre à bulles</style>\nCes pierres à bulles sont très fragiles et légères car elles sont majoritairement constituées d'air."
+                            },
+                            {
+                                "text": "Une fine formation de roche corallienne se développe en forme de bulle, emprisonnant de grandes poches d’air."
+                            },
+                            {
+                                "text": "De nombreuses petites créatures utilisent ces pierres à bulles comme habitat pendant les marées hautes pour éviter de se noyer ou d'être emportées."
+                            },
+                            {
+                                "text": "À marée basse, ils stockent des caches de nourriture dans les différentes cavernes avant de se retirer à l'intérieur pour la prochaine marée haute."
+                            },
+                            {
+                                "text": "Ne sous-estimez jamais une bonne maison qui voyage avec vous.",
+                                "expression": "Happy"
+                            }
+                        ]
+                    },
+                    //gem_chunky_crystal
+                    {
+                        "key": "item_group_317",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Gros cristal</style>\nC'est un véritable monstre de cristal, n'est-ce pas ?"
+                            },
+                            {
+                                "text": "Les gros cristaux ne peuvent se former que dans des températures extrêmement froides et continuent de grossir avec l’âge."
+                            },
+                            {
+                                "text": "Vous pouvez voir qu’il est en fait constitué de très nombreux petits cristaux fusionnés en un seul solide."
+                            },
+                            {
+                                "text": "On sait même que certains gros cristaux pèsent des milliers de livres lorsqu’ils sont trouvés dans leur environnement naturel."
+                            },
+                            {
+                                "text": "Si vous le tenez fermement, vous vous sentirez rafraîchi, car le gros cristal lui-même maintient une température centrale inhabituellement froide."
+                            }
+                        ]
+                    },
+                    //gem_coral_crystal
+                    {
+                        "key": "item_group_318",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Cristal de corail</style>\nPrenez rapidement une photo de ce cristal de corail avant qu'il ne se transforme en autre chose."
+                            },
+                            {
+                                "text": "Ce cristal astucieux imite l'apparence de tout ce qui l'entoure."
+                            },
+                            {
+                                "text": "Ce qui, dans les océans de la planète Blue Reef, est généralement du corail."
+                            },
+                            {
+                                "text": "Nous n’avons toujours aucune idée de la manière dont les cristaux de corail sont capables d’effectuer ces changements de structure complexes, mais nous savons que cela a quelque chose à voir avec la température.",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Tout comme les roches peuvent se transformer en magma sous l’effet d’une chaleur intense, ce cristal modifiera sa forme au moindre changement de température."
+                            }
+                        ]
+                    },
+                    //gem_diamond
+                    {
+                        "key": "item_group_48",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>diamant</style>\nOooohhh l'éclat de ce diamant a retenu votre attention, hein ?"
+                            },
+                            {
+                                "text": "Comme vous le savez, on les trouve très couramment dans l’espace. Certaines planètes sont même connues pour avoir des tempêtes de pluie de diamants ! Imagine ça."
+                            },
+                            {
+                                "text": "Mais vous voudriez rester dans votre coquille lorsque ces petites beautés commenceront à descendre."
+                            },
+                            {
+                                "text": "Les diamants sont l’une des substances les plus dures connues dans la nature. Il s’agit en fait d’une forme de carbone super solide, créée par une chaleur et une pression intenses sur une très longue période."
+                            },
+                            {
+                                "text": "Ils ont la beauté, l’âge et la durabilité qui les rendent vraiment uniques."
+                            }
+                        ]
+                    },
+                    //gem_firefly_gem
+                    {
+                        "key": "item_group_319",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Gemme de luciole</style>\nLa gemme luciole utilise la bioluminescence au crépuscule pour encourager l'accouplement entre la flore et la faune locales."
+                            },
+                            {
+                                "text": "D’autres insistent sur le fait que c’est aussi un porte-bonheur pour les couples de jeunes mariés afin de maintenir leur amour vivant."
+                            },
+                            {
+                                "text": "Il semble que tout le monde tombe amoureux de ce joyau, d’une manière ou d’une autre.",
+                                "expression": "Happy"
+                            }
+                        ]
+                    },
+                    //gem_friendship_stone
+                    {
+                        "key": "item_group_320",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Pierre d'amitié</style>\nCette roche colorée contient des coquilles fossilisées incrustées dans la surface de la pierre qui affichent un arc-en-ciel de couleurs."
+                            },
+                            {
+                                "text": "Ils sont couramment utilisés comme symboles de gentillesse et d’amitié. Cependant..."
+                            },
+                            {
+                                "text": "...une fois doués, certains disent que les liens d'amitié ne peuvent jamais être défaits."
+                            }
+                        ]
+                    },
+                    //gem_galaxy_stone
+                    {
+                        "key": "item_group_321",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Pierre Galactique</style>\nIl n’existe toujours pas beaucoup d’informations fiables sur la pierre galactique."
+                            },
+                            {
+                                "text": "Sur la base de mythes et de rumeurs populaires, certains disent qu’une pierre galactique pourrait contenir une véritable microgalaxie à l’intérieur."
+                            },
+                            {
+                                "text": "Mais le temps est si lent dans la petite galaxie de pierre que nous sommes incapables de percevoir la moindre vie."
+                            },
+                            {
+                                "text": "Mieux vaut me laisser le garder pour nous."
+                            }
+                        ]
+                    },
+                    //gem_gravity_stone
+                    {
+                        "key": "item_group_322",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Pierre de gravité</style>\nLes pierres de gravité tirent leur nom du fait qu'elles semblent défier les règles de la gravité et flotter."
+                            },
+                            {
+                                "text": "Les pierres gravitationnelles semblent également ne se trouver que dans des endroits soumis à des changements dimensionnels extrêmes."
+                            },
+                            {
+                                "text": "Mais pour être honnête, ce phénomène n’a pas encore été pleinement compris, et à cause de leur mépris pour la physique fondamentale..."
+                            },
+                            {
+                                "text": "...elles sont connues pour être des pierres difficiles à retenir."
+                            }
+                        ]
+                    },
+                    //gem_jade
+                    {
+                        "key": "item_group_263",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Nébuleuse Jade</style>\nComme du jade ordinaire, mais depuis l'espace ! En quelque sorte..."
+                            },
+                            {
+                                "text": "Un morceau de jade se décline en deux variétés, la jadéite et la néphrite, mais les deux sont des roches métamorphiques constituées de minuscules cristaux imbriqués."
+                            },
+                            {
+                                "text": "Ces cristaux peuvent changer l’apparence du jade de transparent à trouble et ajouter à sa résistance exceptionnelle."
+                            },
+                            {
+                                "text": "Lorsqu’un de ces jades est pris dans une tempête de poussière interstellaire, il s’imprègne d’autres matériaux et éléments rayonnés."
+                            },
+                            {
+                                "text": "Cette infusion intègre l'apparence d'une nébuleuse à la surface de la gemme, et sa classification change en nébuleuse de jade."
+                            }
+                        ]
+                    },
+                    //gem_lunar_basalt
+                    {
+                        "key": "item_group_324",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Basalte lunaire</style>\nLes roches de basalte lunaire comme celle-ci se sont formées il y a des milliards d'années à partir de volcans."
+                            },
+                            {
+                                "text": "Ces petits gars contiennent des tonnes de fer et de magnésium."
+                            },
+                            {
+                                "text": "Mais avant que les voyages dans l’espace ne soient monnaie courante, ces roches étaient considérées comme extrêmement rares et étaient récupérées comme souvenirs partout."
+                            },
+                            {
+                                "text": "(Remarque : une sécurité supplémentaire est nécessaire sur cette exposition. Juste au cas où.)"
+                            }
+                        ]
+                    },
+                    //gem_luz_opal
+                    {
+                        "key": "item_group_325",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Opale Luz</style>\nUn autre spécimen intéressant que nous avons ici !",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Les opales se forment lorsque les pluies saisonnières transportent la silice du grès profondément sous terre."
+                            },
+                            {
+                                "text": "Au fur et à mesure que l’eau s’évapore, les dépôts de silice restants commencent à s’accumuler et à former des couches."
+                            },
+                            {
+                                "text": "Ces couches s’empilent les unes sur les autres, formant une opale avec un motif de grille distinctif."
+                            },
+                            {
+                                "text": "La lumière rebondit autour de ce motif de grille pour créer les belles couleurs irisées que vous voyez aujourd’hui."
+                            }
+                        ]
+                    },
+                    //gem_magnesite
+                    {
+                        "key": "item_group_326",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Magnésite</style>\nLa magnésite est un minéral très bon marché qui peut en fait remplacer de nombreuses pierres précieuses plus coûteuses."
+                            },
+                            {
+                                "text": "Il peut être poli et teint pour créer de nombreuses perles ou bijoux colorés."
+                            },
+                            {
+                                "text": "Mais ce n'est pas tout!",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "La magnésite peut également être utilisée pour créer des matériaux résistants à la chaleur et des produits en caoutchouc synthétique."
+                            },
+                            {
+                                "text": "Je le trouve cependant plus impressionnant sous sa forme cristalline naturelle."
+                            }
+                        ]
+                    },
+                    //gem_moonstone
+                    {
+                        "key": "item_group_264",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Pierre de lune</style>\nRegardez attentivement cette pierre de lune. N'a-t-on pas l'impression que la lumière danse sur sa surface ?"
+                            },
+                            {
+                                "text": "Au cours de sa formation, les minéraux se séparent en couches empilées colorées comme celle-ci."
+                            },
+                            {
+                                "text": "Cet effet de lumière s'appelle... ...euh ?... ...quelque chose ?...                      ",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Adularescence! C'est ça!"
+                            },
+                            {
+                                "text": "Beaucoup de gens aiment cet effet d’adularescence. J'en suis moi-même un grand fan."
+                            }
+                        ]
+                    },
+                    //gem_moss_drop
+                    {
+                        "key": "item_group_328",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Goutte de mousse</style>\nÀ première vue, une goutte de mousse ressemble à une pierre normale recouverte de mousse."
+                            },
+                            {
+                                "text": "Mais une fois que vous le touchez, vous remarquerez qu’il a une quantité incroyablement élevée d’écrasement pour la pierre."
+                            },
+                            {
+                                "text": "Toutes les roches ont une certaine élasticité. Lorsque les plaques rocheuses normales des planètes entrent en collision, elles se plient légèrement les unes par rapport aux autres et créent des tremblements de terre lorsque la pression est relâchée."
+                            },
+                            {
+                                "text": "La goutte de mousse pousse ce concept à l'extrême."
+                            },
+                            {
+                                "text": "Il possède des propriétés élastiques si élevées qu'il peut être plié dans n'importe quelle forme et reprendre sa forme originale tout aussi facilement."
+                            }
+                        ]
+                    },
+                    //gem_nova_jewel
+                    {
+                        "key": "item_group_329",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Joyau Nova</style>\nLes bijoux Nova contiennent des fibres minérales très uniques qui se forment à l'intérieur de chacun d'entre eux."
+                            },
+                            {
+                                "text": "Ce qui rend ces fibres si magiques, c’est que la lumière qui les traverse pointe toujours dans la même direction, quelle que soit la direction dans laquelle elle est tournée."
+                            },
+                            {
+                                "text": "Agissant comme une boussole naturelle en cas de perte."
+                            },
+                            {
+                                "text": "Certaines personnes les gardent comme porte-bonheur ou pour les guider vers de nouvelles aventures."
+                            }
+                        ]
+                    },
+                    //gem_obsidian
+                    {
+                        "key": "item_group_330",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Obsidienne Voleuse</style>\nIl est formé de lave qui refroidit rapidement, mais il s'agit en fait d'une forme de verre et non d'un minéral ou d'une pierre précieuse."
+                            },
+                            {
+                                "text": "La variation voyous de l’obsidienne est encore plus nette que votre obsidienne standard. Il peut être extrêmement fragile et se briser en petits fragments avec juste un peu de pression."
+                            },
+                            {
+                                "text": "Certaines planètes sont recouvertes d’obsidienne et constituent des endroits dangereux à visiter.",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "En fait, soyez prudent en explorant toute planète où l’on peut trouver de l’obsidienne malhonnête."
+                            }
+                        ]
+                    },
+                    //gem_pearl
+                    {
+                        "key": "item_group_265",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>perle</style>\nLe mollusque du récif bleu qui a produit cette perle est connu sous le nom de Clam Creep."
+                            },
+                            {
+                                "text": "Ces créatures astucieuses crachent une perle sur leurs cibles à grande vitesse."
+                            },
+                            {
+                                "text": "Ce n'est pas un comportement normal, je dois le dire, et vous ne voulez pas être frappé dans le dôme par l'un de ces objets volants.",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "Mais bien qu’elle soit produite par un organisme vivant, la perle est toujours considérée comme une pierre précieuse."
+                            },
+                            {
+                                "text": "Et retrouver une perle aussi belle et intacte que celle-ci est un véritable régal."
+                            },
+                            {
+                                "text": "Mais cela montre également que toutes les créatures présentées dans une coquille ne sont pas aussi amicales que votre crustacé local préféré. Soyez prudent là-bas !"
+                            }
+                        ]
+                    },
+                    //gem_petrified_wood
+                    {
+                        "key": "item_group_266",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Bois pétrifié</style>\nCe n'est pas seulement un vieux morceau de bois que je voulais traîner dans ma collection. Certainement pas. Il s’agit en fait d’un morceau spécial de bois fossilisé."
+                            },
+                            {
+                                "text": "Je parie que tu ne savais pas qu'un arbre pouvait se fossiliser, hein ?"
+                            },
+                            {
+                                "text": "Eh bien, vous pouvez parier que vos culottes le peuvent.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Vous voyez, lorsqu'un arbre meurt et est lentement remplacé par des minéraux au fil du temps, les détails de la plante sont préservés à un niveau microscopique. Ensuite, vous vous retrouvez avec du bois pétrifié !"
+                            }
+                        ]
+                    },
+                    //gem_prism_shard
+                    {
+                        "key": "item_group_332",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Éclat de prisme</style>\nCe fragment de prisme est composé d'angles précis et de faces planes."
+                            },
+                            {
+                                "text": "Ces surfaces peuvent être utilisées pour séparer un faisceau de lumière blanche en un spectre de couleurs."
+                            },
+                            {
+                                "text": "La lumière blanche est composée de différentes longueurs d’onde colorées et ces longueurs d’onde se courberont en différentes quantités lorsqu’elles traverseront cet éclat."
+                            },
+                            {
+                                "text": "Différents types de prismes peuvent nous aider à disperser la lumière de différentes manières."
+                            },
+                            {
+                                "text": "Une belle vue et un excellent outil pour tout crabe également."
+                            }
+                        ]
+                    },
+                    //gem_pyrite
+                    {
+                        "key": "item_group_267",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>L'or des fous</style>\nL'or des fous est également connu sous le nom de Pyrite. Mais pour les chasseurs de trésors, ce rocher Fool's Gold peut certainement être une déception."
+                            },
+                            {
+                                "text": "Mais c'est l'un de mes préférés car c'est un excellent supraconducteur et peut être utilisé de nombreuses manières pratiques si vous êtes suffisamment astucieux."
+                            },
+                            {
+                                "text": "C'est aussi bon marché à l'achat. Quelle bonne affaire pour ce genre de choses. Je l'utilise depuis des lustres pour propulser mon vaisseau spatial."
+                            }
+                        ]
+                    },
+                    //gem_ruby
+                    {
+                        "key": "item_group_139",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Rubis</style>\nL'un des joyaux les plus précieux de notre collection actuellement. Le rouge, le rubis rouge !",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "La couleur de ce rubis provient du chrome, un oligoélément présent dans la structure de la gemme."
+                            },
+                            {
+                                "text": "C’est aussi un symbole universellement connu de réussite et de pouvoir. Un symbole qu’il mérite vraiment si vous me le demandez."
+                            }
+                        ]
+                    },
+                    //gem_sapphire
+                    {
+                        "key": "item_group_334",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Saphir</style>\nLes saphirs, comme celui-ci, sont extrêmement précieux dans le monde du faste et du glamour."
+                            },
+                            {
+                                "text": "Ils sont généralement connus pour leur riche couleur bleue, mais peuvent en réalité se décliner en de nombreuses couleurs différentes... sauf le rouge."
+                            },
+                            {
+                                "text": "En fait, techniquement, un saphir rouge n’existe pas car même s’il est fabriqué à partir du même minéral, il est plutôt classé comme rubis."
+                            },
+                            {
+                                "text": "Certains saphirs peuvent même changer de couleur sous différentes lumières, alors regardez attentivement pour voir quelles couleurs vous pouvez trouver dans celui-ci."
+                            }
+                        ]
+                    },
+                    //gem_sea_glass
+                    {
+                        "key": "item_group_335",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Verre de mer</style>\nCes magnifiques petits rochers sont en réalité des éclats de verre altérés qui ont été jetés ou brisés et qui ont fini dans un plan d'eau salée."
+                            },
+                            {
+                                "text": "Après de nombreuses années de culbutage avec les courants d’eau et les vagues, le verre est finalement arrondi et lissé."
+                            },
+                            {
+                                "text": "Les différentes couleurs proviennent des sources originales des bouteilles et récipients utilisés tout au long de l'histoire d'une civilisation."
+                            }
+                        ]
+                    },
+                    //gem_star_garnet
+                    {
+                        "key": "item_group_268",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Grenat étoilé</style>\nCes grenats ne se forment que dans des conditions très spécifiques et sont difficiles à trouver, même pour un collectionneur expérimenté comme moi."
+                            },
+                            {
+                                "text": "La réflexion des étoiles est causée par de minuscules aiguilles de rutile visibles le long des plans cristallins de la pierre."
+                            },
+                            {
+                                "text": "Les grenats étoilés avec une étoile à 4 rayons sont plus courants, cette étoile à 6 rayons est donc un trésor assez rare. Tout simplement merveilleux, n'est-ce pas ?"
+                            }
+                        ]
+                    },
+                    //gem_sulfur
+                    {
+                        "key": "item_group_336",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Soufre</style>\nSaviez-vous que le soufre est l'un des éléments les plus courants dans l'univers ?"
+                            },
+                            {
+                                "text": "Eh bien, c'est ce que vous faites maintenant."
+                            },
+                            {
+                                "text": "C'est également un élément essentiel pour tous les organismes vivants que l'on retrouve dans nos protéines et acides aminés."
+                            },
+                            {
+                                "text": "Que ferions-nous sans soufre ? Je ne pouvais pas imaginer un tel monde.",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Il est utile pour créer des médicaments, des conservateurs et une infinité d’autres fournitures. Même de l'engrais !"
+                            },
+                            {
+                                "text": "Un élément aussi incroyable mérite un podium dans tous les musées."
+                            }
+                        ]
+                    },
+                    //gem_sunstone
+                    {
+                        "key": "item_group_337",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumGem>Pierre de soleil</style>\nSemblable à la pierre de lune, cette pierre de soleil a des couleurs vives et un effet pailleté vif, mais elle est très chaleureuse."
+                            },
+                            {
+                                "text": "L’éclat scintillant est dû à de minuscules morceaux de lumière rayonnante venant de l’intérieur."
+                            },
+                            {
+                                "text": "La source de chaleur reste un mystère, mais certains pensent que des milliers de ces pierres solaires chaudes constituent le noyau de la planète d'où elles proviennent. Manipuler avec des gants pour éviter les brûlures."
+                            }
+                        ]
+                    }
+                ]
+            },
+            //MINI COLLECTION MIRCOBES ....................................................................
+            {
+                "miniCollectionKey": "miniCollection_3",
+                "miniCollectionName": "Micro Organisms",
+                "miniCollectionDialogue": [
+                    //collection_sign
+                    {
+                        "key": "collection_sign",
+                        "textSet": [
+                            {
+                                "boxType": "Info",
+                                "text": "<style=MuseumMicrobe>Collection de micro-organismes</style>\n\nJetez un œil à travers ces expositions agrandies vers un autre monde de petites merveilles qui nous entourent chaque jour. Pour la plupart inoffensifs, ces petits combattants peuvent exister dans certains des environnements les plus inhabitables, y compris l'immensité de l'espace !\n\n$amountCompare Collecté"
+                            }
+                        ]
+                    },
+                    //donation_single_start
+                    {
+                        "key": "donation_single_start",
+                        "textSet": [
+                            {
+                                "text": "Un microbe intéressant. Comme c’est scientifique !"
+                            },
+                            {
+                                "text": "Voulez-vous apprendre de nouveaux faits sur ce microbe ?",
+                                "optionOne": {
+                                    "optionText": "Non"
+                                },
+                                "optionTwo": {
+                                    "optionText": "Oui"
+                                }
+                            }
+                        ]
+                    },
+                    //collectionReward_9
+                    {
+                        "key": "collectionReward_9",
+                        "textSet": [
+                            {
+                                "text": "Capitaine, nous avons certainement un début de saison impressionnant <style=MuseumMicrobe>Collection de micro-organismes</style>."
+                            },
+                            {
+                                "text": "Je n'aurais vraiment pas pu le faire décoller sans toi."
+                            },
+                            {
+                                "text": "D'autant plus qu'Edward n'a pas encore créé de version du détecteur de microbes adaptée aux bernard-l'ermite.",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Alors, voici un petit quelque chose pour tout ce travail de numérisation."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 400,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    //collectionReward_10
+                    {
+                        "key": "collectionReward_10",
+                        "textSet": [
+                            {
+                                "text": "$playerName, nous avons vraiment élargi le <style=MuseumMicrobe>Collection de micro-organismes</style> un peu."
+                            },
+                            {
+                                "text": "Il y a eu un moment où j’étais légèrement préoccupé par le système de confinement, mais maintenant les choses vont tout simplement bien."
+                            },
+                            {
+                                "text": "Et tout cela grâce à vos recherches sur les microbes."
+                            },
+                            {
+                                "text": "En fait, j'ai également économisé une partie de chaque admission pour la reverser à votre recherche."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 800,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    //collectionReward_11
+                    {
+                        "key": "collectionReward_11",
+                        "textSet": [
+                            {
+                                "text": "Quelle collection impressionnante de microbes nous avons rassemblée jusqu’à présent.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Le <style=MuseumMicrobe>Collection de micro-organismes</style> devient tellement plein et rempli de faits fascinants que vous remarquez à peine les vitrines vides qui les entourent."
+                            },
+                            {
+                                "text": "J'attendais de te donner ça, jusqu'à exactement ce jour..."
+                            },
+                            {
+                                "text": "*vous montre une enveloppe avec un trou en bas* \n\n<size=10>OUPS !</size>",
+                                "expression": "Confused"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Les crédits sortent de l'enveloppe partout... <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 1200,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    //collectionReward_12
+                    {
+                        "key": "collectionReward_12",
+                        "textSet": [
+                            {
+                                "text": "*halètement*"
+                            },
+                            {
+                                "text": "En effet, c'était la dernière case à cocher et ma page entière est désormais remplie.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Cela signifie que nous avons terminé avec succès l'intégralité <style=MuseumMicrobe>Collection de micro-organismes</style>!",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Avec ces microbes exposés, chaque scientifique et chaque sortie scolaire visitera le musée pour étudier et en apprendre davantage sur ces organismes."
+                            },
+                            {
+                                "text": "Compléter une collection est sans doute le meilleur sentiment au monde... n'est-ce pas ?"
+                            },
+                            {
+                                "text": "Merci, Capitaine.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "J'aimerais partager une partie des bénéfices du musée pour toutes vos contributions !"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 5000,
+                                    "trackAction": "Reward"
+                                }
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <style=Item>Chapiteau promotionnel d'Hermy : Micro-organismes</style>!",
+                                "itemReward": {
+                                    "itemID": "item_1470",
+                                    "amount": 1,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "museumItemDialogues": [
+                    //microbe_alien_fungus
+                    {
+                        "key": "item_group_400",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Champignon extraterrestre</style> (X8900 : C14)\nCe champignon extraterrestre n'a été découvert qu'il y a environ 500 ans et son origine exacte n'est toujours pas claire."
+                            },
+                            {
+                                "text": "Son cycle de croissance rapide et sa transmission élevée à travers les vaisseaux spatiaux ont rendu impossible son arrêt une fois qu'il a finalement été classifié."
+                            },
+                            {
+                                "text": "Il a tendance à briser les pièces des machines pour se nourrir, donc surveiller ses numéros à bord de n'importe quel vaisseau est une partie nécessaire du voyage dans l'espace."
+                            },
+                            {
+                                "text": "Je garde celui-ci sous étroite surveillance pour protéger mon précieux vaisseau-coquillage."
+                            }
+                        ]
+                    },
+                    //microbe_amoeba
+                    {
+                        "key": "item_group_388",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Amibe</style> (Amoeba proteus)\nCes petits gars sont plutôt inoffensifs en fait."
+                            },
+                            {
+                                "text": "Ils aiment passer leurs journées à chercher des déchets organiques ou d’autres petits organismes à manger."
+                            },
+                            {
+                                "text": "Cependant, lorsque vous n'avez qu'une seule cellule, vous devez faire preuve de beaucoup de créativité lorsque vous vous déplacez. Pas de pinces avec lesquelles se déplacer du tout."
+                            },
+                            {
+                                "text": "Les amibes mangent avec et se déplacent en créant des renflements de membranes cellulaires appelés pseudopodes."
+                            },
+                            {
+                                "text": "En remplissant un pseudopode, puis un autre, l'amibe s'étire et peut se déplacer dans n'importe quelle direction. Le mouvement amiboïde est vraiment quelque chose."
+                            }
+                        ]
+                    },
+                    //microbe_common_cold
+                    {
+                        "key": "item_group_393",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Rhume</style> (Rhinovirus)\nUggh, oh ce type... le rhume est un fauteur de troubles régulier et l'a toujours été.",
+                                "expression": "Sad"
+                            },
+                            {
+                                "text": "Ce virus est également appelé rhinovirus car « rhin » signifie nez."
+                            },
+                            {
+                                "text": "C'est ainsi que ce virus se transmet. Il se déplace d’hôte en hôte à travers de minuscules particules d’air qui s’échappent de votre nez."
+                            },
+                            {
+                                "text": "Malheureusement, il n’existe toujours pas de remède."
+                            },
+                            {
+                                "text": "Cependant, le simple repos au lit recommandé et beaucoup de liquides donneront généralement à votre corps suffisamment de temps pour lutter seul contre le virus."
+                            },
+                            {
+                                "text": "L’un des avantages d’être un crabe est que je ne suis pas affecté par ce virus particulier. Héhéhé.",
+                                "expression": "Happy"
+                            }
+                        ]
+                    },
+                    //microbe_dust_mite
+                    {
+                        "key": "item_group_390",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Acarien</style> (Dermatophagoides farinae)\nCes micro-insectes se déplacent dans la plupart des environnements et peuvent vivre entre 50 et 100 jours."
+                            },
+                            {
+                                "text": "Les acariens se nourrissent de divers types de matières organiques et de certains types de moisissures, car ils préfèrent les zones humides."
+                            },
+                            {
+                                "text": "Ce n'est pas un problème. S’ils veulent ce genre de style de vie, ça me va très bien."
+                            },
+                            {
+                                "text": "Mais c'est ici que les ennuis commencent...",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "Après avoir mangé, ils laissent derrière eux des allergènes qui peuvent commencer à s’accumuler dans des écosystèmes fermés. Ces allergènes peuvent vraiment causer des ravages dans les habitats spatiaux, en particulier.",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "Il est recommandé de garder votre environnement propre et de laver souvent votre literie à l'eau chaude pour maintenir son nombre à un niveau bas."
+                            },
+                            {
+                                "text": "Combattre ces créatures peut être une véritable corvée."
+                            }
+                        ]
+                    },
+                    //microbe_ecoli
+                    {
+                        "key": "item_group_391",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>E. Coli</style> (Escherichia coli)\nEh bien, E. Coli ici est tout à fait unique."
+                            },
+                            {
+                                "text": "E. Coli est une bactérie naturelle qui vit généralement en harmonie avec les créatures vivantes, aidant à décomposer et à digérer les aliments."
+                            },
+                            {
+                                "text": "Mais ce volet pathogène que nous étudions n’est pas du tout le cas."
+                            },
+                            {
+                                "text": "Celle-ci est une très mauvaise graine. C'est un tyran et une menace qui refuse de changer d'attitude !",
+                                "expression": "Angry"
+                            },
+                            {
+                                "text": "Ce que je veux dire, c’est que cette E. Coli est très contagieuse et peut causer des problèmes de santé et des douleurs à l’estomac.",
+                                "expression": "Angry"
+                            },
+                            {
+                                "text": "Elle se transmet par des aliments, de l'eau ou d'autres personnes contaminées qui ont été infectées.",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "Alors s'il vous plaît, s'il vous plaît, ne soyez pas trop ami avec ce voyou E. Coli. C'est un mauvais moment.",
+                                "expression": "Stressed"
+                            }
+                        ]
+                    },
+                    //microbe_green_algae
+                    {
+                        "key": "item_group_392",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Les algues vertes</style> (Pediastrum boryanum)\nAlgues vertes, ce sont mes préférées !",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Leur coloration verte provient de quelque chose appelé chlorophylle."
+                            },
+                            {
+                                "text": "Ce truc absorbe la lumière du soleil et la convertit directement en énergie."
+                            },
+                            {
+                                "text": "Ensuite, ces gentils se regroupent en grandes colonies et pompent de l’oxygène comme s’il n’y avait pas de lendemain."
+                            },
+                            {
+                                "text": "Ils ajoutent de la vie à n’importe quel environnement dans lequel ils se trouvent et constituent également une excellente collation pour beaucoup."
+                            },
+                            {
+                                "text": "Sérieusement, beaucoup de créatures mangent des algues vertes. Ce n'est pas seulement moi."
+                            }
+                        ]
+                    },
+                    //microbe_lichen
+                    {
+                        "key": "item_group_260",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Lichen</style> (Lichinacées)\nIl ne s'agit pas seulement d'algues. Ce n'est pas seulement un champignon. Le lichen, c'est les deux !"
+                            },
+                            {
+                                "text": "Le lichen est peut-être assez résistant, mais il se développe très lentement car il partage également les sucres qu'il produit avec son homologue champignon."
+                            },
+                            {
+                                "text": "De nombreux lichens ont des propriétés antibactériennes et contribuent au processus de guérison de nombreuses maladies."
+                            },
+                            {
+                                "text": "Ils partagent entre eux et nous apprennent aussi la médecine. Des petits gars vraiment adorables."
+                            },
+                            {
+                                "text": "Vous pouvez certainement respirer tranquillement lorsque vous trouvez du lichen à bord de votre navire. Leur présence est en effet un signe naturel d’une bonne qualité de l’air."
+                            }
+                        ]
+                    },
+                    //microbe_nanobot
+                    {
+                        "key": "item_group_389",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Nanobot </style>(Nanoïde)\nDe nos jours, les nanobots sont utilisés pour une tonne de tâches micro et médicales. Ils peuvent réparer votre propre corps de l’intérieur."
+                            },
+                            {
+                                "text": "Que peuvent-ils faire de si spécial, demandez-vous ?"
+                            },
+                            {
+                                "text": "Livrer des médicaments ?      ...VÉRIFIER!"
+                            },
+                            {
+                                "text": "Combattre les mauvaises cellules ?      ...OUAIS!"
+                            },
+                            {
+                                "text": "Participer à la production de machines complexes ?      ...Oui encore!"
+                            },
+                            {
+                                "text": "Les nanobots peuvent même se répliquer et se restaurer afin de ne jamais s'user. Ouah."
+                            },
+                            {
+                                "text": "Ils sont si largement utilisés que l’on trouve des nanobots malveillants à peu près partout où les humains vivent aujourd’hui."
+                            }
+                        ]
+                    },
+                    //microbe_nematode
+                    {
+                        "key": "item_group_398",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Nématode</style> (Ver rond)\nWow ! Il y a certainement beaucoup de ces petits nématodes ici."
+                            },
+                            {
+                                "text": "Vous pouvez voir qu’ils ressemblent à de minuscules vers ronds, n’est-ce pas ? Avec des corps si étroits et minces qu’ils peuvent respirer à travers leur peau."
+                            },
+                            {
+                                "text": "Il existe des milliers d’espèces de nématodes, peut-être même des millions ! Mais cette espèce ici est bénéfique aux plantes car elle se nourrit d’insectes nuisibles."
+                            },
+                            {
+                                "text": "Les nématodes en général sont de petits personnages coriaces qui peuvent vivre dans des conditions très sauvages ou hostiles."
+                            },
+                            {
+                                "text": "En fait, leur succès est tel qu’ils dépassent largement en nombre toutes les autres formes de vie animale connues !"
+                            }
+                        ]
+                    },
+                    //microbe_penicillin
+                    {
+                        "key": "item_group_394",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Pénicilline </style>(Penicillium chrysogenum)\nCe héros microbien ne doit pas être tenu pour acquis."
+                            },
+                            {
+                                "text": "Sa capacité à produire de la pénicilline, un antibiotique, a évolué sur des millions d’années. Bien avant notre époque."
+                            },
+                            {
+                                "text": "Lorsque des cellules bactériennes fragmentaires rencontrent de la pénicilline, celle-ci arrête immédiatement la formation de leurs parois cellulaires avant que des problèmes ne surviennent."
+                            },
+                            {
+                                "text": "Cependant, n’utilisez ce produit lourd que lorsque cela est nécessaire, car les bactéries peuvent également évoluer pour résister à ce type de traitements avec le temps."
+                            },
+                            {
+                                "text": "Oh, c'est une micro-bataille des âges comme vous ne le croiriez pas. Beaucoup de drames et de rebondissements."
+                            }
+                        ]
+                    },
+                    //microbe_probiotics
+                    {
+                        "key": "item_group_395",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Probiotiques</style> (Lactobacillus casei)\nLes probiotiques vivent dans de nombreuses parties de votre corps. Ils peuvent résister à une acidité élevée, à une très large plage de températures et n’ont même pas besoin d’oxygène !"
+                            },
+                            {
+                                "text": "Ces micro-amis aident à la digestion et combattent d’autres mauvais agents pathogènes qui veulent nous causer des problèmes de santé."
+                            },
+                            {
+                                "text": "Ils rendent même les aliments ennuyeux plus sucrés en transformant les féculents en sucre."
+                            },
+                            {
+                                "text": "Si seulement tous les microbes étaient aussi utiles."
+                            }
+                        ]
+                    },
+                    //microbe_red_algae
+                    {
+                        "key": "item_group_396",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Algues rouges</style> (Haematococcus pluvialis)\nLes algues rouges contiennent une coloration rouge. Tu l'as deviné. Mais cette coloration n’est pas seulement destinée à la beauté. Oh non."
+                            },
+                            {
+                                "text": "Cette coloration rouge s'appelle Astaxanthine... d'après ces notes de Frances.",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Ce produit chimique est un anti-inflammatoire, un antioxydant et protège contre les dommages causés par les UV."
+                            },
+                            {
+                                "text": "...En plus, vous pouvez manger celui-ci aussi ! Haha. Un de mes autres favoris, vous ne le savez pas.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Quiconque viendra manger ce microbe bénéficiera également de toutes ces propriétés super protectrices."
+                            },
+                            {
+                                "text": "(Avertissement : mangez à vos risques et périls. Connu pour rendre les flamants roses rouge vif.)"
+                            }
+                        ]
+                    },
+                    //microbe_root_bacteria
+                    {
+                        "key": "item_group_397",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Bactéries racinaires</style> (Rhizobium)\nCe n'est pas une mauvaise bactérie à avoir à proximité si vous êtes une plante qui cherche à prendre racine."
+                            },
+                            {
+                                "text": "Ces types de bactéries terrestres vivent naturellement en harmonie avec les plantes."
+                            },
+                            {
+                                "text": "Ils pénètrent dans une plante par les poils absorbants ou les larmes et forment des nodules sur ses racines."
+                            },
+                            {
+                                "text": "Ensuite, les bactéries racinaires s’activent, captant l’azote de l’air et le transmettant à la plante. En échange, la plante fournit du sucre aux bactéries."
+                            },
+                            {
+                                "text": "Ils adorent le sucre, c'est donc un partenariat naturel entre les bactéries et les plantes."
+                            }
+                        ]
+                    },
+                    //microbe_sea_sparkle
+                    {
+                        "key": "item_group_399",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Éclat de mer</style> (Noctiluca scintillans)\nCes créatures ressemblent à de minuscules ballons avec des tentacules. Ils utilisent leurs tentacules collants pour attraper des algues rouges et des bactéries pour se nourrir."
+                            },
+                            {
+                                "text": "Ils sont également transparents, il est donc facile de voir ce que cet éclat marin a apporté au déjeuner. Regardez vous même."
+                            },
+                            {
+                                "text": "Mais cette douce étincelle bleue pour laquelle il est connu est créée lorsque l’oxygène est décomposé et combiné avec d’autres enzymes."
+                            },
+                            {
+                                "text": "La lumière sert principalement à repousser ses ennemis, mais je la trouve très fascinante, surtout la nuit."
+                            }
+                        ]
+                    },
+                    //microbe_slime_mold
+                    {
+                        "key": "item_group_401",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Moisissure visqueuse</style> (Physarum polycephalum)\nBeurk, que fait ce slime dans mon musée !?",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Haha je plaisante. Je pense que la moisissure visqueuse est plutôt charmante en fait.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Il peut se déplacer à l'aide de petits pseudopodes qui s'étendent comme de petits bras. Tellement mignon, non ?"
+                            },
+                            {
+                                "text": "Lorsque ces bras s'agrippent à une surface, le moule peut se déplacer lentement en se tirant dans cette direction. Vas-y, moisissure visqueuse, vas-y !"
+                            },
+                            {
+                                "text": "Il peut également se rappeler où il s’est rendu et où il ne s’est pas rendu grâce à des signaux chimiques. Intelligent aussi !"
+                            },
+                            {
+                                "text": "Cela le rend particulièrement efficace pour trouver de nouveaux aliments ou éviter les ennuis. Je savais que tu aimerais celui-ci une fois que tu les connaîtrais."
+                            }
+                        ]
+                    },
+                    //microbe_slipper_organism
+                    {
+                        "key": "item_group_402",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Organisme de pantoufle</style> (Paramecium caudatum)\nVous savez que ces microbes sont délicats. Laisse-moi expliquer..."
+                            },
+                            {
+                                "text": "Cette petite créature est recouverte de cils, qui sont de courts poils vibrants qui permettent au microbe de nager."
+                            },
+                            {
+                                "text": "Ils utilisent également ces cils pour balayer les bactéries à l’intérieur de leurs vacuoles alimentaires où elles peuvent être digérées."
+                            },
+                            {
+                                "text": "La raison pour laquelle les organismes des pantoufles sont en quelque sorte des microbes neutres est qu’ils finissent par manger des bactéries à la fois nocives et utiles. Ils s'en moquent d'une manière ou d'une autre."
+                            }
+                        ]
+                    },
+                    //microbe_soil_bacteria
+                    {
+                        "key": "item_group_403",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Bactéries du sol</style> (Streptomycètes)\nQuel agréable parfum frais. Ce doivent être des bactéries du sol à l’œuvre."
+                            },
+                            {
+                                "text": "Cette bactérie n'est pas seulement essentielle au compostage... elle crée également des antibiotiques pour combattre les bactéries concurrentes."
+                            },
+                            {
+                                "text": "La plupart des antibiotiques de l'univers sont créés à partir de ce microbe et sont d'une valeur inestimable pour la communauté médicale."
+                            },
+                            {
+                                "text": "C'est tout un exploit pour un si petit microbe, je dirais.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Ils créent également leurs propres spores pour survivre dans les périodes plus sèches. Lorsque l’eau se mélange enfin à ces spores, un merveilleux parfum de forêt terreuse est libéré."
+                            },
+                            {
+                                "text": "Les animaux capables de détecter l’eau à distance sentent en fait ces spores pour trouver ces sources d’eau douce."
+                            }
+                        ]
+                    },
+                    //microbe_strep_bacteria
+                    {
+                        "key": "item_group_404",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Bactéries streptococciques</style> (Streptococcus pyogenes)\nRegardez simplement ce visage suffisant... Vous savez que ça ne sert à rien tout de suite.",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "Ce mauvais microbe peut provoquer de nombreuses maladies allant de légères à graves.",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "Il peut également se déguiser en attaquant des cellules saines et en utilisant ces débris cellulaires pour se cacher du système immunitaire de son hôte. Quel sale tour."
+                            },
+                            {
+                                "text": "Heureusement, cette bactérie est encore faible face à notre bonne vieille amie la pénicilline. Les traitements à la pénicilline peuvent arrêter la plupart des maladies associées sans complications."
+                            },
+                            {
+                                "text": "De toute façon, je garderai celui-ci bien confiné pour protéger le reste de l'équipage."
+                            }
+                        ]
+                    },
+                    //microbe_sweat_bacteria
+                    {
+                        "key": "item_group_405",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Bactéries de la sueur</style> (Staphylococcus epidermidis)\nQuelle est cette odeur ? Oh oui, les bactéries qui transpirent. Hum... eh bien..."
+                            },
+                            {
+                                "text": "Les bactéries sudoripares sont des résidents permanents à vie de nombreuses créatures vivantes. Lorsqu’ils sont combinés à la sueur, ils produisent une odeur corporelle désagréable. C'est vrai. Même eux l'admettront."
+                            },
+                            {
+                                "text": "Mais ils compensent largement ce trait négatif en luttant contre des brins de bactéries staphylococciques plus dangereux. Comme les bactéries toxiques. Ils ne le supportent tout simplement pas et font tout un plat."
+                            },
+                            {
+                                "text": "Les bactéries de la sueur aident généralement à se protéger contre des maladies plus graves et aident même à entraîner le système immunitaire."
+                            },
+                            {
+                                "text": "Lorsque vous avez affaire à des bactéries sudoripares, vous prenez le bon avec le mauvais.",
+                                "expression": "Sad"
+                            }
+                        ]
+                    },
+                    //microbe_tardigrade
+                    {
+                        "key": "item_group_406",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>tardigrade</style> (Milnesium tardigradum)\nVous comprenez pourquoi le tardigrade est également connu sous le nom d'ours d'eau ou de porcelet de mousse. Regardez ce petit museau et ces pattes trapues. Héhéhé.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Ils sont peut-être mignons, mais les tardigrades sont également bien équipés pour survivre."
+                            },
+                            {
+                                "text": "Les tardigrades peuvent se mettre dans un état de sommeil particulier lorsqu'ils sont confrontés à des conditions environnementales difficiles."
+                            },
+                            {
+                                "text": "Cet état leur permet de devenir une petite boule ratatinée et de survivre avec seulement 3 % de l’eau normale nécessaire pendant des décennies."
+                            },
+                            {
+                                "text": "Lorsque les conditions environnantes s’améliorent, le tardigrade peut se réveiller de sa longue sieste avec seulement quelques gouttes d’eau."
+                            },
+                            {
+                                "text": "En raison de leur extrême adaptabilité, ils vivent un peu partout !"
+                            }
+                        ]
+                    },
+                    //microbe_tough_bacteria
+                    {
+                        "key": "item_group_407",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Bactéries coriaces</style> (Deinococcus radiodurans)\nTout ce que vous pouvez lancer sur cette bactérie, elle peut le gérer."
+                            },
+                            {
+                                "text": "Il peut survivre au froid extrême, à la déshydratation, au vide spatial, aux acides et même aux radiations intenses."
+                            },
+                            {
+                                "text": "Cette bactérie rit face au danger et n’a aucun problème à nettoyer les contaminations et les polluants en cas de besoin."
+                            },
+                            {
+                                "text": "Mais comment des bactéries coriaces peuvent-elles être si coriaces ?"
+                            },
+                            {
+                                "text": "Parce qu’il stocke plusieurs copies de son génome et peut réparer son propre ADN quand il le faut. C'est comme ça!"
+                            },
+                            {
+                                "text": "Ses propriétés anti-âge et son attitude intrépide en font une véritable récompense pour tout musée ou laboratoire de recherche."
+                            }
+                        ]
+                    },
+                    //microbe_toxic_bacteria
+                    {
+                        "key": "item_group_408",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Bactéries toxiques</style> (Staphylococcis aureus)\nLes bactéries toxiques sont notoirement mauvaises."
+                            },
+                            {
+                                "text": "Il est connu comme étant un agent pathogène opportuniste, car il profite des bonnes circonstances pour provoquer des infections."
+                            },
+                            {
+                                "text": "Cette bactérie est également devenue plus résistante à de nombreux antibiotiques, de sorte que les infections qu’elle provoque peuvent être difficiles à guérir. Très têtu en fait.",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "Mieux vaut rester en sécurité et éviter cette mauvaise foule.",
+                                "expression": "Stressed"
+                            }
+                        ]
+                    },
+                    //microbe_water_flea
+                    {
+                        "key": "item_group_409",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Puce d'eau</style> (Daphnia magna)\nCes petites créatures tirent leur nom de leur style de nage qui ressemble à celui d'une puce sauteuse."
+                            },
+                            {
+                                "text": "Ils aiment engloutir les algues vertes et les bactéries pendant leur temps de baignade libre."
+                            },
+                            {
+                                "text": "Les puces d’eau sont également excellentes pour prospérer dans des conditions extrêmes. Les puces d'eau femelles peuvent même se reproduire entièrement par elles-mêmes si nécessaire. Ils peuvent produire leurs propres clones ! Sauvage."
+                            },
+                            {
+                                "text": "...et c'est tout ce qu'il y a à savoir sur la puce d'eau..."
+                            },
+                            {
+                                "text": "..."
+                            },
+                            {
+                                "text": "...sujet suivant s'il vous plaît...",
+                                "expression": "Sad"
+                            },
+                            {
+                                "text": "...",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "D'accord! Oui, oui, techniquement, les puces d'eau sont des crustacés, et elles sont un parent très éloigné de moi.",
+                                "expression": "Angry"
+                            },
+                            {
+                                "text": "Mais c’était il y a bien longtemps dans notre arbre évolutif ! Et c’est à ce moment-là que nos similitudes ont pris fin.",
+                                "expression": "Angry"
+                            },
+                            {
+                                "text": "Humph... J'aimerais voir une puce d'eau constituer une collection de musée spectaculaire comme celle-ci...",
+                                "expression": "Sad"
+                            }
+                        ]
+                    },
+                    //microbe_wild_yeast
+                    {
+                        "key": "item_group_410",
+                        "textSet": [
+                            {
+                                "text": "<style=MuseumMicrobe>Levure sauvage</style> (Pichia barkeri)\nIntéressant. Nous avons trouvé ici de la levure sauvage."
+                            },
+                            {
+                                "text": "Une levure comme celle-ci peut très bien convertir le sucre en énergie. Il est utilisé depuis des siècles pour préparer divers aliments et boissons."
+                            },
+                            {
+                                "text": "Vous pouvez cultiver votre propre levure sauvage en faisant fermenter des fruits, des légumes ou des herbes dans des environnements riches et humides."
+                            },
+                            {
+                                "text": "Mais on ne sait jamais quel genre de goût vous obtiendrez. Certains pourraient s’avérer formidables tandis que d’autres pourraient être un gros échec."
+                            },
+                            {
+                                "text": "Ces microbes sauvages ne font aucune promesse."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+
+    //#endregion ...............................................
+    ////#region ANNEXT TEST COLLECTION FOR POST RELEASE ...........
+    //{
+    //    "collectionKey": "collection_2",
+    //    "collectionName": "Annex Collection",
+    //    "collectionDialogue": [
+    //        {
+    //            "key": "collection_complete",
+    //            "textSet": [
+    //                {
+    //                    "text": "You are on fire!"
+    //                },
+    //                {
+    //                    "text": "Way to complete the annex collection!"
+    //                }
+    //            ]
+    //        }
+    //    ],
+    //    "miniCollections": [
+    //        //ANNEX TEST COLLECTION .......................................................................
+    //        {
+    //            "miniCollectionKey": "miniCollection_4",
+    //            "miniCollectionName": "Annex Collection",
+    //            "miniCollectionDialogue": [
+    //                {
+    //                    "key": "collection_sign",
+    //                    "textSet": [
+    //                        {
+    //                            "boxType": "Info",
+    //                            "text": "<#F6C000><b>THE ANNEX COLLECTION</color></b>\n\nThis collection features annex items.\n\n$amountCompare Collected"
+    //                        }
+    //                    ]
+    //                },
+    //                {
+    //                    "key": "donation_single_start",
+    //                    "textSet": [
+    //                        {
+    //                            "text": "How interesting, a new item for my special annex."
+    //                        },
+    //                        {
+    //                            "text": "Would you like to hear the origin of this item?",
+    //                            "optionOne": {
+    //                                "optionText": "Yes"
+    //                            },
+    //                            "optionTwo": {
+    //                                "optionText": "No"
+    //                            }
+    //                        }
+    //                    ]
+    //                },
+    //                {
+    //                    "key": "collection_complete",
+    //                    "textSet": [
+    //                        {
+    //                            "text": "Annex mini collection complete..."
+    //                        },
+    //                        {
+    //                            "boxType": "Reward",
+    //                            "text": "You got <sprite=1><style=Credits> $amount credits</style>!",
+    //                            "itemReward": {
+    //                                "itemID": "item_43",
+    //                                "amount": 10000,
+    //                                "trackAction": "Reward"
+    //                            }
+    //                        }
+    //                    ]
+    //                }
+    //            ]
+    //        }
+    //    ]
+    //}
+
+    ////#endregion ...............................................
+]

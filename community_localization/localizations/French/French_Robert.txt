@@ -1,0 +1,1048 @@
+[
+    {
+        "npcSaveID": "npc_23",
+        "name": "Robert",
+        "titles": [
+            "Directeur général du magasin"
+        ],
+        "birthdayAnnouncement": "Aujourd'hui, c'est l'anniversaire de Robert.",
+        "relationshipStatus": [
+            "C'est compliqué",
+            "Engagé",
+            "Marié"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Des relations",
+                "unlockTitle": "Amis!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 2,
+                "unlockBody": "Bon travail! Votre statut relationnel avec Robert est passé au niveau supérieur. Il vous considère désormais comme un de ses amis et vous a remis une carte d'accès à sa chambre."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Des relations",
+                "unlockTitle": "Meilleurs amis!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Étoile d'or! Votre statut relationnel avec Robert a atteint un autre niveau. Il vous considère désormais comme l'un de ses meilleurs amis."
+            }
+        ],
+
+        "observations": [
+            "Aime le goût des aliments grillés.",
+            "Est en couple avec Frances.",
+            "On dirait qu'il économise pour quelque chose d'important."
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*ours ronfler*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Le magasin me tient en haleine ces jours-ci."
+                    },
+                    {
+                        "text": "Toujours quelque chose qui va ou qui vient."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Bonne journée hein."
+                    },
+                    {
+                        "text": "C'est toujours bien quand les affaires reprennent pour moi."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Les fournitures peuvent être difficiles à trouver dans les régions les plus reculées de l’espace."
+                    },
+                    {
+                        "text": "En tant qu'équipage, nous devons subvenir à nos besoins pour maintenir ce vieux bateau à flot, et chacun fait sa part, grande ou petite."
+                    },
+                    {
+                        "text": "Je prends cette responsabilité très au sérieux et j'espère que vous ressentez la même chose."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "De retour dans mon ancien port spatial, je devais charger et décharger au moins cinq vaisseaux par jour pour assurer le bon fonctionnement de la communauté."
+                    },
+                    {
+                        "text": "Les traders de l’époque étaient plutôt avisés, j’ai donc découvert quelques astuces pour obtenir les meilleures offres."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "J'ai un emploi du temps précis pour Jimmy et moi."
+                    },
+                    {
+                        "text": "L’expédition, la réception, l’équilibrage du livre de comptes et tout le reste se déroulent comme sur des roulettes."
+                    },
+                    {
+                        "text": "Mais nous sommes fermés le samedi, nous avons donc le temps de nous détendre et de passer une bonne soirée cinéma."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Si vous avez du mal à économiser des crédits, je trouve que la budgétisation peut vous aider."
+                    },
+                    {
+                        "text": "Je suis très strict avec mon budget afin de pouvoir disposer d'un peu d'argent de poche supplémentaire chaque mois."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Il y a toujours de petites tâches qui surgissent dans le magasin."
+                    },
+                    {
+                        "text": "Parfois, j'ai l'impression d'être un bricoleur à plein temps.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Ahh, il n'y a rien de mieux que d'échanger des histoires autour d'un feu de joie dans les bois.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "J'aime m'occuper du feu et entendre toutes les aventures de mes amis."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Je m'efforce de garder les produits de base en stock tout le temps, mais les graines dépendent entièrement de notre emplacement."
+                    },
+                    {
+                        "text": "Je suppose que c'est bien d'avoir de la variété."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Les roues du I-1900 continuent de laisser des traces sur mon sol.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Je ne suis pas en colère... mais j'aimerais pouvoir trouver une sorte de cire à sol pour éviter cela.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Je ne suis plus aussi jeune qu'avant.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Frances m'aide vraiment avec tous les maux et douleurs."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Garde un oeil sur Jimmy pour moi, tu veux ?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Il ne parle pas beaucoup, mais il fait de gros efforts."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Une fois, j'ai échangé des fournitures avec un marchand contre des cours de sculpture sur bois."
+                    },
+                    {
+                        "text": "J'utilise habituellement un ciseau laser automatique, mais de temps en temps, je fais quelques détails à la main."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Hé Capitaine, je viens de lire une blague amusante, tu veux l'entendre ?"
+                    },
+                    {
+                        "text": "Alors... pourquoi l'épouvantail a-t-il été promu ?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Parce qu'il était exceptionnel dans son domaine."
+                    },
+                    {
+                        "text": "*rit de lui-même*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Je dis toujours à Jimmy de ressembler davantage à la fille de Frances, Doc12."
+                    },
+                    {
+                        "text": "Elle est tellement enrégimentée et disciplinée dans son entraînement, c'est impressionnant."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Mec... je trouve encore de vieilles boîtes que je dois trier..."
+                    },
+                    {
+                        "text": "Un de ces jours, j'espère pouvoir dire que j'ai enfin fini de réduire mes effectifs."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "J'ai encore en stock une petite navette que j'utilisais pour emprunter de petites routes commerciales."
+                    },
+                    {
+                        "text": "Je suppose que je finirai par le donner à Jimmy s'il veut déployer davantage ses ailes."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Merci d’avoir vendu tous vos articles via ma boutique."
+                    },
+                    {
+                        "text": "Les affaires ont vraiment repris depuis votre arrivée.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Je ne le dis probablement pas assez, mais j'apprécie vraiment tout le travail que Jimmy fait ici."
+                    },
+                    {
+                        "text": "Cet endroit serait bien plus désorganisé s’il n’y avait que moi."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "C'est vraiment agréable d'avoir quelqu'un de spécial dans sa vie."
+                    },
+                    {
+                        "text": "Je n'avais pas réalisé à quel point j'étais seul jusqu'à récemment...",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "C'est drôle comme on peut se surprendre à mesure qu'on vieillit et que ses priorités commencent à changer."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Ouvrir ce magasin a toujours été mon rêve pour ma famille, alors j'espère que Jimmy voudra prendre la relève un jour."
+                    },
+                    {
+                        "text": "Vous devez travailler dur pour atteindre vos objectifs dans la vie."
+                    }
+                ]
+            },
+
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Je n'ai qu'un seul costume et il est un peu vieux.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Je devrai peut-être le dépoussiérer et le modifier pour qu'il me convienne à nouveau."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Jimmy et moi avions l'habitude d'aller camper hors du bateau, mais depuis que nous avons ouvert notre propre magasin, nous n'avons vraiment pas eu de temps libre."
+                    },
+                    {
+                        "text": "Le magasin passe en premier et je sais qu’il est d’accord avec moi, mais peut-être devrions-nous planifier un voyage bientôt de toute façon.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Je ne pense pas qu'il y ait quelque chose de plus relaxant qu'un bon film de kung-fu classique."
+                    },
+                    {
+                        "text": "Mais personne d’autre dans ma vie n’aime mes choix de films.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Eh bien, c'est inattendu ! Ce type d’article est également difficile à trouver."
+                    },
+                    {
+                        "text": "Merci, Capitaine. Grâce à vous, un vieil homme se sent apprécié par ici.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Waouh, Capitaine ! Vous avez certainement tout fait pour moi.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Bon sang, capitaine. Tu essaies de me rendre complètement triste ou quoi ?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "C'est vraiment génial."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Bien! Je cherchais juste quelque chose comme ça."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Vous n'auriez pas dû... mais je suis vraiment content que vous l'ayez fait !",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Merci! Ce n'est même pas encore mon anniversaire, mais peut-être que je devrais juste faire comme si c'était le cas avant que tu changes d'avis !"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Merci. J'ai exactement l'endroit idéal pour ça à la maison."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Oh, c'est très gentil de ta part de partager tes petits plus avec moi."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Vous semblez être d'humeur à offrir des cadeaux aujourd'hui, Capitaine. Merci de penser à moi."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Oh... J'en ai un tas en boîte au magasin.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Vous ne pouvez pas non plus vous en débarrasser, hein ?",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Honnêtement, il n’y a pas grand-chose que je n’aime pas, mais malheureusement, c’est une de ces choses.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Comment quelqu'un peut-il s'enthousiasmer à ce sujet...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "*secoue la tête*... Je suppose que je ne vois tout simplement pas l'attrait.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "Capitaine, vous n'aviez rien à m'offrir pour mon anniversaire, alors merci !",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Les gens disent toujours que je suis difficile à acheter..."
+                    },
+                    {
+                        "text": "... mais j'aime à peu près tout, donc je pense que je suis facile.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            {
+                "key": "RegisterStart_General", //case sensitive because we use the store name Enum to get this key. 
+                "textSet": [
+                    {
+                        "text": "Bienvenue au magasin général. Les articles à acheter sont exposés ou vous pouvez vendre vos articles ici."
+                    }
+                ]
+            },
+            {
+                "key": "RegisterStart_EventFriendship", //case sensitive because we use the store name Enum to get this key. 
+                "textSet": [
+                    {
+                        "text": "Bienvenue sur mon stand spécial de la Journée de l'amitié."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+
+        ],
+        "commentary": [
+            {
+                //MEET THE CREW
+                "key": "quest_16",
+                "textSet": [
+                    {
+                        "text": "Bonjour, Capitaine."
+                    },
+                    {
+                        "text": "Je suis contente que tu m'aies trouvé. Gérer le magasin général sur le navire m'occupe ici la plupart du temps."
+                    },
+                    {
+                        "text": "Oh, et j'ai beaucoup de fournitures et de graines qui pourraient vous aider dans vos tâches ici."
+                    },
+                    {
+                        "text": "Je dis simplement... qu'un navire délabré et un équipage affamé ne sont pas bons pour les affaires.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_VISITGREYPLANET
+                "key": "quest_24",
+                "textSet": [
+                    {
+                        "text": "Lorsque vous vous dirigerez vers la planète grise, n'oubliez pas que j'achèterai tous les surplus de fournitures que vous trouverez."
+                    },
+                    {
+                        "text": "Il n’y a peut-être pas beaucoup de nourriture là-bas, mais les gens achèteront toutes sortes de choses."
+                    }
+                ]
+            },
+            {
+                //P_REPORTTOKAIDA
+                "key": "quest_61",
+                "textSet": [
+                    {
+                        "text": "Vous avez beaucoup de pain sur la planche, alors laissez-moi vous donner quelques conseils."
+                    },
+                    {
+                        "text": "Prenez juste une chose à la fois..."
+                    },
+                    {
+                        "text": "Et si cela ne fonctionne pas, cela fonctionnera."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Vous avez un <style=Item>Tonique Énergétique</style>.",
+                        "itemReward": {
+                            "itemID": "item_912",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_REQUESTGREYSOOT
+                "key": "quest_19",
+                "textSet": [
+                    {
+                        "text": "J'ai donc entendu dire que vous alliez vous aventurer dans d'autres parties de la planète grise et rechercher des ressources précieuses."
+                    },
+                    {
+                        "text": "Eh bien, je suis certainement intéressé à déplacer toutes les ressources que vous pourriez trouver."
+                    }
+                ]
+            },
+            //{
+            //    //P_DELIVERGREYRELIC
+            //    "key": "quest_10",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_OCEANCOORDMEETING
+                "key": "quest_17",
+                "textSet": [
+                    {
+                        "text": "Je ferais mieux de m'enregistrer auprès du CPU après votre réunion afin de pouvoir préparer le magasin à tout ce que vous déciderez.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            //{
+            //    //P_VISITENGINEROOM
+            //    "key": "quest_57",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_PRODUCEFUEL
+                "key": "quest_60",
+                "textSet": [
+                    {
+                        "text": "Vous savez que Dark Matter ne vaut peut-être pas grand-chose, mais c'est une marchandise très facile à déplacer."
+                    },
+                    {
+                        "text": "Après tout, tout le monde a besoin de carburant pour vaisseau spatial."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEOCEAN
+                "key": "quest_8",
+                "textSet": [
+                    {
+                        "text": "Lorsque nous sommes en transit, Jimmy et moi veillons à tout rationner en conséquence afin d'en avoir suffisamment pour le voyage."
+                    },
+                    {
+                        "text": "Si je travaille dur et que je fais bien mon travail, personne ne le remarque...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "... mais j'en suis très fier."
+                    }
+                ]
+            },
+            {
+                //SR_CATCHMICROBES
+                "key": "quest_64",
+                "textSet": [
+                    {
+                        "text": "J'ai entendu dire que Frances t'avait chargé des microbes..."
+                    },
+                    {
+                        "text": "Je suis content qu'elle t'ait demandé à ta place parce que je ne voudrais pas vraiment ce travail... beurk."
+                    }
+                ]
+            },
+            {
+                //P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "Capitaine, j'ai eu de bonnes affaires sur des graines et des articles locaux."
+                    },
+                    {
+                        "text": "Vérifiez tout et obtenez-les jusqu'à épuisement des stocks !",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTOCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "Frances est tellement hors d'elle-même à propos des résidents malades de la planète Blue Reef.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "J'essaie toujours de la calmer et de lui dire que tu as tout sous contrôle.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Mais je pense que cela aiderait si vous lui parliez de temps en temps."
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "Capitaine, vous avez certainement travaillé dur pour gagner ce morceau de relique."
+                    },
+                    {
+                        "text": "Juste pour que vous le sachiez, Jimmy et moi travaillons également dur dans le magasin, mais notre magasin ne peut fournir que ce à quoi nous avons nous-mêmes accès.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "La chaîne d’approvisionnement peut sembler assez limitée lors d’un voyage dans l’espace.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Mais nous devons juste en tirer le meilleur parti, n'est-ce pas ?"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEDESERT
+                "key": "quest_5",
+                "textSet": [
+                    {
+                        "text": "Vous pensez que je ne le remarque pas, n'est-ce pas... ?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "...mais je fais. Je sais que Jimmy veut se lancer seul.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Je ne le retiendrais jamais, mais c'est quelque chose qu'il doit décider et faire lui-même.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Mais une fois qu'il l'aura fait, je serai sa plus grande pom-pom girl. Tu verras."
+                    }
+                ]
+            },
+            {
+                //P_VISITDESERTPLANET
+                "key": "quest_23",
+                "textSet": [
+                    {
+                        "text": "Occupé occupé occupé."
+                    },
+                    {
+                        "text": "Avez-vous vu tous les nouveaux produits passionnants."
+                    },
+                    {
+                        "text": "Les bruits d’un magasin très fréquenté sont comme une musique à mes oreilles.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTDESERTHERMY
+                "key": "quest_18",
+                "textSet": [
+                    {
+                        "text": "Alors Capitaine, à quoi ressemble notre calendrier ?"
+                    },
+                    {
+                        "text": "Combien de temps pensez-vous qu'il vous faudra pour aider ce crabe ?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Cela pourrait encore prendre un certain temps.",
+                            "response": "Eh bien, prenez votre temps, aucune plainte ici ni de la part d'aucun de mes clients."
+                        },
+                        "optionTwo": {
+                            "optionText": "Encore quelques jours maximum.",
+                            "response": "Oh ouf, je suis épuisé..."
+                        }
+                    },
+                    {
+                        "text": "De nos jours, je peux à peine répondre à la demande en magasin."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "Eh bien, vous m'avez certainement impressionné, Capitaine..."
+                    },
+                    {
+                        "text": "Continuez votre bon travail et vous serez un candidat pour le badge de votre véritable capitaine."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "Frances m'a promis un de ses massages thérapeutiques car c'était un emploi du temps très chargé ces derniers temps."
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": "Du nouveau merchandising à tous !",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Capitaine, ces nouvelles graines valent vraiment la peine d'être découvertes dès que possible !"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "Si je peux faire quelque chose pour vous aider avec les fournitures pour les boules de poils, faites-le-moi savoir.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Ce qu'ils demandent est assez difficile à trouver sur le marché marchand...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Mais j'ai déjà prévenu au cas où nous obtiendrions un succès !"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "Capitaine, je suis tout à fait d'accord avec l'arrivée de la Bunky Family à bord."
+                    },
+                    {
+                        "text": "Mais... promets-moi juste qu'ils ne commenceront pas à stocker les mêmes marchandises que moi.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "J’en ai déjà assez avec ce personnage de robot qui vient pendant mon jour de congé.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Qui pense-t-il être?",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "Peut-être aurai-je le temps de relire les livres pendant que nous voyageons.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Cela semble idiot, mais j'adore enfiler mon pyjama en flanelle, prendre un chocolat chaud et revoir nos chiffres."
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "Tout juste sorties du marché, découvrez les nouvelles fournitures tant qu'il en reste..."
+                    },
+                    {
+                        "text": "Lin a fait des provisions ces derniers temps. Vous devrez donc l'affronter si vous êtes en retard à la fête."
+                    },
+                    {
+                        "text": "Mais entre toi et moi... je pense qu'elle fait parfois un joli numéro.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Je ne voudrais pas me mettre entre elle et ses plantes."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Ne reculez pas, Capitaine...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Ces pirates sont tout simplement des commerçants trop agressifs et je sais comment traiter avec les commerçants.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Gardez-les simplement intéressés par ce que vous pouvez offrir et ils seront dans la paume de votre main !"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Avons-nous déjà réellement acquis la dernière relique ?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Je pensais que j'étais un travailleur acharné... mais tu as vraiment fait tes preuves dans mes livres."
+                    }
+                ]
+            },
+            {
+                //SR_EXPLOREALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "Ah, tu es là !"
+                    },
+                    {
+                        "text": "J'espère que je ne suis pas le dernier à dire, beau travail.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Vous savez, une fois la mission terminée et tout..."
+                    },
+                    {
+                        "text": "Eh bien, bon travail... *tapote maladroitement ton épaule*"
+                    },
+                    {
+                        "text": "À plus tard!"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "Hors des livres",
+                "questDescription": "Robert demande un objet qu'il n'a pas pu trouver lui-même, ou peut-être y a-t-il plus ? Apportez à Robert ce qu'il a demandé sur le tableau numérique.",
+                "goalDescriptions": [
+                    "Donner $amount <style=Item>$goalName</style> à Robert."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "C'est donc vous qui avez repris mon message."
+                            },
+                            {
+                                "text": "Je suppose que nous avons tous besoin d’aide de temps en temps, n’est-ce pas ?"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Hé, c'est exactement ce que j'ai demandé.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Très appréciée."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Salut les gars,\n\nJe peux généralement acquérir ce que je recherche, mais cela m'aiderait si quelqu'un pouvait me prêter ces objets. \n\n-Robert"
+                            }
+                        ]
+                    }
+                ]
+            },
+            //#endregion ..............................................
+            //#region T_KILL ENEMIES .............................
+            {
+                "questKey": "quest_59",
+                "questName": "Créatures affamées",
+                "questDescription": "Robert a subi des pertes parce que des créatures affamées à la surface dévorent sa chaîne d'approvisionnement. Aidez-le à effrayer quelques habitants indésirables.",
+                "goalDescriptions": [
+                    "Zapper $amount <style=Item>$goalName</style> pour Robert."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Je suis heureux que vous ayez vu ma demande de bulletin. Ouais, ces créatures ont vraiment faim. Je dirais qu'environ un tiers de mes envois comportent de petits grignotages sur les boîtes.",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "Cela me rend dingue, plus tôt vous pourrez m'aider, mieux ce sera.",
+                                "expression": "Sad"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Oh, ma demande de bulletin est terminée. Donc, vous pensez que ces créatures sont mieux gérées...",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Eh bien, c'est un grand soulagement à entendre. Merci, Capitaine.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Officiers supérieurs,\n\nSi vous pouviez faire quelque chose contre les créatures affamées à la surface, je l'apprécierais. Ils continuent de manger une partie de mes expéditions et ce n'est bon pour personne.\n\nFaire faillite,\nRobert"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

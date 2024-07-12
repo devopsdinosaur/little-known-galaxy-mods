@@ -1,0 +1,122 @@
+[
+    {
+        "npcSaveID": "npc_35",
+        "name": "King Tide",
+        "titles": [
+            "Roi"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "observations": [
+            ""
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Je ne me sens pas très bien...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Est-ce que le récif tourne ou c'est juste moi ?",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Je suis le roi du Royaume du Récif Bleu depuis 21 ans..."
+                    },
+                    {
+                        "text": "Ou alors c'était 22 ans... pouah... oh flippers, je ne m'en souviens plus."
+                    },
+                    {
+                        "text": "Eh bien, ma fille le sait probablement, elle est bien meilleure avec les dates et les chiffres."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Je remonte souvent à la surface pour être présent auprès de mon peuple."
+                    },
+                    {
+                        "text": "En étant disponible pour eux, je peux entendre leurs préoccupations et mieux répondre à leurs besoins."
+                    },
+                    {
+                        "text": "C'est mon rôle le plus important en tant que roi."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "C'est vraiment une belle journée dans le Royaume, n'est-ce pas ?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Si beau!",
+                            "response": "*inspirez profondément* Ahhhh... l'air frais de la mer fera des merveilles pour votre balance, croyez-moi.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "J'ai vu mieux.",
+                            "response": "Est-ce ainsi? Peut-être n’appréciez-vous pas les merveilles de l’humidité comme nous.",
+                            "responseExpression": "Sad"
+                        }
+                    },
+                    {
+                        "text": "Mais je suppose que si je devais porter cette combinaison spatiale toute la journée, il serait difficile de vraiment absorber notre merveilleux climat."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //DOES NOT ADVANCE TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE HE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+
+        "nonCrewCommentary": [
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "C'est tellement merveilleux de ne plus être maudit par le mal de la terre."
+                    },
+                    {
+                        "text": "C'est grâce à vous, Capitaine."
+                    },
+                    {
+                        "text": "Vous serez toujours notre invité d'honneur chaque fois que vous souhaiterez nous rendre visite."
+                    }
+                ]
+            }
+        ]
+    }
+]

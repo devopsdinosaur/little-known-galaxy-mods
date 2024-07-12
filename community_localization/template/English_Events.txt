@@ -1,0 +1,2343 @@
+[
+    //#region FRIENDSHIP DAY .................................
+    {
+        "eventKey": "event_2",
+        "eventName": "Friendship Day",
+        "eventDescription": "Friendship Day on the Recreation Deck. 12PM-8PM",
+        "generalEventText": [
+            {
+                "key": "Pre",
+                "textSet": [
+                    {
+                        "text": "Hey Captain, don't forget that the Friendship Day celebration will be happening from 12PM to 8PM on the Recreation Deck."
+                    },
+                    {
+                        "text": "I don't know about you, but I can't wait to hang out with all of my friends!"
+                    }
+                ]
+            },
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "boxType": "Notification",
+                        "text": "The Friendship Day event has started."
+                    }
+                ]
+            },
+            {
+                "key": "Post",
+                "textSet": [
+                    {
+                        "boxType": "Notification",
+                        "text": "The Friendship Day event is now over."
+                    }
+                ]
+            },
+            {
+                "key": "locked_out",
+                "textSet": [
+                    {
+                        "text": "This area is off-limits while the Friendship Day celebration is being set up."
+                    }
+                ]
+            },
+            {
+                "key": "locked_in",
+                "textSet": [
+                    {
+                        "text": "Captain, make sure to check in with Piper before you leave so everyone can open up their friendship cards."
+                    }
+                ]
+            },
+            {
+                "key": "closed_for_event",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Closed for Friendship Day."
+                    }
+                ]
+            }
+        ],
+        "preDialogue": [
+            {
+                "key": "npc_2", //BUNKY
+                "textSet": [
+                    {
+                        "text": "We will definitely be at the party today. As long as I can get the kids clean and ready in time."
+                    },
+                    {
+                        "text": "... *thinks it over*",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Uhh... maybe it's best if I don't make any promises.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "npc_4", //CHIP
+                "textSet": [
+                    {
+                        "text": "Wow, busy day. I have some last-minute things to finish before the event."
+                    },
+                    {
+                        "text": "So I'll catch you later today, Partner.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_5", //CIENAVI
+                "textSet": [
+                    {
+                        "text": "I love event days! I'm really excited to see how everything turns out.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Since it's a day all about building relationships, I promise to set some time aside for you."
+                    },
+                    {
+                        "text": "As long as I keep all my conversations short, I should have enough time to talk to everyone."
+                    }
+                ]
+            },
+            {
+                "key": "npc_0", //CPU
+                "textSet": [
+                    {
+                        "text": "During events, Piper sets up my mobile tripod so I can attend remotely."
+                    },
+                    {
+                        "text": "I love Friendship Day because I get to spend it with all my friends!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_6", //DAXTON
+                "textSet": [
+                    {
+                        "text": "Hey, $playerName. Seems like there is a lot of excitement in the air."
+                    },
+                    {
+                        "text": "Are you going to the Friendship Day event today?",
+                        "optionOne": {
+                            "optionText": "No",
+                            "response": "Hmm... as our leader you might reconsider so that you don't lose control of the troops.",
+                            "responseExpression": "Sad"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes",
+                            "response": "Glad to hear it. The crew needs a confident leader they trust. There is no better way to build that bond than group activities.",
+                            "responseExpression": "Happy"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "npc_7", //DOC12
+                "textSet": [
+                    {
+                        "text": "Members of the crew are far more productive and happier when they have companions to share their workload."
+                    },
+                    {
+                        "text": "Friendship Day is a great way to expand these kinds of relationships."
+                    },
+                    {
+                        "text": "I hope you will consider expanding your relationships with the others as well."
+                    }
+                ]
+            },
+            {
+                "key": "npc_8", //EDWARD
+                "textSet": [
+                    {
+                        "text": "*yawns*..."
+                    },
+                    {
+                        "text": "I didn't get much sleep last night, Piper was tossing and turning all night.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "She just wants to make sure everything is perfect during the Friendship Day event today."
+                    },
+                    {
+                        "text": "So make an effort to attend for her sake, okay?"
+                    }
+                ]
+            },
+            {
+                "key": "npc_9", //FIJI
+                "textSet": [
+                    {
+                        "text": "Hi, $playerName. Did you know Friendship Day is one of my favorite days of the year?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "A whole day to just celebrate your love with others. That is what friendships are all about!"
+                    }
+                ]
+            },
+            {
+                "key": "npc_11", //FRANCES
+                "textSet": [
+                    {
+                        "text": "Right before Friendship Day kicks off, I'm going to help Robert set up his Friendship Day pop-up store."
+                    },
+                    {
+                        "text": "I only got a sneak peek, but it's definitely going to be worth checking out."
+                    }
+                ]
+            },
+            {
+                "key": "npc_12", //HERMY
+                "textSet": [
+                    {
+                        "text": "Will you be stopping by the Friendship Day event today?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "No",
+                            "response": "Huh? That is disappointing since I will be there. Networking is very important in my business and I know I could always use a few more friends.",
+                            "responseExpression": "Sad"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes",
+                            "response": "Good choice. I'm about to start heading that way soon. I just need to wrap up a few things before I scuttle over.",
+                            "responseExpression": "Happy"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "npc_13", //I-1900
+                "textSet": [
+                    {
+                        "text": "Friendship Day is about to commence."
+                    },
+                    {
+                        "text": "As soon as the remaining tasks are completed, we will be ready to reactivate the doors to the Recreation Deck."
+                    }
+                ]
+            },
+            {
+                "key": "npc_14", //JIMMY
+                "textSet": [
+                    {
+                        "text": "Hey $playerName, let's spend some time together at the Friendship Day event, okay?"
+                    },
+                    {
+                        "text": "Most people don't know this, but I have a shoebox full of my old friendship cards from previous years."
+                    },
+                    {
+                        "text": "I don't know why, but I just can't throw them away."
+                    }
+                ]
+            },
+            {
+                "key": "npc_15", //KAIDA
+                "textSet": [
+                    {
+                        "text": "Make sure to bring some credits with you to the Friendship Day event."
+                    },
+                    {
+                        "text": "You'll want to buy friendship cards, and Robert usually has some other cool things for sale."
+                    }
+                ]
+            },
+            {
+                "key": "npc_16", //KENDALL
+                "textSet": [
+                    {
+                        "text": "Yay Captain, it's finally Friendship Day!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I've been waiting forever for today."
+                    },
+                    {
+                        "text": "I hope I get lots of friendship cards this year!"
+                    }
+                ]
+            },
+            {
+                "key": "npc_17", //LAUREN
+                "textSet": [
+                    {
+                        "text": "I'm so ready for the party today."
+                    },
+                    {
+                        "text": "I don't know about you, but I could use a change of pace."
+                    },
+                    {
+                        "text": "And don't worry about any work you have lingering. Just tackle it tomorrow."
+                    }
+                ]
+            },
+            {
+                "key": "npc_19", //LIN
+                "textSet": [
+                    {
+                        "text": "I spent extra time in the garden recently to make sure it looks great for the Friendship Day party."
+                    },
+                    {
+                        "text": "You should see all the fantastic decorations Piper started setting up this morning."
+                    },
+                    {
+                        "text": "I can't wait to see it all finished.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_18", //MAX
+                "textSet": [
+                    {
+                        "text": "Friendship Day is actually quite an old tradition and has a long history over the years."
+                    },
+                    {
+                        "text": "History helps shape our world today and the good aspects, like Friendship Day, always stand the test of time."
+                    },
+                    {
+                        "text": "I am looking forward to seeing how our crew will contribute to the tradition this year."
+                    }
+                ]
+            },
+            {
+                "key": "npc_21", //PILOT
+                "textSet": [
+                    {
+                        "text": "I am happy to attend the Friendship Day event this year."
+                    },
+                    {
+                        "text": "My duties to the crew go beyond my official position as pilot."
+                    },
+                    {
+                        "text": "It is also important to me that their emotional well-being is satisfied through deeper friendships."
+                    }
+                ]
+            },
+            {
+                "key": "npc_22", //PIPER
+                "textSet": [
+                    {
+                        "text": "Oh Captain, there you are. I hope you are ready to celebrate Friendship Day."
+                    },
+                    {
+                        "text": "Edward will be selling friendship cards and a few other booths are being set up right now."
+                    },
+                    {
+                        "text": "I think everyone is going to have a great time, so don't be late!"
+                    }
+                ]
+            },
+            {
+                "key": "npc_23", //ROBERT
+                "textSet": [
+                    {
+                        "text": "Hey, Captain. I'm getting my Friendship Day booth ready to go."
+                    },
+                    {
+                        "text": "Bring some credits if you can. I'll have some great items on display for today only!"
+                    }
+                ]
+            },
+            {
+                "key": "npc_24", //RUM & TUM
+                "textSet": [
+                    {
+                        "text": "I don't see why we have to get clean and brush our fur for some friend event."
+                    },
+                    {
+                        "text": "We are already really popular just the way we are."
+                    }
+                ]
+            },
+            {
+                "key": "npc_25", //SHINJI
+                "textSet": [
+                    {
+                        "text": "Friendship Day always reminds me of some of the posh picnic parties my grandma used to host."
+                    },
+                    {
+                        "text": "I'm going to put on a fresh white shirt and my classic sneakers."
+                    },
+                    {
+                        "text": "See you there.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_28", //SPOOKSIE
+                "textSet": [
+                    {
+                        "text": "Don't worry, I'll get to the Friendship Day event a little early in case anyone needs last-minute help setting up."
+                    },
+                    {
+                        "text": "It's pretty hard to be late for anything when you can pass through walls and floors."
+                    },
+                    {
+                        "text": "I'll see you there later.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_29", //SPROUT
+                "textSet": [
+                    {
+                        "text": "I wanted to set up the banners for the event today, but I was too short even on the ladder.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "I-1900 lifted me up though so I could finish the job!"
+                    }
+                ]
+            },
+            {
+                "key": "npc_30", //SPUNKY
+                "textSet": [
+                    {
+                        "text": "Captain, thanks for the open invitation to participate in the ship events."
+                    },
+                    {
+                        "text": "I'm definitely ready to mingle!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_31", //STEVEN
+                "textSet": [
+                    {
+                        "text": "We'll be closing the Machine Shop early today to celebrate Friendship Day."
+                    },
+                    {
+                        "text": "So if you need to schedule any upgrades or stock up on supplies you better act quick!"
+                    }
+                ]
+            },
+            {
+                "key": "npc_32", //STEWART
+                "textSet": [
+                    {
+                        "text": "Oh, I'm surprised you stopped by to see me today with everything else going on.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "If you're here to convince me to go to Friendship Day, Lauren already got the jump on you. She is very persistent as you probably know."
+                    }
+                ]
+            }
+        ],
+        "activeDialogue": [
+            {
+                "key": "npc_2", //BUNKY
+                "textSet": [
+                    {
+                        "text": "Little Buddy! Don't you feel all the love already?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I'm trying to round up everyone for a sing-a-long, but so far I have no takers."
+                    },
+                    {
+                        "text": "Hmm... I'm sure I can talk Piper into it at least...",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "npc_4", //CHIP
+                "textSet": [
+                    {
+                        "text": "Hey Partner, I hope you are enjoying all the festivities.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I stayed up extra late to get the food and drinks ready for Piper this morning."
+                    },
+                    {
+                        "text": "*sighs*... But now my hands are stained from all that pink food coloring...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "*shows you his bright pink hands*"
+                    }
+                ]
+            },
+
+            {
+                "key": "npc_5", //CienaVi
+                "textSet": [
+                    {
+                        "text": "I really love all the bright colors in these decorations."
+                    },
+                    {
+                        "text": "And the flowers smell so fresh too!"
+                    }
+                ]
+            },
+            {
+                "key": "npc_0", //CPU
+                "textSet": [
+                    {
+                        "text": "Hey, Captain. I'm just having so much fun already, and I can't wait to see what I get in my friendship box."
+                    },
+                    {
+                        "text": "Oh... and if you're here to drop a friendship card in my box go ahead, I won't look."
+                    },
+                    {
+                        "text": "*turns off visual capability on screen for a second*",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "npc_6", //DAXTON
+                "textSet": [
+                    {
+                        "text": "Hmm... I think I still need to get used to celebrating friendships with frilly cards and flowers."
+                    },
+                    {
+                        "text": "I mean... you guys like each other, right?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "These kinds of gifts just wouldn't be my go-to for my mates."
+                    }
+                ]
+            },
+            {
+                "key": "npc_7", //DOC12
+                "textSet": [
+                    {
+                        "text": "I don't mind Friendship Day."
+                    },
+                    {
+                        "text": "It is kind of nice to give cards anonymously and not have to express some kind of deep feelings in person."
+                    },
+                    {
+                        "text": "Plus, taking a break from a daily routine is good for one's overall well-being."
+                    }
+                ]
+            },
+            {
+                "key": "npc_8", //EDWARD
+                "textSet": [
+                    {
+                        "text": "Piper makes me man this booth every year, but I guess I don't mind being part of all the action."
+                    },
+                    {
+                        "text": "I kind of get a sneak peek of who's buying friendship cards for who...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "*whispers* Sometimes, I can even talk someone into buying an extra one for someone they are unsure about."
+                    }
+                ]
+            },
+            {
+                "key": "npc_9", //FIJI
+                "textSet": [
+                    {
+                        "text": "Hi, $playerName. I'm simply delighted to see you.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I hope you are having fun giving out friendship cards today."
+                    },
+                    {
+                        "text": "If I had enough credits, I'd buy a card for everyone!"
+                    },
+                    {
+                        "text": "Maybe I'll walk around and see whose box feels the lightest to decide who I should give them to."
+                    }
+                ]
+            },
+            {
+                "key": "npc_11", //FRANCES
+                "textSet": [
+                    {
+                        "text": "Captain, have you checked out Robert's store yet?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "He is selling the most adorable decorations and unique items..."
+                    },
+                    {
+                        "text": "I'm trying to decide what I want to buy myself."
+                    },
+                    {
+                        "text": "But I'm definitely not buying anything with more sugar in it. My sweet tooth has been satisfied for at least a week!",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "npc_12", //HERMY
+                "textSet": [
+                    {
+                        "text": "I really think Steven should have made a friendship card with a crab on it."
+                    },
+                    {
+                        "text": "Who wouldn't want an adorable crab friendship card?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "We could call it the Charming Crab Card or something like that..."
+                    }
+                ]
+            },
+            {
+                "key": "npc_13", //I-1900
+                "textSet": [
+                    {
+                        "text": "Hello, $playerName. Just click on my booth if you want to purchase a kiss."
+                    }
+                ]
+            },
+            {
+                "key": "npc_14", //JIMMY
+                "textSet": [
+                    {
+                        "text": "Hey, $playerName. I'm glad you made it today.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Piper put my friendship box way over by the garden, so I hope people can find it."
+                    },
+                    {
+                        "text": "The anticipation of who might drop off a friendship card is kind of fun, don't you think?"
+                    },
+                    {
+                        "text": "My dad usually gives me a card, but he always writes some kind of ridiculous dad thing on it."
+                    },
+                    {
+                        "text": "One year he wrote... 'My favorite type of ship is your friendship!'"
+                    },
+                    {
+                        "text": "Sheesh... *rolls eyes*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "npc_15", //KAIDA
+                "textSet": [
+                    {
+                        "text": "Happy Friendship Day, Captain."
+                    },
+                    {
+                        "text": "I don't know how Piper does it, but she's so on top of these events. It's so nice to just kick back and relax."
+                    },
+                    {
+                        "text": "Plus, it's so well organized. I already bought friendship cards for all of my family and a few others who I've really appreciated this year."
+                    }
+                ]
+            },
+            {
+                "key": "npc_16", //KENDALL
+                "textSet": [
+                    {
+                        "text": "*out of breath* Captain... oh good... you caught me.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "I already ran like 30 laps around the pink floor."
+                    },
+                    {
+                        "text": "Every time a flower petal falls, I am right there to pick it up!"
+                    },
+                    {
+                        "text": "Oh... and don't forget about me when you're buying your friendship cards.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I-1900 is going to help me make a scrapbook with all my cards this year so I hope I get a LOT of them."
+                    }
+                ]
+            },
+            {
+                "key": "npc_17", //LAUREN
+                "textSet": [
+                    {
+                        "text": "I don't want to brag, but I usually get a lot of friendship cards."
+                    },
+                    {
+                        "text": "I suspect people are sucking up to me so I'll forgive them if they load up on sugary drinks and food today."
+                    },
+                    {
+                        "text": "I usually cut everyone some slack for event days anyways..."
+                    },
+                    {
+                        "text": "...but I also love getting friendship cards, so I don't want them to know.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_19", //LIN
+                "textSet": [
+                    {
+                        "text": "Hi, $playerName. I'm glad you made it to Friendship Day!"
+                    },
+                    {
+                        "text": "Aren't the flower decorations just beautiful?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "If you put freshly cut flowers into a vase and add a little food coloring to the water, the petals will absorb that color, making them super vibrant."
+                    },
+                    {
+                        "text": "It only takes a few hours and then BAM! You get wonderful floral displays like you see here today."
+                    }
+                ]
+            },
+            {
+                "key": "npc_18", //MAX
+                "textSet": [
+                    {
+                        "text": "Excellent timing, Captain. A very Happy Friendship Day to you."
+                    },
+                    {
+                        "text": "I was just retrieving memory clips from the past year of wonderful friendship moments with you and the crew."
+                    },
+                    {
+                        "text": "I will proceed to enjoy these relived experiences until the end of the event, at which time I will clear some of the videos and make room for new friendship memories."
+                    }
+                ]
+            },
+            {
+                "key": "npc_21", //PILOT
+                "textSet": [
+                    {
+                        "text": "Captain, I must warn you to proceed with caution when purchasing a kiss from I-1900.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Every year, I like to donate to her cause, but the experience can be quite impactful and a little disorienting."
+                    },
+                    {
+                        "text": "Even if you are prepared it can be difficult to predict the result."
+                    }
+                ]
+            },
+            {
+                "key": "npc_22", //PIPER
+                "textSet": [
+                    {
+                        "text": "Hi, Captain. Welcome to Friendship Day!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Feel free to wander around and enjoy the decorations, talk with crew, and relax."
+                    },
+                    {
+                        "text": "Edward is selling special friendship cards that you can purchase and drop into other people's friendship boxes located around the deck."
+                    },
+                    {
+                        "text": "If you do, you'll be showing them just how much you care. It's a great opportunity to boost some of your relationships with the crew."
+                    },
+                    {
+                        "text": "In fact, you might even get a couple of cards in your friendship box as well."
+                    },
+                    {
+                        "text": "Just come and see me when you're ready for everyone to open their cards and kick off Friendship Day."
+                    },
+                    {
+                        "text": "Are you ready for everyone to open their friendship boxes?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "No"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "npc_23", //ROBERT
+                "textSet": [
+                    {
+                        "text": "I'm glad I got a chance to organize this pop-up store for Friendship Day."
+                    },
+                    {
+                        "text": "It's just a one-day thing though... these items won't be available after the event."
+                    }
+                ]
+            },
+            {
+                "key": "npc_24", //RUMBLE & TUMBLE
+                "textSet": [
+                    {
+                        "text": "Hey, Captain..."
+                    },
+                    {
+                        "text": "We're not allowed to take things out of other people's friendship boxes."
+                    },
+                    {
+                        "text": "But Mom didn't say anything about not putting things in..."
+                    }
+                ]
+            },
+            {
+                "key": "npc_25", //SHINJI
+                "textSet": [
+                    {
+                        "text": "Yo, Captain. Friendship Day is pretty awesome huh?"
+                    },
+                    {
+                        "text": "I know no one's counting, but I usually get a lot... if not the most friendship cards in my box."
+                    },
+                    {
+                        "text": "I give out cards to my top five friends, too.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_26", //SOOT
+                "textSet": [
+                    {
+                        "text": "*smells flowers* mmm mmmm....",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "*sniffles*..."
+                    },
+                    {
+                        "text": "Soot! ...^ ^-^^.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_28", //SPOOKSIE
+                "textSet": [
+                    {
+                        "text": "Everything turned out so nice this year..."
+                    },
+                    {
+                        "text": "It really speaks volumes about how united everyone on the crew is.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Believe me... I know how hard it is to organize a social event of this size if people don't work together.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "npc_29", //SPROUT
+                "textSet": [
+                    {
+                        "text": "I hope I don't forget to tell everyone how much I like them today."
+                    },
+                    {
+                        "text": "Captain, you're pretty great. Thanks for being a great captain and a cool person.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "OK, I got you covered. *puts check mark on list next to your name*"
+                    }
+                ]
+            },
+            {
+                "key": "npc_30", //SPUNKY
+                "textSet": [
+                    {
+                        "text": "This is just fantastic, Happy Friendship Day to you, Captain.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "My friends would love this event back home, so I better send them some souvenirs."
+                    },
+                    {
+                        "text": "I think Friendship Day should apply to all of your friends, not just the ones here with us today."
+                    }
+                ]
+            },
+            {
+                "key": "npc_31", //STEVEN
+                "textSet": [
+                    {
+                        "text": "Did you check out my grandpa's friendship card booth yet?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "No",
+                            "response": "Oh... well you'll have to let me know what you think of the friendship cards. I came up with the design ideas."
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes",
+                            "response": "I hope you liked the card designs. It took me a while to come up something that my grandma and I both liked. She can be quite particular when it comes to these events."
+                        }
+                    },
+                    {
+                        "text": "I think I prefer the monkey card the best because it's also banana scented.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_32", //STEWART
+                "textSet": [
+                    {
+                        "text": "I don't really expect too many friendship cards in my box."
+                    },
+                    {
+                        "text": "...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "But at least Lauren gives me one, so I don't feel left out."
+                    }
+                ]
+            }
+        ],
+        "postDialogue": [
+            {
+                "key": "npc_2", //BUNKY
+                "textSet": [
+                    {
+                        "text": "Hey Little Buddy, I bet you got a bunch of friendship cards at today's event, huh?"
+                    }
+                ]
+            },
+            {
+                "key": "npc_4", //CHIP
+                "textSet": [
+                    {
+                        "text": "Folks really went to town on my desserts today."
+                    },
+                    {
+                        "text": "I think I'll have to bake them again next year too. Give the people what they want... I always say."
+                    }
+                ]
+            },
+            {
+                "key": "npc_5", //CienaVi
+                "textSet": [
+                    {
+                        "text": "$playerName, I had no idea your crew had warmed up to me so much already."
+                    },
+                    {
+                        "text": "I received quite a lot of friendship cards at the event today."
+                    },
+                    {
+                        "text": "I'm a little embarrassed to be honest, so maybe don't tell everyone. I don't want to ruffle any scales.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "npc_0", //CPU
+                "textSet": [
+                    {
+                        "text": "I had a great time at the Friendship Day event!"
+                    },
+                    {
+                        "text": "I spent every last credit I had on as many friendship cards as I could.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Actually... I am officially cleaned out... zero funds left.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Oh well. It doesn't matter. I have a whole year to save up again for next year."
+                    }
+                ]
+            },
+            {
+                "key": "npc_6", //DAXTON
+                "textSet": [
+                    {
+                        "text": "Yeah. I got a few friendship cards in my box."
+                    },
+                    {
+                        "text": "I'm not gonna get all sappy, but... I'll probably keep 'em for a while anyway."
+                    }
+                ]
+            },
+            {
+                "key": "npc_7", //DOC12
+                "textSet": [
+                    {
+                        "text": "It is explicitly stated to not discuss the number of friendship cards given or received today.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "I gave my cards to the people that I felt were the most deserving this year."
+                    },
+                    {
+                        "text": "They know who they are, and they've earned it.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_8", //EDWARD
+                "textSet": [
+                    {
+                        "text": "You'll have to wait again until next year if you would like to buy more friendship cards."
+                    },
+                    {
+                        "text": "Getting cards once a year makes it all the more special, I think."
+                    },
+                    {
+                        "text": "If you have extra friendship cards left over, I'd save them for next year since you only get that special friendship bonus at the event."
+                    }
+                ]
+            },
+            {
+                "key": "npc_9", //FIJI
+                "textSet": [
+                    {
+                        "text": "$playerName, did you get a friendship card from me today?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Oh, I mean... I wanted to give one to so many people, I kinda lost track after a while.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "I run into this problem every year. There are so many special people in my life including you, $playerName."
+                    }
+                ]
+            },
+            {
+                "key": "npc_11", //FRANCES
+                "textSet": [
+                    {
+                        "text": "I always receive at least one special friendship card each year. That's the only one that matters to me really."
+                    }
+                ]
+            },
+            {
+                "key": "npc_12", //HERMY
+                "textSet": [
+                    {
+                        "text": "I got a friendship card at the Friendship Day event!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Not everyone can say that either, but I sure can now!"
+                    },
+                    {
+                        "text": "It's me everyone... \n\nHermy! The Friendship Card Collector Extraordinaire!' \n\nHaha",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_13", //I-1900
+                "textSet": [
+                    {
+                        "text": "With the credits I earned from the kissing booth, I am going to directly donate them to the Robotic Restoration Fund."
+                    },
+                    {
+                        "text": "It's a great organization that helps older robotic models upgrade to newer hardware components."
+                    },
+                    {
+                        "text": "This is my way of expanding our Friendship Day to other robots in need of a friend.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_14", //JIMMY
+                "textSet": [
+                    {
+                        "text": "There are more people on the ship than ever before."
+                    },
+                    {
+                        "text": "Friendship Day can be a bit expensive when you have a lot of cards to give out.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "But I also received more cards than ever before too. It's nice."
+                    }
+                ]
+            },
+            {
+                "key": "npc_15", //KAIDA
+                "textSet": [
+                    {
+                        "text": "The crew really responded well to today's event. I've never seen everyone get along so well together before."
+                    },
+                    {
+                        "text": "Things have really improved since you've joined us, $playerName."
+                    }
+                ]
+            },
+            {
+                "key": "npc_16", //KENDALL
+                "textSet": [
+                    {
+                        "text": "Captain. Did you get any monkey cards at the event today?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "No",
+                            "response": "Really? I thought you would get the most. You're so much cooler than everyone else. Better luck next year.",
+                            "responseExpression": "Sad"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes",
+                            "response": "Haha. Me too! We must have a lot of friends around here.",
+                            "responseExpression": "Happy"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "npc_17", //LAUREN
+                "textSet": [
+                    {
+                        "text": "Sheesh, I'm beat. Why do I get more tired when hanging out at an event all day?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I'll get back to my routine tomorrow."
+                    }
+                ]
+            },
+            {
+                "key": "npc_19", //LIN
+                "textSet": [
+                    {
+                        "text": "Hi, $playerName. I got a few really nice friendship cards this year."
+                    },
+                    {
+                        "text": "But every year there is one extra cute card with little drawings and scribbles on it..."
+                    },
+                    {
+                        "text": "I always am left wondering who gives these to me. Any ideas?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "No idea.",
+                            "response": "Oh... well it doesn't matter. It cheers me up and I love the extra details.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Sprout?",
+                            "response": "Hmmm. That's a good theory. He's so cute and I know he always wants to make me happy.",
+                            "responseExpression": "Happy"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "npc_18", //MAX
+                "textSet": [
+                    {
+                        "text": "Yes. I do give out a fair number of robot cards. It is my signature choice when gifting."
+                    },
+                    {
+                        "text": "But I will give out the other cards occasionally too. Just depends on the person."
+                    }
+                ]
+            },
+            {
+                "key": "npc_21", //PILOT
+                "textSet": [
+                    {
+                        "text": "You have made quite an impression around here, Captain. I hope you received many Friendship Day cards."
+                    },
+                    {
+                        "text": "Just keep being yourself and building those strong connections."
+                    }
+                ]
+            },
+            {
+                "key": "npc_22", //PIPER
+                "textSet": [
+                    {
+                        "text": "We had a great turnout for Friendship Day."
+                    },
+                    {
+                        "text": "I will try to make it just as fun next year!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_23", //ROBERT
+                "textSet": [
+                    {
+                        "text": "That was another successful event this year, I'd say."
+                    },
+                    {
+                        "text": "My Friendship Day booth will be back next year if you missed out on anything you wanted to buy."
+                    }
+                ]
+            },
+            {
+                "key": "npc_24", //RUMBLE & TUMBLE
+                "textSet": [
+                    {
+                        "text": "We HAVE to share all of our Friendship Day cards!",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Having a brother is not always a good deal.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "npc_25", //SHINJI
+                "textSet": [
+                    {
+                        "text": "Overall it was a pretty successful Friendship Day..."
+                    },
+                    {
+                        "text": "I'm glad you made it here for the afterparty too!"
+                    }
+                ]
+            },
+            {
+                "key": "npc_26", //SOOT
+                "textSet": [
+                    {
+                        "text": "*shows you a few friendship cards he's collected*"
+                    },
+                    {
+                        "text": "#^** ^ Soot!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_28", //SPOOKSIE
+                "textSet": [
+                    {
+                        "text": "Wasn't Friendship Day just a delight?"
+                    },
+                    {
+                        "text": "One of these years, perhaps I'll setup a kissing booth too...",
+                        "expression": "Happy"
+                    }
+                    //ALTERNATE...
+                    //{
+                    //    "text": "What a great shindig..."
+                    //},
+                    //{
+                    //    "text": "We should have a party like that at least once a week. Life's too short not too.",
+                    //    "expression": "Happy"
+                    //}
+                ]
+            },
+            {
+                "key": "npc_29", //SPROUT
+                "textSet": [
+                    {
+                        "text": "I gave out cards to all of my favorite people today."
+                    },
+                    {
+                        "text": "I hope Lin knows that I put extra effort into her card...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "OH NO! I shouldn't have told you that!",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Don't rat me out, $playerName. You can keep a secret right?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "npc_30", //SPUNKY
+                "textSet": [
+                    {
+                        "text": "I just loved the decorations they set up on the Recreation Deck for today's event."
+                    },
+                    {
+                        "text": "I wonder if we could just leave them up all year round?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "npc_31", //STEVEN
+                "textSet": [
+                    {
+                        "text": "I know it's totally against the rules, but...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "...I always slip extra cards in Kendall's box even before the Friendship Day event starts."
+                    },
+                    {
+                        "text": "She just gets so excited. I can't help it. And as long as grandma doesn't find out, I'm probably safe."
+                    }
+                ]
+            },
+            {
+                "key": "npc_32", //STEWART
+                "textSet": [
+                    {
+                        "text": "Hi."
+                    },
+                    {
+                        "text": "Are you here to find out how I liked today's event?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Not really.",
+                            "response": "I see. Well, I'll just keep my thoughts to myself then.",
+                            "responseExpression": "Angry"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yeah.",
+                            "response": "Okay. Yeah, I had a good time. Friendship Day may be kinda corny, but Piper does a good job including everybody. I like that part."
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region NEW YEARS EVE ..................................
+    {
+        "eventKey": "event_1",
+        "eventName": "New Year's Eve",
+        "eventDescription": "New Year's Eve Party on the Plaza. 8PM",
+        "generalEventText": [
+            {
+                "key": "Pre",
+                "textSet": [
+                    {
+                        "text": "Hey Captain, just wanted to remind you that the New Year's Eve Party starts tonight at 8PM in the Plaza."
+                    },
+                    {
+                        "text": "Hope to see you there."
+                    }
+                ]
+            },
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "boxType": "Notification",
+                        "text": "The New Year's Eve Party has started."
+                    }
+                ]
+            },
+            {
+                "key": "Post",
+                "textSet": [
+                    {
+                        "boxType": "Notification",
+                        "text": "The New Year's Eve Party is now over."
+                    }
+                ]
+            },
+            {
+                "key": "locked_out",
+                "textSet": [
+                    {
+                        "text": "This area is off limits while the New Year's Eve Party is being set up."
+                    }
+                ]
+            },
+            {
+                "key": "locked_in",
+                "textSet": [
+                    {
+                        "text": "Everyone is waiting for you to start the event before you leave."
+                    }
+                ]
+            },
+            {
+                "key": "closed_for_event",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Closed for New Year's Eve."
+                    }
+                ]
+            }
+        ],
+        "preDialogue": [
+            {
+                "key": "npc_2", //BUNKY
+                "textSet": [
+                    {
+                        "text": "Everyone seems to be getting ready for the New Year's Eve event tonight."
+                    },
+                    {
+                        "text": "In fact... a lot of people came by the shop for some last-minute fashion prep."
+                    },
+                    {
+                        "text": "It should be a great turnout."
+                    }
+                ]
+            },
+            {
+                "key": "npc_4", //CHIP
+                "textSet": [
+                    {
+                        "text": "Partner, I better see you at the event tonight. Don't get our hopes up and be a no-show."
+                    },
+                    {
+                        "text": "I promise there will be some good food as usual.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_5", //CIENAVI
+                "textSet": [
+                    {
+                        "text": "Hmm... there really are a lot of decisions to make before a party.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Even for a small one like this.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Perhaps I should bring an outfit change to make a bigger impact?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "npc_0", //CPU
+                "textSet": [
+                    {
+                        "text": "My software is already programmed to update on the exact second we hit midnight!"
+                    },
+                    {
+                        "text": "The anticipation of the New Year is so exciting!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_6", //DAXTON
+                "textSet": [
+                    {
+                        "text": "New Year's Eve event?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Yeah, Piper tried to explain it to me again. It doesn't sound very thrilling, but I'll be there."
+                    }
+                ]
+            },
+            {
+                "key": "npc_7", //DOC12
+                "textSet": [
+                    {
+                        "text": "Hello, $playerName."
+                    },
+                    {
+                        "text": "Are you attending the New Year's Eve celebration tonight?",
+                        "optionOne": {
+                            "optionText": "No",
+                            "response": "Oh. I thought you would be going. I haven't decided yet for myself.",
+                            "responseExpression": "Sad"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes",
+                            "response": "I'm glad to hear that. I'll have at least one person to talk to. Maybe it won't be so bad.",
+                            "responseExpression": "Happy"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "npc_8", //EDWARD
+                "textSet": [
+                    {
+                        "text": "Hopefully I can make it to midnight tonight."
+                    },
+                    {
+                        "text": "I'm usually fast asleep before the new year strikes."
+                    }
+                ]
+            },
+            {
+                "key": "npc_9", //FIJI
+                "textSet": [
+                    {
+                        "text": "Don't you love a good social get together?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I always think Piper does such a good job setting these things up for us."
+                    },
+                    {
+                        "text": "She usually puts me in charge of the music, which is a big responsibility."
+                    }
+                ]
+            },
+            {
+                "key": "npc_11", //FRANCES
+                "textSet": [
+                    {
+                        "text": "Tonight's going to be a chance to relax and celebrate the new year. I hope to see you later."
+                    }
+                ]
+            },
+            {
+                "key": "npc_12", //HERMY
+                "textSet": [
+                    {
+                        "text": "Party? Today?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Yes. I'll scuttle over. Count Hermy in."
+                    }
+                ]
+            },
+            {
+                "key": "npc_13", //I-1900
+                "textSet": [
+                    {
+                        "text": "I will update all of the clocks and calendars after the new year tonight."
+                    },
+                    {
+                        "text": "Then I will spend the next few months correcting others that they are still using the old year incorrectly."
+                    },
+                    {
+                        "text": "I enjoy that. It makes me feel extra helpful this time of year.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_14", //JIMMY
+                "textSet": [
+                    {
+                        "text": "Hey, $playerName."
+                    },
+                    {
+                        "text": "You going to the party tonight?",
+                        "optionOne": {
+                            "optionText": "I'm not sure.",
+                            "response": "Really? You should reconsider. It would be a lot more fun if you were there.",
+                            "responseExpression": "Sad"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yeah.",
+                            "response": "Great! It's one of the few times everyone gets together and isn't so focused on work.",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "I've got some prep to do for before it starts, but I'll have things ready by tonight."
+                    }
+                ]
+            },
+            {
+                "key": "npc_15", //KAIDA
+                "textSet": [
+                    {
+                        "text": "*working rapidly*",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "It's not that I don't like the ship events.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "I'm excited to get together with everyone for the new year..."
+                    },
+                    {
+                        "text": "...but sometimes I feel like I have to get all my usual tasks done with even less time in the day.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "npc_16", //KENDALL
+                "textSet": [
+                    {
+                        "text": "Happy New Year's Eve, Captain!"
+                    },
+                    {
+                        "text": "Are you coming to the party tonight?",
+                        "optionOne": {
+                            "optionText": "Probably not.",
+                            "response": "Wrong answer. I'm officially inviting you to be my date to the party now.",
+                            "responseExpression": "Angry"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes, for sure.",
+                            "response": "Awesome. You, Sprout, Steven, and so many people are gonna be there!",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "See you then!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_17", //LAUREN
+                "textSet": [
+                    {
+                        "text": "I expect to see you at the party tonight."
+                    },
+                    {
+                        "text": "As captain, you have to make an appearance or you will disappoint a lot of people."
+                    }
+                ]
+            },
+            {
+                "key": "npc_19", //LIN
+                "textSet": [
+                    {
+                        "text": "Should I wear something new to the party tonight?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Maybe I'm just overthinking things. Keep it simple, right."
+                    }
+                ]
+            },
+            {
+                "key": "npc_18", //MAX
+                "textSet": [
+                    {
+                        "text": "Happy New Year's Eve, $playerName."
+                    },
+                    {
+                        "text": "Perhaps we can exchange some social observations with each other at the event tonight."
+                    }
+                ]
+            },
+            {
+                "key": "npc_21", //PILOT
+                "textSet": [
+                    {
+                        "text": "Don't worry, Captain. I will be engaging auto pilot during the event tonight."
+                    },
+                    {
+                        "text": "I will also be supervising the controls throughout the celebration."
+                    },
+                    {
+                        "text": "Feel free to enjoy yourself."
+                    }
+                ]
+            },
+            {
+                "key": "npc_22", //PIPER
+                "textSet": [
+                    {
+                        "text": "$playerName, we're all looking forward to seeing you at the New Year's Eve event tonight."
+                    },
+                    {
+                        "text": "I have been planning this party for weeks, so don't forget now."
+                    }
+                ]
+            },
+            {
+                "key": "npc_23", //ROBERT
+                "textSet": [
+                    {
+                        "text": "I see that you're getting your last-minute ship duties out of the way before the party tonight."
+                    },
+                    {
+                        "text": "Hard worker right here."
+                    }
+                ]
+            },
+            {
+                "key": "npc_24", //RUM & TUM
+                "textSet": [
+                    {
+                        "text": "Yeah, yeah, yeah. We are gonna be good tonight..."
+                    },
+                    {
+                        "text": "Why does everybody keep asking?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "npc_25", //SHINJI
+                "textSet": [
+                    {
+                        "text": "I don't know about you... but I'm ready to party tonight.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I should probably take a nap and start getting ready soon."
+                    },
+                    {
+                        "text": "Catch you later.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_26", //SOOT
+                "textSet": [
+                    {
+                        "text": "^-^ ^-^ ^-^ -- <"
+                    },
+                    {
+                        "text": "*shakes his bottom*"
+                    }
+                ]
+            },
+            {
+                "key": "npc_28", //SPOOKSIE
+                "textSet": [
+                    {
+                        "text": "I'm going to close the shop for tonight's wing-ding."
+                    },
+                    {
+                        "text": "But don't worry, I'll be back on my normal schedule tomorrow."
+                    },
+                    {
+                        "text": "We should all take tonight off to celebrate the new year!"
+                    }
+                ]
+            },
+            {
+                "key": "npc_29", //SPROUT
+                "textSet": [
+                    {
+                        "text": "I have been trying to learn some dance moves for tonight's party.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I'm pretty excited. I'll show them to you later.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_30", //SPUNKY
+                "textSet": [
+                    {
+                        "text": "Piper is just buzzing about the New Year's Eve party. She has me so excited for it."
+                    }
+                ]
+            },
+            {
+                "key": "npc_31", //STEVEN
+                "textSet": [
+                    {
+                        "text": "Yep, I'm working on a few decorations for later."
+                    },
+                    {
+                        "text": "You'll have to let me know what you think when you see the event setup."
+                    }
+                ]
+            },
+            {
+                "key": "npc_32", //STEWART
+                "textSet": [
+                    {
+                        "text": "*whispers* Pssst, hey Captain.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Did Piper put you to work on any of the event preparations?",
+                        "optionOne": {
+                            "optionText": "I haven't seen her today.",
+                            "response": "Nice. I've been hiding from her too.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "She didn't ask me.",
+                            "response": "What!? You must be getting special treatment. I always get roped into something.",
+                            "responseExpression": "Angry"
+                        }
+                    }
+                ]
+            }
+        ],
+        "activeDialogue": [
+            {
+                "key": "npc_2", //BUNKY
+                "textSet": [
+                    {
+                        "text": "Oh boy, am I stuffed!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I'm absolutely hooked on these party desserts Chip baked up. Can't get enough of 'em."
+                    },
+                    {
+                        "text": "Probably gonna have to start eating healthier one of these days."
+                    },
+                    {
+                        "text": "But that's next year's problem, right Little Buddy?",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_4", //CHIP
+                "textSet": [
+                    {
+                        "text": "Happy New Year, $playerName! Glad you could make it.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "It wouldn't be a party without you. All of the others were asking about you too."
+                    },
+                    {
+                        "text": "Help yourself to the food and desserts. It's not going to keep fresh, so get your fill.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+
+            {
+                "key": "npc_5", //CienaVi
+                "textSet": [
+                    {
+                        "text": "Some of the crew were filling me in on your traditions here."
+                    },
+                    {
+                        "text": "At midnight tonight..."
+                    },
+                    {
+                        "text": "...you're supposed to make a New Year's resolution and achieve that goal by the end of next year."
+                    },
+                    {
+                        "text": "I think that's so sweet.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_0", //CPU
+                "textSet": [
+                    {
+                        "text": "3...2...1... Oh! Hi, $playerName."
+                    },
+                    {
+                        "text": "I'm just practicing for the main event."
+                    },
+                    {
+                        "text": "The countdown to the new year is my favorite part of this whole celebration. It's just like kicking off a brand-new journey!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_6", //DAXTON
+                "textSet": [
+                    {
+                        "text": "It seems like everyone's having a great time."
+                    },
+                    {
+                        "text": "But there is no way Shinji is staying up later than me tonight!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "That is something no self-respecting Space Pirate can allow.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Hooray!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_7", //DOC12
+                "textSet": [
+                    {
+                        "text": "Don't you think the music is kind of loud?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I mean, it's fitting for the party...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "...but I think it gets louder every year.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "npc_8", //EDWARD
+                "textSet": [
+                    {
+                        "text": "It's rare that everyone gets together like this. Once a year is not enough."
+                    },
+                    {
+                        "text": "Take advantage, $playerName. I swear, the years only go by faster the older you get."
+                    }
+                ]
+            },
+            {
+                "key": "npc_9", //FIJI
+                "textSet": [
+                    {
+                        "text": "$playerName, you came to the party! I'm so happy!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I'm so grateful to have you in my circle. *hugs you*"
+                    },
+                    {
+                        "text": "There's just something blissful in the air on a night like this.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Wishing you a peaceful New Year!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_11", //FRANCES
+                "textSet": [
+                    {
+                        "text": "Captain, it's so good to see you tonight."
+                    },
+                    {
+                        "text": "I'm glad you're checking in with everyone. New Year's Eve should be a night to mingle a bit."
+                    },
+                    {
+                        "text": "I find it a little romantic, even.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_12", //HERMY
+                "textSet": [
+                    {
+                        "text": "Every year your crew celebrates the New Year?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "That's a lot of free food. I could get used to this."
+                    }
+                ]
+            },
+            {
+                "key": "npc_13", //I-1900
+                "textSet": [
+                    {
+                        "text": "I'm having trouble deciding on a New Year's resolution."
+                    },
+                    {
+                        "text": "The children have been suggesting new hobbies for me to try."
+                    },
+                    {
+                        "text": "Which hobby do you think I should choose?",
+                        "optionOne": {
+                            "optionText": "Trapeze Arts",
+                            "response": "It does sound exhilarating, but I don't know there are safety harnesses available that can handle my load capacity.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Creative Hedge Trimming",
+                            "response": "I have always enjoyed topiary gardens, but I'm a little nervous about not having access to an undo function.",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "You vote has been stored in my database for further consideration. Thanks, $playerName."
+                    }
+                ]
+            },
+            {
+                "key": "npc_14", //JIMMY
+                "textSet": [
+                    {
+                        "text": "Wait. Hold it... *takes photo of you*"
+                    },
+                    {
+                        "text": "Thanks. That's a good one! I'm trying to get a few shots of the party, at least.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "It's always nice to remember the fun times like this."
+                    }
+                ]
+            },
+            {
+                "key": "npc_15", //KAIDA
+                "textSet": [
+                    {
+                        "text": "It's hard to believe how much has happened over the last year."
+                    },
+                    {
+                        "text": "Maybe next year things will slow down."
+                    },
+                    {
+                        "text": "Although... I think I say that every year.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "npc_16", //KENDALL
+                "textSet": [
+                    {
+                        "text": "Captain, guess what my New Year's resolution is...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I want to be more like a robot! Just like I-1900! \n\nBeeep. Beeep. Booop!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": " She says I will need to put in a lot more effort to fool people though...",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "npc_17", //LAUREN
+                "textSet": [
+                    {
+                        "text": "The new year is time to set new goals, crush them, and party hard.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "It's even better with a good team like ours."
+                    }
+                ]
+            },
+            {
+                "key": "npc_19", //LIN
+                "textSet": [
+                    {
+                        "text": "Whew... I'm going to make it to midnight no matter what!"
+                    },
+                    {
+                        "text": "I just have to keep finding ways to keep busy and stay awake.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "*shakes her head to wake up*"
+                    }
+                ]
+            },
+            {
+                "key": "npc_18", //MAX
+                "textSet": [
+                    {
+                        "text": "I have not downloaded any programs for dancing..."
+                    },
+                    {
+                        "text": "But on events like this, it's nice to see how creatively people can move.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I bet you have some good moves, $playerName.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_21", //PILOT
+                "textSet": [
+                    {
+                        "text": "The turning of a new year is of course referring to the relative Space Alliance calendar year."
+                    },
+                    {
+                        "text": "It can be difficult to keep track of time in deep space."
+                    },
+                    {
+                        "text": "But I can assure you, we're right on target for an accurate New Year's Eve moment.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_22", //PIPER
+                "textSet": [
+                    {
+                        "text": "Hi, Captain. I'm so glad you came to the party."
+                    },
+                    {
+                        "text": "It seems like everyone has a lot to say about the new year."
+                    },
+                    {
+                        "text": "Let me know when you have had a chance to explore and talk with everyone. Then we can kick off the celebration with music and dancing."
+                    },
+                    {
+                        "text": "Are you ready to welcome in the New Year?",
+                        "optionOne": {
+                            "optionText": "No"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "npc_23", //ROBERT
+                "textSet": [
+                    {
+                        "text": "Another year, huh?"
+                    },
+                    {
+                        "text": "Went by too fast if you ask me."
+                    },
+                    {
+                        "text": "But at the same time, so much happened. Kinda makes you think..."
+                    }
+                ]
+            },
+            {
+                "key": "npc_24", //RUMBLE & TUMBLE
+                "textSet": [
+                    {
+                        "text": "We get to stay up until midnight!"
+                    },
+                    {
+                        "text": "And eat cake until we get sick!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I wish everyday was New Year's Eve!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_25", //SHINJI
+                "textSet": [
+                    {
+                        "text": "This is what it's all about huh, $playerName?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I'm ready to get out on that dance floor and really light up the party!"
+                    },
+                    {
+                        "text": "Cheers!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_26", //SOOT
+                "textSet": [
+                    {
+                        "text": "mmm mmmm.... *mouth full of food*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "*burp*..."
+                    },
+                    {
+                        "text": "...^ ^-^^!!.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_28", //SPOOKSIE
+                "textSet": [
+                    {
+                        "text": "Don't you love the way the party lights reflect off my ghostly mist?"
+                    },
+                    {
+                        "text": "I'm like a colorful disco ball!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_29", //SPROUT
+                "textSet": [
+                    {
+                        "text": "I have a really good New Year's resolution this year."
+                    },
+                    {
+                        "text": "But I'm keeping it super-secret."
+                    },
+                    {
+                        "text": "I don't want to reveal it until I've achieved it!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_30", //SPUNKY
+                "textSet": [
+                    {
+                        "text": "The deck looks so beautiful tonight with everyone here and all the decorations up."
+                    },
+                    {
+                        "text": "I thought we would miss our New Year celebration that we used to do back home, but this is just amazing.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "npc_31", //STEVEN
+                "textSet": [
+                    {
+                        "text": "Hey, you look festive tonight."
+                    },
+                    {
+                        "text": "I know it means a lot to my grandma and everyone else to have you join us at events like this."
+                    },
+                    {
+                        "text": "So did you try the New Year's punch yet?",
+                        "optionOne": {
+                            "optionText": "No",
+                            "response": "Yeah, it looks almost too sweet, huh? I think I'll skip it this time.",
+                            "responseExpression": "Confused"
+                        },
+                        "optionTwo": {
+                            "optionText": "Yes",
+                            "response": "Well... you're braver than me. Is it supposed to bubble like that?",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "Have fun, and Happy New Year, $playerName."
+                    }
+                ]
+            },
+            {
+                "key": "npc_32", //STEWART
+                "textSet": [
+                    {
+                        "text": "What...? I've already talked to everybody, so don't worry about me...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "I'm happy hanging out over here. Been by myself for a while now."
+                    },
+                    {
+                        "text": "....",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Oh yeah... Happy New Year and all that.",
+                        "expression": "Stressed"
+                    }
+                ]
+            }
+        ],
+        "postDialogue": [
+            {
+                "key": "npc_0", //CPU
+                "textSet": [
+                    {
+                        "text": "What a great event today! I hope you had fun too."
+                    }
+                ]
+            }
+        ]
+    },
+    //#endregion .............................................
+
+    //#region TBA ............................................
+    {
+        "eventKey": "event_0",
+        "eventName": "TBA",
+        "eventDescription": "TBA",
+        "generalEventText": [
+            {
+                "key": "Pre",
+                "textSet": [
+                    {
+                        "boxType": "Notification",
+                        "text": ""
+                    }
+                ]
+            },
+            {
+                "key": "Available",
+                "textSet": [
+                    {
+                        "boxType": "Notification",
+                        "text": ""
+                    }
+                ]
+            },
+            {
+                "key": "Post",
+                "textSet": [
+                    {
+                        "boxType": "Notification",
+                        "text": ""
+                    }
+                ]
+            },
+            {
+                "key": "locked_out",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            },
+            {
+                "key": "locked_in",
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            },
+            {
+                "key": "closed_for_event",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": ""
+                    }
+                ]
+            }
+        ],
+        "preDialogue": [
+            {
+
+                "key": "npc_0", //CPU
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            }
+
+        ],
+        "activeDialogue": [
+            {
+                "key": "npc_4", //CHIP
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            }
+
+        ],
+        "postDialogue": [
+            {
+
+                "key": "npc_0", //CPU
+                "textSet": [
+                    {
+                        "text": ""
+                    }
+                ]
+            }
+        ]
+    }
+    //#endregion .............................................
+
+]

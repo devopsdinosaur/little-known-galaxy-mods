@@ -2,6 +2,21 @@
   <Import Project="$(SolutionDir)\solution_private.targets" />
   <Import Project="$(SolutionDir)\solution.targets" />
   <ItemGroup>
-    <Compile Include="..\shared\ReflectionUtils.cs" Link="ReflectionUtils.cs" />
+    <Compile Include="..\shared\dd_utils.cs" Link="dd_utils.cs" />
   </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <ItemGroup>
+      <AllFiles Include="$(TargetDir)**\*.*" Exclude="$(TargetDir)**\*.pdb" />
+	  <LocalizationFiles Include="$(ProjectDir)\localizations\**\*.*" />
+    </ItemGroup>
+	<Copy SourceFiles="@(AllFiles)" DestinationFolder="$(GamePath)\BepInEx\plugins\%(RecursiveDir)" />
+	<MakeDir Directories="$(GamePath)\BepInEx\plugins\community_localization" />
+	<Copy SourceFiles="@(LocalizationFiles)" DestinationFolder="$(GamePath)\BepInEx\plugins\community_localization\%(RecursiveDir)" />
+    <Delete Files="$(ProjectDir)\bin\$(TargetName).zip" />
+    <Copy SourceFiles="@(AllFiles)" DestinationFolder="$(TargetDir)..\Release\%(RecursiveDir)"></Copy>
+    <MakeDir Directories="$(TargetDir)..\Release\community_localization" />
+	<Copy SourceFiles="@(LocalizationFiles)" DestinationFolder="$(TargetDir)..\Release\community_localization\%(RecursiveDir)" />
+	<ZipDirectory SourceDirectory="$(TargetDir)..\Release" DestinationFile="$(ProjectDir)\bin\$(TargetName).zip" />
+    <RemoveDir Directories="$(TargetDir)..\Release" />
+  </Target>
 </Project>

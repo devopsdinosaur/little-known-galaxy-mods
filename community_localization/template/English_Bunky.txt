@@ -1,0 +1,871 @@
+[
+    {
+        "npcSaveID": "npc_2",
+        "name": "Bunky",
+        "titles": [
+            "Iceladus Cluster Resident",
+            "Boutique Manager"
+        ],
+        "birthdayAnnouncement": "Today is Bunky's birthday.",
+        "relationshipStatus": [
+            "Married"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "UnlockCrew",
+                "unlockHeader": "New Crew Member!",
+                "unlockTitle": "Bunky",
+                "unlockSubTitle": "Boutique Manager",
+                "unlockSubImage": 1,
+                "unlockBody": "Bunky has joined your crew and is opening a new store! He is moving into the quarters above the storefront on the Plaza Deck with his family."
+            },
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 2,
+                "unlockBody": "Great job! Your relationship status with Bunky has increased to the next level. He now considers you one of his friends and has given you an access card to his room."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Relationships",
+                "unlockTitle": "Best Friends!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Gold star! Your relationship status with Bunky has increased another level. He now considers you one of his very best friends."
+            }
+        ],
+        "observations": [
+            "Likes to take bubble baths.",
+            "Has a hard time finding a brush that works for him.",
+            "Takes his bedding very seriously with high thread counts and silky sheets."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "SNORE!!"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "I don't think I can salvage these busted barrels....",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "But... I can probably use the wooden pieces for firewood."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Um... Little Buddy, I would probably not mention to Spunky that you destroyed her anniversary gift.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "We can solve this little mishap without her worrying about it."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "I enjoy these snowy days on this ice post and I actually predicted this weather."
+                    },
+                    {
+                        "text": "Look I wrote it down here..."
+                    },
+                    {
+                        "text": "'Brisk temperatures and snowy with a crisp refreshing winter scent in the air.'"
+                    },
+                    {
+                        "text": "...nailed it."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Come visit me in the boutique and we'll do something about that look."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "What's the vacation package look like aboard your ship?"
+                    },
+                    {
+                        "text": "I'll need at least some time off to attend the ice sculpture convention back home."
+                    },
+                    {
+                        "text": "One of my creations almost made it past the qualifying round..."
+                    },
+                    {
+                        "text": "...but then again, my in-laws were on the judging panel that year.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Another beautiful day in space, don't you think?"
+                    },
+                    {
+                        "text": "I think the stars are extra shiny today.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Little Buddy, everyone aboard this ship is so accommodating."
+                    },
+                    {
+                        "text": "Piper even lent me a whole bowl of sugar for my morning breakfast."
+                    }
+
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "I pick out all of the hats and accessories in the store by hand."
+                    },
+                    {
+                        "text": "I'll always try to get the best selections for you and my new crewmates about $shipName.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Sometimes when Rumble and Tumble are not around, I will sneak into their room and play their games."
+                    },
+                    {
+                        "text": "I use the code name 'Boogie' to beat their high scores."
+                    },
+                    {
+                        "text": "Haha, they think someone from another galaxy has been beating them and it drives them nuts.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "One day I'll spring it on them and they will have to concede to their awesome father!"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "When Spunky and I were just a young couple I used to teach student furballs how to drive snowmobiles."
+                    },
+                    {
+                        "text": "It helps to cover your snowmobile in student driver signs to warn others!",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Little Buddy, I love passing through the Zen Garden but you know..."
+                    },
+                    {
+                        "text": "I swear I hear some strange noises from time to time.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "But these old ships tend to creak from time to time, right?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "I never realized how amazing hair dryers are."
+                    },
+                    {
+                        "text": "We really should invest in the Turbo 400,000 Extreme dryer."
+                    },
+                    {
+                        "text": "A whole-body dryer that gets you bone-dry in 30 seconds flat."
+                    },
+                    {
+                        "text": "That CPU unit on the bridge seemed a little nervous about the power requirements though.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "I've been going to weekly teacher's meeting with Max to discuss Rumble & Tumble's behavior."
+                    },
+                    {
+                        "text": "Why do I feel like I get in more trouble than them sometimes?",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "My boys have a lot of energy because they take after me."
+                    },
+                    {
+                        "text": "When I was their age, I once put molasses in my mother's shampoo bottle."
+                    },
+                    {
+                        "text": "Ah, haha, that brings me back. OH! But don't tell the boys about it."
+                    },
+                    {
+                        "text": "Spunky would kill me if she was covered in molasses one day.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "You know Little Buddy... you make a pretty good captain."
+                    },
+                    {
+                        "text": "I should know, I did a short term as a council member in our hometown too."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "You know, I think I've really mastered hair coloring."
+                    },
+                    {
+                        "text": "Spunky won't let me practice on her, but I'm sure you would trust me, right?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "I really have gotten into the jazzercise class Lauren teaches."
+                    },
+                    {
+                        "text": "Plus, you get to use colorful weights and headbands, which just makes it more fun in my opinion."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "I hope you don't mind if we keep our quarters at sub-zero temperatures."
+                    },
+                    {
+                        "text": "It gets a little toasty under all this fur."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Don't tell the kids, but sometimes I respond to the letters they write to Nickedemus Geronimo."
+                    },
+                    {
+                        "text": "I just love seeing their excited faces...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "...plus it makes me feel a little like a superhero too."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "When Spunky is not around I love to kick back and read some of her romance books."
+                    },
+                    {
+                        "text": "I'm a sap for a happy ending...",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Isn't it a great day today?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Somehow I'm all caught up on my chores and it feels great."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "When I was a young furball, I remember always giving my lunch credits to the other kids."
+                    },
+                    {
+                        "text": "And now my furballs take all my credits, too. I guess I should just pack a lunch from now on.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "You know Little Buddy... I wouldn't be surprised if my ancestors visited your home planet in the past."
+                    },
+                    {
+                        "text": "Some of your winter traditions like sledding and snowshoeing must have come from our people."
+                    },
+                    {
+                        "text": "Furballs have been exploring the universe as long as anyone can remember."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Little Buddy, I'll tell you a secret if you promise not to tell anyone...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "I have a slight phobia of aerosol canisters.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "When I was a kid, I accidentally used pepper spray instead of hair spray once and I just never recovered.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Spunky thinks I don't notice or do anything romantic, so I need to plan a big surprise for her soon."
+                    },
+                    {
+                        "text": "So if you have any surprise ideas, I could really use some help.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Little Buddy, would you be willing to be a Little Buddy to my kids as well?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "They could use a good friend in their lives and someone else to look up to."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Captain, thank goodness I found you..."
+                    },
+                    {
+                        "text": "...Rumble and Tumble are asking me about... you know... the facts of life...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "What should I tell them?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Tell the truth.",
+                            "response": "Oh my, how can I pawn this off on Spunky? Oh, I know, I'll just tell them to read one of her romance novels. Then it's her fault.",
+                            "responseExpression": "Stressed"
+                        },
+                        "optionTwo": {
+                            "optionText": "Lie! Lie! Lie!",
+                            "response": "Good idea, I think I'll tell them the story about the snow bunnies and the fairies."
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Fiji thinks I'd make a great entertainer, but once I sang for her... she suggested I'd be better in percussion section."
+                    },
+                    {
+                        "text": "Look, she gave me this nifty tambourine!"
+                    },
+                    {
+                        "text": "*shakes it so violently it scares you!*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Oh, sorry Little Buddy.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "This just makes my day! Considerate as always, $playerName.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "This is one of my favorite things of all time! You know me so well.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Just when I think you can't surprise me anymore...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "...you bring me such a thoughtful gift. Thanks, Little Buddy!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "You know I really love this...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "...it just brings back so many happy memories."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Hey thanks buddy, this is a nice surprise.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Ahh, so cool. You are a pretty good gift giver."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "I was just going to pick some of this up myself. It's like you read my mind or something!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Are you trying to get on my good side?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Cuz it's working! *chuckles*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Aww, were you thinking of me again?"
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Buddy! Thank you."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Oh, I get it... you must be clearing out some of your storage bins right...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "...Spunky makes me get rid of the stuff I don't want any more from time to time too."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "OK, I'll put this somewhere if I have any room left."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Hm... if I bring this home, Spunky will make me throw away something else so I'll see what I can do.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "But thanks."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "The kids might like this. They can make use of just about anything."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Oh, buddy. I'm usually not too picky or anything, but I really don't think I want this.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Oh... they say it's the thought that counts, but someone else might appreciate this more than me.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Yawn... sorry, just feeling a little bored by everything today it seems.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Hmmm, it's... nice.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "*tears up* Come here Little Buddy...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "*gives you bear hug*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "You have made this big furball so happy on his birthday.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I even saved you a piece of my birthday cake..."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got a <style=Item>Carrot Cake</style>.",
+                        "itemReward": {
+                            "itemID": "item_217",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            {
+                "key": "RegisterStart_Bunky", //case sensitive because we use the store name Enum to get this key. 
+                "textSet": [
+                    {
+                        "text": "Welcome to Bunky's Boutique. Feel free to look around."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+        ],
+        "commentary": [
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "HEY BUDDY... IT'S GREAT TO BE A PART OF THE CREW!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Not having second thoughts about us coming aboard, are you?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "No way!",
+                            "response": "Oh, I'm so glad because this place is GREAT and we're already settling in!"
+                        },
+                        "optionTwo": {
+                            "optionText": "Maybe...",
+                            "response": "Oh boy... well... HEYYYYY.... you're just messing with me, right?",
+                            "responseExpression": "Confused"
+                        }
+                    },
+                    {
+                        "text": "Come here you! *messes up your hair*"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "Now I understand how that Relic works..."
+                    },
+                    {
+                        "text": "And now we're off... onward on this great adventure... to find the next missing relic piece... and to save the universe!"
+                    },
+                    {
+                        "text": "Well... I made up that last part, but it sounds good, doesn't it?"
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "Now that we have arrive at this new planet, isn't it so exciting..."
+                    },
+                    {
+                        "text": "I wonder if you'll get lucky enough to find another friend like me down there... Just teasing!"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Hey Buddy! I heard those pirates were not as understanding as me when you landed.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "I've always heard pirates like gold... so maybe this will cheer them up."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "You got 2 <style=Item>Gold</style>!",
+                        "itemReward": {
+                            "itemID": "item_70",
+                            "amount": 2,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Little Buddy, you should have shown me that letter that the Space Pirates had!"
+                    },
+                    {
+                        "text": "I didn't realize it came from my home world."
+                    },
+                    {
+                        "text": "Our spoken language is different than our written one so it has caused problems with diplomatic relationships in the past..."
+                    },
+                    {
+                        "text": "We should have seen this coming...",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //SR_EXPLORE ALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "Wowie Little Buddy! What a revelation! Did you know how all this Grey Planet stuff was going to turn out all along?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "I was just holding on to that relic piece like it was no big deal, but you knew better alright."
+                    },
+                    {
+                        "text": "I'm so glad you found me, and that I could be a part of this whole thing."
+                    },
+                    {
+                        "text": "Those Viridians seem like a good bunch too. I wonder how you say 'Little Buddy' in their native language?"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "A little of this and that.",
+                "questDescription": "Bunky is looking for a few items he hasn't been able to find himself. He'll give you a Bunky sized hug if you help him out.",
+                "goalDescriptions": [
+                    "Give $amount <style=Item>$goalName</style> to Bunky."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "So you're the one who picked up my request."
+                            },
+                            {
+                                "text": "With you on my side Little Buddy, I've sure you've got it covered."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Look at you! Always helping out your favorite crew member..."
+                            },
+                            {
+                                "text": "...I assume I'm your favorite of course! *chuckles*",
+                                "expression": "Happy"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "You got <sprite=1><style=Credits> $amount credits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Bunky Here...\n\nIt has been a little difficult to get my mitts on a few key items. If anyone can help me out, I'll make sure to get you back one day! Thanks friends.\n\nBunky"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

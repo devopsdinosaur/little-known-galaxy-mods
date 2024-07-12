@@ -1,0 +1,145 @@
+[
+    {
+        "npcSaveID": "npc_47",
+        "name": "Reef Guard",
+        "titles": [
+            "Garde"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzz... Gargouillis..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Euh, c'est insupportable...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Mais il faut garder le récif."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Ohhhh... tout tourne à nouveau.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Si jamais vous êtes en ville pour une longue période, vous devriez consulter notre music-hall local."
+                    },
+                    {
+                        "text": "Écouter de la musique sous l’eau peut être une expérience magique."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Nous ne sommes pas vraiment censés parler beaucoup lorsque nous sommes en service, mais je viens d'entendre de bons potins."
+                    },
+                    {
+                        "text": "*chuchote* Apparemment, la princesse et le roi ont eu un autre désaccord.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Je suis tellement contente que mes enfants soient encore trop jeunes pour se battre avec moi."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Parfois, ça peut être un peu ennuyeux de rester ici toute la journée."
+                    },
+                    {
+                        "text": "Je cache donc un livre dans cette armure de temps en temps pour rattraper mon retard de lecture."
+                    },
+                    {
+                        "text": "Je n'ai été attrapé qu'une seule fois jusqu'à présent, mais j'ai dit au roi que j'enregistrais juste des notes de service, OUF..."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //NEVER ADVANCES TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE HE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+        "nonCrewCommentary": [
+            {
+                //P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "Euhhhhh...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "...c'est tout simplement horrible.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //P_OCEANKING
+            {
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "Merci de nous aider."
+                    },
+                    {
+                        "text": "*son expression peinée s'aggrave*",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Je ne sais pas combien de temps je pourrai tenir encore pendant ce quart de travail.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "Je me sens déjà beaucoup mieux maintenant. Vous devrez m’apprendre votre astuce pour faire pousser des plants de gingembre aussi sains."
+                    },
+                    {
+                        "text": "Merci beaucoup pour votre aide."
+                    }
+                ]
+            }
+        ]
+    }
+]

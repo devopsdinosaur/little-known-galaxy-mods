@@ -1,0 +1,674 @@
+[
+    {
+        "npcSaveID": "npc_28",
+        "name": "Spooksie",
+        "titles": [
+            "??",
+            "Ancien capitaine"
+        ],
+        "birthdayAnnouncement": "Aujourd'hui, c'était l'anniversaire de Spooksie.",
+        "relationshipStatus": [
+            "J'y suis allé, j'ai fait ça."
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "UnlockCrew",
+                "unlockHeader": "Nouveau membre d'équipage !",
+                "unlockTitle": "Effrayant",
+                "unlockSubTitle": "Membre d'équipage",
+                "unlockSubImage": 1,
+                "unlockBody": "Spooksie a décidé que vous étiez suffisamment digne pour qu'elle vous accepte comme nouveau capitaine. Elle dirigera une boutique de bizarreries avec son tube cryogénique."
+            },
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Des relations",
+                "unlockTitle": "Amis!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 0,
+                "unlockBody": "Bon travail! Votre statut relationnel avec Spooksie est passé au niveau supérieur. Elle vous considère désormais comme l'un de ses amis."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Des relations",
+                "unlockTitle": "Meilleurs amis!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Étoile d'or! Votre statut relationnel avec Spooksie a atteint un autre niveau. Elle vous considère désormais comme l'un de ses meilleurs amis."
+            }
+        ],
+
+        "observations": [
+            "Ironiquement, il s'avère qu'Halloween a toujours été sa fête préférée.",
+            "A un goût raffiné pour les boissons de spécialité.",
+            "Elle a modifié son acte de naissance pour que personne ne sache quel âge elle a réellement."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Euh quoi? Ne saviez-vous pas que les fantômes ne dorment pas. Je repose juste mes yeux." //Zzzz...
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Les articles de mon magasin sont tous des trésors, mais je vous offrirai toujours les meilleures réductions."
+                    },
+                    {
+                        "text": "Il m'a fallu des décennies pour négocier ces prix afin de pouvoir les partager avec quelqu'un comme vous.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "À mon époque... on organisait des mixeurs de danse pour se détendre et vivre un peu."
+                    },
+                    {
+                        "text": "Mais c'était à l'époque où les gens avaient encore de bons goûts en matière de musique... et j'avais encore de bonnes hanches.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Vous avez placé des machines loin sur la coque extérieure ?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Intelligent, intelligent, intelligent. Je n'aurais jamais pensé à ça."
+                    },
+                    {
+                        "text": "À mon époque... nous n'allions pas du tout nous défouler dehors sur la coque. Cela aurait été fou !"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Ne vous laissez pas tromper par ces looks magnifiques.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "J'ai pris mon rôle de capitaine très au sérieux et je peux être difficile à satisfaire."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Les fantômes n'ont pas besoin de dormir. Je l'ai abandonné il y a longtemps.",
+                    },
+                    {
+                        "text": "Mais les longues nuits deviennent un peu ennuyeuses, alors je finis par me parler toute seule la plupart du temps...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "... et je peux être très difficile à gérer lorsque je ne suis pas d'accord avec moi-même. *secoue la tête*",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Oh mon Dieu, je sais que j'ai oublié d'éteindre quelque chose ce matin...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "... mais qu'est-ce que c'était ?", 
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Eh bien... si des alarmes autour du navire se déclenchent, faites-le-moi savoir.",
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Maintenant que le fantôme est sorti du sac, j'espère que cela ne vous dérange pas si je fais suivre mon courrier ici."
+                    },
+                    {
+                        "text": "J'aimerais écrire à certains de mes parents éloignés et leur faire savoir que je suis toujours à la recherche."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Comme mon équipe passait beaucoup de temps ensemble en voyage, personne n'avait d'intimité."
+                    },
+                    {
+                        "text": "Tout le monde savait tout sur tout le monde et personne ne pouvait garder un secret."
+                    },
+                    {
+                        "text": "Mais ce sera encore plus facile désormais. Être un fantôme présente des avantages sournois.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Ne vous inquiétez pas, j'ai vérifié les règles de Space Alliance..."
+                    },
+                    {
+                        "text": "Il n'y a rien là-dedans qui dit que les morts-vivants ne peuvent pas rejoindre l'équipage d'un navire."
+                    },
+                    {
+                        "text": "Alors mort ou vivant, je vous soutiens, Capitaine.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Je sais que vous êtes le capitaine officiel maintenant, mais s'il vous plaît, ne touchez pas au thermostat cryogène.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Je dois garder ces vieux os au frais pour une bonne conservation."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "À mon époque... les nouveaux cadets se voyaient confier toutes les tâches les plus épuisantes et les plus exigeantes en main-d'œuvre.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Je pense que j'ai déjà fait preuve de compétences en leadership à l'époque, car je parvenais généralement à convaincre mes pairs de m'aider dans mon travail."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Je voulais vous poser des questions sur le nom de ce vaisseau...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "CPU a encore oublié le nom d'origine du vaisseau, n'est-ce pas ?",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Eh bien... le nom original du navire était le SS Hummingbird, mais si je suis honnête..."
+                    },
+                    {
+                        "text": "J'aime mieux le nom que tu as choisi."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Quand j'étais jeune cadet, j'ai essayé pendant un certain temps de devenir officier scientifique."
+                    },
+                    {
+                        "text": "Mais après la fusion du laboratoire, j’ai décidé que je ferais mieux de suivre le programme de capitaine.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "J'espère que ta journée se passe mieux que la mienne. Quelqu'un a volé mes meilleures collations...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "...ou est-ce que je les ai déjà mangés ?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "De toute façon, j'ai faim. Un fantôme peut apprécier une bonne bouchée autant que le prochain.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Les gens associent les toiles d'araignées aux fantômes, mais honnêtement..."
+                    },
+                    {
+                        "text": "... Je suis tout simplement trop vieux pour faire autant de ménage.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Et je ne vais pas monter sur une échelle.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Saviez-vous que j'ai déjà joué le rôle principal dans la comédie musicale à succès « Farewell Captain » ?"
+                    },
+                    {
+                        "text": "Je pouvais vraiment atteindre ces notes aiguës lorsque j'avais toute la gamme de mes cordes vocales.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "J'aime vraiment les programmes Holo-Sim que vous avez sur le navire."
+                    },
+                    {
+                        "text": "Cette simulation de spa me fait vraiment du bien après une longue nuit envoûtante."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Je n'aurais jamais cru vivre assez longtemps pour voir le navire fonctionner aussi bien. Tu es un grand capitaine, $playerName."
+                    },
+                    {
+                        "text": "Je suppose que je n'ai pas vraiment « vécu » pour le voir... mais euh, tu vois ce que je veux dire de toute façon.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Être un propriétaire de magasin à succès présente de nombreuses similitudes avec le fait d'être un bon capitaine."
+                    },
+                    {
+                        "text": "Il faut être très organisé, travailler dur et s'entendre avec toutes sortes de personnalités excentriques."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Je pense acheter quelques perruques comme CienaVi..."
+                    },
+                    {
+                        "text": "Mais là encore, il y a quelque chose de respectable et de sage dans ce look de dôme pragmatique."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Je ne sais pas exactement pourquoi je suis devenu un fantôme, mais je pense que veiller sur ce vaisseau a quelque chose à voir avec ça.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Peut-être qu'un jour je serai prêt à passer à autre chose..."
+                    },
+                    {
+                        "text": "... mais ne vous inquiétez pas... cela n'arrivera pas de si tôt. J'aime toujours être ici avec vous, bonne chance.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "De retour à mon époque...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "...euhh...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "...Eh bien, je ne me souviens pas de ce que j'allais dire, mais...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "... quoi que ce soit, c'était mieux à mon époque. J'en suis sûr !"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Puisque nous sommes meilleurs amis maintenant, tu devrais connaître mon vrai nom..."
+                    },
+                    {
+                        "text": "Je suis née Susannah, mais tous mes amis m'appelaient « Sookie »."
+                    },
+                    {
+                        "text": "Une fois que j’ai jeté un coup d’envoi, j’ai pensé qu’il était à nouveau temps de changer."
+                    },
+                    {
+                        "text": "C'est à ce moment-là que j'ai abandonné le 'Sookie' et que je suis passé à 'Spooksie'."
+                    },
+                    {
+                        "text": "Quel est l'intérêt d'être un fantôme si vous ne pouvez pas faire un peu de hantise ?",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Avant que ce vaisseau ne reçoive sa mise à niveau moteur, nous comptions sur les tubes cryogènes pour dormir pendant de longues périodes de voyage dans l'espace."
+                    },
+                    {
+                        "text": "Une fois, CPU a oublié d'éteindre les vapeurs endormissantes une fois arrivés à destination."
+                    },
+                    {
+                        "text": "Tout l'équipage s'endort à son poste et nous avons raté toute notre mission.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Il a fallu de nombreux paniers-cadeaux et des années d’excuses pour que l’ambassadeur de Juboo Planet nous pardonne."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "$playerName, je pense que tu fais un très bon capitaine."
+                    },
+                    {
+                        "text": "Mais je vais quand même rester encore un peu."
+                    },
+                    {
+                        "text": "Pourquoi pas ? Je suis né de nouveau pour une aventure comme celle-ci !",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "$playerName, as-tu fouillé mes affaires ?"
+                    },
+                    {
+                        "text": "Sinon, comment pourriez-vous savoir que j'aime les cadeaux comme celui-ci !",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Je sais que mon expression peut parfois être difficile à lire, mais c'est exactement ce que je voulais."
+                    },
+                    {
+                        "text": "Vous êtes devenu un grand capitaine et un meilleur donateur de cadeaux !",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Oh, merveilleux!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Je n'en ai jamais assez de ce genre de choses."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Merci. Vous êtes si attentionné de vous souvenir de moi ainsi."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Oh? Un cadeau pour moi... ça a aussi l'air très spécial !"
+                    },
+                    {
+                        "text": "Merci, $playerName.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Oh, quel beau cadeau de mon protégé préféré ! Vous êtes trop gentil."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Tu ne m'as pas offert un cadeau récemment ?"
+                    },
+                    {
+                        "text": "Bon, je vais essayer de ne pas oublier cette fois car j'apprécie le geste."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Hmm... c'est un beau cadeau. Merci."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Continuez votre bon travail."
+                    },
+                    {
+                        "text": "Faire en sorte que votre équipage se sente apprécié de cette manière vous mènera loin dans votre carrière de capitaine."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Si vous essayez d'être de mon côté, j'espère que vous pourrez faire mieux que ça...",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Ohhh *visage déçu*",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Eh bien, c'est la pensée qui compte... du moins c'est ce qu'on dit.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Hmm... puis-je vous donner un petit conseil ?",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Lorsque vous offrez un cadeau à votre équipage, essayez d'y mettre un peu plus de punch.", //, Kid
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "Pour moi? $playerName! Tu n'aurais pas dû !",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Vous avez dû voir le calendrier de rappel que je vous ai laissé à propos de mon anniversaire.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Ne me demandez pas quel âge j'ai parce que j'ai arrêté de compter depuis très, très longtemps."
+                    },
+                    {
+                        "text": "Assurez-vous également de le dire aux autres. Je ne mentirai pas. J’adore l’attention.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            {
+                "key": "RegisterStart_Spooksie", //case sensitive because we use the store name Enum to get this key. 
+                "textSet": [
+                    {
+                        "text": "Bienvenue dans la boutique Spooksie, des articles intéressants et uniques rien que pour vous."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+        ],
+
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "Compagnie Chilly",
+                "questDescription": "Spooksie cherche quelques choses, mais cela ressemble plus à une excuse pour que quelqu'un vienne lui rendre visite. Quoi qu’il en soit, apportez à Spooksie les objets qu’elle a demandés.",
+                "goalDescriptions": [
+                    "Donner $amount <style=Item>$goalName</style> à Spooksie."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Oh hé, qu'est-ce qui te déprime ?"
+                            },
+                            {
+                                "text": "Alors, vous avez vu mon bulletin... eh bien, je pensais justement l'autre jour à quel point ce serait agréable de revoir le capitaine."
+                            },
+                            {
+                                "text": "Et comme c'est gentil... te voilà... *cligne des yeux innocemment*."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Vous avez apporté mes objets ?",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Merci, $playerName!",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Le fantôme n'est pas facile. Je ne peux pas toujours m'éloigner du magasin pour récupérer ces nécessités supplémentaires."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Vous avez <sprite=1><style=Credits> $amount crédits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Hey Gang,\n\nVotre fantôme préféré pourrait avoir besoin de quelques objets si quelqu'un a du temps à perdre. J'ai aussi de bonnes affaires en préparation, si vous souhaitez passer voir mon inventaire.\n\nÀ bientôt,\nSpooksie"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

@@ -1,0 +1,129 @@
+[
+    {
+        "npcSaveID": "npc_37",
+        "name": "Ocean Resident",
+        "titles": [
+            "Résident"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "J'ai encore un peu le vertige, alors s'il vous plaît, ne me posez pas trop de questions.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Tellement étourdi... tout tourne... sans fin. \n\nCela doit être la fin pour moi.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "J'adore remonter à la surface pour ramasser des coquillages pour ma maison."
+                    },
+                    {
+                        "text": "J'ai un mur entier que je recouvre de mon propre art de coquillage spécial."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Je dois continuer ma formation..."
+                    },
+                    {
+                        "text": "Je suis le capitaine de l'équipe de natation Flying Gurnard et nous avons une grande compétition à venir."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Parfois, j'aime errer sur les récifs à la recherche de trésors cachés dans le sable."
+                    },
+                    {
+                        "text": "Mais je fais toujours attention à ces palourdes grincheuses... ces salauds sont les pires."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //NEVER ADVANCES TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE HE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+        "nonCrewCommentary": [
+            {
+                // P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "Je me sens...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "*pose la tête baissée*",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //P_OCEANKING
+            {
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "Ughh... Pensez-vous vraiment que vous pouvez aider à guérir ce mal des terres ?",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Si vous le faites, vous serez la personne la plus populaire de tout le royaume.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "Après m'être sentie si malheureuse auparavant, je suis tellement reconnaissante d'être de retour au travail et de rassembler à nouveau nos propres fournitures !"
+                    }
+                ]
+            }
+        ]
+    }
+]

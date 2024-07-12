@@ -1,0 +1,125 @@
+[
+    {
+        "npcSaveID": "npc_36",
+        "name": "Reef Guard",
+        "titles": [
+            "Guard"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzz... Gurgle..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "I just need to lay down a bit longer... ohhh.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "I hope you are enjoying your visit to our Kingdom."
+                    },
+                    {
+                        "text": "We have tons of great knick knack shops to peruse if you are looking for any souvenirs."
+                    },
+                    {
+                        "text": "Just dive down about 50 meters and swim left at the Seahorse Hotel to find the main shopping district."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "I share this guard post with my partner."
+                    },
+                    {
+                        "text": "We alternate day and night shifts, but we always get at least 2 days off a week to spend together."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "I loved growing up in the Kingdom."
+                    },
+                    {
+                        "text": "CienaVi and I used to play together as kids in the coral gardens while my parents attended parties with the King and Queen."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //NEVER ADVANCES TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE HE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+        "nonCrewCommentary": [
+            {
+                //P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "Ohhh... please not now.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "...I just can't.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_OCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "You are going to help us with our land sickness?!"
+                    },
+                    {
+                        "text": "You are my hero! ...also... please hurry... ohhh",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "My stomach is finally settling, thanks to you."
+                    },
+                    {
+                        "text": "By the way, if anyone asks, I of course gave you clearance when you first arrived."
+                    }
+                ]
+            }
+        ]
+    }
+]
