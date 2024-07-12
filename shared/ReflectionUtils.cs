@@ -32,12 +32,22 @@ public static class ReflectionUtils {
         return get_field(obj, name)?.GetValue(obj);
     }
 
+    public static object set_field_value(object obj, string name, object value) {
+        get_field(obj, name)?.SetValue(obj, value);
+        return value;
+    }
+
     public static PropertyInfo get_property(object obj, string name) {
         return obj.GetType().GetProperty(name, BINDING_FLAGS_ALL);
     }
 
     public static object get_property_value(object obj, string name) {
         return get_property(obj, name)?.GetValue(obj);
+    }
+
+    public static object set_property_value(object obj, string name, object value) {
+        get_property(obj, name)?.SetValue(obj, value);
+        return value;
     }
 
     public static MethodInfo get_method(object obj, string name) {

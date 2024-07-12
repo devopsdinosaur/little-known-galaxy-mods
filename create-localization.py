@@ -220,36 +220,7 @@ class JankyTranslator:
                 break
             chunks.append(chunk if (chunk[0] in "<$") else self.translate_string(chunk))
         return "".join(chunks)
-
-    """
-    def translate_marked_up_string(self, text):
-        chunks = []
-        index = 0
-        chunk = ""
-        in_tag = False
-        while (index < len(text)):
-            if (in_tag and text[index] == '>'):
-                chunks.append(chunk + ">")
-                chunk = ""
-                in_tag = False
-            elif (text[index] == '<'):
-                chunks.append(chunk)
-                chunk = "<"
-                in_tag = True
-            else:
-                chunk += text[index]
-            index += 1
-        if (chunk != ""):
-            chunks.append(chunk)
-        new_chunks = []
-        for chunk in chunks:
-            chunk = chunk.strip()
-            if (chunk != ""):
-                new_chunks.append(chunk if (chunk[0] == '<') else self.translate_string(chunk))
-        return "".join(new_chunks)
-    """
-        
-        
+ 
     def translate_file(self, path):
         log("--> in: " + path)
         data = self.read_file(path)
@@ -327,6 +298,6 @@ if (__name__ == "__main__"):
     sys.exit(main([
         "", 
         "tmp/template", 
-        "French", 
+        "Korean", 
         "tmp/output"
     ]))
