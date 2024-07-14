@@ -1,8 +1,8 @@
 # =========================================================================
 # Copyright (c) 2024 devopsdinosaur (devopsdinosaur@gmail.com)
 #
-# This file may not be modified, redistributed, or used for monetary gain
-# without the express written consent of the author.
+# This file may not be modified, copied, redistributed, or used for 
+# monetary gain without the express written consent of the author.
 # =========================================================================
 #
 #--------------------------------------------------------------------------
@@ -49,25 +49,37 @@
 
 LANGUAGES = (
     # "Gibberish",
-    "Chinese (Simplified)",
+
+    "Spanish",
     "French",
     "German",
-    "Korean",
+    "Korean",                   # character set not yet fully supported?
     "Portuguese",
-    "Spanish",
+    "Chinese (Simplified)",     # character set not yet fully supported?
+    "Italian",
+    "Japanese",                 # character set not yet fully supported?
 )
 
 import os
 import sys
 import re
+import time
 from google.cloud import translate, translate_v2
 
 THIS_DIR = os.path.dirname(__file__)
 TMP_DIR = os.path.join(THIS_DIR, "tmp")
 PROJECT_ID_FILE = os.path.join(TMP_DIR, "project_id")
 CACHE_FILE = os.path.join(TMP_DIR, "cache")
+CACHE_FILE_BACKUP = os.path.join(TMP_DIR, "cache_backup")
 TEMPLATE_DIR = os.path.join(THIS_DIR, "template")
 OUT_DIR = os.path.join(THIS_DIR, "localizations")
+
+INVALID_CHARS = "ÃÂ"
+
+STRING_REPLACEMENTS = [
+    ('"', "'"),
+    ("\\ n", "\\n"),
+]
 
 KEYS_TO_TRANSLATE = [
     "achievementDescription",
@@ -81,6 +93,7 @@ KEYS_TO_TRANSLATE = [
     "emailSubject",
     "eventDescription",
     "eventName",
+    "interfaceText",
     "itemDescription",
     "itemName",
     "libraryBody",
@@ -119,6 +132,7 @@ class JankyTranslator:
     RX_KEY_VAL = re.compile(r"^([ \t]*\")([^\"]+)(\": \")([^\"]+)(\".*)$")
     RX_LIST_START = re.compile(r"^[ \t]*\"([^\"]+)\": \[[ \t]*$")
     RX_LIST_ITEM = re.compile(r"^([ \t]*\")([^\"]+)(\".*)$")
+    CACHE_WRITE_FREQUENCY = 30.0
 
     def __init__(self, template_dir, language, out_dir):
         self.template_dir = template_dir
@@ -127,6 +141,7 @@ class JankyTranslator:
         self.out_dir = os.path.join(out_dir, self.language)
         self.project_id = self.read_file(PROJECT_ID_FILE).strip()
         self.translate_parent = "projects/%(project_id)s/locations/global" % self.__dict__
+        self.last_cache_write_time = None
         
     def read_file(self, path):
         f = open(path, "r")
@@ -156,13 +171,27 @@ class JankyTranslator:
         try:
             self.cache = eval(self.read_file(CACHE_FILE))
         except:
-            pass
+            try:
+                self.cache = eval(self.read_file(CACHE_FILE_BACKUP))
+                log("* warning - unable to load primary cache; restoring from backup.")
+            except:
+                pass
         for key in ('languages', 'translations', 'stats'):
             if (key not in self.cache.keys()):
                 self.cache[key] = {}
         
     def write_cache(self):
         self.write_file(CACHE_FILE, str(self.cache))
+
+    def write_cache_backup(self):
+        self.write_file(CACHE_FILE_BACKUP, str(self.cache))
+
+    def write_cache_periodic(self):
+        if (self.last_cache_write_time is not None and time.time() - self.last_cache_write_time < self.CACHE_WRITE_FREQUENCY):
+            return
+        self.write_cache_backup()
+        self.write_cache()
+        self.last_cache_write_time = time.time()
 
     def set_language_code(self):
         
@@ -185,11 +214,18 @@ class JankyTranslator:
             self.cache['languages'][language['name']] = language['language']
         __set_language_code__(True)
 
-    def translate_string(self, text):
+    def contains_invalid_chars(self, text):
+        for c in text:
+            for c2 in INVALID_CHARS:
+                if (c2 == c):
+                    return True
+        return False
+
+    def translate_string(self, text, use_cache = True):
         if (not self.language_code in self.cache['translations'].keys()):
             self.cache['translations'][self.language_code] = {}
         result = self.cache['translations'][self.language_code].get(text, None)
-        if (result is not None):
+        if (use_cache and result is not None and not self.contains_invalid_chars(result)):
             return result
         if ('total_chars_translated' not in self.cache['stats'].keys()):
             self.cache['stats']['total_chars_translated'] = 0
@@ -205,6 +241,11 @@ class JankyTranslator:
         self.cache['stats']['total_chars_translated'] += len(text)
         return self.cache['translations'][self.language_code][text]
 
+    def apply_string_replacements(self, text):
+        for old, new in STRING_REPLACEMENTS:
+            text = text.replace(old, new)
+        return text
+    
     def translate_marked_up_string(self, text):
     
         def get_next_chunk(index, text):
@@ -238,7 +279,7 @@ class JankyTranslator:
             if (not chunk):
                 break
             chunks.append(chunk if (chunk[0] in "<$") else self.translate_string(chunk))
-        return "".join(chunks).replace('"', "'")
+        return self.apply_string_replacements("".join(chunks))
  
     def translate_file(self, path):
         log("--> in: " + path)
@@ -286,9 +327,18 @@ class JankyTranslator:
             for func in (add_key_val, add_list_val, add_everything_else):
                 if (func()):
                     break
+            self.write_cache_periodic()
         self.write_file(out_path, "\n".join(fixed_lines))
         return 0
     
+    def print_word_count(self):
+        word_count = 0
+        for chunks in self.cache['translations'].values():
+            for chunk in chunks:
+                word_count += len(chunk.split())
+            break
+        log("\nWord Count: %dK" % (word_count / 1000))
+
     def run(self):
         log("Running JankyTranslator magic (template_dir: '%(template_dir)s', language: '%(language)s', out_dir: '%(out_dir)s'))." % self.__dict__)
         self.load_cache()
@@ -302,6 +352,7 @@ class JankyTranslator:
             log("\n* Keyboard interrupt")
             sys.exit(1)
         finally:
+            self.print_word_count()
             log("Accumulated Total Chars Translated: %dK" % (self.cache['stats']['total_chars_translated'] / 1000))
             self.write_cache()
         return 0
@@ -315,7 +366,6 @@ def main(argv):
     #    log("usage: %s <template-dir> <language> <out-dir>" % argv[0])
     #    return 1
     #return JankyTranslator(argv[1], argv[2], argv[3]).run()
-
 
 if (__name__ == "__main__"):
     sys.exit(main(sys.argv))
