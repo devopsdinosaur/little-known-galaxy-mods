@@ -5,14 +5,18 @@ using HarmonyLib;
 using System;
 using System.Reflection;
 using System.IO;
+using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using TMPro;
 using Newtonsoft.Json;
 
-[BepInPlugin("devopsdinosaur.lkg.community_localization", "Community Localization", "0.0.1")]
+[BepInPlugin("devopsdinosaur.lkg.community_localization", "Community Localization", "0.0.2")]
 public class CommunityLocalizationPlugin : BaseUnityPlugin {
+	
+	private const string MISSING_KEY_STRING = "<< MISSING STRING >>";
+	
 	private Harmony m_harmony = new Harmony("devopsdinosaur.lkg.community_localization");
 	public static ManualLogSource logger;
 	private static ConfigEntry<bool> m_enabled;
@@ -130,9 +134,10 @@ public class CommunityLocalizationPlugin : BaseUnityPlugin {
 	[HarmonyPatch(typeof(ScLocalizationManager), "GetMatchingLocalizationData")]
 	class HarmonyPatch_ScLocalizationManager_GetMatchingLocalizationData {
 
-		private static bool Prefix(Language ___language) {
+		private static bool Prefix(ref ScLocalizationData[] ___supportedLanguagesData) {
 			try {
-				debug_log($"ScLocalizationManager.GetMatchingLocalizationData(language: {___language})");
+				// debug_log($"ScLocalizationManager.GetMatchingLocalizationData(language: {___language})");
+				___supportedLanguagesData = CommunityLocalizer.Instance.Languages;
 				return true;
 			} catch (Exception e) {
 				logger.LogError("** HarmonyPatch_ScLocalizationManager_GetMatchingLocalizationData.Prefix ERROR - " + e);
@@ -158,6 +163,16 @@ public class CommunityLocalizationPlugin : BaseUnityPlugin {
 				logger.LogError("** HarmonyPatch_ScWndMainMenu_BeforeOpening.Prefix ERROR - " + e);
 			}
 			return true;
+		}
+	}
+
+	[HarmonyPatch(typeof(ScLocalizationManager), "GetUIText")]
+	class HarmonyPatch_ScLocalizationManager_GetUIText {
+
+		private static void Postfix(string uiTextKey, ref ScUIText __result) {
+			if (__result == null) {
+				__result = new ScUIText(uiTextKey, MISSING_KEY_STRING);
+			}
 		}
 	}
 
@@ -220,12 +235,15 @@ public class CommunityLocalizationPlugin : BaseUnityPlugin {
 					if (key[key.Length - 1] == 's') {
 						key = key.Substring(0, key.Length - 1);
 					}
-					fields[key] = field;
-					loaded_fields[key] = false;
+					if (key != "npc") {
+						fields[key] = field;
+						loaded_fields[key] = false;
+					}
 				}
 				ScLocalizationData localization;
 				List<TextAsset> npc_texts = null;
 				List<string> npc_names = null;
+				Encoding encoding = Encoding.GetEncoding("iso-8859-1");
 				foreach (string sub_dir in Directory.GetDirectories(root_dir)) {
 					try {
 						localization = GameObject.Instantiate<ScLocalizationData>(existing_localizations[0]);
@@ -234,7 +252,7 @@ public class CommunityLocalizationPlugin : BaseUnityPlugin {
 						logger.LogInfo($"Loading '{localization.name}' (language id [hash code]: {localization.GetLanguage()}).");
 						npc_texts = new List<TextAsset>();
 						npc_names = new List<string>();
-						foreach (string key in loaded_fields.Keys) {
+						foreach (string key in fields.Keys) {
 							loaded_fields[key] = false;
 						}
 						foreach (string file in Directory.GetFiles(sub_dir)) {
@@ -250,10 +268,10 @@ public class CommunityLocalizationPlugin : BaseUnityPlugin {
 							}
 							if (fields.ContainsKey(file_name)) {
 								// debug_log($"--> reading '{file_name_with_extension}' into localization.{fields[file_name].Name} field.");
-								fields[file_name].SetValue(localization, new TextAsset(File.ReadAllText(file)));
+								fields[file_name].SetValue(localization, new TextAsset(File.ReadAllText(file, encoding)));
 								loaded_fields[file_name] = true;
 							} else {
-								string data = File.ReadAllText(file);
+								string data = File.ReadAllText(file, encoding);
 								if (!data.Contains("npcSaveID")) {
 									// debug_log($"--> skipping unknown file, '{file_name_with_extension}'.");
 									continue;
@@ -265,7 +283,7 @@ public class CommunityLocalizationPlugin : BaseUnityPlugin {
 						}
 						logger.LogInfo("Checking fields and NPC count.");
 						bool has_all_fields = true;
-						foreach (string key in loaded_fields.Keys) {
+						foreach (string key in fields.Keys) {
 							if (!loaded_fields[key]) {
 								logger.LogError($"** Field ERROR - '{key}' not present.");
 								has_all_fields = false;

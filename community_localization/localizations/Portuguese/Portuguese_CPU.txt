@@ -1,0 +1,1083 @@
+[
+    {
+        "npcSaveID": "npc_0",
+        "name": "CPU",
+        "titles": [
+            "Processador Central"
+        ],
+        "birthdayAnnouncement": "Hoje é a data de fabricação da CPU.",
+        "relationshipStatus": [
+            "Não aplicável"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Relacionamentos",
+                "unlockTitle": "Amigos!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 0,
+                "unlockBody": "Bom trabalho! Seu status de relacionamento com a CPU aumentou para o próximo nível. Ele agora considera você um de seus amigos."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Relacionamentos",
+                "unlockTitle": "Os melhores amigos!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Estrela de Ouro! Seu status de relacionamento com a CPU aumentou outro nível. Ele agora considera você um de seus melhores amigos."
+            }
+        ],
+        "observations": [
+            "Devido a uma falha, é esquecido e um pouco negligente.",
+            "Grande multitarefa e tem dificuldade em se concentrar em uma coisa.",
+            "Gosta de coletar tecnologia antiga para reformar ou reaproveitar."
+
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*modo dormir*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Olá capitão! As coisas estão correndo bem..."
+                    },
+                    {
+                        "text": "espere... ah, ufa...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Sim, está tudo ótimo."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Tenho trabalhado em meu próprio jogo indie nas horas vagas.",
+                        "optionOne": {
+                            "optionText": "Que tempo livre?",
+                            "response": "Você não é um maluco duro! Tenho uma janela de 20 minutos por dia em que apenas 4 dos meus 5 processadores estão funcionando com capacidade total. Isso é bastante tempo, você não diria!",
+                            "responseExpression": "Confused"
+                        },
+                        "optionTwo": {
+                            "optionText": "Organizado.",
+                            "response": "Estou trabalhando para simplificar a jogabilidade porque todo mundo que já jogou disse que é impossível vencer a menos que você seja um computador.",
+                            "responseExpression": "Sad"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Todo o navio está falando sobre você ultimamente, mas você nunca vai conseguir fofocar de mim."
+                    },
+                    {
+                        "text": "Na verdade, algumas pessoas solteiras a bordo já o apelidaram de Capitão Cutey."
+                    },
+                    {
+                        "text": "Ah... opa...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "... bem, você poderia ter ouvido isso de qualquer pessoa, certo?",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "_______EM BRANCO______Erro.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Oh espere, você pode me ouvir?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Estou de volta agora."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "É muito emocionante ter um novo capitão a bordo. Nossos últimos capitães não permaneceram por muito tempo."
+                    },
+                    {
+                        "text": "Quer saber, não me lembro quem foi o último capitão...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "...uh, isso vai me incomodar agora... *vai à deriva*",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Capitão, posso apenas dizer que acho que você está fazendo um trabalho fantástico."
+                    },
+                    {
+                        "text": "Você está me conquistando mais e mais a cada dia.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Você sabe que toda essa situação me lembrou disso uma vez..."
+                    },
+                    {
+                        "text": "... espere, posso ter fotos ...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "*verificando o armazenamento interno*",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Droga... devo tê-los perdido quando tive que reinstalar meu sistema operacional.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Não é grande coisa... esqueci do que estávamos falando."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "A Space Alliance faz check-in de tempos em tempos e coleta meus relatórios de status."
+                    },
+                    {
+                        "text": "Não se preocupe... eu sempre dou ótimas críticas sobre você...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "...mesmo quando passamos por uma fase difícil!"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Talvez um dia ganhemos medalhas pelas nossas grandes conquistas com a Space Alliance."
+                    },
+                    {
+                        "text": "Seria cafona se eu usasse minha medalha todos os dias?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "A maioria das pessoas a bordo desta nave não aproveita meu sistema de armazenamento de backup, mas tenho bastante espaço em disco se você precisar armazenar algum arquivo digital."
+                    },
+                    {
+                        "text": "Caramba... você tem um ou dois problemas de funcionamento no disco rígido e todo mundo simplesmente para de confiar em você... *faz beicinho*",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Sempre me sinto como um computador novo quando Stewart dá polimento em meu revestimento externo."
+                    },
+                    {
+                        "text": "É hora de limpar minha interface também... *beep*"
+                    },
+                    {
+                        "text": "Tudo feito."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Às vezes, Kaida terá competições de digitação com seus implantes biônicos versus meu poder de processamento."
+                    },
+                    {
+                        "text": "Fica bastante acalorado, mas sempre termina com a gente rindo quando vemos algum erro de autocorreção."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Ei capitão, chegue um pouco mais perto para que eu possa ver você melhor.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "OK, entendi... aqui está minha representação artística de você."
+                    },
+                    {
+                        "text": "<|(:-D)",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Acho que acertei. Na verdade, estou trabalhando em uma obra-prima ainda maior que enviarei a vocês posteriormente."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Se precisar de algum reforço, capitão, é só me avisar."
+                    },
+                    {
+                        "text": "Estou programado para antecipar seus comandos e aprendo mais sobre você a cada dia."
+                    },
+                    {
+                        "text": "*olha intensamente para você esperando seu próximo movimento*",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Uma vez, fingi que ainda estava dormindo quando Pilot chegou à ponte pela manhã."
+                    },
+                    {
+                        "text": "Então eu saí e gritei boo!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Eu realmente o peguei da primeira vez, mas no dia 10 ele parou de achar graça.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Estou digitalizando livros em busca de um novo ângulo."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Capitão, agora que somos bons amigos, talvez devêssemos oferecer um jantar para os nossos outros bons amigos."
+                    },
+                    {
+                        "text": "Farei chapéus de festa e tudo mais!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Ah, que bom que você veio conversar."
+                    },
+                    {
+                        "text": "É bom ser incluído às vezes."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Capitão, obrigado por me deixar acompanhá-lo em suas aventuras."
+                    },
+                    {
+                        "text": "Nosso último capitão deixava meu transmissor em seus aposentos, então ficou meio solitário.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Mas desde que você subiu a bordo, faço parte de toda a ação novamente!"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Capitão, você está bem classificado no meu medidor de simpatia."
+                    },
+                    {
+                        "text": "Como sou uma unidade de computação, todos os meus amigos precisam ser classificados..."
+                    },
+                    {
+                        "text": "...mas minha lista é duplamente criptografada com uma senha."
+                    },
+                    {
+                        "text": "Nunca quero ter favoritos intencionalmente."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Capitão, espero que fique a bordo conosco por muito tempo."
+                    },
+                    {
+                        "text": "Fico muito emocionado quando um dos meus tripulantes sai do navio.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Estou a bordo desta nave há muito tempo e meus bancos de memória foram reiniciados algumas vezes.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "É por isso que às vezes eu esqueço as coisas, mas Stewart está me ajudando a tentar recuperar minhas memórias perdidas."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Capitão, com você a bordo, todos parecem estar funcionando com desempenho ideal."
+                    },
+                    {
+                        "text": "...Quer dizer, gosto de ter você a bordo também."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Quando eu me aposentar, certamente gostaria de passar parte do meu tempo fazendo scrapbooks com as fotos de todas as nossas aventuras."
+                    },
+                    {
+                        "text": "Espero ter mais milhões até lá."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Capitão, acabei de assistir meu programa favorito e terminou da melhor maneira."
+                    },
+                    {
+                        "text": "Mas ainda estou tão triste que acabou... *lágrimas digitais escorrendo pelo rosto*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Ei, melhor amigo, olhe para nós."
+                    },
+                    {
+                        "text": "Melhor amigo, melhor, melhor, melhor amigo.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Uau, você realmente colocou minha unidade de computação dentro deste shell de computador, não é... obrigado, capitão!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Minha programação é tão óbvia que eu adoro isso!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "SEM CHANCE! SEM CHANCE! Você é o maior, capitão.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Não acredito que você está me dando isso!"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Tão incrível, um presente meu. Vou adicioná-lo à minha caixa de presentes legal."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "!|(^O^)|! ",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Este é um presente muito bom. Obrigado!"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Oh garoto! eu ia pegar isso...  "
+                    },
+                    {
+                        "text": "...Eu até tinha isso na minha lista de desejos. Obrigado capitão.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Você com certeza sabe como alegrar o dia de um robô!"
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "É sempre bom pensar no Capitão!"
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Eu não esperava isso, obrigado capitão."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Você não deveria, mas estou feliz que você fez!"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Ah, hum, obrigado?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Acho que esse tipo de coisa é mais para humanos.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Ewwwwe, capitão, leve embora, leve embora. Eu não gosto nada disso.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Capitão... você está testando meus módulos de estresse me dando um presente terrível?",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Recalibrando os níveis de frustração agora.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Ah, isso não está realmente classificado como um presente em meu banco de dados, mas talvez ainda haja uma função que eu possa encontrar para ele.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "Capitão, um presente só para mim no meu aniversário?!!!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Todos cantam comigo... *pelo interfone*"
+                    },
+                    {
+                        "text": "Parabéns para mim, parabéns para mim, feliz aniversário querida Unidade Central de Processamento também conhecida carinhosamente como CPUuuuuuu..."
+                    },
+                    {
+                        "text": "Feliz aniversário para mim!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            //away_ship_fail
+            {
+                "key": "away_ship_fail",
+                "textSet": [
+                    {
+                        "text": "Capitão, você só pode embarcar na nave quando estivermos orbitando um planeta.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            //first_night
+            {
+                "key": "first_night",
+                "textSet": [
+                    {
+                        "text": "Boa noite, capitão. Desculpe pela intrusão, mas é $clock 1200!"
+                    },
+                    {
+                        "text": "Esqueci de te contar isso todos os dias às $clock Às 12h, entramos no modo noturno no navio para imitar o ciclo diurno para a tripulação e economizar energia.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Avisarei você quando as luzes estiverem oficialmente apagadas mais tarde. Tchau, até então."
+                    }
+                ]
+            },
+            //force_bedtime
+            {
+                "key": "force_bedtime",
+                "textSet": [
+                    {
+                        "text": "A nave está entrando em modo de descanso total. Estou mandando você para a cama agora.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Dorme bem, $playerName."
+                    }
+                ]
+            },
+            //midnight warning
+            {
+                "key": "midnight_warning",
+                "textSet": [
+                    {
+                        "text": "Capitão. Está ficando tarde. Você provavelmente deveria ir para a cama logo.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SMART NOTIFICATIONS .........................
+            //smart_notify_rad_crops
+            {
+                "key": "smart_notify_rad_crops",
+                "textSet": [
+                    {
+                        "text": "Capitão... essa foi por pouco!",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Vejamos, estou carregando a lista que eles nos deram agora...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Parecem suprimentos mecânicos e algumas culturas alimentares... espere... eles estão solicitando culturas irradiadas?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "O que são culturas irradiadas?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Bem, se alguém soubesse, seria Lin. Talvez devêssemos começar perguntando a ela primeiro?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Agora, vamos sair daqui antes que mudem de ideia...",
+                        "expression": "Stressed"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+        ],
+        "commentary": [
+            {
+                //P_VISITGREYPLANET
+                "key": "quest_24",
+                "textSet": [
+                    {
+                        "text": "Você já está indo para o planeta...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "...Vou sentir sua falta.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_REPORTTOKAIDA
+                "key": "quest_61",
+                "textSet": [
+                    {
+                        "text": "Você fez um ótimo trabalho lá no Capitão do Planeta Cinza."
+                    },
+                    {
+                        "text": "Acho que este é o começo de algo incrível.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTGREYSOOT
+                "key": "quest_19",
+                "textSet": [
+                    {
+                        "text": "Eu estava pensando em Fuligem..."
+                    },
+                    {
+                        "text": "Espero que ele ainda esteja bem sozinho naquela caverna assustadora.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Não posso fazer muito, mas isso ajudaria?"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Você tem <sprite=1><style=Credits> 25 créditos</style>!",
+                        "itemReward": {
+                            "itemID": "item_43",
+                            "amount": 25,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            //{
+            //    //P_DELIVERGREYRELIC
+            //    "key": "quest_10",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            //{
+            //    //P_OCEANCOORDMEETING
+            //    "key": "quest_17",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_VISITENGINEROOM
+                "key": "quest_57",
+                "textSet": [
+                    {
+                        "text": "Tente não incomodar Stewart quando você for para a Sala de Máquinas.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Eu apenas sorrio e aceno bastante... ah, e evito contato visual se for preciso."
+                    }
+                ]
+            },
+            //{
+            //    //P_ARRIVEOCEAN
+            //    "key": "quest_8",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //SR_CATCHMICROBES
+                "key": "quest_64",
+                "textSet": [
+                    {
+                        "text": "Eca, eu simplesmente odeio micróbios!",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Você fará a varredura em meu console com frequência e se livrará deles, não é?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            //{
+            //    //P_VISITOCEANPLANET
+            //    "key": "quest_27",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_REQUESTOCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "Capitão, você pode lembrar Stewart de atualizar meu software antivírus em breve?"
+                    },
+                    {
+                        "text": "Acho que estou sentindo muita pena daqueles pobres residentes do Blue Reef Kingdom porque também me sinto mal.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //{
+            //    //P_DELIVEROCEANRELIC
+            //    "key": "quest_13",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //}
+            //{
+            //    //P_ARRIVEDESERT
+            //    "key": "quest_5",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_VISITDESERTPLANET
+                "key": "quest_23",
+                "textSet": [
+                    {
+                        "text": "O Pilot disse alguma coisa para você?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Posso ter reagido exageradamente antes, quando estávamos colocando a nave em órbita.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Ele vai me perdoar, certo?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTDESERTHERMY
+                "key": "quest_18",
+                "textSet": [
+                    {
+                        "text": "Capitão, você não acha que aquela areia lá no planeta deserto poderia subir até aqui e entupir minha placa de circuito, acha?",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Você sabe... como aconteceu no navio de Hermy.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Ontem à noite tive um pesadelo em que estava enterrado na areia e ninguém conseguia me encontrar...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Foi assustador.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //{
+            //    //P_DELIVERDESERTPIECE
+            //    "key": "quest_9",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            //{
+            //    //P_ARRIVEICE
+            //    "key": "quest_6",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            //{
+            //    //P_VISITICEPLANET
+            //    "key": "quest_25",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "Esse Bunky com certeza é um cara legal."
+                    },
+                    {
+                        "text": "Ele até se ofereceu para me mostrar como fazer meu próprio globo de neve um dia."
+                    }
+                ]
+            },
+            //{
+            //    //P_DELIVERICERELIC
+            //    "key": "quest_11",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            //{
+            //    //P_ARRIVELAVA
+            //    "key": "quest_7",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            //{
+            //    //P_VISITLAVAPLANET
+            //    "key": "quest_26",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Capitão, eu não queria tocar no assunto antes porque, bem, você sabe...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "...aqueles piratas não queriam bater papo...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Mas você acha que da próxima vez que falar com Bonny Red... você poderia perguntar a ela se eu poderia conseguir um chapéu como o dela?"
+                    },
+                    {
+                        "text": "Você consegue imaginar... CPU, pirata espacial do computador, apresentando-se para o serviço!",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+            //{
+            //    //P_DELIVERLAVARELIC
+            //    "key": "quest_12",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //}
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "Bugigangas",
+                "questDescription": "CPU informou que está procurando alguns itens. Passe pela ponte e traga o que ele procura.",
+                "goalDescriptions": [
+                    "Dar $amount <style=Item>$goalName</style> para CPU."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Você viu minha postagem! Aposto que você não achava que as CPUs também precisavam de itens."
+                            },
+                            {
+                                "text": "Bem, eu tenho uma caixa de coisas especiais que mantenho segura, assim como todo mundo."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Oh, que bom, que bom, que bom, você me trouxe o que eu pedi.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Agora, o que eu ia fazer com isso...",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "Bem... acho que está na minha caixa especial por enquanto."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Você tem <sprite=1><style=Credits> $amount créditos</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Olá família,\n\nSua unidade de computação favorita está procurando alguns itens para um projeto ultrassecreto. Brincadeirinha, não é ultrassecreto, mas preciso desses itens se alguém os tiver.\n\nTenha um ótimo dia,\nCPU"
+                            }
+                        ]
+                    }
+                ]
+            },
+            //#endregion ..............................................
+
+            //#region T_KILL ENEMIES .............................
+            {
+                "questKey": "quest_59",
+                "questName": "Insetos Traquinas",
+                "questDescription": "A CPU está preocupada porque a vida selvagem na superfície pode ter como alvo o navio ou talvez até ele para o próximo lanche. Reporte à CPU quando você tiver gerenciado o problema.",
+                "goalDescriptions": [
+                    "Zap $amount <style=Item>$goalName</style> para CPU."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Oh capitão, só ter você aqui me traz conforto.",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "Com aqueles alienígenas selvagens por aí, não tenho dormido bem, então espero que você possa assustá-los para mim.",
+                                "expression": "Stressed"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Então aqueles alienígenas estão assustados agora... e você jura que eles não vão me incomodar?\n\nPromessa mindinho?",
+                                "expression": "Confused"
+                            },
+                            {
+                                "text": "OK, me sinto melhor agora, obrigado capitão."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Você tem <sprite=1><style=Credits> $amount créditos</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Socorro!\n\nAqueles pequenos insetos irritantes na superfície estão chegando perto demais para mim. Eles podem começar a mastigar os fios da nave auxiliar e então, quem sabe... eu poderia ser o próximo! Espero que alguém possa ajudar a assustá-los.\n\nAnsioso,\nCPU",
+                                "expression": "Stressed"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

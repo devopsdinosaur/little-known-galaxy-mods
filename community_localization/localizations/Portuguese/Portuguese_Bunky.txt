@@ -1,0 +1,871 @@
+[
+    {
+        "npcSaveID": "npc_2",
+        "name": "Bunky",
+        "titles": [
+            "Residente do Aglomerado Iceladus",
+            "Gerente de Boutique"
+        ],
+        "birthdayAnnouncement": "Hoje é o aniversário do Bunky.",
+        "relationshipStatus": [
+            "Casado"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "UnlockCrew",
+                "unlockHeader": "Novo membro da tripulação!",
+                "unlockTitle": "Beliche",
+                "unlockSubTitle": "Gerente de Boutique",
+                "unlockSubImage": 1,
+                "unlockBody": "Bunky se juntou à sua equipe e está abrindo uma nova loja! Ele está se mudando para os aposentos acima da loja no Plaza Deck com sua família."
+            },
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Relacionamentos",
+                "unlockTitle": "Amigos!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 2,
+                "unlockBody": "Bom trabalho! Seu status de relacionamento com Bunky aumentou para o próximo nível. Ele agora considera você um de seus amigos e lhe deu um cartão de acesso ao quarto dele."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Relacionamentos",
+                "unlockTitle": "Os melhores amigos!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Estrela de Ouro! Seu status de relacionamento com Bunky aumentou outro nível. Ele agora considera você um de seus melhores amigos."
+            }
+        ],
+        "observations": [
+            "Gosta de tomar banhos de espuma.",
+            "Tem dificuldade em encontrar um pincel que funcione para ele.",
+            "Leva muito a sério sua roupa de cama, com muitos fios e lençóis sedosos."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "RONCO!!"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Eu não acho que posso salvar esses barris quebrados....",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Mas... provavelmente posso usar os pedaços de madeira como lenha."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Hum... Amiguinho, eu provavelmente não mencionaria ao Spunky que você destruiu o presente de aniversário dela.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Podemos resolver esse pequeno acidente sem que ela se preocupe."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Eu gosto desses dias de neve neste posto de gelo e realmente previ esse tempo."
+                    },
+                    {
+                        "text": "Olha, eu anotei aqui..."
+                    },
+                    {
+                        "text": "'Temperaturas amenas e neve com um aroma refrescante de inverno no ar.'"
+                    },
+                    {
+                        "text": "...acertou em cheio."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Venha me visitar na boutique e faremos algo sobre esse visual."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Como é o pacote de férias a bordo do seu navio?"
+                    },
+                    {
+                        "text": "Vou precisar de pelo menos algum tempo livre para participar da convenção de esculturas de gelo em casa."
+                    },
+                    {
+                        "text": "Uma das minhas criações quase passou da fase de qualificação..."
+                    },
+                    {
+                        "text": "...mas, novamente, meus sogros estavam no painel de jurados naquele ano.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Mais um lindo dia no espaço, não acham?"
+                    },
+                    {
+                        "text": "Acho que as estrelas estão ainda mais brilhantes hoje.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Amiguinho, todos a bordo deste navio são muito receptivos."
+                    },
+                    {
+                        "text": "Piper até me emprestou uma tigela inteira de açúcar para meu café da manhã."
+                    }
+
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Escolho todos os chapéus e acessórios da loja à mão."
+                    },
+                    {
+                        "text": "Sempre tentarei fazer as melhores seleções para você e meus novos companheiros de tripulação. $shipName.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Às vezes, quando Rumble e Tumble não estão por perto, entro no quarto deles e jogo seus jogos."
+                    },
+                    {
+                        "text": "Eu uso o codinome 'Boogie' para bater suas pontuações mais altas."
+                    },
+                    {
+                        "text": "Haha, eles acham que alguém de outra galáxia os está derrotando e isso os deixa malucos.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Um dia eu vou atacar eles e eles terão que ceder ao seu incrível pai!"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Quando Spunky e eu éramos apenas um jovem casal, eu costumava ensinar alunos bolas de pêlo a dirigir motos de neve."
+                    },
+                    {
+                        "text": "Ajuda cobrir seu snowmobile com placas de motorista estudantil para alertar os outros!",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Amiguinho, adoro passar pelo Jardim Zen mas você sabe..."
+                    },
+                    {
+                        "text": "Juro que ouço alguns barulhos estranhos de vez em quando.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Mas esses navios antigos tendem a ranger de vez em quando, certo?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Nunca percebi como os secadores de cabelo são incríveis."
+                    },
+                    {
+                        "text": "Realmente deveríamos investir no secador Turbo 400.000 Extreme."
+                    },
+                    {
+                        "text": "Um secador de corpo inteiro que deixa você seco em 30 segundos."
+                    },
+                    {
+                        "text": "Aquela unidade de CPU na ponte parecia um pouco nervosa com os requisitos de energia.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Tenho ido à reunião semanal de professores com Max para discutir o comportamento de Rumble & Tumble."
+                    },
+                    {
+                        "text": "Por que às vezes sinto que me meto em mais problemas do que eles?",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Meus meninos têm muita energia porque eles são parecidos comigo."
+                    },
+                    {
+                        "text": "Quando eu tinha a idade deles, certa vez coloquei melaço no frasco de xampu da minha mãe."
+                    },
+                    {
+                        "text": "Ah, haha, isso me traz de volta. OH! Mas não conte isso aos meninos."
+                    },
+                    {
+                        "text": "Spunky me mataria se um dia estivesse coberta de melaço.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Você sabe, Little Buddy... você é um ótimo capitão."
+                    },
+                    {
+                        "text": "Eu deveria saber, também fiz um curto período como membro do conselho em nossa cidade natal."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Sabe, acho que realmente dominei a coloração de cabelo."
+                    },
+                    {
+                        "text": "Spunky não me deixa praticar com ela, mas tenho certeza que você confiaria em mim, certo?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Eu realmente entrei na aula de jazz que Lauren dá."
+                    },
+                    {
+                        "text": "Além disso, você pode usar pesos e tiaras coloridas, o que torna tudo mais divertido, na minha opinião."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Espero que não se importe se mantivermos nossos alojamentos em temperaturas abaixo de zero."
+                    },
+                    {
+                        "text": "Fica um pouco quentinho debaixo de todo esse pelo."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Não conte às crianças, mas às vezes respondo às cartas que escrevem para Nickedemus Geronimo."
+                    },
+                    {
+                        "text": "Eu adoro ver seus rostos animados...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "... além disso, também me faz sentir um pouco como um super-herói."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Quando Spunky não está por perto, adoro relaxar e ler alguns de seus livros de romance."
+                    },
+                    {
+                        "text": "Eu sou um idiota por um final feliz...",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Não está um ótimo dia hoje?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "De alguma forma, estou em dia com minhas tarefas e isso é ótimo."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Quando eu era uma bola de pêlo, lembro-me de sempre dar os créditos do meu almoço às outras crianças."
+                    },
+                    {
+                        "text": "E agora minhas bolas de pelo levam todos os meus créditos também. Acho que deveria apenas preparar um almoço a partir de agora.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Você sabe, amiguinho... eu não ficaria surpreso se meus ancestrais visitassem seu planeta natal no passado."
+                    },
+                    {
+                        "text": "Algumas de suas tradições de inverno, como andar de trenó e andar com raquetes de neve, devem ter vindo de nosso povo."
+                    },
+                    {
+                        "text": "As bolas de pêlo exploram o universo desde que alguém se lembra."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Amiguinho, vou te contar um segredo se você prometer não contar a ninguém...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Tenho uma leve fobia de latas de aerossol.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Quando eu era criança, acidentalmente usei spray de pimenta em vez de spray de cabelo uma vez e nunca me recuperei.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Spunky acha que não percebo nem faço nada romântico, então preciso planejar uma grande surpresa para ela logo."
+                    },
+                    {
+                        "text": "Então, se você tiver alguma ideia surpresa, preciso de ajuda.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Amiguinho, você estaria disposto a ser um amiguinho para meus filhos também?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Eles poderiam usar um bom amigo em suas vidas e outra pessoa em quem respeitar."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Capitão, graças a Deus eu encontrei você..."
+                    },
+                    {
+                        "text": "...Rumble e Tumble estão me perguntando sobre... você sabe... os fatos da vida...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "O que devo dizer a eles?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Diga a verdade.",
+                            "response": "Nossa, como posso penhorar isso no Spunky? Ah, eu sei, vou apenas dizer a eles para lerem um de seus romances. Então a culpa é dela.",
+                            "responseExpression": "Stressed"
+                        },
+                        "optionTwo": {
+                            "optionText": "Mentira! Mentira! Mentira!",
+                            "response": "Boa ideia, acho que vou contar a eles a história dos coelhinhos da neve e das fadas."
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Fiji acha que eu seria um ótimo artista, mas quando cantei para ela... ela sugeriu que eu seria melhor na seção de percussão."
+                    },
+                    {
+                        "text": "Olha, ela me deu esse pandeiro bacana!"
+                    },
+                    {
+                        "text": "*balança tão violentamente que te assusta!*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Oh, desculpe, amiguinho.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Isso só faz o meu dia! Atencioso como sempre, $playerName.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Esta é uma das minhas coisas favoritas de todos os tempos! Você me conhece tão bem.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Justo quando penso que você não pode mais me surpreender...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "... você me traz um presente tão atencioso. Obrigado, amiguinho!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Você sabe que eu realmente amo isso...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "... isso traz de volta tantas lembranças felizes."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Ei, obrigado amigo, esta é uma boa surpresa.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Ah, que legal. Você é um ótimo presenteador."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Eu ia pegar um pouco disso sozinho. É como se você lesse minha mente ou algo assim!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Você está tentando ficar do meu lado bom?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Porque está funcionando! *risos*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Ah, você estava pensando em mim de novo?"
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Companheiro! Obrigado."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Ah, entendi... você deve estar limpando algumas de suas caixas de armazenamento, certo...",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "...Spunky também me faz me livrar das coisas que não quero mais de vez em quando."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "OK, vou colocar isso em algum lugar se tiver algum espaço sobrando."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Hm... se eu levar isso para casa, Spunky vai me fazer jogar fora outra coisa, então verei o que posso fazer.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Mas obrigado."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "As crianças podem gostar disso. Eles podem fazer uso de praticamente qualquer coisa."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Ah, amigo. Normalmente não sou muito exigente nem nada, mas realmente não acho que quero isso.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Ah... dizem que é o pensamento que conta, mas alguém pode apreciar isso mais do que eu.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Bocejo... desculpe, só estou me sentindo um pouco entediado com tudo hoje, ao que parece.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Hmmm, é... legal.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "*chorando* Venha aqui amiguinho...",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "*te dá um abraço de urso*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Você deixou esta grande bola de pelos tão feliz no aniversário dele.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Até guardei para você um pedaço do meu bolo de aniversário..."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Você tem um <style=Item>Bolo de cenoura</style>.",
+                        "itemReward": {
+                            "itemID": "item_217",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            {
+                "key": "RegisterStart_Bunky", //case sensitive because we use the store name Enum to get this key. 
+                "textSet": [
+                    {
+                        "text": "Bem-vindo à Boutique do Bunky. Sinta-se à vontade para dar uma olhada."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+        ],
+        "commentary": [
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "Ei, amigo... É ótimo fazer parte da equipe!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Você não está pensando duas vezes sobre a nossa chegada a bordo, não é?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Sem chance!",
+                            "response": "Ah, que bom porque esse lugar é ÓTIMO e já estamos nos adaptando!"
+                        },
+                        "optionTwo": {
+                            "optionText": "Talvez...",
+                            "response": "Nossa... bem... HEYYYYY.... você só está brincando comigo, certo?",
+                            "responseExpression": "Confused"
+                        }
+                    },
+                    {
+                        "text": "Venha aqui voce! *bagunça seu cabelo*"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "Agora eu entendo como essa Relíquia funciona..."
+                    },
+                    {
+                        "text": "E agora partimos... nesta grande aventura... para encontrar a próxima peça de relíquia que falta... e para salvar o universo!"
+                    },
+                    {
+                        "text": "Bom... essa última parte eu inventei, mas parece bom, não é?"
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "Agora que chegamos a este novo planeta, não é tão emocionante..."
+                    },
+                    {
+                        "text": "Será que você terá a sorte de encontrar outro amigo como eu lá embaixo... Só brincando!"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Ei amigo! Ouvi dizer que aqueles piratas não foram tão compreensivos quanto eu quando você desembarcou.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Sempre ouvi que piratas gostam de ouro... então talvez isso os anime."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Você tem 2<style=Item>Ouro</style>!",
+                        "itemReward": {
+                            "itemID": "item_70",
+                            "amount": 2,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Amiguinho, você deveria ter me mostrado aquela carta que os Piratas Espaciais tinham!"
+                    },
+                    {
+                        "text": "Eu não sabia que vinha do meu mundo natal."
+                    },
+                    {
+                        "text": "A nossa língua falada é diferente da escrita, por isso causou problemas nas relações diplomáticas no passado..."
+                    },
+                    {
+                        "text": "Deveríamos ter previsto isso chegando...",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //SR_EXPLORE ALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "Uau amiguinho! Que revelação! Você sabia como toda essa coisa do Planeta Cinza iria acabar o tempo todo?",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Eu estava apenas segurando aquela relíquia como se não fosse grande coisa, mas você sabia que não era verdade."
+                    },
+                    {
+                        "text": "Estou tão feliz que você me encontrou e que eu pude fazer parte de tudo isso."
+                    },
+                    {
+                        "text": "Esses Viridianos também parecem um bom grupo. Eu me pergunto como você diz 'Little Buddy' em sua língua nativa?"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "Um pouco disso e daquilo.",
+                "questDescription": "Bunky está procurando alguns itens que não conseguiu encontrar sozinho. Ele lhe dará um abraço do tamanho de Bunky se você o ajudar.",
+                "goalDescriptions": [
+                    "Dar $amount <style=Item>$goalName</style> para Bunky."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Então foi você quem atendeu meu pedido."
+                            },
+                            {
+                                "text": "Com você ao meu lado, amiguinho, tenho certeza de que você tem tudo sob controle."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Olhe para você! Sempre ajudando seu membro favorito da tripulação..."
+                            },
+                            {
+                                "text": "...Presumo que sou o seu favorito, é claro! *risos*",
+                                "expression": "Happy"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Você tem <sprite=1><style=Credits> $amount créditos</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Bunky aqui...\n\nTem sido um pouco difícil controlar alguns itens importantes. Se alguém puder me ajudar, eu te trarei de volta um dia! Obrigado amigos.\n\nBunky"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

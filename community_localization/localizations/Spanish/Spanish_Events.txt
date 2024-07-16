@@ -3,13 +3,13 @@
     {
         "eventKey": "event_2",
         "eventName": "Dia de la amistad",
-        "eventDescription": "Día de la Amistad en la Plataforma Recreativa. 12 p.m.-8 p.m.",
+        "eventDescription": "Día de la Amistad en la Plataforma Recreativa. $clock 0720-$clock 1200",
         "generalEventText": [
             {
                 "key": "Pre",
                 "textSet": [
                     {
-                        "text": "Hola Capitán, no olvide que la celebración del Día de la Amistad se llevará a cabo de 12 p. m. a 8 p. m. en la cubierta de recreación."
+                        "text": "Hola Capitán, no olvide que la celebración del Día de la Amistad se llevará a cabo desde $clock 0720 a $clock 1200 en la cubierta de recreación."
                     },
                     {
                         "text": "¡No sé ustedes, pero yo no puedo esperar para pasar el rato con todos mis amigos!"
@@ -632,7 +632,7 @@
                         "text": "Feliz día de la Amistad, Capitán."
                     },
                     {
-                        "text": "No sé cómo lo hace Piper, pero está muy al tanto de estos eventos. Es tan agradable descansar y relajarse."
+                        "text": "No sé cómo lo hace Piper, pero está muy al tanto de estos eventos. Es muy agradable simplemente descansar y relajarse."
                     },
                     {
                         "text": "Además, está muy bien organizado. Ya compré tarjetas de amistad para toda mi familia y algunas otras personas a quienes realmente aprecio este año."
@@ -665,7 +665,7 @@
                 "key": "npc_17", //LAUREN
                 "textSet": [
                     {
-                        "text": "No quiero alardear, pero suelo recibir muchas tarjetas de amistad."
+                        "text": "No quiero alardear, pero normalmente recibo muchas tarjetas de amistad."
                     },
                     {
                         "text": "Sospecho que la gente me está engañando, así que los perdonaré si hoy se atiborran de bebidas y alimentos azucarados."
@@ -949,7 +949,7 @@
                         "expression": "Stressed"
                     },
                     {
-                        "text": "Oh bien. No importa. Tengo todo un año para volver a ahorrar para el próximo año."
+                        "text": "Oh bien. No importa. Tengo todo un año para volver a ahorrar para el año que viene."
                     }
                 ]
             },
@@ -1247,7 +1247,7 @@
                         "expression": "Stressed"
                     },
                     {
-                        "text": "No me delates, $playerName. Puedes guardar un secreto ¿verdad?",
+                        "text": "No me delates $playerName. Puedes guardar un secreto ¿verdad?",
                         "expression": "Confused"
                     }
                 ]
@@ -1308,13 +1308,13 @@
     {
         "eventKey": "event_1",
         "eventName": "Nochevieja",
-        "eventDescription": "Fiesta de Nochevieja en la Plaza. 8 p.m.",
+        "eventDescription": "Fiesta de Nochevieja en la Plaza. $clock 1200",
         "generalEventText": [
             {
                 "key": "Pre",
                 "textSet": [
                     {
-                        "text": "Hola Capitán, solo quería recordarle que la fiesta de Nochevieja comienza esta noche a las 8 p.m. en la Plaza."
+                        "text": "Hola Capitán, solo quería recordarle que la fiesta de Nochevieja comienza esta noche a las $clock 12:00 en la Plaza."
                     },
                     {
                         "text": "Espero verte allí."
@@ -1504,7 +1504,7 @@
                 "key": "npc_13", //I-1900
                 "textSet": [
                     {
-                        "text": "Actualizaré todos los relojes y calendarios después del año nuevo esta noche."
+                        "text": "Actualizaré todos los relojes y calendarios después del nuevo año esta noche."
                     },
                     {
                         "text": "Luego pasaré los próximos meses corrigiendo a otros que todavía están usando el año anterior incorrectamente."
@@ -1724,7 +1724,7 @@
                 "key": "npc_30", //SPUNKY
                 "textSet": [
                     {
-                        "text": "Piper simplemente está hablando de la fiesta de Nochevieja. Ella me tiene muy emocionada por eso."
+                        "text": "Piper está hablando de la fiesta de Nochevieja. Ella me tiene muy emocionada por eso."
                     }
                 ]
             },
@@ -1876,7 +1876,7 @@
                         "text": "Es raro que todos se reúnan así. Una vez al año no es suficiente."
                     },
                     {
-                        "text": "Aprovechar, $playerName. Lo juro, los años pasan más rápido cuanto más envejeces."
+                        "text": "Aprovechar, $playerNameLo juro, los años pasan más rápido cuanto más viejo te haces."
                     }
                 ]
             },
@@ -1923,7 +1923,7 @@
                         "expression": "Confused"
                     },
                     {
-                        "text": "Eso es mucha comida gratis. Me podría acostumbrar a esto."
+                        "text": "Es mucha comida gratis. Podría acostumbrarme a esto."
                     }
                 ]
             },
@@ -1934,7 +1934,7 @@
                         "text": "Me cuesta decidirme por un propósito de Año Nuevo."
                     },
                     {
-                        "text": "Los niños me han sugerido nuevos pasatiempos para probar."
+                        "text": "Los niños han estado sugiriendo nuevos pasatiempos para que pruebe."
                     },
                     {
                         "text": "¿Qué hobby crees que debería elegir?",
@@ -1944,7 +1944,7 @@
                             "responseExpression": "Happy"
                         },
                         "optionTwo": {
-                            "optionText": "Recorte de setos creativo",
+                            "optionText": "Recorte creativo de setos",
                             "response": "Siempre me han gustado los jardines topiarios, pero estoy un poco nervioso por no tener acceso a la función de deshacer.",
                             "responseExpression": "Happy"
                         }

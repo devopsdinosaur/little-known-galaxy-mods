@@ -1,0 +1,129 @@
+[
+    {
+        "npcSaveID": "npc_37",
+        "name": "Ocean Resident",
+        "titles": [
+            "Residente"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Estou ficando um pouco tonto de novo, então, por favor, não me faça muitas perguntas.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Tão tonto... tudo está girando... sem parar. \n\nEste deve ser o meu fim.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Adoro vir à superfície coletar conchas para minha casa."
+                    },
+                    {
+                        "text": "Tenho uma parede inteira que estou cobrindo com minha própria arte especial."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "tenho que continuar treinando..."
+                    },
+                    {
+                        "text": "Sou o capitão da equipe de natação Flying Gurnard e temos um grande encontro chegando."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Às vezes adoro passear pelos recifes em busca de tesouros escondidos na areia."
+                    },
+                    {
+                        "text": "Mas eu sempre fico atento a esses moluscos mal-humorados... esses nojentos são os piores."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //NEVER ADVANCES TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE HE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+        "nonCrewCommentary": [
+            {
+                // P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "Eu sinto...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "*abaixa a cabeça*",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //P_OCEANKING
+            {
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "Ughh... Você realmente acha que pode ajudar a curar essa doença da terra?",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Se fizer isso, você será a pessoa mais popular de todo o reino.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "Depois de me sentir tão infeliz antes, estou muito grato por voltar a trabalhar reunindo nossos próprios suprimentos novamente!"
+                    }
+                ]
+            }
+        ]
+    }
+]

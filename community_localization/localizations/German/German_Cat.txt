@@ -1,0 +1,470 @@
+[
+    {
+        "npcSaveID": "npc_3",
+        "name": "Kitty",
+        "titles": [
+            "???",
+            "Crew-Mitglied"
+        ],
+        "birthdayAnnouncement": "Heute ist $npcName's Geburtstag.",
+        "relationshipStatus": [
+            "??"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "UnlockCrew",
+                "unlockHeader": "Neues Crewmitglied!",
+                "unlockTitle": "$npcName",
+                "unlockSubTitle": "Crew-Mitglied",
+                "unlockSubImage": 1,
+                "unlockBody": "Diese Katze hat sich Ihrer Crew angeschlossen und zieht in Ihr Quartier. Miau."
+            },
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Beziehungen",
+                "unlockTitle": "Freunde!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 0,
+                "unlockBody": "Gut gemacht! Dein Beziehungsstatus mit$npcNameist auf die nächste Stufe aufgestiegen. Du wirst nun als Freund angesehen."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Beziehungen",
+                "unlockTitle": "Besten Freunde!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Goldstern! Dein Beziehungsstatus mit$npcNamehat eine weitere Stufe erreicht. Du wirst jetzt als bester Freund angesehen."
+            }
+        ],
+
+        "observations": [
+            "Wandert gern, entfernt sich aber nicht zu weit von seinem Revier.",
+            "Irgendwie ein wählerischer Esser.",
+            "Immer an verschiedenen Dingen zum Spielen interessiert."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*Zzrrrr*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Miau Miau."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "*ignoriert dich*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "*beobachtet deine Bewegungen genau...*",
+                        "optionOne": {
+                            "optionText": "Haustier"
+                        },
+                        "optionTwo": {
+                            "optionText": "Spielen"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Zwitscher, zwitscher."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "*starrt erwartungsvoll...*",
+                        "optionOne": {
+                            "optionText": "Haustier"
+                        },
+                        "optionTwo": {
+                            "optionText": "Spielen"
+                        }
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*Schwanz ragt neugierig steil nach oben …*",
+                        "optionOne": {
+                            "optionText": "Haustier"
+                        },
+                        "optionTwo": {
+                            "optionText": "Spielen"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*macht langsam eine Dehnung vor dir...*"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Miauhhhh. *grollend* Miau."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*macht ein leises Schnurren...*",
+                        "optionOne": {
+                            "optionText": "Haustier"
+                        },
+                        "optionTwo": {
+                            "optionText": "Spielen"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*plappert...kuschelt*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Schnurr... *kuschel*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "*hüpft herum und schlägt nach deiner Hand*",
+                        "optionOne": {
+                            "optionText": "Haustier"
+                        },
+                        "optionTwo": {
+                            "optionText": "Spielen"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Schnurr... Miau..."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Klicken und schnattern..."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "*schmiegt seinen Kopf an deine Hand...*",
+                        "expression": "Happy",
+                        "optionOne": {
+                            "optionText": "Haustier"
+                        },
+                        "optionTwo": {
+                            "optionText": "Spielen"
+                        }
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*rollt sich auf dem Boden*"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*reibt sich in einer Achterform an deinen Beinen …*",
+                        "optionOne": {
+                            "optionText": "Haustier"
+                        },
+                        "optionTwo": {
+                            "optionText": "Spielen"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*leckt eine Weile deinen Arm und deine Hand*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*posiert hübsch und zuckt mit den Ohren…*",
+                        "optionOne": {
+                            "optionText": "Haustier"
+                        },
+                        "optionTwo": {
+                            "optionText": "Spielen"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*blinzelt langsam mit seinen Katzenaugen*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "*springt dir auf den Schoß und rollt sich um...*",
+                        "expression": "Happy",
+                        "optionOne": {
+                            "optionText": "Haustier"
+                        },
+                        "optionTwo": {
+                            "optionText": "Spielen"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Miau. *streckt dir seinen Schwanz ins Gesicht*"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "*liegt ausgestreckt über Ihren Füßen, sodass Sie Ihre Arbeit nur schwer erledigen können …*",
+                        "optionOne": {
+                            "optionText": "Haustier"
+                        },
+                        "optionTwo": {
+                            "optionText": "Spielen"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Schnurrrrr … *leckt deine Hand*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "*springt schnell und voller Aufregung …*",
+                        "optionOne": {
+                            "optionText": "Haustier"
+                        },
+                        "optionTwo": {
+                            "optionText": "Spielen"
+                        }
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "*schnappt schnell*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "*springt vor Freude*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Miau Miau Miau!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "*muntert auf*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Schnurren...",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "*spielt fröhlich mit diesem Gegenstand*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Miau...?"
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "*schnuppert eine Weile an dem Gegenstand, bevor er ihn nimmt*"
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "*leckt den Gegenstand ein wenig ab, verliert dann aber schnell das Interesse*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "*ignoriert das Geschenk und lässt es auf dem Boden liegen*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Schrei!",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "*wendet sich von deinem Geschenk ab*",
+                        "expression": "Confused"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ]
+    }
+]

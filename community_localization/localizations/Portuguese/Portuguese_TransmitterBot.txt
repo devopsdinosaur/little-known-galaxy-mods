@@ -1,0 +1,94 @@
+[
+    {
+        "npcSaveID": "npc_38",
+        "name": "Mechi",
+        "titles": [
+            "Bot transmissor"
+        ],
+        "relationshipStatus": [
+            ""
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "text": "Zzzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Um transmissor caseiro que parece não estar funcionando... embora a lâmpada esteja funcionando corretamente."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Gosto de olhar as estrelas para o céu claro e escuro."
+                    },
+                    {
+                        "text": "É bastante agradável mapear as estrelas sem a poluição luminosa dos organismos orgânicos."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Prefiro o clima quente e seco, em vez do frio. Meu ventilador embutido é capaz de regular o calor para proteger meu hardware interno."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "*BEEP BOOP* Olá, $playerName. "
+                    },
+                    {
+                        "text": "Você ainda está de plantão?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Estar aposentado é muito mais divertido. Eu recomendo.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Quente o suficiente para você?"
+                    },
+                    {
+                        "text": "Há algo no clima quente que faz um velho bot se sentir em paz. Hmmm... *BOOP BEEP BOOP BEEP*",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //DOES NOT ADVANCE TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE HE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ]
+    }
+]

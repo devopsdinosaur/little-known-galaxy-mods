@@ -1,0 +1,114 @@
+[
+    {
+        "npcSaveID": "npc_45",
+        "name": "Pirate Goon",
+        "titles": [
+            "Weltraumpirat"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*schnauben, grunzen*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Nur weil Sie zugestimmt haben, uns zu helfen, heißt das nicht, dass wir Ihnen bereits vertrauen.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Taten sagen mehr als Worte und Sie wollen von dieser Seite keine Taten sehen ... glauben Sie mir.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Seit wir mit den Außerirdischen Frieden geschlossen haben, ist es hier schon zu ruhig geworden."
+                    },
+                    {
+                        "text": "Ich sollte mir besser ein neues Hobby suchen … vielleicht Taschendiebstahl?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Zu meinen Aufgaben gehört es, dafür zu sorgen, dass das Hauptschiff gut ausgestattet und funktionsfähig ist."
+                    },
+                    {
+                        "text": "Es könnte jederzeit zu einer Schlacht kommen, also ist es am besten, vorbereitet zu sein."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Ich experimentiere mit einigen neuen Stinkbombenrezepten."
+                    },
+                    {
+                        "text": "Aber Bonny sagte, ich dürfe in der Nähe des Lagers keine Tests mehr durchführen."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //NEVER ADVANCES TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+        "nonCrewCommentary": [
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Ihnen wurde vorübergehend Zugang zu unserem Basislager gewährt, aber denken Sie daran …",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Ich habe ein Auge auf dich geworfen, also versuch nichts.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Dank euch werden wir wahrscheinlich noch bis in den Abend hinein feiern."
+                    },
+                    {
+                        "text": "Ich für meinen Teil freue mich auf eine Nacht ohne ständige Streifendienste."
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -8,14 +8,15 @@
     <ItemGroup>
       <AllFiles Include="$(TargetDir)**\*.*" Exclude="$(TargetDir)**\*.pdb" />
 	  <LocalizationFiles Include="$(ProjectDir)\localizations\**\*.*" />
+	  <Assets Include="$(ProjectDir)**\*.assetbundle" />
     </ItemGroup>
 	<Copy SourceFiles="@(AllFiles)" DestinationFolder="$(GamePath)\BepInEx\plugins\%(RecursiveDir)" />
 	<MakeDir Directories="$(GamePath)\BepInEx\plugins\community_localization" />
 	<Copy SourceFiles="@(LocalizationFiles)" DestinationFolder="$(GamePath)\BepInEx\plugins\community_localization\%(RecursiveDir)" />
     <Delete Files="$(ProjectDir)\bin\$(TargetName).zip" />
-    <Copy SourceFiles="@(AllFiles)" DestinationFolder="$(TargetDir)..\Release\%(RecursiveDir)"></Copy>
+    <Copy SourceFiles="@(AllFiles);@(Assets)" DestinationFolder="$(TargetDir)..\Release\%(RecursiveDir)"></Copy>
     <MakeDir Directories="$(TargetDir)..\Release\community_localization" />
-	<Copy SourceFiles="@(LocalizationFiles)" DestinationFolder="$(TargetDir)..\Release\community_localization\%(RecursiveDir)" />
+	<Copy SourceFiles="@(LocalizationFiles);@(Assets)" DestinationFolder="$(TargetDir)..\Release\community_localization\%(RecursiveDir)" />
 	<ZipDirectory SourceDirectory="$(TargetDir)..\Release" DestinationFile="$(ProjectDir)\bin\$(TargetName).zip" />
     <RemoveDir Directories="$(TargetDir)..\Release" />
   </Target>

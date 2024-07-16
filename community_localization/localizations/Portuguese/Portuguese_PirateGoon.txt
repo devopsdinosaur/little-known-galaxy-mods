@@ -1,0 +1,114 @@
+[
+    {
+        "npcSaveID": "npc_45",
+        "name": "Pirate Goon",
+        "titles": [
+            "Pirata Espacial"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*bufando, grunhindo*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Só porque você concordou em nos ajudar não significa que confiamos em você ainda.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "As ações falam mais alto que as palavras e você não quer ver nenhuma ação deste lado... confie em mim.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "As coisas já estão ficando muito calmas por aqui desde que fizemos as pazes com aqueles alienígenas."
+                    },
+                    {
+                        "text": "É melhor eu encontrar um novo hobby... talvez furtar carteiras?",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Faz parte do meu dever manter a nave principal bem abastecida e funcionando."
+                    },
+                    {
+                        "text": "Uma batalha pode começar a qualquer momento, então é melhor estar preparado."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Estou experimentando algumas novas receitas de bombas fedorentas."
+                    },
+                    {
+                        "text": "Mas Bonny disse que não posso mais fazer testes perto do acampamento."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //NEVER ADVANCES TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+        "nonCrewCommentary": [
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Você recebeu acesso temporário ao nosso acampamento base, mas lembre-se...",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Estou de olho em você, então não tente nada.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Provavelmente comemoraremos até tarde graças a você."
+                    },
+                    {
+                        "text": "Eu, pelo menos, estou ansioso por uma noite sem turnos constantes de patrulha."
+                    }
+                ]
+            }
+        ]
+    }
+]

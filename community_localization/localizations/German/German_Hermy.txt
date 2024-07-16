@@ -1,0 +1,976 @@
+[
+    {
+        "npcSaveID": "npc_12",
+        "name": "Hermy",
+        "titles": [
+            "???",
+            "Museumskurator"
+        ],
+        "birthdayAnnouncement": "Heute ist Hermys Geburtstag.",
+        "relationshipStatus": [
+            "Engagierter Einsiedler"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "UnlockCrew",
+                "unlockHeader": "Neues Crewmitglied!",
+                "unlockTitle": "Hermy",
+                "unlockSubTitle": "Museumskurator",
+                "unlockSubImage": 1,
+                "unlockBody": "Hermy hat sich Ihrer Crew angeschlossen! Er bringt sein Wandermuseum mit und richtet sich im Shuttle-Hangar ein."
+            },
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Beziehungen",
+                "unlockTitle": "Freunde!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 0,
+                "unlockBody": "Gut gemacht! Ihr Beziehungsstatus mit Hermy hat sich auf die nächste Stufe verbessert. Er betrachtet Sie jetzt als einen seiner Freunde."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Beziehungen",
+                "unlockTitle": "Besten Freunde!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Goldstern! Ihr Beziehungsstatus mit Hermy hat sich um eine weitere Ebene verbessert. Er betrachtet Sie jetzt als einen seiner allerbesten Freunde."
+            }
+        ],
+        "observations": [
+            "Bevorzugt unvollkommene Objekte.",
+            "Legt sich gerne einen Vorrat an konservierten, fermentierten und eingelegten Lebensmitteln für lange Ausflüge an.",
+            "Hat ein Pilzzuchtset für zu Hause, das gedeiht zu werden scheint."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzz …"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Ich habe das Gefühl, als ob überall Sand an mir klebt ...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Egal, wie viel ich aufräume, ich finde immer mehr Haufen davon im Muschelschiff.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDER AFTER .............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Ich bin wieder auf den Beinen, aber dieser Planet sieht ziemlich düster aus."
+                    },
+                    {
+                        "text": "Ich bin bereit, mein nächstes Abenteuer zu beginnen."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Soweit ich mich erinnere, treibe ich mich seit einem halben Jahrhundert in diesem Teil des Weltraums umher."
+                    },
+                    {
+                        "text": "Halten Sie für mich nach Antiquitäten Ausschau, ja?"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Mein Cockle Ship bietet viel mehr Stauraum, als Sie vielleicht denken."
+                    },
+                    {
+                        "text": "Ich habe alle möglichen versteckten Fächer eingebaut."
+                    },
+                    {
+                        "text": "Oh, warte, ähm, ich meine, es ist einfach so viel Platz ... warum sollte ich etwas verstecken.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Wo habe ich den Hammer hingelegt? Du hast ihn doch nicht mitgenommen, oder?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Das Letzte, was ich brauche, ist ein Freund mit klebrigen Zangen.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Mein Museum ist für alle geöffnet, aber vielleicht sollte ich ein paar „Berühren verboten“-Schilder aufhängen."
+                    },
+                    {
+                        "text": "Die jüngeren Besucher, die sich noch in der Entwicklungsphase befinden, scheinen etwas instabil zu sein.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Ich könnte mir stundenlang Antiquitätenausstellungen anschauen."
+                    },
+                    {
+                        "text": "Es zeigt nur, dass man nie weiß, wo man einen unbezahlbaren Schatz findet."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Wissen Sie, für jemanden mit Krabbenbeinen ist es auf diesem Schiff etwas rutschig."
+                    },
+                    {
+                        "text": "Gut, dass ich ein unglaubliches Gleichgewicht habe."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Es gibt nichts Entspannenderes, als sich in einen warmen, feuchten Meeresschwamm zu kuscheln."
+                    },
+                    {
+                        "text": "Probieren Sie es aus ... Sie werden verstehen, was ich meine."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Mein Shellship ist sehr langlebig, aber ich trage trotzdem regelmäßig eine Schicht Mineralöl auf, um es in einem Topzustand zu halten."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Die meisten meiner Verwandten leben noch immer in unmittelbarer Nähe voneinander."
+                    },
+                    {
+                        "text": "Ich bin so etwas wie der Einsiedler der Familie und lebe gern alleine."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Kapitän, weisen Sie die Besatzung bitte an, ihre Konsolengeräte nicht an mein Außenschiff anzuschließen.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Die Energieabgaben sind einfach nicht kompatibel.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Die meisten meiner Spezies sind große Sammler. Wir veranstalten jedes Jahr ein Sammlerfestival, bei dem wir unsere Schätze tauschen und bewundern können."
+                    },
+                    {
+                        "text": "Es ist das größte Ereignis des Jahres.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Samstagabends höre ich gerne meine Radiosendung."
+                    },
+                    {
+                        "text": "Meistens handelt es sich dabei um Krimis oder Gruselgeschichten, aber hin und wieder gibt es auch eine tolle Science-Fiction-Folge."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Vergessen Sie Ihre Lieblingskrabbe nicht, wenn Sie all diese neuen Welten erkunden."
+                    },
+                    {
+                        "text": "Kein Schatz ist zu klein. Große Schätze stecken in kleinen Schalen."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Als ich ein kleiner Krebs war, hatte ich ein Poster vom Großen Kornelius."
+                    },
+                    {
+                        "text": "Er war der berühmteste Sammler aller Zeiten."
+                    },
+                    {
+                        "text": "Vielleicht können kleine, aufstrebende Krabben mein Poster eines Tages auch auf ihren Kuppeln aufhängen."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Ich löse gern das Monatspuzzle von Starzette, aber dabei gehen immer meine Bleistifte kaputt.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Sie benötigen eine größere, krabbenfreundliche Version, damit ich die Lösungen richtig eintragen kann."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "In einem perfekten Universum hat alles einen Zweck oder kann einem anderen Zweck zugeführt werden."
+                    },
+                    {
+                        "text": "Denken Sie an all die Schätze, die wir jeden Tag als selbstverständlich erachten."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Ich habe meinen Verwandten kostenlose Eintrittskarten für mein Museum zurückgeschickt."
+                    },
+                    {
+                        "text": "Ich bezweifle, dass es irgendjemandem möglich sein wird, vorbeizukommen, aber dann werden alle stolz darauf sein, dass ich hart daran arbeite, ein großer Sammler zu werden."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Keine Sorge ... wenn uns jemals der Platz für neue Sammlerstücke ausgehen sollte, könnte ich immer noch über eine Erweiterung des Muschelschiffs nachdenken."
+                    },
+                    {
+                        "text": "Ich denke, ich könnte mindestens noch eine Etage hinzufügen und es trotzdem noch in Gang bringen."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Ugh … ich bin gerade in der Häutungsphase, also entschuldigen Sie meine Gereiztheit.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Ich sollte mich besser mit ein paar Maiskolben für die zusätzliche Zellulose eindecken."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Auf Ihrem Deck gibt es sicher eine Menge interessanter Dinge zu sehen ..."
+                    },
+                    {
+                        "text": "Es scheint, meine Sammelleidenschaft hat auf Sie abgefärbt!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Habe ich Ihre Loyalität, Captain?",
+                        "optionOne": {
+                            "optionText": "Sicher?",
+                            "response": "*blickt dich tief an* Na gut, dann.",
+                            "responseExpression": "Angry"
+                        },
+                        "optionTwo": {
+                            "optionText": "Warum fragst du?",
+                            "response": "Scharfsinnig, immer auf Zack, das gefällt mir."
+                        }
+                    },
+                    {
+                        "text": "Ich muss auf meinem Versicherungsformular einen Begünstigten angeben und ich denke, ich kann Ihnen vertrauen, dass Sie dafür sorgen, dass meine Sammlung nicht in die falschen Fänge gerät."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Der Übergangsritus einer Krabbe besteht darin, dass die ganze Familie hilft, ihr erstes Sammlerschiff zu bauen."
+                    },
+                    {
+                        "text": "Als ich ein junger Krebs war, haben mir über 256 Verwandte mit meinem Schiff geholfen.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Ich weiß, dass Sie mir helfen werden, die größte Sammlung aller Zeiten aufzubauen."
+                    },
+                    {
+                        "text": "In mancher Hinsicht sind SIE dadurch vielleicht mein wertvollster Besitz."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Kapitän, was halten Sie von dieser alten Muschel?",
+                        "optionOne": {
+                            "optionText": "Sieht für mich immer noch gut aus.",
+                            "response": "Meinen Sie? Na gut, ich habe es schon so lange, dass ich nicht daran denken könnte, mich davon zu trennen."
+                        },
+                        "optionTwo": {
+                            "optionText": "Es ist langsam abgenutzt.",
+                            "response": "Oh nein, ich denke, du hast recht. Ich muss eine Antenne für neue Granaten bereithalten ... aber vielleicht behalte ich diese trotzdem einfach als Ersatz.",
+                            "responseExpression": "Stressed"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Wenn du irgendwann einmal mit mir in die Great Garbage World reisen möchtest, würde das bestimmt sehr viel Spaß machen."
+                    },
+                    {
+                        "text": "Ich habe nur Bilder davon in Reisebroschüren gesehen, aber können Sie sich überhaupt vorstellen, was wir in all dem Müll finden könnten?"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Ich muss träumen, so ein tolles Geschenk zu bekommen. SCHNELL! Jemand soll mich kneifen, damit ich weiß, dass es echt ist.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Wenn ich vorher gewusst hätte, dass Sie mir solche Wertsachen bringen würden, wäre ich schon vor langer Zeit Ihrer Crew beigetreten.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Kann sich eine Krabbe in einen Gegenstand verlieben?"
+                    },
+                    {
+                        "text": "Ich glaube, ich bin so nah dran, wie es nur geht.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Ich muss sagen, ich freue mich wirklich über solche Leckereien."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Vielen Dank! Was für ein toller Fund! Es sind Dinge wie diese, die mich weiter sammeln lassen und meine Begeisterung wecken.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Ja, das ist genau das, was ich brauchte, um die Dinge hier aufzupeppen. Danke, Captain."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Danke, auch schöner Zustand."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Ich liebe alle Geschenke, ob groß oder klein!"
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Oh toll, noch ein Objekt dazugekauft. Jetzt werde ich einen passenden Platz dafür finden."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Ziemlich gewöhnliches Zeug hier. Nicht einmal ich bin ein Sammler davon.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Langweilig.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Captain, Sie haben mir irgendwie umsonst Hoffnungen gemacht.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "Oh, noch mehr Geschenke für mich...? Was für ein Tag, was für ein Tag!"
+                    },
+                    {
+                        "text": "Ich liebe meinen Geburtstag!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Diese Geburtstagsrituale mit Geschenkegeben und Süßem sind wahrscheinlich die beste Erfindung seit der Erfindung der Beinwärmer."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            {
+                "key": "greeting_donor",
+                "textSet": [
+                    {
+                        "text": "Willkommen bei Hermy's Spectacular Collectables. Möchten Sie etwas spenden?"
+                    }
+                ]
+            },
+            {
+                "key": "greeting_complete",
+                "textSet": [
+                    {
+                        "text": "Willkommen bei Hermy's Spectacular Collectables. Stöbern Sie in aller Ruhe durch das Museum."
+                    }
+                ]
+            },
+            {
+                "key": "greeting_rewards_miss",
+                "textSet": [
+                    {
+                        "text": "Willkommen bei Hermy's Spectacular Collectables. Ich freue mich, dass Sie hier sind, denn ich habe ein paar Unstimmigkeiten in meinen Aufzeichnungen gefunden ..."
+                    },
+                    {
+                        "text": "Solche Dinge passieren ständig, also lasst uns diese Dinge sofort klären."
+                    }
+                ]
+            },
+            {
+                "key": "greeting_rewards_continue",
+                "textSet": [
+                    {
+                        "text": "Nachdem die Sache nun geklärt ist … möchten Sie etwas spenden?"
+                    }
+                ]
+            },
+            {
+                "key": "greeting_rewards_end",
+                "textSet": [
+                    {
+                        "text": "Nachdem nun alles geklärt ist, können Sie sich in aller Ruhe im Museum umsehen."
+                    }
+                ]
+            },
+            //Single donation text can be overwritten by specific text found on the collection text JSON. This will only be used if no text is specified in the Collection JSON.
+            {
+                "key": "donation_single_start",
+                "textSet": [
+                    {
+                        "text": "Wie erstaunlich..."
+                    },
+                    {
+                        "text": "Möchten Sie mehr über dieses Objekt erfahren?",
+                        "optionOne": {
+                            "optionText": "NEIN"
+                        },
+                        "optionTwo": {
+                            "optionText": "Ja"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "donation_single_no_details",
+                "textSet": [
+                    {
+                        "text": "Hmmm ... ich habe nicht viele Informationen zu diesem Objekt."
+                    },
+                    {
+                        "text": "Ich muss noch etwas nachforschen und mich dann bei Ihnen melden."
+                    }
+                ]
+            },
+            {
+                "key": "donation_multi_start",
+                "textSet": [
+                    {
+                        "text": "Oh, mehrere Spenden... Sie sind zu freundlich."
+                    },
+                    {
+                        "text": "Ich werde sofort damit beginnen, diese anzuzeigen."
+                    },
+                    {
+                        "text": "Wenn Sie weitere Informationen zu diesen Objekten wünschen, hören Sie sich die Audiotour im Museum an."
+                    }
+                ]
+            },
+            {
+                "key": "donation_continue",
+                "textSet": [
+                    {
+                        "text": "Haben Sie noch andere Gegenstände, die Sie spenden möchten?",
+                        "optionOne": {
+                            "optionText": "NEIN"
+                        },
+                        "optionTwo": {
+                            "optionText": "Ja"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "farewell",
+                "textSet": [
+                    {
+                        "text": "Vielen Dank für Ihren Besuch. Ich hoffe, Ihnen gefallen alle Ausstellungsstücke.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+        ],
+        "commentary": [
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "Muss ich also mit einem Anstieg der Museumsbesucherzahlen rechnen, während wir im Weltraum sind?"
+                    },
+                    {
+                        "text": "Ich bin sicher, dass sich jeder langweilt und gerne in meinem Museum vorbeischauen würde, oder? … Oder?"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "Glauben Sie, dass es am neuen Standort Sammelmöglichkeiten geben wird?"
+                    },
+                    {
+                        "text": "Ich hoffe, Sie können eine Antenne für mich draußen halten."
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": "Hier, hier, nimm das, falls du unten auf dem neuen Planeten ein paar Überstunden machen willst …"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Du hast 2<style=Item>Tomaten</style>.",
+                        "itemReward": {
+                            "itemID": "item_169",
+                            "amount": 2,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "Sie haben auch auf einem Eisplaneten eine Familie gefunden, sagen Sie?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Ich erinnere mich an die Zeit, als ich im Wasser lebte, aber wie kann etwas in gefrorenem Wasser überleben?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Eigentlich bin ich sowieso kein großer Fan von Wasser jeglicher Art ...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Ich bin als kleiner Krebs beim Schwimmunterricht durchgefallen und wurde so sehr gehänselt, dass ich mich nicht wieder angemeldet habe.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "Wenn wir zu diesem Reliquien-Ding zurückkehren, nehme ich vielleicht ein paar dieser grauen Radieschen mit."
+                    },
+                    {
+                        "text": "Kaida hat mir ein paar gegeben und ich glaube, ich habe einen Geschmack für dieses fade Wurzelgemüse entwickelt."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "Captain, ich möchte nicht kleinlich sein, aber meine Navigationssteuerung zeigt mir, dass es einen effizienteren Weg zu unserem nächsten Ziel gibt.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Aber ich schätze, es liegt an Ihnen, ob Sie die landschaftlich reizvolle Route nehmen möchten.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Ich werde so oder so hier sein ...",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "... warte einfach geduldig auf neue Stücke in Museumsqualität.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "Ja, ja, warst du schon an der Oberfläche ...",
+                        "optionOne": {
+                            "optionText": "Ja",
+                            "response": "Oh, goooood, ich kann es kaum erwarten zu sehen, was du mir bringst ..."
+                        },
+                        "optionTwo": {
+                            "optionText": "NEIN",
+                            "response": "Nun, ich kann deine Zange nicht immer festhalten... mach dich bereit... du schaffst das.",
+                            "responseExpression": "Angry"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Ich habe gehört, dass Sie unten auf diesem Lavaplaneten auf einige harte Verhandlungspartner gestoßen sind ..."
+                    },
+                    {
+                        "text": "...hier ist das Geheimnis..."
+                    },
+                    {
+                        "text": "... tun Sie einfach so, als ob es Ihnen egal wäre, wonach Sie suchen."
+                    },
+                    {
+                        "text": "... oder wollten Sie so tun, als hätten Sie etwas, das sie wollen?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "... oh, vielleicht wollten Sie so tun, als hätten Sie bereits gefunden, was Sie wollen.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Es kommt für mich ganz natürlich daher, daher ist es schwer, es anderen zu erklären."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Kapitän, Freund, Kumpel ..."
+                    },
+                    {
+                        "text": "Du wirst mir doch einen Blick auf das neue Reliktstück gewähren, oder?",
+                        "optionOne": {
+                            "optionText": "Kommt darauf an",
+                            "response": "Du bist so hart im Nehmen ... OK, ich werde mich vorbildlich benehmen.",
+                            "responseExpression": "Stressed"
+                        },
+                        "optionTwo": {
+                            "optionText": "NEIN",
+                            "response": "Das ist nicht fair. Du kennst mich zu gut. *schaut dich verschlagen an*",
+                            "responseExpression": "Angry"
+                        }
+                    }
+                ]
+            },
+            {
+                //SR_EXPLOREALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "Kapitän, die Teilnehmerzahl ließ zu wünschen übrig …",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Ist etwas passiert?",
+                        "expression": "Stressed",
+                        "optionOne": {
+                            "optionText": "Ja, wir haben unsere Mission erfüllt!",
+                            "response": "Das hast du! Ich wusste von Anfang an, dass diese Reliquienstücke der Knüller sein würden.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Soot hat seine Familie gefunden!",
+                            "response": "Tolle Neuigkeiten, der kleine Kerl hat mich immer zum Lachen gebracht.",
+                            "responseExpression": "Happy"
+                        }
+                    },
+                    {
+                        "text": "Also ist eine Feier angebracht, vielleicht habe ich hier irgendwo etwas ..."
+                    },
+                    {
+                        "text": "*wühlt in Kisten und bläst dir Staub ins Gesicht*"
+                    },
+                    {
+                        "text": "Oh, entschuldigen Sie, also ... ich suche weiter ... aber weiter so, Captain!",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "Immer auf der Suche",
+                "questDescription": "Hermy benötigt dieses Mal einige spezielle Gegenstände, nimmt aber jederzeit auch Museumsspenden entgegen.",
+                "goalDescriptions": [
+                    "Geben $amount <style=Item>$goalName</style>zu Hermy."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Ich freue mich, dass mein Bulletin-Beitrag Sie erreicht hat."
+                            },
+                            {
+                                "text": "Ich habe immer wieder versehentlich auf „Löschen“ statt auf „Senden“ geklickt, aber mindestens einmal muss ich es richtig gemacht haben."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Oh, du hast meine Sachen gebracht! Das ist einfach ausgezeichnet, ja, einfach ausgezeichnet.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "Ich hoffe, dass diese Entschädigung zufriedenstellend ist."
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Du hast <sprite=1><style=Credits> $amountCredits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Zweibeiner...\n\nObwohl ich IMMER Spenden im Museum annehme, brauche ich heute... insbesondere die folgenden Gegenstände. ALLES ist verhandelbar... auch.\n\n-herMy"
+                            }
+                        ]
+                    }
+                ]
+            },
+            //#endregion ..............................................
+            //#region T_KILL ENEMIES .............................
+            {
+
+                "questKey": "quest_59",
+                "questName": "Ausgrabungsdiebe",
+                "questDescription": "Hermy hat ein paar Kreaturen beobachtet, die mit möglicherweise wertvollen Museumsstücken davonflohen.",
+                "goalDescriptions": [
+                    "Zap$amount <style=Item>$goalName</style>für Hermy."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Oh, Sie sind es, der meine Bulletin-Anfrage angenommen hat, nicht wahr?"
+                            },
+                            {
+                                "text": "Es ist gut zu wissen, dass ich nicht der Einzige hier bin, der die Dringlichkeit dieser Angelegenheit erkennt.",
+                                "expression": "Stressed"
+                            },
+                            {
+                                "text": "Ich werde besser schlafen, wenn ich weiß, dass Sie diesen Bestien Einhalt gebieten.",
+                                "expression": "Stressed"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "Du hast diese Viecher für mich erledigt? Ahhhh, das ist mir eine große Erleichterung!"
+                            },
+                            {
+                                "text": "Ich wette, Sie haben diesen Museumsdieben gezeigt, wo es langgeht.",
+                                "expression": "Angry"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Du hast <sprite=1><style=Credits> $amountCredits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            },
+                            {
+                                "text": "Äh..."
+                            },
+                            {
+                                "text": "Ich möchte nicht undankbar klingen, aber ich bin überrascht, dass Sie mir keine Artefakte mitgebracht haben …"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "ACHTUNG!\n\nDas ist inakzeptabel! Ich habe persönlich miterlebt, wie diese BRUTEN mit wichtigen historischen Objekten davonliefen. Ich bin mir nicht sicher, wozu sie Artefakte brauchen, ABER wir sollten dem besser ein Ende setzen!\n\nStress-Häutung!\n-herMy"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

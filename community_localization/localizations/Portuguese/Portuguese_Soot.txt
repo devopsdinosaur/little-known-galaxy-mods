@@ -1,0 +1,811 @@
+[
+    {
+        "npcSaveID": "npc_26",
+        "name": "Soot",
+        "titles": [
+            "???",
+            "???"
+        ],
+        "birthdayAnnouncement": "Talvez este seja o aniversário de Fuligem?",
+        "relationshipStatus": [
+            "??"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "UnlockCrew",
+                "unlockHeader": "Novo membro da tripulação!",
+                "unlockTitle": "Fuligem",
+                "unlockSubTitle": "???",
+                "unlockSubImage": 1,
+                "unlockBody": "Fuligem se juntou à sua tripulação. Ele se sentiu em casa na área de recreação do Deck de Recreação."
+            },
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Relacionamentos",
+                "unlockTitle": "Amigos!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 2,
+                "unlockBody": "Bom trabalho! Seu status de relacionamento com Soot aumentou para o próximo nível. Ele agora considera você um de seus amigos e lhe deu um cartão de acesso ao seu teatro."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Relacionamentos",
+                "unlockTitle": "Os melhores amigos!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Estrela de Ouro! Seu status de relacionamento com Fuligem aumentou outro nível. Ele agora considera você um de seus melhores amigos."
+            }
+        ],
+        "observations": [
+            "Gosta de flores com cheiro doce.",
+            "Gosta de dormir com um cobertor grande para se aconchegar.",
+            "Consegue escrever com muita proficiência em símbolos e formas."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzzz"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "*resmungar, resmungar*.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "*deturpado* *deturpado*"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "...",
+                        "expression": "Confused"
+
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "*fuligem?* *pop* *pop*"
+
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "...*olhar vazio...",
+                        "expression": "Angry"
+
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "...*olhar confuso*...",
+                        "expression": "Confused"
+
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "^--^...^--^ fuligem, pop!"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*rosto brilha em rosa e amarelo mais profundo*"
+                    },
+                    {
+                        "text": "--^^.... Fuligem! ^^.."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Fuligem... *longo suspiro*...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "> ^^ - < ^ ^^^-^ >--.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "^ -^^ ^>> ^^ ^^-<!"
+                    },
+                    {
+                        "text": "*faz um grande gesto com os braços estendidos em círculos*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "*grande bocejo*..."
+                    },
+                    {
+                        "text": "Zzz... ^o^ Zzz..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "*whssss* *POP* Gogo *Brrrrrr*"
+
+                    },
+                    {
+                        "text": "*cora*",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "^^^<- <<^^&^... *garble*"
+
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "...^^< << --^-^^^..."
+
+                    },
+                    {
+                        "text": "^^-><< ^^ ^^-^ ^< ^^ ... *soot?*",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "*cantarolando uma música*...",
+                        "expression": "Happy"
+
+                    },
+                    {
+                        "text": "Hm, hm, hmmm... hm, hm, hmmm... fuligem.",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "*arrotar!*",
+                        "expression": "Sad"
+
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "^^< << --^-^^^ -- ^^< you."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*aponta para você*..."
+                    },
+                    {
+                        "text": "*pequeno sorriso*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "^^ - ^ ^^^<< ^^ >."
+
+                    },
+                    {
+                        "text": "^ ^-^^ divertido >> < -^^ ^^^ ^- <.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "^^ ^-- < - << ^^ space ^. *points at you*"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "*pula ao seu redor com entusiasmo*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "..."
+                    },
+                    {
+                        "text": "...$playerName.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Amigo amigo. Amigo fuliginoso.",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "..."
+
+                    },
+                    {
+                        "text": "*brrrr*.. amigo!",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "*deturpado*",
+                        "expression": "Confused"
+
+                    },
+                    {
+                        "text": "... *pop* Fuligem!"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Fuligem!"
+
+                    },
+                    {
+                        "text": "*abraça sua perna com força*",
+                        "expression": "Happy"
+
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Fuligem!!! Fuligem!!!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "*o rosto fica rosa* Fuligem!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "*cora*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "*fuligem*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Fuligem",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "*pop* Fuligem!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Muuuito."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Fuligem."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "hum, hum, hum..."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "*deturpado?",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "*olhar confuso*",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Bláhhhh...",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "*estala os lábios* Fuligem!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "*pulando* Fuligem!",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+
+        ],
+        "commentary": [
+            //{
+            //    //P_DELIVERGREYRELIC
+            //    "key": "quest_10",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_OCEANCOORDMEETING
+                "key": "quest_17",
+                "textSet": [
+                    {
+                        "text": "*aponta para a janela*"
+                    },
+                    {
+                        "text": "Muuuito! >^^. ^",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //{
+            //    //P_VISITENGINEROOM
+            //    "key": "quest_57",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_PRODUCEFUEL
+                "key": "quest_60",
+                "textSet": [
+                    {
+                        "text": "...! Fuligem!"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Você tem um <style=Item>Combustível de matéria escura</style>.",
+                        "itemReward": {
+                            "itemID": "item_156",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEOCEAN
+                "key": "quest_8",
+                "textSet": [
+                    {
+                        "text": "*sons de barulho* ^^ -..<",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "... *pop* *garble* ^^ .. -"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTOCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "*esfrega a cabeça*",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "^^.^- ^^.--"
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "*pula animadamente*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Fuligem, fuligem, fuligem!",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEDESERT
+                "key": "quest_5",
+                "textSet": [
+                    {
+                        "text": "*bate os pés impacientemente*",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_VISITDESERTPLANET
+                "key": "quest_23",
+                "textSet": [
+                    {
+                        "text": "*as cores brilham incontrolavelmente*"
+                    },
+                    {
+                        "text": "Fuligem! Fuligem! Fuligem! ^..-^",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_REQUESTDESERTHERMY
+                "key": "quest_18",
+                "textSet": [
+                    {
+                        "text": "*levanta as mãos como antenas e faz uma careta*"
+                    },
+                    {
+                        "text": "*risos*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "*acena com as mãos no ar alegremente*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "desejo, rrrrrr, *pop*!"
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": ".^- ..^<<.-^--.^..."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "*suspirar...*",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "*balança a cabeça para você*",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "*grita de excitação*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "^-^. .^-^"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "*respiração profunda*",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "^-.^^......",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "...^^< << --^-^^^..."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "*faz uma cara de raiva e zombaria...*",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "*relaxa o rosto* *risos*",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "*andando para frente e para trás*",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Fuligem... ^.- fuligem!"
+                    }
+                ]
+            },
+            {
+                //SR_EXPLORE ALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "^-^-.^^! *abraço*",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "^-^- Obrigado...você ^<.",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "^^ Ajuda ->^^",
+                "questDescription": "Parece que Soot está solicitando alguns itens, mas sabe-se lá para quê. Traga para Fuligem os itens que você pode decifrar da mensagem dele.",
+                "goalDescriptions": [
+                    "Dar $amount <style=Item>$goalName</style> para fuligem."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "* Fuligem, fuligem..."
+                            },
+                            {
+                                "text": "*...Unid?"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "*Fuligem!* *BRRRrrr* *POP*... ^^ >>- - ^< ^!",
+                                "expression": "Happy"
+                            },
+                            {
+                                "text": "*pega o item solicitado*"
+                            },
+                            {
+                                "text": "*parece extremamente feliz*",
+                                "expression": "Happy"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Você tem <sprite=1><style=Credits> $amount créditos</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Fuligem,\n\nFuligem^^->< soot ^^>, >>- ^< -^^ ^->> - >> ^^ -- fuliginoso ^^ - ^ ^^^<< ^^ > pop!\n\n-Fuligem"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

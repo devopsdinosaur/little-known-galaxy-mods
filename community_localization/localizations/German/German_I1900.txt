@@ -1,0 +1,979 @@
+[
+    {
+        "npcSaveID": "npc_13",
+        "name": "I-1900",
+        "titles": [
+            "Crew-Mitglied"
+        ],
+        "birthdayAnnouncement": "Heute ist das Herstellungsdatum der I-1900.",
+        "relationshipStatus": [
+            "Unzutreffend"
+        ],
+        "unlockAnnouncements": [
+            {
+                "unlockKey": "Friend",
+                "unlockHeader": "Beziehungen",
+                "unlockTitle": "Freunde!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 0,
+                "unlockBody": "Gut gemacht! Ihr Beziehungsstatus mit I-1900 hat sich auf die nächste Ebene verbessert. Sie betrachtet Sie jetzt als einen ihrer Freunde."
+            },
+            {
+                "unlockKey": "BestFriend",
+                "unlockHeader": "Beziehungen",
+                "unlockTitle": "Besten Freunde!",
+                "unlockSubTitle": "",
+                "unlockSubImage": 3,
+                "unlockBody": "Goldstern! Ihr Beziehungsstatus mit I-1900 hat sich um eine weitere Ebene verbessert. Sie betrachtet Sie jetzt als einen ihrer allerbesten Freunde."
+            }
+        ],
+        "observations": [
+            "Experimentiert gerne mit selbstgemachtem Dünger für ihren Hausgarten.",
+            "Sieht sich gerne alte Science-Fiction-Sendungen über die Raumfahrt an.",
+            "Besteht zu 85 % aus recyceltem Material."
+        ],
+
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "*automatische Antwort* Wird aufgeladen."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Kann ich Ihnen irgendwie behilflich sein?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Was ist neu?",
+                            "response": "Wir haben heute keine neuen Artikel in unserem Haus erhalten. Hier gibt es nichts Neues."
+                        },
+                        "optionTwo": {
+                            "optionText": "Wie geht es dir?",
+                            "response": "Ich funktioniere mit optimaler Effizienz, danke der Nachfrage."
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Piper und Edward sind meine Familie."
+                    },
+                    {
+                        "text": "Sie kümmern sich um mich und ich kümmere mich um sie."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Heute ist ein toller Tag und meine Garantie läuft noch einwandfrei."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Ich bin darauf programmiert, jedes Detail zu erkennen."
+                    },
+                    {
+                        "text": "Eventuelle Sicherheitsrisiken werden durch eine gelbe oder rote Warnung gekennzeichnet."
+                    },
+                    {
+                        "text": "Derartige Gefahren müssen schnellstmöglich behoben werden."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Ich bin als Home Assistant Bot klassifiziert, aber mit meinen jüngsten Upgrades könnte ich auch als Friendly Companion Bot gelten. :)"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region ACQUAINTANCE ................................
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Ich kann alle Küchengeräte in meiner Wohnung fernsteuern."
+                    },
+                    {
+                        "text": "*klicken*..."
+                    },
+                    {
+                        "text": "Sehen Sie, ich habe gerade den Topf mit dem heißen Wasser angemacht."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Falls irgendwann neue Mittel für Schiffsverbesserungen bereitgestellt werden, würde ich es begrüßen, wenn in den Treppenhäusern Rampen eingebaut würden.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Für Ihren Home Assistant Bot ist ein Update verfügbar. Möchten Sie das Update heute Abend planen?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "Ja",
+                            "response": "Vielen Dank, Ihr Update wurde geplant."
+                        },
+                        "optionTwo": {
+                            "optionText": "NEIN",
+                            "response": "Vielen Dank, es wurde eine Erinnerung eingerichtet, um Sie zu einem späteren Zeitpunkt erneut zu benachrichtigen."
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Wenn meine Räder in Bewegung sind, habe ich eine Reaktionszeit von 0,002 Sekunden."
+                    },
+                    {
+                        "text": "Bitte berücksichtigen Sie diese Verzögerung, wenn Sie sich mir während der Fahrt nähern."
+                    }
+                ]
+            },
+            {
+                "key": "Acquaintance",
+                "textSet": [
+                    {
+                        "text": "Mein Gehäuse verfügt über ein spezielles Fach zur Aufbewahrung von Zubehör und Adaptern, um die Kompatibilität meines Modells mit anderen elektronischen Geräten zu gewährleisten."
+                    },
+                    {
+                        "text": "Allerdings wird es von Jahr zu Jahr schwieriger, die neuen Komponenten einzubauen.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Idealer wäre es, einen Standard für elektronische Konfigurationen festzulegen."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region FRIEND ......................................
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Ich bin zertifizierter Teesommelier und weiß daher, wie man verschiedene Teesorten identifiziert, schmeckt und mit den richtigen Techniken aufbrüht."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Ich bin mit vielen Märchengeschichten für Kinder programmiert."
+                    },
+                    {
+                        "text": "Aber ich nutze meine Improvisationskreise, um einige der Geschichten zu ändern."
+                    },
+                    {
+                        "text": "Die Herkunft und der ursprüngliche Inhalt sind teilweise recht verstörend.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Edward hat meine Sicherheitsprotokolle geändert."
+                    },
+                    {
+                        "text": "Andernfalls würde ich ihm nicht erlauben, bei der Arbeit solch gefährliche Maschinen zu benutzen.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Für mich ist das Züchten von Pflanzen ein angenehmer Zeitvertreib."
+                    },
+                    {
+                        "text": "Pflanzen haben im Vergleich zu anderen Lebewesen direkte und logische Bedürfnisse."
+                    }
+                ]
+            },
+            {
+                "key": "Friend",
+                "textSet": [
+                    {
+                        "text": "Einmal im Monat muss Piper mir helfen, meinen Luftfilter zu reinigen, da sich zu viel Staub negativ auf meine Leistung auswirken kann.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Sie sagt immer, ich sei der einzige Roboter, den sie kenne, der allergisch auf Staub reagiert."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GOOD FRIEND .................................
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Home Assistant Bots wie ich können beim Kauf in verschiedenen Farben gebaut werden."
+                    },
+                    {
+                        "text": "Als ich zur Familie kam, war Stevens Lieblingsfarbe Kaugummipink, und so wurde mir diese Farbe zugeteilt."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Manchmal verfangen sich lose Haarsträhnen in meinen Rädern und müssen entfernt werden."
+                    },
+                    {
+                        "text": "Es ist keine angenehme Erfahrung.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Ich muss meinen Akku jede Nacht aufladen, um eine optimale Leistung aufrechtzuerhalten."
+                    },
+                    {
+                        "text": "Ich habe eine Notstromversorgung, aber meine Produktivität sinkt auf nur 35 %."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Kendall hat wieder einen Herzaufkleber über eine meiner Seriennummern geklebt."
+                    },
+                    {
+                        "text": "Ich sollte über diesen Akt des Vandalismus mehr verärgert sein, aber ich weiß, dass sie nur ihre Zuneigung ausdrückt."
+                    }
+                ]
+            },
+            {
+                "key": "GoodFriend",
+                "textSet": [
+                    {
+                        "text": "Eine meiner Topfpflanzen hat heute geblüht."
+                    },
+                    {
+                        "text": "Es ist das schönste Gefühl, bei der Gartenarbeit ein positives Ergebnis zu erzielen.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region BESTFRIEND ..................................
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Ihr Interesse an der Aufrechterhaltung meiner Hauptfunktion wurde zur Kenntnis genommen und geschätzt."
+                    },
+                    {
+                        "text": "Ich werde Ihre Funktion auch weiterhin unterstützen."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Piper besteht darauf, dass Kendall einige der Hausarbeiten übernimmt."
+                    },
+                    {
+                        "text": "Natürlich beaufsichtige und unterrichte ich Kendall gewissenhaft, aber letztendlich lässt sie immer mich die Arbeit zu Ende bringen.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Piper gibt mir Tanzunterricht, damit sie üben kann, ohne dass Edward dabei ist."
+                    },
+                    {
+                        "text": "Durch den eingebauten Verstärker bin ich in der Lage, passende Musik zu jedem Tanzstil abzuspielen."
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Wenn Sie eine perfekte Tasse Tee möchten, muss ich zunächst die Herkunft Ihrer Vorfahren kennen."
+                    },
+                    {
+                        "text": "Einige Traditionen der Teezubereitung sind strenger reglementiert als andere, aber die beste Methode ist ..."
+                    },
+                    {
+                        "text": "*FEHLER* Bitte drücken Sie „Reset“.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                "key": "BestFriend",
+                "textSet": [
+                    {
+                        "text": "Ich bewahre diese materiellen Besitztümer besonders sicher auf.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "*öffnet die Seitenwand und zeigt Zeichnungen und Bilder von Steven, Kendall und I-1900 aus verschiedenen Zeiträumen*"
+                    },
+                    {
+                        "text": "*auch ein neu angehängtes Bild von dir und mir-1900*"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLOVE ....................................
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "*pieeeep* ... GÜNSTIGES GESCHENK AKZEPTIERT:",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Meine Glückssensoren schießen durch die Decke. Innere Warnungen ertönen vor Freude.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Bitte denken Sie darüber nach, die Dienste von I-1900 bald wieder zu nutzen."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Dies ist das perfekte Geschenk für meinen Modeltyp. Ihr Geschenk wird jetzt geschätzt.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLove",
+                "textSet": [
+                    {
+                        "text": "Das ist eines meiner Lieblingsgeschenke aller Zeiten. Mein Tag wird jetzt mit Glück bereichert.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTLIKE ....................................
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "In den Freudemodus wechseln. Das ist ein wunderbares Geschenk. Was für eine wunderbare Geste.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "*pieeeep* ... PERSÖNLICHE GESCHENKE AKZEPTIERT:"
+                    },
+                    {
+                        "text": "Dieses Geschenk ist ein überdurchschnittliches Geschenk. Ihre Bemühungen, eine Beziehung aufzubauen, wurden nun aufgezeichnet."
+                    },
+                    {
+                        "text": "Vielen Dank, dass Sie die Dienste von I-1900 nutzen."
+                    }
+                ]
+            },
+            {
+                "key": "GiftLike",
+                "textSet": [
+                    {
+                        "text": "Dies ist eine großzügige Spende, auch als gute Tat oder freundliche Geste bekannt."
+                    },
+                    {
+                        "text": "Ich reagiere positiv auf diesen Artikel.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTNEUTRAL .................................
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Vielen Dank, Benutzer, für dieses Angebot. Das Geschenk wird jetzt zur sicheren Aufbewahrung gespeichert."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "*pieeeep* ... DURCHSCHNITTLICH AKZEPTIERTES GESCHENK:"
+                    },
+                    {
+                        "text": "Dies ist eine normale Ressourcenteilung und wird zu unserem Haushalt beitragen."
+                    },
+                    {
+                        "text": "Vielen Dank, dass Sie die Dienste von I-1900 nutzen."
+                    }
+                ]
+            },
+            {
+                "key": "GiftNeutral",
+                "textSet": [
+                    {
+                        "text": "Vielen Dank für diese freundliche Lieferung."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTDISLIKE .................................
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "*pieeeep* ... MÜLL WIRD AKZEPTIERT:",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Ich werde diesen Müll sofort in der Luftschleuse entsorgen.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Vielen Dank, dass Sie die Dienste von I-1900 nutzen."
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Dieses Geschenk wurde in meinen Einstellungseinstellungen als „Nicht annehmen“ markiert.",
+                        "expression": "Angry"
+                    },
+                    {
+                        "text": "Bitte zukünftig woanders entsorgen.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                "key": "GiftDislike",
+                "textSet": [
+                    {
+                        "text": "Ich weiß nicht, was ich mit so einem Gegenstand machen soll.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Es gehört zu den Dingen, die ich nicht mag, und ich habe keine Verwendung dafür.",
+                        "expression": "Sad"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region GIFTBIRTHDAY ................................
+            {
+                "key": "GiftBirthday",
+                "textSet": [
+                    {
+                        "text": "Vielen Dank für das Geburtstagsgeschenk.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Ich werde es auf dem dafür vorgesehenen Geschenktisch aufbewahren, bis Piper sagt, dass ich meine Geschenke öffnen kann."
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region SPECIALTY ...................................
+            {
+                "key": "KissConfirm",
+                "textSet": [
+                    {
+                        "text": "Willkommen am Kussservice-Stand von I-1900.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Möchten Sie einen Kuss kaufen für<sprite=1><style=Credits>10 Credits</style>?",
+                        "optionOne": {
+                            "optionText": "NEIN"
+                        },
+                        "optionTwo": {
+                            "optionText": "Ja"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "KissFailCredits",
+                "textSet": [
+                    {
+                        "text": "FEHLER... Sie haben nicht genügend Guthaben, um diesen Kauf zu tätigen. Bitte versuchen Sie es später erneut.",
+                        "expression": "Stressed"
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+
+        ],
+        "commentary": [
+            {
+                //MEET THE CREW
+                "key": "quest_16",
+                "textSet": [
+                    {
+                        "text": "I-1900 hier. Programmierter Assistent für die Familieneinheit."
+                    },
+                    {
+                        "text": "*SCANNEN...*"
+                    },
+                    {
+                        "text": "Sie sind nicht in meinem Verzeichnis programmiert.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "*NOCHMALS SCANNEN...*",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Ihr Gesichtsscan und Ihre Fingerabdrücke werden als GASTBENUTZER gespeichert."
+                    },
+                    {
+                        "text": "Vielen Dank für Ihren Besuch!"
+                    }
+                ]
+            },
+            {
+                //P_VISITGREYPLANET
+                "key": "quest_24",
+                "textSet": [
+                    {
+                        "text": "Am besten befolgen Sie alle Sicherheitsprotokolle gemäß den genauen Angaben in der Bedienungsanleitung."
+                    },
+                    {
+                        "text": "Ich schlage vor, dass Sie vor Ihrer Abreise das Shuttle-Craft-Handbuch lesen."
+                    },
+                    {
+                        "text": "Mal sehen. Das Handbuch ist nur 1500 Seiten lang. Leicht über Nacht zu lesen."
+                    }
+                ]
+            },
+            {
+                //P_REPORTTOKAIDA
+                "key": "quest_61",
+                "textSet": [
+                    {
+                        "text": "Oh. Sie haben unten auf dem Grauen Planeten etwas „Ruß“ gefunden?",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Um derartige Schmutzansammlungen zu vermeiden, reinige ich regelmäßig unsere Schiffsquartiere. Putzen ist eine meiner Hauptaufgaben."
+                    },
+                    {
+                        "text": "Leider ist mein Terminkalender im Moment voll. Vielleicht kann Ihnen diesmal ein anderes Crewmitglied bei Ihrem „Ruß“-Problem behilflich sein."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTGREYSOOT
+                "key": "quest_19",
+                "textSet": [
+                    {
+                        "text": "Alle neuen Fremden müssen mit ihrem Freundesstatus in mein Verzeichnis programmiert werden, bevor ich ihnen den Zutritt zu meiner Residenz erlaube."
+                    }
+                ]
+            },
+            //{
+            //    //P_DELIVERGREYRELIC
+            //    "key": "quest_10",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_OCEANCOORDMEETING
+                "key": "quest_17",
+                "textSet": [
+                    {
+                        "text": "Ich werde Ihr Treffen nach dessen Abschluss transkribieren und in unser Familienbulletin aufnehmen."
+                    }
+                ]
+            },
+            //{
+            //    //P_VISITENGINEROOM
+            //    "key": "quest_57",
+            //    "textSet": [
+            //        {
+            //            "text": "."
+            //        }
+            //    ]
+            //},
+            {
+                //P_PRODUCEFUEL
+                "key": "quest_60",
+                "textSet": [
+                    {
+                        "text": "Das Erlernen der Herstellung von Maschinen ist eine nützliche praktische Fähigkeit."
+                    },
+                    {
+                        "text": "Ich habe selbst geübt, aber Edward unterbricht meine Bemühungen normalerweise.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Darüber hinaus befolgt er die Montageanleitung nicht, sodass es für ihn schwierig ist, die richtigen Vorgehensweisen zu erlernen.",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEOCEAN
+                "key": "quest_8",
+                "textSet": [
+                    {
+                        "text": "Bitte beachten Sie, dass Kendall und Sprout beim Versteckspiel in und in der Nähe Ihres Shuttle-Raumschiffs erwischt wurden."
+                    },
+                    {
+                        "text": "Vor Verlassen des Schiffes sind bis auf Weiteres gründliche Ladungskontrollen erforderlich."
+                    }
+                ]
+            },
+            {
+                //SR_CATCHMICROBES
+                "key": "quest_64",
+                "textSet": [
+                    {
+                        "text": "Ich bringe mein eigenes Werkzeug zur Mikrobenerkennung mit, es ist jedoch nicht so fortschrittlich wie Ihre Ausrüstung."
+                    },
+                    {
+                        "text": "Ich kann nur Haushaltsallergene und Staub erkennen."
+                    }
+                ]
+            },
+            {
+                //P_VISITOCEANPLANET
+                "key": "quest_27",
+                "textSet": [
+                    {
+                        "text": "Reisen Sie sicher ab und kehren Sie umgehend zurück."
+                    },
+                    {
+                        "text": "Die Crew wird bis zu Ihrer Rückkehr unruhig sein."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTOCEANKING
+                "key": "quest_22",
+                "textSet": [
+                    {
+                        "text": "Es hat mir Freude gemacht, die neuen Blue Reef-Samen zu testen, die Robert im Laden anbietet."
+                    },
+                    {
+                        "text": "Ich lade relevante Informationen zu ihren Wachstumsmustern von den Anwohnern herunter, mit denen Sie Kontakt hatten."
+                    },
+                    {
+                        "text": "Vielleicht werde ich in meiner nächsten Gartenperiode versuchen, diese neuen Pflanzen anzubauen."
+                    }
+                ]
+            },
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "Sie haben hervorragende Leistung erbracht und sich eine Pause verdient.",
+                        "expression": "Happy"
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Du hast ein <style=Item>Earl Grey Tee</style>.",
+                        "itemReward": {
+                            "itemID": "item_50",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEDESERT
+                "key": "quest_5",
+                "textSet": [
+                    {
+                        "text": "Eines meiner Mobilitätsräder wurde vor Kurzem durch Trümmer einer zerstörten Struktur beschädigt.",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Ich würde Ihnen vorschlagen, den Zustand dieses Schiffes zu verbessern, um solche Unfälle in Zukunft zu vermeiden.",
+                        "expression": "Angry"
+                    }
+                ]
+            },
+            {
+                //P_VISITDESERTPLANET
+                "key": "quest_23",
+                "textSet": [
+                    {
+                        "text": "Ich werde heute meinen Aufgaben wie gewohnt nachgehen."
+                    },
+                    {
+                        "text": "Mit meinen derzeitigen Einstellungen wäre es für mich sehr schwierig, meine Routinen so häufig zu ändern wie Sie."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTDESERTHERMY
+                "key": "quest_18",
+                "textSet": [
+                    {
+                        "text": "Sie müssen mit dem Wunsch programmiert sein, auch anderen zu helfen."
+                    },
+                    {
+                        "text": "Es ist auch einer meiner Lieblingsteile meiner Programmierung.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_DELIVERDESERTPIECE
+                "key": "quest_9",
+                "textSet": [
+                    {
+                        "text": "Die zusätzlichen Reisen ins All haben sich positiv auf meine Familie ausgewirkt."
+                    },
+                    {
+                        "text": "Es muss etwas im Kosmos sein, das ihre Stimmungsstabilisatoren beeinflusst."
+                    }
+                ]
+            },
+            {
+                //P_ARRIVEICE
+                "key": "quest_6",
+                "textSet": [
+                    {
+                        "text": "Ich habe Stabilisatoren, die mir helfen, das Gleichgewicht zu halten, wenn wir im Weltraum in Turbulenzen geraten."
+                    }
+                ]
+            },
+            {
+                //P_VISITICEPLANET
+                "key": "quest_25",
+                "textSet": [
+                    {
+                        "text": "Der Prozentsatz der Planeten mit einem für Ihre Spezies geeigneten Lebensraum ist ziemlich gering."
+                    },
+                    {
+                        "text": "Ich bin für die meisten Planetenumgebungen geeignet und kann bei Bedarf Ihren Platz einnehmen."
+                    },
+                    {
+                        "text": "Mein Programm für diplomatische Beziehungen befindet sich jedoch noch in der Entwicklung."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTICEBUNKY
+                "key": "quest_20",
+                "textSet": [
+                    {
+                        "text": "Mir wurde mitgeteilt, dass sich auf der Oberfläche des Planeten ein Unfall ereignet hat.",
+                        "expression": "Sad"
+                    },
+                    {
+                        "text": "Ich bin darauf programmiert, viele Notfallprotokolle zu handhaben ... zu verarbeiten ..."
+                    },
+                    {
+                        "boxType": "Reward",
+                        "text": "Du hast ein <style=Item>Erste-Hilfe-Kasten</style>.",
+                        "itemReward": {
+                            "itemID": "item_86",
+                            "amount": 1,
+                            "trackAction": "Reward"
+                        }
+                    }
+                ]
+            },
+            {
+                //P_DELIVERICERELIC
+                "key": "quest_11",
+                "textSet": [
+                    {
+                        "text": "Sie erhalten eine überdurchschnittliche Bewertung für Effizienz und Arbeitsqualität."
+                    },
+                    {
+                        "text": "Ich freue mich, dass es Ihnen so gut geht.",
+                        "expression": "Happy"
+                    }
+                ]
+            },
+            {
+                //P_ARRIVELAVA
+                "key": "quest_7",
+                "textSet": [
+                    {
+                        "text": "Ich achte darauf, dass alle Mahlzeiten, die ich zubereite, für jede einzelne Familie ausgewogen sind."
+                    },
+                    {
+                        "text": "Ich kann also nicht verstehen, warum Edward Essen von Stevens Teller stiehlt, wenn er denkt, dass ich nicht hinschaue.",
+                        "expression": "Confused"
+                    }
+                ]
+            },
+            {
+                //P_VISITLAVAPLANET
+                "key": "quest_26",
+                "textSet": [
+                    {
+                        "text": "Denken Sie bitte daran, den kleineren Einheiten an Bord dieses Schiffes ein gutes Beispiel zu geben, wenn Sie sich auf den Weg machen."
+                    }
+                ]
+            },
+            {
+                //P_REQUESTLAVAPIRATES
+                "key": "quest_21",
+                "textSet": [
+                    {
+                        "text": "Leider kann ich die Nachricht, die Sie von den Piraten erhalten haben, nicht übersetzen.",
+                        "expression": "Confused"
+                    },
+                    {
+                        "text": "Es ist keine der von mir unterstützten Schriftsprachen, aber ich werde vorsichtshalber meinen Basis-Decoder darauf ausführen."
+                    }
+                ]
+            },
+            {
+                //P_DELIVERLAVARELIC
+                "key": "quest_12",
+                "textSet": [
+                    {
+                        "text": "Wenn alle Teile der Reliquie wieder zusammengefügt sind, erfahren wir möglicherweise mehr über ihren Zweck."
+                    },
+                    {
+                        "text": "Zumindest hatte Piper das spekuliert ... es gibt keine wirklichen Fakten, die ihre Aussage stützen."
+                    }
+                ]
+            },
+            {
+                //SR_EXPLOREALL
+                "key": "quest_2",
+                "textSet": [
+                    {
+                        "text": "Meine Stimmungssensoren sind über ihre Grenzen hinaus und ich freue mich, Teil dieser Begeisterung zu sein!",
+                        "expression": "Happy"
+                    },
+                    {
+                        "text": "Sie haben Großes geleistet und meine Bewunderung gilt Ihnen."
+                    },
+                    {
+                        "text": "*druckt Nachricht auf kleines Stück Papier* …"
+                    },
+                    {
+                        "text": "<size=12>HERZLICHEN GLÜCKWUNSCH\n\nX0 0110\nI-1900</size>",
+                        "expression": "Happy"
+                    }
+                ]
+            }
+        ],
+        //QUEST TEXT FOR TIMED GENERIC QUESTS
+        "questTertiaryText": [
+            //#region T_BRING ITEMS ..............................
+            {
+                "questKey": "quest_58",
+                "questName": "Unterstützung erforderlich",
+                "questDescription": "I-1900 benötigt Hilfe, um bestimmte Gegenstände zu erhalten. Schließe Freundschaft mit I-1900, indem du ihr die aufgelisteten Gegenstände bringst.",
+                "goalDescriptions": [
+                    "Geben $amount <style=Item>$goalName</style>bis I-1900."
+                ],
+                "questDialogue": [
+                    {
+                        "key": "Active",
+                        "textSet": [
+                            {
+                                "text": "Ihre Annahme meiner Anfrage entspricht meinen Standardprotokollen und ist akzeptabel."
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Completed",
+                        "textSet": [
+                            {
+                                "text": "*SCANNEN... akzeptiert Elemente*\n\nProtokolldatenbanken werden aktualisiert..."
+                            },
+                            {
+                                "text": "Vielen Dank für Ihre Unterstützung von I-1900. Ihre Personalakte wurde mit einer positiven Note aktualisiert.",
+                                "expression": "Happy"
+                            },
+                            {
+                                "boxType": "Reward",
+                                "text": "Du hast <sprite=1><style=Credits> $amountCredits</style>!",
+                                "itemReward": {
+                                    "itemID": "item_43",
+                                    "amount": 100,
+                                    "trackAction": "Reward"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "Bulletin",
+                        "textSet": [
+                            {
+                                "text": "Gastbenutzer,\n\nIch benötige Unterstützung bei der Erledigung der unten aufgeführten Aufgaben. Alle Beiträge werden in meiner Personaldatenbank protokolliert.\n\nVielen Dank für Ihre Aufmerksamkeit,\nI-1900"
+                            }
+                        ]
+                    }
+                ]
+            }
+            //#endregion ..............................................
+        ]
+    }
+]

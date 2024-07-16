@@ -1,0 +1,109 @@
+[
+    {
+        "npcSaveID": "npc_1",
+        "name": "Bin Bot",
+        "titles": [
+            ""
+        ],
+        "relationshipStatus": [
+            ""
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "<i>Mensagem do sistema: Carregamento em andamento...</i>"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region STRANGER ....................................
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Olá <i>Cliente valioso</i> Espero que você esteja aproveitando o seu dia."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Bip boop.  \n\nEstou de folga agora, mas voltarei em breve.   :)"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Guardo todos os produtos na temperatura ideal até serem distribuídos."
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "Minha capacidade de armazenamento foi atualizada recentemente."
+                    },
+                    {
+                        "text": "Na verdade, agora posso carregar mais de 10 vezes o meu peso métrico.    ;)"
+                    }
+                ]
+            },
+            {
+                "key": "Stranger",
+                "textSet": [
+                    {
+                        "text": "As vendas finais dos produtos serão distribuídas diretamente em sua conta de crédito no final de cada dia."
+                    }
+                ]
+            },
+            //#endregion ............................................
+
+            //Bin Bot does not advance in friendship level so he only has stranger status
+
+            //#region SPECIALTY ...................................
+            {
+                "key": "open_sell_bin",
+                "textSet": [
+                    {
+                        "text": "Oi. Gostaria de devolver o último item adicionado?",
+                        "optionOne": {
+
+                            "optionText": "Não"
+                        },
+                        "optionTwo": {
+                            "optionText": "Sim"
+                        }
+                    }
+                ]
+            },
+            {
+                "key": "can_not_sell",
+                "textSet": [
+                    {
+                        "text": "Bip boop. Opa! Este item não pode ser vendido. Por favor insira um item diferente."
+                    }
+                ]
+            },
+            {
+                "key": "empty_bin",
+                "textSet": [
+                    {
+                        "text": "Olá $playerName. Quer me dar um item para vender? Basta segurar o item sobre sua cabeça e pressionar $inputPrimary."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+        ]
+    }
+]

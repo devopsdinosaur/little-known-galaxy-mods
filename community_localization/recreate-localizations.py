@@ -50,14 +50,14 @@
 LANGUAGES = (
     # "Gibberish",
 
-    "Spanish",
-    "French",
     "German",
-    "Korean",                   # character set not yet fully supported?
+    "Spanish",
     "Portuguese",
-    "Chinese (Simplified)",     # character set not yet fully supported?
-    "Italian",
-    "Japanese",                 # character set not yet fully supported?
+    "French",
+    "Korean",                   # character set not yet fully supported?
+    #"Chinese (Simplified)",     # character set not yet fully supported?
+    #"Italian",
+    #"Japanese",                 # character set not yet fully supported?
 )
 
 import os
@@ -65,6 +65,8 @@ import sys
 import re
 import time
 from google.cloud import translate, translate_v2
+import pickle
+import traceback
 
 THIS_DIR = os.path.dirname(__file__)
 TMP_DIR = os.path.join(THIS_DIR, "tmp")
@@ -79,6 +81,7 @@ INVALID_CHARS = "ÃÂ"
 STRING_REPLACEMENTS = [
     ('"', "'"),
     ("\\ n", "\\n"),
+    ("\\N", "\\n"),
 ]
 
 KEYS_TO_TRANSLATE = [
@@ -160,7 +163,7 @@ class JankyTranslator:
             new_data = ""
             for index in range(len(data)):
                 try:
-                    new_data += chr(int(data[index].encode("utf-8")[0]))
+                    new_data += chr(int(data[index].encode("iso-8859-1")[0]))
                 except UnicodeEncodeError as e:
                     pass
             f.write(new_data)
@@ -169,10 +172,15 @@ class JankyTranslator:
     def load_cache(self):
         self.cache = {}
         try:
-            self.cache = eval(self.read_file(CACHE_FILE))
-        except:
+            f = open(CACHE_FILE, "rb")
+            self.cache = pickle.load(f)
+            f.close()
+        except Exception as e:
+            traceback.print_exc()
             try:
-                self.cache = eval(self.read_file(CACHE_FILE_BACKUP))
+                f = open(CACHE_FILE, "rb")
+                self.cache = pickle.load(f)
+                f.close()
                 log("* warning - unable to load primary cache; restoring from backup.")
             except:
                 pass
@@ -181,10 +189,16 @@ class JankyTranslator:
                 self.cache[key] = {}
         
     def write_cache(self):
-        self.write_file(CACHE_FILE, str(self.cache))
+        os.makedirs(os.path.dirname(CACHE_FILE), exist_ok = True)
+        f = open(CACHE_FILE, "wb")
+        pickle.dump(self.cache, f)
+        f.close()
 
     def write_cache_backup(self):
-        self.write_file(CACHE_FILE_BACKUP, str(self.cache))
+        os.makedirs(os.path.dirname(CACHE_FILE_BACKUP), exist_ok = True)
+        f = open(CACHE_FILE_BACKUP, "wb")
+        pickle.dump(self.cache, f)
+        f.close()
 
     def write_cache_periodic(self):
         if (self.last_cache_write_time is not None and time.time() - self.last_cache_write_time < self.CACHE_WRITE_FREQUENCY):
@@ -342,6 +356,8 @@ class JankyTranslator:
     def run(self):
         log("Running JankyTranslator magic (template_dir: '%(template_dir)s', language: '%(language)s', out_dir: '%(out_dir)s'))." % self.__dict__)
         self.load_cache()
+        #print(str(self.cache))
+        #sys.exit(0)
         self.set_language_code()
         try:
             for file in os.listdir(self.template_dir):

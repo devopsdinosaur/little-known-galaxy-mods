@@ -1,0 +1,122 @@
+[
+    {
+        "npcSaveID": "npc_35",
+        "name": "King Tide",
+        "titles": [
+            "König"
+        ],
+        "relationshipStatus": [
+            " "
+        ],
+        "observations": [
+            ""
+        ],
+        "unlockAnnouncements": [
+        ],
+        "dialogue": [
+            //#region RESTING .....................................
+            {
+                "key": "Resting",
+                "textSet": [
+                    {
+                        "boxType": "Info",
+                        "text": "Zzzz …"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+            //#region OUTLANDERBEFORE .............................
+            {
+                "key": "OutlanderBefore",
+                "textSet": [
+                    {
+                        "text": "Mir geht es nicht so gut...",
+                        "expression": "Stressed"
+                    },
+                    {
+                        "text": "Dreht sich das Riff, oder bilde ich mir das nur ein?",
+                        "expression": "Stressed"
+                    }
+                ]
+            },
+            //#endregion ..........................................
+
+            //#region OUTLANDERAFTER ..............................
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Ich bin seit 21 Jahren der König des Blue Reef Kingdom ..."
+                    },
+                    {
+                        "text": "Oder waren es 22 Jahre ... uff ... oh, Mist, ich kann mich nicht erinnern."
+                    },
+                    {
+                        "text": "Nun, meine Tochter weiß es wahrscheinlich, denn mit Daten und Zahlen kann sie viel besser."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Ich komme oft an die Oberfläche, um für meine Leute da zu sein."
+                    },
+                    {
+                        "text": "Indem ich für sie da bin, kann ich mir ihre Sorgen anhören und besser auf ihre Bedürfnisse eingehen."
+                    },
+                    {
+                        "text": "Das ist meine wichtigste Rolle als König."
+                    }
+                ]
+            },
+            {
+                "key": "OutlanderAfter",
+                "textSet": [
+                    {
+                        "text": "Es ist wirklich ein wunderschöner Tag im Königreich, finden Sie nicht?",
+                        "expression": "Confused",
+                        "optionOne": {
+                            "optionText": "So schön!",
+                            "response": "*tief einatmen* Ahhhh ... die frische Meeresluft wird Wunder für Ihre Schuppen bewirken, glauben Sie mir.",
+                            "responseExpression": "Happy"
+                        },
+                        "optionTwo": {
+                            "optionText": "Ich habe besseres gesehen.",
+                            "response": "Ist das so? Vielleicht wissen Sie die Wunder der Luftfeuchtigkeit nicht so zu schätzen wie wir.",
+                            "responseExpression": "Sad"
+                        }
+                    },
+                    {
+                        "text": "Aber ich schätze, wenn ich den ganzen Tag diesen Raumanzug tragen müsste, würde es mir schwerfallen, unser wunderbares Klima wirklich wahrzunehmen."
+                    }
+                ]
+            }
+            //#endregion ..........................................
+
+            //DOES NOT ADVANCE TO STRANGER, FRIENDS, BEST FRIEND, OR GIFT DIALOGUE BECAUSE HE DOES NOT HAVE FRIENDSHIP ABILITIES.
+
+            //#region SPECIALTY ...................................
+            //NOTHING YET
+            //#endregion ..........................................
+        ],
+
+        "nonCrewCommentary": [
+            {
+                //P_DELIVEROCEANRELIC
+                "key": "quest_13",
+                "textSet": [
+                    {
+                        "text": "Es ist so wunderbar, nicht mehr unter der Landkrankheit zu leiden."
+                    },
+                    {
+                        "text": "Das ist alles Ihnen zu verdanken, Captain."
+                    },
+                    {
+                        "text": "Sie werden immer unser Ehrengast sein, wann immer Sie uns besuchen möchten."
+                    }
+                ]
+            }
+        ]
+    }
+]
